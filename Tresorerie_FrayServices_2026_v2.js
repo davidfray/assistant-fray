@@ -26,7 +26,7 @@ const CFG = {
   EMAIL:         "david@frayservices.com",
   SEUIL_ROUGE:   5000,   // Alerte critique si solde < ce montant (€)
   SEUIL_ORANGE:  10000,  // Attention si solde < ce montant (€)
-  SOLDE_INIT:    15000,  // Solde bancaire Jan 2026 — À AJUSTER selon réalité
+  SOLDE_INIT:    0,      // Solde bancaire Jan 2026
 };
 
 // ─── COULEURS ────────────────────────────────────────────────
