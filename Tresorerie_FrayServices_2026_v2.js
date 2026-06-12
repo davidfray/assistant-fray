@@ -147,40 +147,47 @@ function addAlertFormat(sh, r) {
 // ============================================================
 function getData2026() {
   return {
-    // ENTRÉES (valeurs HT en €)
-    // GSTYR signé : 2 360,20€ TTC → 1 984€ HT (mai = intervention prévue)
-    // PICARD : AVP en cours, chiffrage ~50-80K€ (à partir sep/oct)
-    // Serenibrava : conciergerie saisonnière
-    acomptes:     [    0,    0,    0,    0,  708, 2500, 3000, 2500, 3000, 4800, 4800, 2800],
-    situations:   [    0,    0,    0,    0, 1063, 3750, 4500, 3750, 4500, 7200, 7200, 4200],
-    soldes:       [    0,    0,    0,    0, 1984,    0, 2000, 1500, 2000, 4000, 4000, 2000],
-    honoraires:   [    0,    0,    0,    0,  176,  500,  600,  500,  600,  900,  900,  500],
-    serenibrava:  [  300,  200,  400,  800, 1200, 2500, 3800, 4200, 2200,  900,  450,  320],
+    // ── ENTRÉES (HT en €) ──────────────────────────────────────
+    // ✓ GSTYR (PR2604-0003) : 2 020€ HT, réceptionné 10/06/2026 → facture juin
+    // ✓ Serenibrava mai : 455€ (virement Axele/Revolut reçu 19/05/2026 — réel)
+    // Projections : PICARD AVP → PRO (sep/oct), autres Serenibrava été
+    acomptes:     [    0,    0,    0,    0,    0, 2500, 3000, 2500, 3000, 4800, 4800, 2800],
+    situations:   [    0,    0,    0,    0,    0, 3750, 4500, 3750, 4500, 7200, 7200, 4200],
+    // GSTYR : 2 020€ HT solde unique en juin (pas d'acompte sur ce chantier)
+    soldes:       [    0,    0,    0,    0,    0, 2020, 2000, 1500, 2000, 4000, 4000, 2000],
+    honoraires:   [    0,    0,    0,    0,    0,  500,  600,  500,  600,  900,  900,  500],
+    // ✓ Mai : 455€ réel (Axele Revolut 19/05) | Projections été Costa Brava
+    serenibrava:  [  300,  200,  400,  800,  455, 2500, 3800, 4200, 2200,  900,  450,  320],
     divers:       [    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0],
 
-    // SOUS-TRAITANTS (en fonction CA projeté)
+    // ── SOUS-TRAITANTS ─────────────────────────────────────────
+    // ✓ Avr : FA2605-0003 plomberie/clim/élec 1 620€ HT (GSTYR)
+    // ✓ Mai : Pascal Parent FA2605-0004 2 250€ − avoir AV2605-0001 300€ = 1 950€ net
     stMaconnerie: [    0,    0,    0,    0,    0,  540,  810,  540,  675, 1296, 1296,  756],
-    stPlomberie:  [    0,    0,    0,    0,    0,  486,  729,  486,  608, 1166, 1166,  680],
+    stPlomberie:  [    0,    0,    0, 1620,    0,  486,  729,  486,  608, 1166, 1166,  680],
     stElec:       [    0,    0,    0,    0,    0,  324,  486,  324,  405,  778,  778,  454],
     stCarrelage:  [    0,    0,    0,    0,    0,  486,  729,  486,  608, 1166, 1166,  680],
     stMenuiserie: [    0,    0,    0,    0,    0,  324,  486,  324,  405,  778,  778,  454],
     stPeinture:   [    0,    0,    0,    0,    0,  378,  567,  378,  473,  907,  907,  529],
-    stAutres:     [    0,    0,    0,    0,    0,  162,  243,  162,  203,  389,  389,  227],
+    // ✓ Mai : Pascal Parent (travaux Serenibrava/autres) 2 250€ − avoir 300€ = 1 950€
+    stAutres:     [    0,    0,    0,    0, 1950,  162,  243,  162,  203,  389,  389,  227],
 
-    // ACHATS CHANTIER
+    // ── ACHATS CHANTIER ────────────────────────────────────────
     materiaux:    [    0,    0,    0,    0,    0,  675, 1080,  720,  900, 1728, 1728,  756],
-    location:     [    0,    0,    0,  800,    0,    0,    0,    0,    0,  800,    0,    0],
+    // ✓ Mai : Ganxo Rent a Car 91€ HT (location véhicule chantier 15/05)
+    location:     [    0,    0,    0,  800,   91,    0,    0,    0,    0,  800,    0,    0],
 
-    // CHARGES FIXES (mensuelles récurrentes)
+    // ── CHARGES FIXES ──────────────────────────────────────────
     salaires:     [ 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000],
     loyer:        [ 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
     assurances:   [  200,  200,  200,  200,  200,  200,  200,  200,  200,  200,  200,  200],
-    // Orange Pro 82,53€ + Blink 22€ + WordPress 10€ + G.Workspace 14€ = 128,53€ ≈ 129€
-    abonnements:  [  129,  129,  129,  129,  129,  129,  129,  129,  129,  129,  129,  129],
-    carburant:    [  250,  250,  250,  250,  250,  250,  250,  250,  250,  250,  250,  250],
+    // Orange Pro 87€ HT + Blink 22€ + WordPress 10€ + GWorkspace 3€ + IONOS 11€ = 133€
+    // ✓ Mai : +15€ renouvellement domaine IONOS frayservices.com = 148€
+    abonnements:  [  133,  133,  133,  133,  148,  133,  133,  133,  133,  133,  133,  133],
+    carburant:    [  200,  200,  200,  200,  200,  200,  200,  200,  200,  200,  200,  200],
     compta:       [  150,  150,  150,  150,  150,  150,  150,  150,  150,  150,  150,  150],
-    // Meta Ads Serenibrava : 15€/j × 30j = 450€ (périodes actives)
-    marketing:    [  150,  150,  150,  200,  450,  350,  150,  150,  200,  200,  150,  150],
+    // Meta Ads Serenibrava : actif mai–juin (campagnes TEST)
+    marketing:    [  100,  100,  100,  150,  350,  300,  150,  150,  200,  200,  150,  150],
     // IVA trimestrielle espagnole : jan, avr, jul, oct
     taxes:        [ 1200,    0,    0, 1200,    0,    0, 1200,    0,    0, 1200,    0,    0],
     emprunts:     [    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0],
@@ -565,6 +572,86 @@ function preRemplir2026() {
     "• Cellules bleues = saisies à vérifier/ajuster\n" +
     "• Cellules vertes = liens automatiques\n" +
     "• Solde final : rouge < 5 000€ | orange < 10 000€ | vert ≥ 10 000€\n\n" +
+    ss.getUrl()
+  );
+}
+
+// ============================================================
+// PATCH : CORRIGER LE SHEET EXISTANT SANS RECRÉER
+// Basé sur factures réelles : GSTYR, Pascal Parent, BBVA mai 2026
+// ============================================================
+function patcherSheet() {
+  const files = DriveApp.getFilesByName(CFG.NOM);
+  if (!files.hasNext()) {
+    Browser.msgBox(`❌ Fichier "${CFG.NOM}" introuvable.\nExécutez d'abord creerTresorerie2026().`);
+    return;
+  }
+  const ss = SpreadsheetApp.open(files.next());
+  const sh = ss.getSheetByName("Fray Services – Trésorerie 2026");
+  if (!sh) { Browser.msgBox("❌ Onglet non trouvé."); return; }
+
+  // col = mois + 2 (C=3=Jan, D=4=Fév, ... G=7=Mai, H=8=Jun)
+  const JAN=3, FEV=4, MAR=5, AVR=6, MAI=7, JUN=8;
+
+  // ── Solde initial ─────────────────────────────────────────
+  sh.getRange(3, JAN).setValue(0);
+
+  // ── ENTRÉES : corrections jan–juin ───────────────────────
+  // Mai : GSTYR n'est PAS en mai → tout à 0
+  sh.getRange(5, MAI).setValue(0);   // acomptes
+  sh.getRange(6, MAI).setValue(0);   // situations
+  sh.getRange(7, MAI).setValue(0);   // soldes
+  sh.getRange(8, MAI).setValue(0);   // honoraires
+  // Mai : Serenibrava réel (virement Axele/Revolut 19/05/2026)
+  sh.getRange(9, MAI).setValue(455);
+
+  // Juin : GSTYR 2 020€ HT — solde unique (réceptionné 10/06/2026)
+  sh.getRange(7, JUN).setValue(2020);
+  sh.getRange(7, JUN).setNote("✓ GSTYR PR2604-0003 : 2 020€ HT (2 360,20€ TTC) — réceptionné 10/06/2026");
+
+  // ── SOUS-TRAITANTS : corrections ─────────────────────────
+  // Avr : FA2605-0003 plomberie/clim/élec 1 620€ HT
+  sh.getRange(17, AVR).setValue(1620);
+  sh.getRange(17, AVR).setNote("✓ FA2605-0003 : installation clim/gaz/élec GSTYR — 1 620€ HT");
+  // Mai : Pascal Parent FA2605-0004 2 250€ − avoir AV2605-0001 300€ = 1 950€ net
+  sh.getRange(22, MAI).setValue(1950);
+  sh.getRange(22, MAI).setNote("✓ FA2605-0004 Pascal Parent 2 250€ − avoir AV2605-0001 300€ = 1 950€ net HT");
+
+  // ── ACHATS : corrections ──────────────────────────────────
+  // Mai : Ganxo Rent a Car 91€ HT (15/05/2026)
+  sh.getRange(25, MAI).setValue(91);
+  sh.getRange(25, MAI).setNote("✓ Ganxo Via SL — location véhicule F13 — 91€ HT (110,20€ TTC)");
+
+  // ── CHARGES : corrections ─────────────────────────────────
+  // Abonnements : Orange 87€ + IONOS 11€ + Blink 22€ + WP 10€ + GWS 3€ = 133€/mois
+  for (let m = JAN; m <= 14; m++) sh.getRange(30, m).setValue(133);
+  // Mai : +15€ renouvellement domaine IONOS frayservices.com
+  sh.getRange(30, MAI).setValue(148);
+  sh.getRange(30, MAI).setNote("✓ 133€ + 15€ renouvellement domaine IONOS frayservices.com (08/05/2026)");
+
+  // Carburant : ajusté à 200€/mois (correction estimation)
+  for (let m = JAN; m <= 14; m++) sh.getRange(31, m).setValue(200);
+
+  // Marketing : ajusté selon périodes réelles
+  const mktg = [100,100,100,150,350,300,150,150,200,200,150,150];
+  mktg.forEach((v, i) => sh.getRange(33, JAN+i).setValue(v));
+
+  // ── Notes de correction ────────────────────────────────────
+  sh.getRange(3, JAN).setNote("✓ Solde initial réel jan 2026 = 0€");
+  sh.getRange(9, MAI).setNote("✓ 455€ — virement Axele Fray via Revolut reçu le 19/05/2026 (BBVA)");
+
+  SpreadsheetApp.flush();
+  Browser.msgBox(
+    "✅ Sheet patché avec données réelles !\n\n" +
+    "Corrections appliquées :\n" +
+    "• Solde initial jan : 0€\n" +
+    "• Mai : entrées GSTYR → 0 (chantier terminé juin)\n" +
+    "• Mai : Serenibrava → 455€ (réel)\n" +
+    "• Juin : GSTYR solde → 2 020€ HT\n" +
+    "• Avr : sous-traitant plomberie → 1 620€ (FA2605-0003)\n" +
+    "• Mai : sous-traitant Pascal Parent → 1 950€ net\n" +
+    "• Mai : location véhicule → 91€ (Ganxo)\n" +
+    "• Abonnements : 133€/mois (148€ mai avec IONOS)\n\n" +
     ss.getUrl()
   );
 }
