@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Assistant Personnel — Fray Services</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   :root {
     --bg: #080808;
@@ -547,6 +548,144 @@
   .highlight-green { color: var(--green); }
   .highlight-red { color: var(--red); }
   .highlight-blue { color: var(--blue); }
+
+  /* === CHARTS IN MESSAGES === */
+  .chart-wrapper {
+    background: var(--s1);
+    border: 1px solid var(--b);
+    border-radius: 8px;
+    padding: 14px 16px 10px;
+    margin-top: 12px;
+  }
+  .chart-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--m);
+    margin-bottom: 10px;
+  }
+
+  /* === DASHBOARD OVERLAY === */
+  .db-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8,8,8,.97);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    animation: fadeUp .3s ease both;
+  }
+  .db-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--b);
+    flex-shrink: 0;
+  }
+  .db-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .db-date {
+    font-size: 9px;
+    color: var(--m);
+    font-weight: 400;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .5px;
+  }
+  .db-close {
+    font-size: 10px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--b2);
+    background: transparent;
+    color: var(--m2);
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .5px;
+    transition: all .15s;
+  }
+  .db-close:hover { border-color: var(--gold2); color: var(--gold); }
+  .db-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .db-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .db-kpi {
+    background: var(--s1);
+    border: 1px solid var(--b);
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+  .db-kpi-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--m);
+    margin-bottom: 8px;
+  }
+  .db-kpi-val {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .db-kpi-sub { font-size: 9px; color: var(--m); margin-top: 5px; }
+  .db-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .db-card {
+    background: var(--s1);
+    border: 1px solid var(--b);
+    border-radius: 8px;
+    padding: 18px 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .db-card-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--t);
+  }
+  .db-card-sub { font-size: 9px; color: var(--m); margin-bottom: 8px; }
+  .db-canvas-wrap { position: relative; height: 200px; }
+  .db-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .db-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 9px;
+    color: var(--m2);
+  }
+  .db-legend-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
 </style>
 </head>
 <body>
@@ -817,6 +956,12 @@ Tu peux agir comme ces agents selon la demande :
 - Indique toujours l'agent utilisé : ex. "[Agent Projets]"
 - Date actuelle : 09 mai 2026
 
+## GRAPHIQUES (OPTIONNEL)
+Quand tu présentes des données chiffrées comparables (budgets, stats, métriques), tu PEUX insérer un graphique ainsi :
+[[CHART:{"type":"bar","title":"Titre du graphique","labels":["Label1","Label2","Label3"],"values":[100,200,150],"unit":"€"}]]
+Types disponibles : bar (barres verticales), barh (barres horizontales), line (courbe), doughnut (anneau).
+N'utilise un graphique que si ≥2 valeurs sont comparables. Ne force pas les graphiques.
+
 Aujourd'hui en priorité :
 1. Confirmer RDV PICARD 14 ou 15 mai avec Dombrowski
 2. Planifier intervention GSTYR
@@ -940,10 +1085,23 @@ function addMessage(role, content) {
   `;
 
   chat.appendChild(div);
+  renderPendingCharts();
   chat.scrollTop = chat.scrollHeight;
 }
 
 function formatContent(text) {
+  // Extract chart blocks before markdown processing corrupts the JSON
+  text = text.replace(/\[\[CHART:([\s\S]*?)\]\]/g, (_, raw) => {
+    const id = 'chart-' + Math.random().toString(36).substr(2, 9);
+    try {
+      pendingCharts[id] = JSON.parse(raw);
+      const spec = pendingCharts[id];
+      const lbl = spec.title ? `<div class="chart-label">${spec.title}</div>` : '';
+      return `<div class="chart-wrapper">${lbl}<div style="position:relative;height:210px"><canvas id="${id}"></canvas></div></div>`;
+    } catch(e) {
+      return '<div class="chart-wrapper"><em style="color:var(--m);font-size:10px">[données incorrectes]</em></div>';
+    }
+  });
   // Convert markdown-like formatting
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong style="color:var(--t)">$1</strong>')
@@ -998,7 +1156,7 @@ function loadBriefing() {
 }
 
 function loadDashboard() {
-  sendMessage('Fais-moi un tableau de bord synthétique de tous les projets, finances et marketing — statut actuel complet.');
+  showDashboard();
 }
 
 function clearChat() {
@@ -1049,6 +1207,283 @@ function handleKey(e) {
 function autoResize(textarea) {
   textarea.style.height = 'auto';
   textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+}
+
+// ── CHART ENGINE ──────────────────────────────────────────────────────────
+const pendingCharts = {};
+
+// Categorical palette — fixed order, dark-surface validated
+const CAT = ['#d4a96a','#60a5fa','#4ade80','#fb923c','#c084fc','#22d3ee','#f87171'];
+
+function hexA(hex, a) {
+  const n = parseInt(hex.replace('#',''), 16);
+  return `rgba(${n>>16},${(n>>8)&255},${n&255},${a})`;
+}
+
+function renderPendingCharts() {
+  for (const [id, spec] of Object.entries(pendingCharts)) {
+    const canvas = document.getElementById(id);
+    if (!canvas) continue;
+    delete pendingCharts[id];
+    _drawChart(canvas, spec);
+  }
+}
+
+function _drawChart(canvas, spec) {
+  const raw = spec.type || 'bar';
+  const isH = raw === 'barh';
+  const type = isH ? 'bar' : raw;
+  const isDoughnut = type === 'doughnut' || type === 'pie';
+  const labels = spec.labels || [];
+  const vals = spec.values || [];
+  const unit = spec.unit || '';
+
+  const bgs = labels.map((_, i) => hexA(CAT[i % CAT.length], .75));
+  const borders = labels.map((_, i) => CAT[i % CAT.length]);
+
+  const tooltipCfg = {
+    backgroundColor: '#161616',
+    borderColor: '#2e2e2e',
+    borderWidth: 1,
+    titleColor: '#f0ede6',
+    bodyColor: '#777',
+    padding: 10,
+    titleFont: { family: "'Syne',sans-serif", size: 11, weight: '700' },
+    bodyFont: { family: "'DM Mono',monospace", size: 10 },
+    callbacks: { label: ctx => ` ${ctx.formattedValue}${unit}` }
+  };
+
+  const scalesCfg = isDoughnut ? {} : {
+    scales: {
+      x: {
+        grid: { color: '#1c1c1c' }, border: { display: false },
+        ticks: { color: '#555', font: { family: "'DM Mono',monospace", size: 9 }, maxRotation: 30 },
+      },
+      y: {
+        grid: { color: '#1c1c1c' }, border: { display: false },
+        ticks: { color: '#555', font: { family: "'DM Mono',monospace", size: 9 } },
+      }
+    }
+  };
+
+  new Chart(canvas, {
+    type,
+    data: {
+      labels,
+      datasets: [{
+        label: spec.title || '',
+        data: vals,
+        backgroundColor: bgs,
+        borderColor: isDoughnut ? '#080808' : borders,
+        borderWidth: isDoughnut ? 2 : 1,
+        borderRadius: isDoughnut ? 0 : 4,
+        hoverOffset: isDoughnut ? 6 : 0,
+      }]
+    },
+    options: {
+      indexAxis: isH ? 'y' : 'x',
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 500 },
+      plugins: {
+        legend: { display: isDoughnut, labels: { color: '#777', font: { family: "'DM Mono',monospace", size: 9 }, boxWidth: 8 } },
+        tooltip: tooltipCfg,
+      },
+      ...scalesCfg,
+    }
+  });
+}
+
+// ── VISUAL DASHBOARD ──────────────────────────────────────────────────────
+function showDashboard() {
+  if (document.getElementById('db-overlay')) return;
+  const ov = document.createElement('div');
+  ov.className = 'db-overlay';
+  ov.id = 'db-overlay';
+  ov.innerHTML = `
+    <div class="db-header">
+      <div class="db-title">
+        📊 Dashboard Fray Services
+        <span class="db-date">09 mai 2026 · Vue synthétique</span>
+      </div>
+      <button class="db-close" onclick="closeDashboard()">✕ Fermer</button>
+    </div>
+    <div class="db-body">
+      <div class="db-kpis">
+        <div class="db-kpi">
+          <div class="db-kpi-label">Pipeline à facturer</div>
+          <div class="db-kpi-val" style="color:var(--gold)">2 360€</div>
+          <div class="db-kpi-sub">GSTYR · TTC · Signé</div>
+        </div>
+        <div class="db-kpi">
+          <div class="db-kpi-label">Meta Ads actives</div>
+          <div class="db-kpi-val" style="color:var(--green)">15€/j</div>
+          <div class="db-kpi-sub">3 campagnes TEST · Serenibrava</div>
+        </div>
+        <div class="db-kpi">
+          <div class="db-kpi-label">Projets actifs</div>
+          <div class="db-kpi-val" style="color:var(--blue)">3</div>
+          <div class="db-kpi-sub">PICARD · GSTYR · Calella José</div>
+        </div>
+        <div class="db-kpi">
+          <div class="db-kpi-label">Charges fixes / mois</div>
+          <div class="db-kpi-val" style="color:var(--orange)">83€</div>
+          <div class="db-kpi-sub">Orange Pro · 5 lignes</div>
+        </div>
+      </div>
+      <div class="db-charts">
+        <div class="db-card">
+          <div class="db-card-title">Projets — Budget estimé</div>
+          <div class="db-card-sub">Devis signés & estimations AVP (€ TTC)</div>
+          <div class="db-canvas-wrap"><canvas id="db-c1"></canvas></div>
+        </div>
+        <div class="db-card">
+          <div class="db-card-title">Statut Chantiers</div>
+          <div class="db-card-sub">Phase actuelle par projet</div>
+          <div class="db-canvas-wrap"><canvas id="db-c2"></canvas></div>
+          <div class="db-legend" id="db-c2-leg"></div>
+        </div>
+        <div class="db-card">
+          <div class="db-card-title">Meta Ads — Budget / Campagne</div>
+          <div class="db-card-sub">3 campagnes actives · 08–11 mai (€/jour)</div>
+          <div class="db-canvas-wrap"><canvas id="db-c3"></canvas></div>
+        </div>
+        <div class="db-card">
+          <div class="db-card-title">Finances — Flux (€)</div>
+          <div class="db-card-sub">Entrées prévues vs charges fixes</div>
+          <div class="db-canvas-wrap"><canvas id="db-c4"></canvas></div>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(ov);
+  setTimeout(_initDashboardCharts, 50);
+}
+
+function closeDashboard() {
+  const ov = document.getElementById('db-overlay');
+  if (ov) ov.remove();
+}
+
+function _initDashboardCharts() {
+  const tickStyle = { color: '#555', font: { family: "'DM Mono',monospace", size: 9 } };
+  const tipBase = {
+    backgroundColor: '#161616', borderColor: '#2e2e2e', borderWidth: 1,
+    titleColor: '#f0ede6', bodyColor: '#777', padding: 10,
+    titleFont: { family: "'Syne',sans-serif", size: 11, weight: '700' },
+    bodyFont: { family: "'DM Mono',monospace", size: 10 },
+  };
+  const gridStyle = { color: '#1c1c1c' };
+  const scaleCfg = {
+    x: { grid: gridStyle, border: { display: false }, ticks: tickStyle },
+    y: { grid: gridStyle, border: { display: false }, ticks: tickStyle },
+  };
+
+  // 1 — Budget projets (horizontal bar)
+  new Chart(document.getElementById('db-c1'), {
+    type: 'bar',
+    data: {
+      labels: ['PICARD', 'Fray SL (levée)', 'GSTYR'],
+      datasets: [{
+        data: [65000, 50000, 2360],
+        backgroundColor: [hexA('#d4a96a',.75), hexA('#60a5fa',.75), hexA('#4ade80',.75)],
+        borderColor:      ['#d4a96a', '#60a5fa', '#4ade80'],
+        borderWidth: 1, borderRadius: 4,
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      animation: { duration: 600 },
+      plugins: {
+        legend: { display: false },
+        tooltip: { ...tipBase, callbacks: { label: ctx => ` ${Number(ctx.raw).toLocaleString('fr-FR')}€` } }
+      },
+      scales: {
+        ...scaleCfg,
+        x: { ...scaleCfg.x, ticks: { ...tickStyle, callback: v => v >= 1000 ? (v/1000)+'k€' : v+'€' } },
+      }
+    }
+  });
+
+  // 2 — Statut projets (doughnut)
+  const dLabels = ['AVP en cours','Devis signé','À planifier','En attente RDV'];
+  const dColors = ['#d4a96a','#4ade80','#60a5fa','#fb923c'];
+  new Chart(document.getElementById('db-c2'), {
+    type: 'doughnut',
+    data: {
+      labels: dLabels,
+      datasets: [{
+        data: [1, 1, 1, 1],
+        backgroundColor: dColors.map(c => hexA(c, .8)),
+        borderColor: '#080808',
+        borderWidth: 3,
+        hoverOffset: 6,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: '65%',
+      animation: { duration: 600 },
+      plugins: { legend: { display: false }, tooltip: tipBase }
+    }
+  });
+  const leg = document.getElementById('db-c2-leg');
+  if (leg) dLabels.forEach((l, i) => {
+    leg.innerHTML += `<span class="db-legend-item"><span class="db-legend-dot" style="background:${dColors[i]}"></span>${l}</span>`;
+  });
+
+  // 3 — Meta Ads budget/campagne (bar)
+  new Chart(document.getElementById('db-c3'), {
+    type: 'bar',
+    data: {
+      labels: ['TEST-1 · Tranquillité', 'TEST-2 · Coût absence', 'TEST-3 · Urgence sais.'],
+      datasets: [{
+        data: [5, 5, 5],
+        backgroundColor: [hexA('#d4a96a',.75), hexA('#60a5fa',.75), hexA('#4ade80',.75)],
+        borderColor: ['#d4a96a','#60a5fa','#4ade80'],
+        borderWidth: 1, borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      animation: { duration: 600 },
+      plugins: {
+        legend: { display: false },
+        tooltip: { ...tipBase, callbacks: { label: ctx => ` ${ctx.raw}€/jour` } }
+      },
+      scales: {
+        ...scaleCfg,
+        y: { ...scaleCfg.y, min: 0, max: 10, ticks: { ...tickStyle, callback: v => v+'€' } },
+        x: { ...scaleCfg.x, ticks: { ...tickStyle, maxRotation: 20, font: { family: "'DM Mono',monospace", size: 8 } } },
+      }
+    }
+  });
+
+  // 4 — Finances flux (bar, positive = entrée, negative = charge)
+  new Chart(document.getElementById('db-c4'), {
+    type: 'bar',
+    data: {
+      labels: ['GSTYR (à facturer)', 'Devis Segura (à émettre)', 'Orange Pro (charge/mois)'],
+      datasets: [{
+        data: [2360, 500, -82.53],
+        backgroundColor: [hexA('#4ade80',.75), hexA('#facc15',.6), hexA('#f87171',.75)],
+        borderColor: ['#4ade80','#facc15','#f87171'],
+        borderWidth: 1, borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      animation: { duration: 600 },
+      plugins: {
+        legend: { display: false },
+        tooltip: { ...tipBase, callbacks: { label: ctx => ` ${ctx.raw}€` } }
+      },
+      scales: {
+        ...scaleCfg,
+        y: { ...scaleCfg.y, ticks: { ...tickStyle, callback: v => v+'€' } },
+        x: { ...scaleCfg.x, ticks: { ...tickStyle, maxRotation: 20, font: { family: "'DM Mono',monospace", size: 8 } } },
+      }
+    }
+  });
 }
 </script>
 </body>
