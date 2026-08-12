@@ -5,16 +5,23 @@
  * Sheet cible : "Tresorerie Fray services"
  * ID : 1k40WA42h5vmKeVTA2rfPZ23DCeHSiOx20aZUv7ffjAI
  *
- * DÉPLOIEMENT :
- *   1. Extensions → Apps Script → coller ce code
- *   2. Déployer → Nouvelle version → Web App
+ * DÉPLOIEMENT INITIAL (1 seule fois) :
+ *   1. Ouvrir le sheet → Extensions → Apps Script
+ *   2. Coller tout ce code → Enregistrer
+ *   3. Exécuter la fonction  installTrigger()  (menu Exécuter → Exécuter la fonction)
+ *      → accepter les permissions demandées par Google
+ *   4. C'est tout ! Le script tourne désormais automatiquement chaque nuit.
+ *
+ * DÉPLOIEMENT WEB APP (pour appels n8n/Make) :
+ *   1. Déployer → Nouvelle version → Web App
  *      - Exécuter en tant que : Moi (david@frayservices.com)
- *      - Accès : Toute personne (pour que n8n puisse appeler sans OAuth)
- *   3. Copier l'URL de déploiement → la coller dans le nœud HTTP de n8n
+ *      - Accès : Toute personne
+ *   2. Copier l'URL → la coller dans le nœud HTTP de n8n / Make
  */
 
-const SHEET_ID   = '1k40WA42h5vmKeVTA2rfPZ23DCeHSiOx20aZUv7ffjAI';
+const SHEET_ID    = '1k40WA42h5vmKeVTA2rfPZ23DCeHSiOx20aZUv7ffjAI';
 const TAB_SAISIES = 'SAISIES';
+const TRIGGER_FN  = 'marquerToutPayees_auto';
 
 // ─── Colonnes (0-indexé, basé sur l'en-tête réel) ─────────────────────────
 const COL = {
@@ -39,10 +46,52 @@ const COL = {
   PAYE       : 18,   // ← colonne S
 };
 
+// ─── Trigger automatique ───────────────────────────────────────────────────
+/**
+ * Installe un déclencheur quotidien (23h00) sur marquerToutPayees_auto.
+ * À exécuter une seule fois depuis Apps Script → Exécuter → installTrigger.
+ */
+function installTrigger() {
+  // Supprimer les anciens triggers du même nom pour éviter les doublons
+  ScriptApp.getProjectTriggers().forEach(function(t) {
+    if (t.getHandlerFunction() === TRIGGER_FN) ScriptApp.deleteTrigger(t);
+  });
+
+  ScriptApp.newTrigger(TRIGGER_FN)
+    .timeBased()
+    .everyDays(1)
+    .atHour(23)
+    .create();
+
+  SpreadsheetApp.getUi().alert(
+    '✅ Trigger installé !\n\n' +
+    'La fonction marquerToutPayees_auto() tournera automatiquement\n' +
+    'chaque soir à 23h. Aucune action supplémentaire requise.'
+  );
+}
+
+/**
+ * Désinstalle le trigger automatique.
+ */
+function desinstallTrigger() {
+  ScriptApp.getProjectTriggers().forEach(function(t) {
+    if (t.getHandlerFunction() === TRIGGER_FN) ScriptApp.deleteTrigger(t);
+  });
+  SpreadsheetApp.getUi().alert('🗑️ Trigger supprimé.');
+}
+
+/**
+ * Fonction appelée automatiquement par le trigger quotidien.
+ * Marque toutes les lignes sans valeur Payé comme "Oui".
+ */
+function marquerToutPayees_auto() {
+  marquerPayees([], 'Oui');
+}
+
 // ─── Fonction principale ───────────────────────────────────────────────────
 /**
- * @param {string[]} refs  - liste de références à marquer (ex: ["FA2605-0003","AV2605-0001"])
- *                           Si vide → marque TOUTES les lignes sans "Payé"
+ * @param {string[]} refs   - liste de références à marquer (ex: ["FA2605-0003","AV2605-0001"])
+ *                            Si vide → marque TOUTES les lignes sans "Payé"
  * @param {string}   valeur - valeur à écrire dans Payé (défaut: "Oui")
  * @returns {{updated: number, skipped: number, rows: string[]}}
  */
@@ -54,7 +103,7 @@ function marquerPayees(refs, valeur) {
   const sh = ss.getSheetByName(TAB_SAISIES);
   if (!sh) throw new Error('Onglet "' + TAB_SAISIES + '" introuvable dans le sheet.');
 
-  const lastRow  = sh.getLastRow();
+  const lastRow = sh.getLastRow();
   if (lastRow < 2) return { updated: 0, skipped: 0, rows: [] };
 
   const range    = sh.getRange(2, 1, lastRow - 1, COL.PAYE + 1);
@@ -62,8 +111,8 @@ function marquerPayees(refs, valeur) {
   const payeCol  = sh.getRange(2, COL.PAYE + 1, lastRow - 1, 1);
   const payeVals = payeCol.getValues();
 
-  const updated  = [];
-  const skipped  = [];
+  const updated = [];
+  const skipped = [];
 
   data.forEach(function(row, i) {
     const ref      = String(row[COL.REFERENCE] || '').trim();
@@ -129,6 +178,9 @@ function onOpen() {
     .addItem('✅ Marquer TOUTES les factures Payé', 'menuToutPayees')
     .addSeparator()
     .addItem('🔵 Marquer FA + AV comme Encaissé', 'menuEncaisserFaAv')
+    .addSeparator()
+    .addItem('⏰ Installer trigger automatique (1× au départ)', 'installTrigger')
+    .addItem('🗑️ Supprimer trigger automatique', 'desinstallTrigger')
     .addToUi();
 }
 
@@ -138,7 +190,6 @@ function menuToutPayees() {
 }
 
 function menuEncaisserFaAv() {
-  // Marque spécifiquement les lignes dont la référence commence par FA ou AV
   const ss     = SpreadsheetApp.openById(SHEET_ID);
   const sh     = ss.getSheetByName(TAB_SAISIES);
   const data   = sh.getRange(2, COL.REFERENCE + 1, sh.getLastRow() - 1, 1).getValues();
