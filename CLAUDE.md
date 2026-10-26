@@ -61,6 +61,23 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
 
+## Travail partagé entre Cowork et Claude Code
+
+David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé avec GitHub Desktop) et dans Claude Code (cloud, branche dédiée puis pull request). Règles à appliquer à chaque session, quel que soit l'outil :
+
+1. **Début de session :** lire ce fichier, puis résumer à David où en est le sujet demandé avant de modifier quoi que ce soit. Dans Cowork, rappeler à David de faire « Fetch origin » puis « Pull » dans GitHub Desktop s'il ne l'a pas fait.
+2. **Un sujet, un outil à la fois :** ne pas modifier un fichier qu'une autre session est en train de traiter. En cas de doute (fichier modifié récemment, statut « en cours »), demander à David.
+3. **Fin de session :** mettre à jour ce fichier (sections « Décisions », « Fait en ligne », « En attente », et le journal ci-dessous).
+   - Dans Cowork : rappeler à David de faire « Commit to main » puis « Push origin » dans GitHub Desktop.
+   - Dans Claude Code : pousser sur la branche de session, ouvrir la pull request, et la fusionner seulement si David le demande. Tant qu'elle n'est pas fusionnée, Cowork ne voit pas le travail : le signaler à David.
+4. **Conflit de versions :** ne jamais choisir seul entre deux versions d'un même fichier. Montrer la différence à David et le laisser trancher.
+
+## Journal des sessions
+
+| Date | Outil | Sujets traités |
+|---|---|---|
+| 26/10/2026 | Claude Code | Agent Reach, veille kits balcon, articles kit balcon (FR/ES), Wh, hiver, fiche Tornasol, emails syndic et Tornasol, réponses types, calendriers et posts Sol & Volt (nov.-déc.) et Fray (nov.), audits et corrections des deux sites, mémoire des projets |
+
 ## Mise à jour de ce fichier
 
-À la fin de chaque session : mettre à jour « Décisions », « Fait en ligne » et « En attente ».
+À la fin de chaque session : mettre à jour « Décisions », « Fait en ligne », « En attente » et ajouter une ligne au journal des sessions.
