@@ -144,6 +144,11 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 - 14 fiches réécrites : ?p=850, 584, 750, 658, 671, 705, 800, 790, 532, 646, 614, 634, 776, 864 ; 6 titres corrigés (puissance ou nom de modèle faux). Détail : `catalogue/fiches-ecoflow-lot2-2026-10-26.md`.
 - Restent 5 fiches « à venir » : 640, 690, 833, 573, 768 (informations à obtenir du fournisseur).
 
+### Textes alternatifs (21 h 05, accord de David)
+
+- Image principale des 48 produits publiés : 29 textes ajoutés, 5 corrigés, 14 déjà corrects. Détail : `catalogue/textes-alternatifs-images-2026-10-26.md`.
+- Restent : images de galerie, compression et WebP.
+
 ## Plan d'action proposé (4 semaines)
 
 | Semaine | Action | Qui |
@@ -151,7 +156,7 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 | 1 | ~~Corriger « 24/48h », accents, promesse Le Module, option A côté contenu~~ Fait le 26/10 | Claude |
 | 1 | 4 redirections 301, contrôles Search Console et Rank Math ci-dessous | David |
 | 2 | ~~Compléter 8 fiches EcoFlow prioritaires~~ 7 faites le 26/10, ?p=640 en attente | Claude |
-| 2 | Textes alternatifs des 48 images principales (point 3) | Claude, après accord |
+| 2 | ~~Textes alternatifs des 48 images principales~~ Fait le 26/10 | Claude |
 | 3 | Catégorie blog « Guides », images à la une, mise à jour ?p=483 (point 4) | Claude, après publication de ?p=94 |
 | 4 | Slugs Tornasol avec 301 (point 7), 18 fiches EcoFlow restantes | Claude, après accord |
 
