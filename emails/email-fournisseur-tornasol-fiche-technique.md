@@ -1,7 +1,7 @@
 # Brouillon : demande de fiche technique à Tornasol Energy
 
-Statut : brouillon à envoyer par David (l'envoi des emails fournisseurs lui appartient).
-Destinataire : [email du contact commercial Tornasol Energy / distributeur]
+Statut : envoyé le 26/10/2026 à somos@tornasol.energy depuis david@frayservices.com (validé par David). Réponse attendue avant le 05/11/2026.
+Destinataire : somos@tornasol.energy (page contact Tornasol)
 
 ---
 

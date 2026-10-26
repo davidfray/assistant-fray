@@ -12,11 +12,11 @@ Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
 | Modèle email syndic (FR + ES) | `emails/modele-email-syndic-kit-balcon.md` | Prêt |
 | Fiche produit Tornasol 800W FR | `catalogue/fiche-kit-tornasol-800w.md` | Brouillon, données fournisseur à confirmer |
 | Fiche produit Tornasol 800W ES | `catalogue/fiche-kit-tornasol-800w-es.md` | Brouillon, idem |
-| Demande fiche technique fournisseur (ES) | `emails/email-fournisseur-tornasol-fiche-technique.md` | Prêt à envoyer |
+| Demande fiche technique fournisseur (ES) | `emails/email-fournisseur-tornasol-fiche-technique.md` | Envoyée le 26/10, réponse attendue avant le 05/11 |
 
 ## Ordre de publication
 
-1. **David : envoyer la demande de fiche technique à Tornasol.** Tout le reste en dépend pour les caractéristiques exactes.
+1. **Fait le 26/10 : demande de fiche technique envoyée à Tornasol.** Tout le reste en dépend pour les caractéristiques exactes.
 2. **David : transmettre** le prix TTC, le délai de livraison, une vraie photo du kit, les IDs produit (?p=ID) des liens internes.
 3. **Claude : mettre à jour les fiches FR et ES** avec la réponse fournisseur, retirer les [À CONFIRMER].
 4. **Publication fiche produit** : contenu d'abord, stock ensuite. Classe « Colis volumineux ». Vérifier le total au checkout FR et ES.
