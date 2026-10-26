@@ -1,6 +1,6 @@
 # Posts Sol & Volt : décembre 2026, deuxième quinzaine
 
-Statut : accroche A retenue par David le 26/10/2026 pour tous les posts. Post 9 : version 2 (récapitulatif des 4 niveaux). Post 8 (25/12) : publication à confirmer.
+Statut : accroche A retenue par David le 26/10/2026 pour tous les posts. Post 9 : version 2 (récapitulatif des 4 niveaux). Post 8 (25/12) : publication validée par David le 26/10, lancement de Sol & Volt en 2026 confirmé.
 Format : un texte par post, 80 à 90 mots en français avec le CTA, utilisable sur Instagram et Facebook. Sur Facebook, remplacer « lien en bio » par l'URL indiquée.
 Univers : Solaire. Charte : fond #3D2E0A, accent #C89B3C, clair #FAEEDA, encre #14201C, papier #FBFAF6, police système sans-serif, chiffres en monospace, logo « SOLANDVOLT » blanc sur sombre.
 Interdits : emoji, mention CE, badge de certification, référence à Fray Services, scène de panne ou de catastrophe, durée d'autonomie garantie, témoignage ou chiffre inventé.
@@ -85,7 +85,7 @@ Tiene el nivel Le Module en el enlace de la bio. (Facebook: [ENLACE CATEGORÍA N
 
 ## Post 8 (optionnel) : vendredi 25 décembre (message de fin d'année)
 
-À publier seulement si David le souhaite. Aucune promotion. Vérifier que Sol & Volt a bien été lancé en 2026 (sinon reformuler « Cette année, nous avons lancé… »).
+Publication validée par David (26/10). Lancement en 2026 confirmé. Aucune promotion.
 
 **Accroche A :** Merci d'avoir suivi nos premiers mois.
 **Accroche B :** Joyeuses fêtes, de la part de toute l'équipe Sol & Volt.
@@ -177,7 +177,7 @@ Pour le niveau 04, ne montrer que le kit réellement au catalogue (Tornasol 800 
 
 - [ ] Post 6 : dates limites avant Noël calculées sur les délais réels, prix TTC vérifiés, vraies photos des produits La Veilleuse
 - [ ] Post 7 : vraie photo d'une station en usage
-- [ ] Post 8 : décision de David (publier ou non)
+- [x] Post 8 : publication validée (26/10)
 - [x] Post 9 : version 2 retenue (26/10)
 - [x] Accroche A validée pour tous les posts (26/10)
 - [ ] Publication Instagram via le webhook n8n uniquement après validation de David
