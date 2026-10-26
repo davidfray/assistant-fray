@@ -91,13 +91,17 @@ L'hiver, la maison est vide et les équipes sont disponibles. Nous coordonnons t
 
 ## C. Brief visuel Canva
 
-**Style :** terrain / chantier réel. Vraie photo d'un chantier Fray en cours (salle de bain ou cuisine en rénovation), lumière naturelle d'hiver. Pas de photo de banque d'images.
+**Style :** terrain / chantier réel.
+**Photo retenue par David (26/10) :** « Rénovation salle de bain », page Projets de frayservices.com, média n° 150, prise le 25/11/2025.
+- Fichier : https://frayservices.com/wp-content/uploads/2026/04/20251125_143809-rotated-1.jpg (3000 × 4000, portrait)
+- À télécharger depuis la médiathèque WordPress de frayservices.com (Médias, n° 150) puis à importer dans Canva.
+- Contenu de la photo non vérifié par Claude (image non accessible depuis la session) : vérifier qu'aucune personne ni élément permettant d'identifier le logement n'apparaît, et que le propriétaire est d'accord.
 **Palette :** fond #F5F0E8, accent #C4822A, texte #2C2C2C
 **Typographie :** Oswald Bold (titres) / Lato (corps)
 
 **Version A**
 - Format : 4:5 portrait (1080 × 1350) pour Instagram et Facebook.
-- Élément central : photo du chantier sur les deux tiers supérieurs.
+- Élément central : la photo « Rénovation salle de bain » (média 150) sur les deux tiers supérieurs.
 - Bandeau bas #F5F0E8, titre Oswald Bold #2C2C2C : « Votre villa est vide cet hiver ? »
 - Sous-titre Lato #C4822A : « C'est le moment des gros travaux »
 - Petit encart en bas à droite : les trois pastilles vert, orange, rouge avec « Un rapport à chaque étape ».
@@ -118,5 +122,5 @@ L'hiver, la maison est vide et les équipes sont disponibles. Nous coordonnons t
 - **IVA à 10 % :** le post la présente comme possible « sous conditions », jamais comme acquise. Les trois conditions sont celles de l'article 91.Uno.2.10º LIVA. À confirmer avec votre gestor si la formulation doit être plus prudente.
 - **Rapport de chantier :** la structure (avancement, prochaines étapes, points d'attention, action client) et le code vert, orange ou rouge sont votre méthode habituelle. Vérifier que c'est bien ce que reçoivent tous les clients avant de l'afficher.
 - **Diagnostic gratuit :** confirmé par la page « Notre méthode » de frayservices.com (visite sur site, déplacement offert à Palamós, Platja d'Aro, Palafrugell, Begur et Calella de Palafrugell). CTA aligné le 26/10.
-- **Photo :** une vraie photo de chantier, avec l'accord du propriétaire si le bien est reconnaissable.
+- **Photo :** « Rénovation salle de bain » (média 150 de frayservices.com) retenue le 26/10. Accord du propriétaire à confirmer si le bien est reconnaissable.
 - **Emojis :** aucun dans cette version. La voix Fray en autorise 1 ou 2 si vous le souhaitez.
