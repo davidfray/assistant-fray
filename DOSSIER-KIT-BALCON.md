@@ -16,6 +16,7 @@ Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
 | Posts novembre « Wh pour 48 h » | `social/wh-48h-posts-2026-11.md` | Version A validée le 26/10, attente article en ligne et photo |
 | Article décembre « station en hiver » FR + ES | `blog/recharger-station-hiver-2026-12.md`, `blog/recargar-estacion-invierno-2026-12.md` | Rédigés, publication prévue le 08/12 |
 | Posts décembre, 1re quinzaine (5 posts) | `social/posts-decembre-1re-quinzaine-2026.md` | Accroche A validée le 26/10, attente articles en ligne, photos et données du Kit 48H |
+| Posts décembre, 2e quinzaine (18, 22, 25, 29/12) | `social/posts-decembre-2e-quinzaine-2026.md` | Rédigés, choix A/B à faire |
 | Demande fiche technique fournisseur (ES) | `emails/email-fournisseur-tornasol-fiche-technique.md` | Envoyée le 26/10, réponse attendue avant le 05/11 |
 
 ## Ordre de publication
