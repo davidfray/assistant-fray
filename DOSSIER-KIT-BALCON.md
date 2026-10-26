@@ -1,0 +1,44 @@
+# Dossier Sol & Volt : kit solaire de balcon (octobre 2026)
+
+Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
+
+## Livrables prêts (brouillons)
+
+| Livrable | Fichier | Statut |
+|---|---|---|
+| Article blog FR | `blog/kit-solaire-balcon-loi-france-espagne-2026.md` | Rédigé, liens à compléter |
+| Article blog ES | `blog/kit-solar-balcon-ley-espana-francia-2026.md` | Rédigé, liens à compléter |
+| Posts Instagram + Facebook (FR/ES, A/B, brief Canva) | `social/kit-balcon-loi-posts-2026-10.md` | Version A validée le 26/10, attente article en ligne et photo |
+| Modèle email syndic (FR + ES) | `emails/modele-email-syndic-kit-balcon.md` | Prêt |
+| Fiche produit Tornasol 800W FR | `catalogue/fiche-kit-tornasol-800w.md` | Brouillon, données fournisseur à confirmer |
+| Fiche produit Tornasol 800W ES | `catalogue/fiche-kit-tornasol-800w-es.md` | Brouillon, idem |
+| Article novembre « Wh pour 48 h » FR + ES | `blog/combien-wh-48h-sans-courant-2026-11.md`, `blog/cuantos-wh-48h-sin-luz-2026-11.md` | Rédigés, liens à compléter |
+| Posts novembre « Wh pour 48 h » | `social/wh-48h-posts-2026-11.md` | Version A validée le 26/10, attente article en ligne et photo |
+| Article décembre « station en hiver » FR + ES | `blog/recharger-station-hiver-2026-12.md`, `blog/recargar-estacion-invierno-2026-12.md` | Rédigés, publication prévue le 08/12 |
+| Posts décembre, 1re quinzaine (5 posts) | `social/posts-decembre-1re-quinzaine-2026.md` | Accroche A validée le 26/10, attente articles en ligne, photos et données du Kit 48H |
+| Posts décembre, 2e quinzaine (18, 22, 25, 29/12) | `social/posts-decembre-2e-quinzaine-2026.md` | Accroche A validée, version 2 le 29/12 ; post du 25/12 validé ; attente photos et délais avant Noël |
+| Demande fiche technique fournisseur (ES) | `emails/email-fournisseur-tornasol-fiche-technique.md` | Envoyée le 26/10, réponse attendue avant le 05/11 |
+
+## Ordre de publication
+
+1. **Fait le 26/10 : demande de fiche technique envoyée à Tornasol.** Tout le reste en dépend pour les caractéristiques exactes.
+2. **David : transmettre** le prix TTC, le délai de livraison, une vraie photo du kit, les IDs produit (?p=ID) des liens internes.
+3. **Claude : mettre à jour les fiches FR et ES** avec la réponse fournisseur, retirer les [À CONFIRMER].
+4. **Publication fiche produit** : contenu d'abord, stock ensuite. Classe « Colis volumineux ». Vérifier le total au checkout FR et ES.
+5. **Claude : insérer les liens** (fiche, catégories) dans les articles FR et ES.
+6. **David : relire la question écrite n° 6574** sur le site de l'Assemblée nationale (citée dans l'article, non lue en direct).
+7. **Publication articles FR puis ES**, liés par hreflang. Vérifier les liens en ligne. Ajouter le lien retour fiche vers article.
+8. **Claude : insérer les URLs des articles** dans les posts Facebook.
+9. **Version A validée le 26/10.** David : fournir la photo réelle pour Canva.
+10. **Publication** : Instagram via webhook n8n (après validation uniquement), Facebook.
+
+## Règles rappel
+
+- Aucune mention CE tant qu'un PDF avec organisme notifié n'est pas reçu et vérifié pour la commande en cours.
+- « Gestionnaire de réseau local », jamais « Enedis » seul.
+- Aucun croisement avec Fray Services.
+- Photos réelles uniquement.
+
+## Limites de cette session
+
+Sites inaccessibles depuis l'environnement cloud : solandvolt.com, enedis.fr, tornasol.energy, leroymerlin.es, BOE, Reddit, YouTube. Les données réglementaires et produit viennent de résultats de recherche et doivent être confirmées sur les sources officielles.
