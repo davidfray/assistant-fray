@@ -23,7 +23,7 @@ Vous êtes en France ? Nous coordonnons tous les corps d'état sur place. Vous r
 
 Bon à savoir : pour un logement de plus de 2 ans, chez un particulier, l'IVA peut être à 10 % au lieu de 21 %, sous conditions.
 
-**CTA :** Envoyez-nous l'adresse de votre bien et votre projet : nous organisons la visite technique.
+**CTA :** Envoyez-nous l'adresse de votre bien et votre projet : nous organisons votre diagnostic gratuit sur place.
 
 **Hashtags :**
 #rénovation #CostaBrava #villaEspagne #propriétaire #FrayServices
@@ -117,6 +117,6 @@ L'hiver, la maison est vide et les équipes sont disponibles. Nous coordonnons t
 
 - **IVA à 10 % :** le post la présente comme possible « sous conditions », jamais comme acquise. Les trois conditions sont celles de l'article 91.Uno.2.10º LIVA. À confirmer avec votre gestor si la formulation doit être plus prudente.
 - **Rapport de chantier :** la structure (avancement, prochaines étapes, points d'attention, action client) et le code vert, orange ou rouge sont votre méthode habituelle. Vérifier que c'est bien ce que reçoivent tous les clients avant de l'afficher.
-- **Visite technique :** le CTA de la version A parle d'organiser une visite. Confirmer que vous la proposez systématiquement.
+- **Diagnostic gratuit :** confirmé par la page « Notre méthode » de frayservices.com (visite sur site, déplacement offert à Palamós, Platja d'Aro, Palafrugell, Begur et Calella de Palafrugell). CTA aligné le 26/10.
 - **Photo :** une vraie photo de chantier, avec l'accord du propriétaire si le bien est reconnaissable.
 - **Emojis :** aucun dans cette version. La voix Fray en autorise 1 ou 2 si vous le souhaitez.

@@ -19,7 +19,7 @@ Prérequis : confirmer que la coordination apparaît sur une ligne distincte de 
 **Corps :**
 Une rénovation complète, c'est souvent un plombier, un électricien, un carreleur, un menuisier, un peintre. Chacun avec son planning, ses contraintes, son ordre de passage.
 
-Depuis la France, coordonner tout ce monde est presque impossible. C'est notre métier.
+Depuis la France, coordonner tout ce monde est presque impossible. C'est notre métier, avec un réseau d'une vingtaine d'artisans locaux, vérifiés et assurés.
 
 Nous organisons l'ordre d'intervention : les réseaux avant les murs, les murs avant les sols, les finitions en dernier. Nous vérifions chaque étape avant de passer à la suivante. Et vous n'avez qu'un interlocuteur, qui parle français.
 
@@ -115,7 +115,7 @@ Pour vous qui êtes en France : quelqu'un sur place, qui parle votre langue.
 ## Points à vérifier avant publication
 
 - [ ] Post 4 : coordination sur une ligne distincte du devis (sinon supprimer la phrase)
-- [ ] Posts 4 et 5 : interlocuteur francophone sur place, confirmé
-- [ ] Post 5 : « passer sur un chantier dans la journée » correspond à votre fonctionnement réel (sinon remplacer par votre délai réel d'intervention, par exemple « sous 48 h », jamais par « rapidement »)
+- [x] Posts 4 et 5 : interlocuteur francophone confirmé par frayservices.com (pages « Nos services » et « À propos »)
+- [x] Post 5 : « passer sur un chantier dans la journée » cohérent avec la « supervision quotidienne des travaux » annoncée sur frayservices.com (page « Notre méthode »)
 - [ ] Vraies photos, avec l'accord des personnes et des propriétaires
 - [x] Version A validée pour les 2 posts (26/10)

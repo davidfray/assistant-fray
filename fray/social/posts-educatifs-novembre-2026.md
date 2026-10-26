@@ -8,7 +8,7 @@ Charte : fond #F5F0E8, accent #C4822A, texte #2C2C2C, Oswald Bold (titres) / Lat
 
 ## Post 1 : lundi 2 novembre — Préparer sa maison pour l'hiver
 
-Prérequis : confirmer que Fray Services propose une visite de contrôle avant l'hiver (le CTA en dépend). Sinon, remplacer le CTA par « Une question sur votre maison ? Écrivez-nous. »
+CTA aligné le 26/10 sur le diagnostic gratuit annoncé sur frayservices.com (page « Notre méthode »). Une « visite de contrôle avant l'hiver » n'y figure pas : ne pas l'annoncer sans confirmation de David.
 
 ### Version A (accroche problème / solution)
 
@@ -25,9 +25,9 @@ Une maison vide pendant des semaines, c'est une maison où les petits problèmes
 4. Coupez les circuits électriques inutiles. Gardez ceux de l'alarme ou de la box si besoin.
 5. Fermez les volets et vérifiez les menuiseries. Un joint fatigué laisse passer l'eau.
 
-Vous êtes déjà rentré en France ? Nous pouvons passer.
+Vous êtes déjà rentré en France ? Nous sommes sur place, à Palamós.
 
-**CTA :** Envoyez-nous l'adresse de votre bien : nous organisons une visite de contrôle avant l'hiver.
+**CTA :** Un projet de travaux cet hiver ? Envoyez-nous l'adresse de votre bien : nous organisons votre diagnostic gratuit sur place.
 
 **Hashtags :** #rénovation #CostaBrava #villaEspagne #propriétaire #FrayServices
 
@@ -42,7 +42,7 @@ Vous êtes déjà rentré en France ? Nous pouvons passer.
 4. Coupez les circuits électriques inutiles, gardez l'alarme et la box si besoin.
 5. Fermez les volets, vérifiez les joints des menuiseries.
 
-Déjà rentré en France ? Nous passons vérifier pour vous.
+Déjà rentré en France ? Nous sommes sur place, à Palamós.
 
 **CTA :** Envoyez-nous l'adresse de votre bien en message privé.
 
@@ -52,7 +52,7 @@ Déjà rentré en France ? Nous passons vérifier pour vous.
 
 **Accroche :** Qui surveille votre villa quand vous êtes en France ?
 **Corps :** identique à la version A.
-**Différence stratégique :** A est pratique (une liste à cocher), B touche l'inquiétude du propriétaire absent et met en avant le service de visite.
+**Différence stratégique :** A est pratique (une liste à cocher), B touche l'inquiétude du propriétaire absent et met en avant la présence sur place.
 
 ### Brief Canva
 
@@ -187,7 +187,7 @@ Votre maison, suivie depuis chez vous.
 
 ## Points à vérifier avant publication
 
-- [ ] Post 1 : visite de contrôle avant l'hiver proposée par Fray Services (sinon changer le CTA)
+- [x] Post 1 : CTA aligné sur le diagnostic gratuit du site (26/10)
 - [ ] Post 2 : formulation IVA validée par le gestor
 - [ ] Post 3 : format de rapport confirmé, visuel réel anonymisé ou exemple signalé
 - [ ] Vraies photos (post 1 et post 3)
