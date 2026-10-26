@@ -50,3 +50,7 @@ Les sources `es_es/` couvrent les visites espagnoles vues dans Google Analytics.
 
 - Search Console : demander l'indexation des 4 catégories de niveau.
 - Retirer le lien vers l'ancienne batterie 200 Ah encore présent sur /boutique/ (Google l'y trouve).
+
+## Contrôles du 26/10/2026
+
+4 contrôles entre 21 h 35 et 21 h 45, depuis un serveur externe (Composio, outil bash distant) : aucune redirection active. Les pages de niveau répondent 200, les anciennes adresses 404. La réponse est générée par WordPress (en-tête no-cache), donc ce n'est pas un problème de cache. Cause à trouver dans Rank Math (module Redirections, statut des lignes). Solution de repli : cPanel o2switch > Domaines > Redirections (301). À reprendre le 27/10.
