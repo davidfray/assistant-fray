@@ -54,3 +54,13 @@ Pic la semaine du 7 au 13 septembre 2026 (64 sessions, 48 utilisateurs), puis 1 
 | 2 | Activer le suivi e-commerce GA4 (extension Google pour WooCommerce, ou Site Kit, ou GTM4WP) et vérifier l'événement purchase sur une commande test | David |
 | 2 | Devise EUR et fuseau Europe/Madrid dans GA4 ; filtre de trafic interne | David |
 | 3 | Compression et WebP des images (engagement mobile) | David |
+
+## Contrôle des publicités Meta (26/10/2026, 21 h 30)
+
+Tentative de lecture des publicités par Composio : échec. La connexion Facebook (« Fray Services Facebook ») liste les portefeuilles Business, mais Meta refuse l'accès aux publicités du compte 1029984932981254 (erreur 403, permission `ads_read` non accordée). Aucune publicité n'a été lue ni modifiée.
+
+Deux options :
+- David vérifie lui-même dans le Gestionnaire de publicités (filtre « Actives », colonne « URL de destination ») ;
+- ou David connecte la boîte à outils « metaads » dans Composio (lecture seule suffit), puis Claude refait le contrôle.
+
+Les redirections 301 proposées plus haut protègent les clics dans les deux cas.
