@@ -39,6 +39,8 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Décisions prises par David (26/10/2026)
 
+- Meta Ads : contrôle fait par David dans le Gestionnaire de publicités (26/10), aucune publicité active vers les pages 404.
+
 - Posts : version A retenue partout (kit balcon, Wh, décembre 1re et 2e quinzaines, Fray novembre). Post Sol & Volt du 25/12 validé, lancement en 2026 confirmé ; bilan du 29/12 en version 2 (récapitulatif des 4 niveaux).
 - Article Wh : enrichir ?p=483 plutôt que publier le brouillon de novembre (proposition prête : `blog/maj-article-483-combien-wh.html`).
 - Produit niveau Le Module : publier le Kit Autonomie 300 Wh ?p=94 (David le publie lui-même).
@@ -69,7 +71,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (brouillon Gmail prêt pour Juan Carlos Pinar, à relire et envoyer : `emails/email-fournisseur-ecoflow-infos-fiches.md`) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
 
-- Sol & Volt, URGENT : vérifier dans Meta Ads si des publicités actives pointent vers les anciennes fiches en 404 (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L) ; les mettre en pause ou changer le lien ; créer les redirections 301 listées dans `audit/google-analytics-solandvolt-2026-10-26.md`. Contrôle impossible par Composio le 26/10 (permission `ads_read` absente) : à faire dans le Gestionnaire de publicités, ou après connexion de « metaads ».
+- Sol & Volt, SEO : créer les redirections 301 des anciennes fiches produits en 404 listées dans `audit/google-analytics-solandvolt-2026-10-26.md` (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L). Plus urgent : David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers ces pages ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
 - Sol & Volt, GA4 : activer le suivi e-commerce WooCommerce (aucun événement d'achat remonté) ; devise EUR et fuseau Europe/Madrid ; filtre de trafic interne.
 
 ### Rappels programmés
@@ -84,7 +86,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Accès via Composio
 
-Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics (propriété « Solandvolt - GA4 », properties/551064081), Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté. Meta Ads : non lisible (26/10). La connexion Facebook voit les 6 portefeuilles Business (dont « Solandvolt » 1687379002526386) mais pas la permission `ads_read` : le compte publicitaire 1029984932981254 renvoie une erreur 403. Pour lire les publicités, David doit connecter la boîte à outils « metaads » dans Composio, ou ajouter `ads_read` à la connexion Facebook.
+Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics (propriété « Solandvolt - GA4 », properties/551064081), Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté. Meta Ads : non lisible (26/10), deux tentatives de connexion « metaads » restées en attente ; Motion Creative Analytics connecté mais sans espace de travail. La connexion Facebook voit les 6 portefeuilles Business (dont « Solandvolt » 1687379002526386) mais pas la permission `ads_read` : le compte publicitaire 1029984932981254 renvoie une erreur 403. Pour lire les publicités, David doit connecter la boîte à outils « metaads » dans Composio, ou ajouter `ads_read` à la connexion Facebook.
 
 ## Travail partagé entre Cowork et Claude Code
 
