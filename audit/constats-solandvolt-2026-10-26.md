@@ -92,4 +92,4 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
 - ?p=42 renvoie vers ?p=44 (« Rafraîchisseur d'air sans pales USB »), en brouillon.
 - ?p=42 : l'extrait annonce « 3 vitesses », le tableau « 2 vitesses ».
 - ?p=46 : l'extrait annonce « télécommande et Wi-Fi », la fiche ne mentionne que la télécommande.
-- La catégorie Climatisation n'apparaît dans aucun menu : à ajouter dans Apparence > Menus si besoin.
+- Menus non vérifiés : la nouvelle catégorie n'y figure pas automatiquement. L'ajouter dans Apparence > Menus si besoin.
