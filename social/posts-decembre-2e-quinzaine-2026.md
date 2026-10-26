@@ -75,7 +75,7 @@ Un consejo para las fiestas: compruebe su carga una vez al mes y recárguela en 
 
 Nuestro nivel Le Module está pensado para eso.
 
-Tiene el nivel Le Module en el enlace de la bio. (Facebook: [ENLACE CATEGORÍA NIVEAU 02])
+Tiene el nivel Le Module en el enlace de la bio. (Facebook: [ENLACE CATEGORÍA NIVEL 02])
 
 **Hashtags :** #solandvolt #powerstation #autonomieenergetique #residencesecondaire #franceespagne #costabrava
 
@@ -85,7 +85,7 @@ Tiene el nivel Le Module en el enlace de la bio. (Facebook: [ENLACE CATEGORÍA N
 
 ## Post 8 (optionnel) : vendredi 25 décembre (message de fin d'année)
 
-À publier seulement si David le souhaite. Aucune promotion.
+À publier seulement si David le souhaite. Aucune promotion. Vérifier que Sol & Volt a bien été lancé en 2026 (sinon reformuler « Cette année, nous avons lancé… »).
 
 **Accroche A :** Merci d'avoir suivi nos premiers mois.
 **Accroche B :** Joyeuses fêtes, de la part de toute l'équipe Sol & Volt.
