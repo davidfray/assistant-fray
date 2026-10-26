@@ -175,7 +175,7 @@ Corrections faites (textes d'origine : `audit/sauvegardes-2026-10-26/articles/`)
 
 Encore à vérifier ou décider (non modifié) :
 - ~~?p=346 (centrale AC70P) : garantie « 2 ans », liens vers ?p=88 et ?p=348 en brouillon~~ Corrigé à 21 h 14 (accord de David) : garantie légale de 3 ans avec lien vers les CGV ; bloc renommé « Voir aussi », avec River 2 Pro ?p=546 et DELTA 3 ?p=344 (pas de panneau EcoFlow proposé : l'AC70P est une Bluetti, compatibilité du connecteur non vérifiée). Sauvegarde : `audit/sauvegardes-2026-10-26/produit-346-ac70p.html`.
-- ?p=95 « livré depuis l'Europe » (vrai pour tous les fournisseurs ?).
+- ~~?p=95 « livré depuis l'Europe »~~ Corrigé à 21 h 15 (accord de David) : « livré en France et en Espagne » (zones de la page Livraison).
 
 
 ## Plan d'action proposé (4 semaines)
