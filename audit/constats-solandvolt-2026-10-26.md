@@ -79,3 +79,17 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
 - Le site n'a aucune catégorie « Climatisation » : ces produits n'ont pas d'autre place aujourd'hui.
 - Effet : un visiteur qui parcourt Le Module ou La Veilleuse (niveaux d'autonomie solaire) voit des climatiseurs, ce qui mélange les deux univers de la charte.
 - Proposition (à valider par David) : créer une catégorie « Climatisation » et y déplacer ces 4 produits, en retirant les catégories de niveau. Vérifier ensuite les produits climatisation en brouillon (EcoFlow Wave 3 ?p=637, batterie Wave 3 ?p=643, rafraîchisseur ?p=44) avant leur publication.
+
+## 9. Climatisation : catégorie créée et produits déplacés (26/10/2026, 18 h 05)
+
+- Catégorie « Climatisation » créée (ID 61, /categorie-produit/climatisation/), avec l'accord de David.
+- Produits 339, 42, 46, 112 déplacés dans « Climatisation », niveaux solaires retirés.
+- Comptages après modification : Climatisation 4, Le Module 12 (au lieu de 15), La Veilleuse 12 (au lieu de 13), Autonomie énergétique 40 (au lieu de 44).
+
+### Incohérences restantes dans le contenu de ces 4 fiches
+
+- Le bloc « Ce produit fait partie de » renvoie encore vers Le Module (339, 46, 112) ou La Veilleuse (42). À remplacer par la catégorie Climatisation.
+- ?p=42 renvoie vers ?p=44 (« Rafraîchisseur d'air sans pales USB »), en brouillon.
+- ?p=42 : l'extrait annonce « 3 vitesses », le tableau « 2 vitesses ».
+- ?p=46 : l'extrait annonce « télécommande et Wi-Fi », la fiche ne mentionne que la télécommande.
+- La catégorie Climatisation n'apparaît dans aucun menu : à ajouter dans Apparence > Menus si besoin.
