@@ -49,3 +49,12 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
 - Posts décembre, 2e quinzaine : catégories 01 et 02.
 - Fiche Tornasol : catégorie L'Autonomie (URL réelle), délai de livraison.
 - Restent à remplir : le produit « station La Base » à mettre en avant, le kit du niveau 02, les URL espagnoles (selon la configuration TranslatePress), les URL des articles une fois publiés.
+
+## 6. Décisions de David (26/10/2026)
+
+- Article Wh : enrichir l'article en ligne ?p=483 plutôt que publier un nouvel article. Version enrichie préparée : `blog/maj-article-483-combien-wh.html`. Le brouillon `blog/combien-wh-48h-sans-courant-2026-11.md` (et sa version espagnole) n'est plus destiné à être publié tel quel.
+- Produit du niveau Le Module : publier le Kit Autonomie 300 Wh (?p=94).
+  - Attention : la fiche ?p=94 renvoie vers ?p=87 (Station 300Wh « Autonomie 48H ») et ?p=88 (Panneau pliable 100W), tous deux en brouillon. Les publier aussi, ou retirer ces liens.
+  - Le titre de ?p=87 (« Autonomie 48H ») annonce une durée que la fiche du kit ne promet pas (« une soirée à une demi-journée » pour l'usage type) : à harmoniser avant publication.
+  - Prix, stock et classe d'expédition à vérifier dans WooCommerce (non accessibles par le connecteur).
+- Ordre : publier ?p=94 d'abord, puis mettre à jour ?p=483 (qui renvoie vers ?p=94).
