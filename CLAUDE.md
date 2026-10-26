@@ -25,7 +25,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
 | `social/` | Posts Sol & Volt (kit balcon, Wh, décembre) et calendrier de décembre |
-| `emails/` | Modèle email syndic, demande fiche technique Tornasol (envoyée) |
+| `emails/` | Modèle email syndic, demande fiche technique Tornasol (envoyée), demande d'informations au fournisseur EcoFlow (brouillon) |
 | `service-client/` | Réponses types FR/ES (kit balcon, Wh) |
 | `fray/social/` | Calendrier et posts Fray Services de novembre |
 
@@ -64,7 +64,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
-- Sol & Volt, fournisseur EcoFlow : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
+- Sol & Volt, fournisseur EcoFlow (brouillon d'email prêt : `emails/email-fournisseur-ecoflow-infos-fiches.md`, destinataire à compléter) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque.
 
 ### Rappels programmés
