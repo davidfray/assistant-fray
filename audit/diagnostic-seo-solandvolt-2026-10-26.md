@@ -133,13 +133,19 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 - Bloc « Nos stations les plus demandées » : il affichait les produits 54, 50 et 52, tous en brouillon (bloc vide). Remplacés par River 3 UPS ?p=601, DELTA 3 ?p=344 et AC70P ?p=346 (publiés).
 - Carte La Base : « De quoi vivre une semaine normale sans réseau » et « Autonomie : une semaine » remplacés par « Station de forte capacité et panneaux solaires. Le réfrigérateur en marche, une journée et plus avec le soleil. » et « Autonomie : une journée et plus ».
 
+### Fiches EcoFlow complétées (20 h 43 à 20 h 44, accord de David)
+
+- 7 fiches réécrites en ligne : ?p=601, 623, 539, 546, 739, 525, 563 (usage pendant une coupure, caractéristiques recoupées, niveau, liens vers produits complémentaires, catégorie et guide ?p=483). Détail et sources : `catalogue/fiches-ecoflow-2026-10-26.md`.
+- ?p=640 (« Glacier 3 ») non traitée : modèle à identifier auprès du fournisseur.
+- Restent 19 fiches avec « Fiche technique détaillée à venir » (au lieu de 26).
+
 ## Plan d'action proposé (4 semaines)
 
 | Semaine | Action | Qui |
 |---|---|---|
 | 1 | ~~Corriger « 24/48h », accents, promesse Le Module, option A côté contenu~~ Fait le 26/10 | Claude |
 | 1 | 4 redirections 301, contrôles Search Console et Rank Math ci-dessous | David |
-| 2 | Compléter 8 fiches EcoFlow prioritaires (point 1) | Claude rédige, David valide |
+| 2 | ~~Compléter 8 fiches EcoFlow prioritaires~~ 7 faites le 26/10, ?p=640 en attente | Claude |
 | 2 | Textes alternatifs des 48 images principales (point 3) | Claude, après accord |
 | 3 | Catégorie blog « Guides », images à la une, mise à jour ?p=483 (point 4) | Claude, après publication de ?p=94 |
 | 4 | Slugs Tornasol avec 301 (point 7), 18 fiches EcoFlow restantes | Claude, après accord |
