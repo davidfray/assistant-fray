@@ -1,6 +1,6 @@
 # Fray Services : posts « marque » de novembre 2026
 
-Statut : brouillon, à valider par David (version A ou B pour chaque post).
+Statut : version A retenue par David le 26/10/2026 pour les 2 posts. Versions B conservées pour un test ultérieur.
 Langue : français. Cible : propriétaires français absents, Costa Brava.
 Charte : fond #F5F0E8, accent #C4822A, texte #2C2C2C, Oswald Bold (titres) / Lato (corps). Vraies photos uniquement, avec l'accord des personnes visibles.
 
@@ -118,4 +118,4 @@ Pour vous qui êtes en France : quelqu'un sur place, qui parle votre langue.
 - [ ] Posts 4 et 5 : interlocuteur francophone sur place, confirmé
 - [ ] Post 5 : « passer sur un chantier dans la journée » correspond à votre fonctionnement réel (sinon remplacer par votre délai réel d'intervention, par exemple « sous 48 h », jamais par « rapidement »)
 - [ ] Vraies photos, avec l'accord des personnes et des propriétaires
-- [ ] Version A ou B choisie pour chaque post
+- [x] Version A validée pour les 2 posts (26/10)
