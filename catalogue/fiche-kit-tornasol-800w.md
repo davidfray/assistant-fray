@@ -1,22 +1,7 @@
 # Fiche produit : Kit Solaire de Balcon Tornasol 800W
 
-Statut : brouillon. Variante exacte non identifiée : deux kits Tornasol sont vendus sous le nom « 800 W ».
-Avant publication, identifier la variante (étape 1), supprimer la colonne inutile du tableau et compléter les champs [À COMPLÉTER].
-
----
-
-## Étape 1 : identifier la variante au catalogue
-
-Ouvrir le produit dans WooCommerce et comparer avec la référence fournisseur :
-
-| Indice | Variante A : Efficiency 800W (rigide) | Variante B : Flex / by Sunman 800W |
-|---|---|---|
-| Nombre de panneaux | 2 | 4 |
-| Type | Rigides, bifaciaux, full black | Flexibles |
-| Poids indicatif | Environ 55 kg (kit complet) | Environ 2,9 kg par panneau |
-| Mot dans le titre fournisseur | « 420W », « 60º », « rígidos » | « Flex », « Sunman », « flexibles » |
-
-Si aucun indice ne permet de trancher : demander la fiche technique PDF au fournisseur avant publication.
+Statut : brouillon. Variante confirmée par David le 26/10/2026 : Efficiency 800W, 2 panneaux rigides bifaciaux 420 W.
+Avant publication : compléter les champs [À COMPLÉTER] et confirmer les points [À CONFIRMER] sur la fiche technique fournisseur.
 
 ---
 
@@ -25,10 +10,10 @@ Si aucun indice ne permet de trancher : demander la fiche technique PDF au fourn
 - **Titre :** Kit Solaire de Balcon Tornasol 800W
 - **Catégorie :** L'Autonomie (/categorie-produit/autonomie-energetique/lautonomie/)
 - **Prix :** [À COMPLÉTER] € TTC (vérifier qu'il couvre coût fournisseur + port)
-- **Classe d'expédition :** variante A : « Colis volumineux » (environ 55 kg). Variante B : classe standard, sauf si le colis réel dépasse le seuil du transporteur.
+- **Classe d'expédition :** « Colis volumineux » (kit complet d'environ 55 kg)
 - **Délai de livraison :** [À COMPLÉTER depuis la fiche fournisseur : stock Europe ou international]
 - **Stock :** publier d'abord le contenu, puis le stock (quantité ≥ 1).
-- **Image :** vraie photo du kit fournie par le fournisseur. Alt : « Kit solaire de balcon Tornasol 800 W fixé sur un garde-corps ».
+- **Image :** vraie photo du kit fournie par le fournisseur. Alt : « Kit solaire de balcon Tornasol 800 W, deux panneaux rigides sur support incliné ».
 
 ## Rank Math
 
@@ -41,7 +26,7 @@ Si aucun indice ne permet de trancher : demander la fiche technique PDF au fourn
 
 ## Description courte
 
-Un kit solaire de balcon de 800 W qui produit votre électricité de jour et la consomme directement chez vous. Branchement sur une prise, sans travaux de toiture.
+Kit solaire de balcon de 800 W : deux panneaux rigides de 420 W sur support incliné à 60°, un micro-onduleur et un câble avec fiche Schuko. Votre logement consomme directement l'électricité produite en journée.
 
 ---
 
@@ -49,8 +34,8 @@ Un kit solaire de balcon de 800 W qui produit votre électricité de jour et la 
 
 ```html
 <h2>Produire son électricité depuis son balcon</h2>
-<p>Ce kit Tornasol de 800 W transforme la lumière du soleil en électricité pour votre logement. Les appareils allumés en journée (réfrigérateur, box internet, chauffe-eau, ordinateur) consomment d'abord cette énergie. Votre facture baisse d'autant.</p>
-<p>Le kit se pose sur un garde-corps, un mur ou au sol. Il se raccorde par un câble à une prise de votre logement.</p>
+<p>Ce kit Tornasol de 800 W transforme la lumière du soleil en électricité pour votre logement. Les appareils allumés en journée (réfrigérateur, box internet, ordinateur, pompe de piscine) consomment d'abord cette énergie. Votre facture baisse d'autant.</p>
+<p>Les deux panneaux rigides se posent sur leur support en aluminium incliné à 60°, contre un garde-corps, un mur ou au sol. Le kit se raccorde par un câble de 5 m à une prise de votre logement.</p>
 
 <h2>Usages</h2>
 <ul>
@@ -60,27 +45,25 @@ Un kit solaire de balcon de 800 W qui produit votre électricité de jour et la 
 </ul>
 
 <h2>Caractéristiques</h2>
-<!-- GARDER UNE SEULE COLONNE SELON LA VARIANTE -->
 <table>
-  <thead>
-    <tr><th>Caractéristique</th><th>Variante A : Efficiency 800W</th><th>Variante B : Flex 800W</th></tr>
-  </thead>
   <tbody>
-    <tr><td>Panneaux</td><td>2 × 420 W, rigides, bifaciaux, full black</td><td>4 × 200 W, flexibles</td></tr>
-    <tr><td>Dimensions d'un panneau</td><td>170 × 110 × 3 cm</td><td>[À COMPLÉTER] (épaisseur 2 mm)</td></tr>
-    <tr><td>Poids</td><td>Environ 55 kg (kit complet)</td><td>Environ 2,9 kg par panneau</td></tr>
-    <tr><td>Micro-onduleur</td><td>[À COMPLÉTER : modèle et puissance]</td><td>800 W, 25 × 17 × 2,8 cm, 3 kg, rendement maximal 96,7 %</td></tr>
-    <tr><td>Fixation</td><td>Support aluminium incliné à 60°</td><td>[À COMPLÉTER]</td></tr>
-    <tr><td>Raccordement</td><td>Câble avec fiche Schuko, 5 m, rallonges MC4</td><td>[À COMPLÉTER]</td></tr>
-    <tr><td>Indice de protection</td><td>IP68 (selon le titre fournisseur)</td><td>[À COMPLÉTER]</td></tr>
-    <tr><td>Garantie</td><td>[À COMPLÉTER]</td><td>Micro-onduleur 12 ans, puissance des panneaux 25 ans</td></tr>
+    <tr><td>Puissance du kit</td><td>800 W (micro-onduleur)</td></tr>
+    <tr><td>Panneaux</td><td>2 × 420 W, rigides, bifaciaux, full black</td></tr>
+    <tr><td>Dimensions</td><td>170 × 110 × 3 cm [À CONFIRMER : dimensions d'un panneau ou du colis]</td></tr>
+    <tr><td>Poids</td><td>Environ 55 kg (kit complet)</td></tr>
+    <tr><td>Micro-onduleur</td><td>800 W, rendement maximal 96,7 % [À CONFIRMER : marque et modèle]</td></tr>
+    <tr><td>Fixation</td><td>Support en aluminium incliné à 60°, avec colliers de fixation</td></tr>
+    <tr><td>Raccordement</td><td>Câble avec fiche Schuko de 5 m, rallonges MC4</td></tr>
+    <tr><td>Indice de protection</td><td>IP68 [À CONFIRMER : composant concerné]</td></tr>
+    <tr><td>Contenu</td><td>2 panneaux, micro-onduleur, support et colliers, prise connectée, câble Schuko, rallonges MC4, notice</td></tr>
+    <tr><td>Garantie</td><td>Micro-onduleur : 12 ans (fabricant). Panneaux : [À CONFIRMER]</td></tr>
   </tbody>
 </table>
 
 <h2>Pour qui, et pourquoi le niveau L'Autonomie</h2>
 <p>Ce kit s'adresse aux propriétaires qui veulent réduire durablement leur facture et commencer à produire leur propre énergie. Il appartient au niveau L'Autonomie, l'horizon d'une maison qui produit et consomme sa propre électricité.</p>
 <p>À savoir : sans batterie, le kit ne stocke pas l'électricité. Il s'arrête automatiquement pendant une coupure de courant, par sécurité. Pour garder la lumière et le réfrigérateur pendant une panne, une station électrique du niveau La Base est plus adaptée.</p>
-<p>La production dépend de l'exposition : un balcon orienté sud, sud-est ou sud-ouest, sans ombre portée, donne les meilleurs résultats.</p>
+<p>La production dépend de l'exposition : un balcon orienté sud, sud-est ou sud-ouest, sans ombre portée, donne les meilleurs résultats. Avec environ 55 kg, prévoyez deux personnes pour la pose et vérifiez la solidité du garde-corps.</p>
 
 <h2>Réglementation : ce qu'il faut faire avant la pose</h2>
 <ul>
@@ -100,11 +83,21 @@ Un kit solaire de balcon de 800 W qui produit votre électricité de jour et la 
 
 ---
 
+## Points à confirmer avec le fournisseur
+
+Les sources ne concordent pas sur ces points :
+
+- **Panneaux :** Leroy Merlin indique 2 × 420 W bifaciaux. Le site Tornasol décrit le kit Efficiency avec des panneaux Aiko monofaciaux de 445 Wp. Garder la version de la fiche fournisseur réellement livrée.
+- **Garantie des panneaux :** le site Tornasol annonce 30 ans sur la puissance et 15 ans sur les matériaux, pour les panneaux Aiko 445 Wp. Non confirmé pour la version 420 W.
+- **Micro-onduleur :** identifié comme TSUN par certaines sources. Ne pas citer la marque sans la fiche fournisseur.
+- **Dimensions 170 × 110 × 3 cm :** préciser s'il s'agit d'un panneau ou du colis.
+- **Anti-injection :** à vérifier sur la fiche technique avant de le mentionner. Si le micro-onduleur n'a pas de dispositif anti-injection documenté, ne rien affirmer pour l'Espagne au-delà du texte réglementaire général.
+
 ## Contrôles avant publication
 
-- [ ] Variante identifiée, colonne inutile supprimée, tous les [À COMPLÉTER] remplis depuis la fiche fournisseur
+- [ ] Tous les [À COMPLÉTER] et [À CONFIRMER] traités depuis la fiche fournisseur
 - [ ] Référence fournisseur valide (pas de 404)
-- [ ] Prix TTC vérifié, total réel testé au checkout (France et Espagne)
+- [ ] Prix TTC vérifié, total réel testé au checkout (France et Espagne), classe « Colis volumineux » appliquée
 - [ ] Aucune mention CE, aucun badge de certification
 - [ ] Vraie photo du kit en place
 - [ ] Liens internes testés en ligne, et lien retour depuis l'article de blog vers cette fiche
@@ -112,6 +105,7 @@ Un kit solaire de balcon de 800 W qui produit votre électricité de jour et la 
 
 ## Sources des caractéristiques
 
-- Variante A : fiche Leroy Merlin España (titre et caractéristiques du kit « TORNASOL Kit solar autoinstalable 800W, x2 paneles solares rígidos, bifaciales, full black de 420W »), fiche Amazon.es du même produit.
-- Variante B : pages produit et blog de tornasol.energy (kit Tornasol by Sunman).
-- Données relevées via des résultats de recherche, pages non consultables en direct depuis cette session : à confirmer sur la fiche technique fournisseur.
+- Fiche Leroy Merlin España : « TORNASOL Kit solar autoinstalable 800W, x2 paneles solares rígidos, bifaciales, full black de 420W-DC1500V inclinación 60º, protección IP68 »
+- Fiche Amazon.es du même produit
+- tornasol.energy : page du kit Efficiency et article de lancement Efficiency 400W/800W
+- Données relevées via des résultats de recherche, pages non consultables en direct depuis cette session.
