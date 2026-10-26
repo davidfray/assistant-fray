@@ -26,3 +26,12 @@ Lecture seule via le connecteur WordPress (site 253853971). Aucune modification 
 - Aucun article de blog publié sur le site : les posts éducatifs ne peuvent renvoyer qu'aux pages existantes (Services, Méthode, Contact).
 - Page « Nos services » : emojis dans les titres (🏠, 🚿, ❄️, 🏗️, 📋). Choix de style à confirmer.
 - Page « Nos services » : « Délais respectés, finitions soignées » et « Partenaires certifiés » sont des affirmations sans preuve sur la page. Un exemple de chantier (photos, dates) les renforcerait.
+
+## Compléments (pages Accueil et Projets)
+
+- **Rapport de chantier en 4 parties confirmé** par la FAQ de l'accueil (avancement, prochaines étapes, points d'attention, action attendue). Le post du 13/11 est donc cohérent. Seul le code vert, orange, rouge reste à confirmer.
+- **IVA à 10 % ou 21 % précisée sur chaque devis** (FAQ de l'accueil) : cohérent avec le post du 09/11.
+- **Témoignage client publié** : Roger Boullier, rénovation complète, Palamós, 2025. Utilisé pour le post du 25/11 (`fray/social/post-preuve-sociale-2026-11-25.md`), sous réserve de son accord pour les réseaux.
+- **10 vraies photos de chantiers** sur la page Projets (novembre 2025 à avril 2026 : salle de bain, cuisine, Platja d'Aro, chantier en cours). Utilisables pour les visuels des posts, avec l'accord des propriétaires.
+- **Délai de réponse contradictoire** : « Réponse sous 24h » sur la page Projets, « Devis gratuit en 48h » sur l'accueil. À harmoniser sur le site, et à trancher avant le post commercial du 18/11.
+- **Balise technique dans le contenu** : une balise « google-site-verification » est insérée dans le contenu de la page d'accueil. Sans effet visible, mais sa place normale est dans l'en-tête du site (ou via un plugin SEO).
