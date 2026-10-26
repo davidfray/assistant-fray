@@ -69,6 +69,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ### Rappels programmés
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.
+- 06/11/2026, 9 h (heure de Madrid) : vérifier la réponse du fournisseur EcoFlow ; sans réponse, préparer une relance en espagnol (nouvelle échéance au 13/11) et la soumettre à David avant envoi.
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
 ### Points ouverts sur les sites (non corrigés, à proposer)
