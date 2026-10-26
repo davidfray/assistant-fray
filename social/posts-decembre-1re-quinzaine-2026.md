@@ -1,6 +1,6 @@
 # Posts Sol & Volt : décembre 2026, première quinzaine
 
-Statut : brouillon, à valider par David post par post (version A ou B de l'accroche).
+Statut : accroche A retenue par David le 26/10/2026 pour les 5 posts. Accroches B conservées pour un test ultérieur.
 Format : un texte par post, 80 à 90 mots en français avec le CTA, utilisable sur Instagram et Facebook. Sur Facebook, remplacer « lien en bio » par l'URL indiquée.
 Univers : Solaire. Charte : fond #3D2E0A, accent #C89B3C, clair #FAEEDA, encre #14201C, papier #FBFAF6, police système sans-serif, chiffres en monospace, logo « SOLANDVOLT » blanc sur sombre.
 Interdits : emoji, mention CE, badge de certification, référence à Fray Services, scène de panne ou de catastrophe, durée d'autonomie garantie.
@@ -191,5 +191,5 @@ Tiene el cálculo completo en el enlace de la bio. (Facebook: [ENLACE ARTÍCULO 
 - [ ] Article hiver FR et ES en ligne le 08/12 (post 3)
 - [ ] Post 4 : prix, capacité, puissance du panneau et délai vérifiés sur la fiche le jour même
 - [ ] Vraies photos pour les posts 2, 3 et 4
-- [ ] Version A ou B choisie pour chaque post
+- [x] Accroche A validée par David pour les 5 posts (26/10)
 - [ ] Publication Instagram via le webhook n8n uniquement après validation de David
