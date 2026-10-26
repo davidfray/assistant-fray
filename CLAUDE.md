@@ -23,6 +23,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
 | `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
 | `audit/redirections-301-rank-math-2026-10-26.md` | Liste prête des 12 redirections 301 à saisir dans Rank Math (pages de niveau, anciennes fiches en 404, catégorie de blog) |
+| `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md` | Guide d'activation du suivi e-commerce GA4 (extension, réglages, test) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
@@ -73,7 +74,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
 
 - Sol & Volt, SEO, à reprendre le 27/10 : les redirections 301 de `audit/redirections-301-rank-math-2026-10-26.md` ne fonctionnent pas. Elles ont été saisies dans Rank Math le 26/10, mais 4 contrôles en ligne (21 h 35 à 21 h 45) donnent toujours 200 sur les pages de niveau et 404 sur les anciennes adresses, sans cache. Demain : captures de Rank Math (Modules, Redirections) ou saisie dans cPanel o2switch > Domaines > Redirections (301), puis nouveau contrôle par Claude (Composio, outil bash distant, `curl`) ; anciennes fiches produits en 404 (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L). Plus urgent : David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers ces pages ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
-- Sol & Volt, GA4 : activer le suivi e-commerce WooCommerce (aucun événement d'achat remonté) ; devise EUR et fuseau Europe/Madrid ; filtre de trafic interne.
+- Sol & Volt, GA4 : aucune balise GA4 (`G-X1JG6B971W`) sur le site au 26/10 (seulement Google Ads `AW-18515270298` via Google for WooCommerce) ; dernière session GA4 le 19/10. Installer « Google Analytics for WooCommerce », puis devise EUR et fuseau Europe/Madrid, puis tester. Guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`. Claude vérifie ensuite par l'API GA4 (temps réel).
 
 ### Rappels programmés
 - 27/10/2026, 9 h (heure de Madrid) : reprendre les redirections 301 de solandvolt.com avec David.
@@ -88,7 +89,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Accès via Composio
 
-Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics (propriété « Solandvolt - GA4 », properties/551064081), Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté. Meta Ads : non lisible (26/10), deux tentatives de connexion « metaads » restées en attente ; Motion Creative Analytics connecté mais sans espace de travail. La connexion Facebook voit les 6 portefeuilles Business (dont « Solandvolt » 1687379002526386) mais pas la permission `ads_read` : le compte publicitaire 1029984932981254 renvoie une erreur 403. Pour lire les publicités, David doit connecter la boîte à outils « metaads » dans Composio, ou ajouter `ads_read` à la connexion Facebook.
+Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics (propriété « Solandvolt - GA4 », properties/551064081), Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté, pas d'outil de modification d'une propriété GA4. L'outil bash distant de Composio (`curl`) atteint solandvolt.com : utile pour tester redirections et balises (certaines commandes sont bloquées par son pare-feu : rester simple). Meta Ads : non lisible (26/10), deux tentatives de connexion « metaads » restées en attente ; Motion Creative Analytics connecté mais sans espace de travail. La connexion Facebook voit les 6 portefeuilles Business (dont « Solandvolt » 1687379002526386) mais pas la permission `ads_read` : le compte publicitaire 1029984932981254 renvoie une erreur 403. Pour lire les publicités, David doit connecter la boîte à outils « metaads » dans Composio, ou ajouter `ads_read` à la connexion Facebook.
 
 ## Travail partagé entre Cowork et Claude Code
 
