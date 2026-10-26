@@ -12,6 +12,8 @@ Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
 | Modèle email syndic (FR + ES) | `emails/modele-email-syndic-kit-balcon.md` | Prêt |
 | Fiche produit Tornasol 800W FR | `catalogue/fiche-kit-tornasol-800w.md` | Brouillon, données fournisseur à confirmer |
 | Fiche produit Tornasol 800W ES | `catalogue/fiche-kit-tornasol-800w-es.md` | Brouillon, idem |
+| Article novembre « Wh pour 48 h » FR + ES | `blog/combien-wh-48h-sans-courant-2026-11.md`, `blog/cuantos-wh-48h-sin-luz-2026-11.md` | Rédigés, liens à compléter |
+| Posts novembre « Wh pour 48 h » | `social/wh-48h-posts-2026-11.md` | Rédigés, choix A/B à faire |
 | Demande fiche technique fournisseur (ES) | `emails/email-fournisseur-tornasol-fiche-technique.md` | Envoyée le 26/10, réponse attendue avant le 05/11 |
 
 ## Ordre de publication
