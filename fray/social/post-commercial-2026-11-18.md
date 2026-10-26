@@ -1,7 +1,7 @@
 # Fray Services : post du mercredi 18 novembre 2026 — Démarrer en janvier
 
 Type : commercial.
-Statut : brouillon, à valider par David (version A ou B).
+Statut : version A retenue par David le 26/10/2026. Version B conservée pour un test ultérieur.
 Délai de réponse : « réponse sous 24 h », confirmé par David le 26/10/2026 (identique à la page Projets de frayservices.com).
 
 Aucune date de démarrage ni nombre de créneaux n'est annoncé : ajouter vos disponibilités réelles si vous voulez renforcer le post (par exemple « 2 démarrages possibles en janvier »).
@@ -73,4 +73,4 @@ Réponse sous 24 h, en français.
 
 - [ ] Vraie photo de chantier, avec accord
 - [ ] Facultatif : vos disponibilités réelles de démarrage en janvier
-- [ ] Version A ou B choisie
+- [x] Version A validée (26/10)
