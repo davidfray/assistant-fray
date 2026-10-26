@@ -66,3 +66,16 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
   - Lien « Complétez votre installation » : PW1000 (?p=348, brouillon) remplacée par la Centrale AC70P (?p=346, publiée).
   - Reste du contenu inchangé. Aucun avertissement de WordPress à l'enregistrement.
   - Non vérifié sur le front : solandvolt.com n'est pas joignable depuis cet environnement. À contrôler dans un navigateur.
+
+## 8. Produits de climatisation classés dans les niveaux solaires (vérifié)
+
+| Produit | ID | Catégorie actuelle |
+|---|---|---|
+| Climatiseur Mural à Compresseur | 339 | Le Module |
+| Rafraîchisseur d'air portable (Air Cooler) | 42 | La Veilleuse |
+| Air Cooler Connecté avec Télécommande | 46 | Le Module |
+| Rafraîchisseur d'air évaporatif SNOWFIELD 5 | 112 | Le Module |
+
+- Le site n'a aucune catégorie « Climatisation » : ces produits n'ont pas d'autre place aujourd'hui.
+- Effet : un visiteur qui parcourt Le Module ou La Veilleuse (niveaux d'autonomie solaire) voit des climatiseurs, ce qui mélange les deux univers de la charte.
+- Proposition (à valider par David) : créer une catégorie « Climatisation » et y déplacer ces 4 produits, en retirant les catégories de niveau. Vérifier ensuite les produits climatisation en brouillon (EcoFlow Wave 3 ?p=637, batterie Wave 3 ?p=643, rafraîchisseur ?p=44) avant leur publication.
