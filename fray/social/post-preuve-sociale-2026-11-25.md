@@ -2,7 +2,7 @@
 
 Type : preuve sociale.
 Source : témoignage déjà publié sur la page d'accueil de frayservices.com : « Travaux réalisés dans les délais, suivi clair à distance depuis la France et finitions impeccables dans notre appartement à Palamós. » Roger Boullier, rénovation complète, Palamós, 2025.
-Statut : brouillon, à valider par David (version A ou B).
+Statut : version A retenue par David le 26/10/2026. Version B conservée pour un test ultérieur.
 
 Prérequis :
 1. Confirmer que Roger Boullier accepte que son témoignage et son nom soient repris sur les réseaux sociaux (l'accord donné pour le site ne couvre pas forcément Facebook et Instagram). Sinon, version anonymisée : « R. B., propriétaire à Palamós ».
@@ -70,4 +70,4 @@ Un interlocuteur francophone, une supervision quotidienne, un compte-rendu photo
 
 - [ ] Accord de Roger Boullier pour une reprise sur les réseaux (sinon version anonymisée)
 - [ ] Vraie photo de son chantier, avec accord
-- [ ] Version A ou B choisie
+- [x] Version A validée (26/10)
