@@ -46,7 +46,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Fait en ligne (26/10/2026)
 
-- solandvolt.com, SEO (20 h 35) : bandeau de la page commande (« Délai de livraison indiqué sur chaque fiche produit »), descriptions des catégories 20, 21, 33, 42, 50 (accents, promesse Le Module « une soirée à une journée », contenu des pages de niveau repris), boutons des niveaux de l'accueil vers les catégories. Sauvegardes : `audit/sauvegardes-2026-10-26/`.
+- solandvolt.com, SEO (20 h 35) : bandeau de la page commande (« Délai de livraison indiqué sur chaque fiche produit »), descriptions des catégories 20, 21, 33, 42, 50 (accents, promesse Le Module « une soirée à une journée », contenu des pages de niveau repris), boutons des niveaux de l'accueil vers les catégories ; accueil : bloc « Nos stations les plus demandées » (601, 344, 346 au lieu des brouillons 54, 50, 52) et carte La Base (« une journée et plus »). Sauvegardes : `audit/sauvegardes-2026-10-26/`.
 
 - solandvolt.com : fiche Tornasol ?p=114 (lien catégorie corrigé, PW1000 remplacée par AC70P) ; catégorie Climatisation créée, produits 339, 42, 46, 112 déplacés, lien de catégorie corrigé sur leurs fiches.
 - Email de demande de fiche technique envoyé à somos@tornasol.energy depuis david@frayservices.com (réponse attendue avant le 05/11).
@@ -58,7 +58,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
-- Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque ; accord pour remplacer le bloc « Nos stations les plus demandées » de l'accueil (produits 54, 50, 52 en brouillon) et le texte de la carte La Base (« une semaine »).
+- Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque.
 
 ### Rappels programmés
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.

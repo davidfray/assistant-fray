@@ -128,10 +128,10 @@ Le connecteur ne donne pas accès aux redirections. Dans Rank Math > Redirection
 
 Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent vers les catégories ; laisser les 4 pages publiées (la redirection prend le dessus) ou les passer en brouillon après une semaine.
 
-### Nouveaux constats pendant les corrections
+### Accueil : deux corrections complémentaires (20 h 38, accord de David)
 
-- **Accueil, bloc « Nos stations les plus demandées » :** il affiche les produits 54, 50 et 52, tous les trois en brouillon. Le bloc est probablement vide en ligne. Proposition : le remplacer par 3 stations publiées (par exemple River 3 UPS ?p=601, DELTA 3 ?p=344, AC70P ?p=346).
-- **Accueil, carte La Base :** « De quoi vivre une semaine normale sans réseau », « Autonomie : une semaine ». Non modifié (hors des 3 textes validés), mais en décalage avec la nouvelle description de catégorie. Proposition : « Station de forte capacité et panneaux solaires. Le réfrigérateur en marche, une journée et plus avec le soleil. »
+- Bloc « Nos stations les plus demandées » : il affichait les produits 54, 50 et 52, tous en brouillon (bloc vide). Remplacés par River 3 UPS ?p=601, DELTA 3 ?p=344 et AC70P ?p=346 (publiés).
+- Carte La Base : « De quoi vivre une semaine normale sans réseau » et « Autonomie : une semaine » remplacés par « Station de forte capacité et panneaux solaires. Le réfrigérateur en marche, une journée et plus avec le soleil. » et « Autonomie : une journée et plus ».
 
 ## Plan d'action proposé (4 semaines)
 
