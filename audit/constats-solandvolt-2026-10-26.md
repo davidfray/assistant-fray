@@ -58,3 +58,11 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
   - Le titre de ?p=87 (« Autonomie 48H ») annonce une durée que la fiche du kit ne promet pas (« une soirée à une demi-journée » pour l'usage type) : à harmoniser avant publication.
   - Prix, stock et classe d'expédition à vérifier dans WooCommerce (non accessibles par le connecteur).
 - Ordre : publier ?p=94 d'abord, puis mettre à jour ?p=483 (qui renvoie vers ?p=94).
+
+## 7. Corrections faites en ligne
+
+- 26/10/2026, 18 h 03 (heure du site) : fiche Tornasol ?p=114 mise à jour, avec l'accord de David.
+  - Lien de catégorie : /categorie-produit/autonomie-energetique/lautonomie/ remplacé par /categorie-produit/lautonomie/ (URL réelle de la catégorie ID 50).
+  - Lien « Complétez votre installation » : PW1000 (?p=348, brouillon) remplacée par la Centrale AC70P (?p=346, publiée).
+  - Reste du contenu inchangé. Aucun avertissement de WordPress à l'enregistrement.
+  - Non vérifié sur le front : solandvolt.com n'est pas joignable depuis cet environnement. À contrôler dans un navigateur.
