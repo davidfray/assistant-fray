@@ -154,7 +154,7 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 - Catégorie d'articles ID 1 renommée « Uncategorized » → « Guides », slug « guides » (/category/guides/), description ajoutée. Ancienne adresse /category/uncategorized/ : non redirigée (à ajouter dans Rank Math si elle a des visites).
 - Images à la une (photos produits réelles de la médiathèque) : ?p=483 Wh → AC70P (média 345) ; ?p=412 climatisation → rafraîchisseur SNOWFIELD (434) ; ?p=231 LiFePO4 ou plomb → batterie SOK 100 Ah (490) ; ?p=229 coupures Espagne → DELTA 3 (500) ; ?p=95 Pourquoi Sol & Volt → kit Tornasol 800 W (435).
 
-### Contenus périmés repérés dans les articles (non modifiés)
+### Contenus périmés repérés dans les articles (corrigés à 21 h 07-21 h 10, accord de David)
 
 | Article | Problème | Proposition |
 |---|---|---|
@@ -162,6 +162,14 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 | ?p=229 coupures Espagne | La Base décrite comme « une semaine d'autonomie, station 600 Wh, panneaux 200 W, frigo 40 L » | Aligner sur la catégorie : stations de 768 Wh à 4 000 Wh, réfrigérateur une journée et plus avec le soleil |
 | ?p=412 climatisation | Lien vers ?p=44 (brouillon) ; ?p=42 présenté comme « climatiseur mobile » (c'est un rafraîchisseur) ; produits rattachés à La Veilleuse et Le Module au lieu de Climatisation | Remplacer les liens et le paragraphe par la catégorie Climatisation |
 | ?p=95 Pourquoi Sol & Volt | La Base « une semaine normale sans réseau » ; « 95 % des foyers » sans source | Aligner La Base ; retirer le chiffre ou le sourcer |
+
+Corrections faites (textes d'origine : `audit/sauvegardes-2026-10-26/articles/`) :
+- ?p=231 : lien vers le produit en brouillon remplacé par les batteries SOK ?p=480 et ?p=482 ; « l'ensemble de notre gamme » devient « la plupart de nos stations et batteries » ; faute « consomme » corrigée.
+- ?p=229 : Le Module « 245 à 512 Wh » ; La Base « stations de 768 à 4 000 Wh, une journée et plus avec le soleil » ; « élimine réellement la dépendance » devient « réduit le plus » ; phrase « l'ordre dans lequel nos propres clients équipent leur logement » retirée (non vérifiable) ; liens vers les catégories et vers le guide ?p=483.
+- ?p=412 (blocs 6 et 8) : liens et libellés alignés sur les produits réels (rafraîchisseurs 42, 46, 112 ; climatiseur mural 339, avec pose) et sur la catégorie Climatisation ; lien vers ?p=44 (brouillon) retiré.
+- ?p=95 : La Base alignée ; « 95 % des foyers » devient « la plupart des foyers ».
+
+Encore à vérifier par David (non modifié) : ?p=229 « option d'extension de garantie » (existe-t-elle ?) ; ?p=95 « livré depuis l'Europe » (vrai pour tous les fournisseurs ?).
 
 
 ## Plan d'action proposé (4 semaines)
