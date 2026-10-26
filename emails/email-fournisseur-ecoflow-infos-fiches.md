@@ -1,8 +1,11 @@
 # Brouillon : demande d'informations au fournisseur EcoFlow
 
-Statut : brouillon, à valider par David avant envoi.
-Destinataire : [adresse du fournisseur EcoFlow, à compléter : nom de la société et contact commercial]
-Expéditeur : contact@solandvolt.com (signature Sol & Volt uniquement)
+Statut : brouillon Gmail créé le 26/10/2026 (compte david@frayservices.com), à relire et envoyer par David.
+Destinataire : Juan Carlos Pinar, Innov8 Iberia SL (juancarlos.pinar@innov8iberia.com), distributeur EcoFlow agréé.
+Copie : noelia.perez@innov8iberia.com, carlos.crespo@innov8iberia.com, alex@innov8iberia.com (mêmes personnes que dans les échanges du 23 au 26/10).
+Signature : Sol & Volt, contact@solandvolt.com.
+
+Différences avec le texte ci-dessous dans la version Gmail : salutation « Buenos días, Juan Carlos: » et remerciement pour les poids bruts et le fichier quotidien ; liste des références placée en bas du message (pas de pièce jointe).
 
 ---
 
@@ -55,7 +58,8 @@ contact@solandvolt.com
 
 ## Notes internes (ne pas envoyer)
 
-- **Destinataire :** le nom du fournisseur EcoFlow (références « ECF ») n'apparaît ni dans le dépôt ni sur les fiches. À compléter par David.
+- **Fournisseur :** Innov8 Iberia SL, distributeur présenté par EcoFlow (Vickey Cui, 16/10/2026). Poids des fichiers fournisseur = poids bruts avec emballage (confirmé le 26/10).
+- **Expéditeur :** le brouillon est dans le compte david@frayservices.com, adresse utilisée jusqu'ici avec Innov8. Si l'alias contact@solandvolt.com est configuré dans Gmail, le choisir dans le champ « De » avant l'envoi.
 - **Pièce jointe suggérée :** liste des 26 références EcoFlow publiées, à tirer de `catalogue/fiches-ecoflow-2026-10-26.md` et `catalogue/fiches-ecoflow-lot2-2026-10-26.md` (ECF0004, 0006, 0007, 0008, 0015, 0030, 0037, 0039, 0042, 0043, 0044, 0046, 0048, 0050, 0051, 0061, 0064, 0068, 0070, 0071, 0072, 0074, 0075, 0077, 0081, 0082, plus 0040, 0041, 0049 pour DELTA 3, DELTA 3 Plus et STREAM Ultra).
 - **Point 6, déclaration de conformité :** demandée pour le dossier interne uniquement. Règle CE : rien n'apparaît sur le site tant qu'un PDF réel avec référence d'organisme notifié n'est pas reçu et vérifié pour la commande en cours. Ne pas payer pour l'obtenir.
 - **Point 5, envoi au client final :** la question sur l'emballage sert à savoir ce que le client reçoit (facture, marque). Supprimer si déjà connu.
