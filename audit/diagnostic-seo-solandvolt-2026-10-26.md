@@ -139,6 +139,11 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 - ?p=640 (« Glacier 3 ») non traitée : modèle à identifier auprès du fournisseur.
 - Restent 19 fiches avec « Fiche technique détaillée à venir » (au lieu de 26).
 
+### Fiches EcoFlow, lot 2 (20 h 51 à 20 h 57, accord de David)
+
+- 14 fiches réécrites : ?p=850, 584, 750, 658, 671, 705, 800, 790, 532, 646, 614, 634, 776, 864 ; 6 titres corrigés (puissance ou nom de modèle faux). Détail : `catalogue/fiches-ecoflow-lot2-2026-10-26.md`.
+- Restent 5 fiches « à venir » : 640, 690, 833, 573, 768 (informations à obtenir du fournisseur).
+
 ## Plan d'action proposé (4 semaines)
 
 | Semaine | Action | Qui |

@@ -48,6 +48,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 - solandvolt.com, SEO (20 h 35) : bandeau de la page commande (« Délai de livraison indiqué sur chaque fiche produit »), descriptions des catégories 20, 21, 33, 42, 50 (accents, promesse Le Module « une soirée à une journée », contenu des pages de niveau repris), boutons des niveaux de l'accueil vers les catégories ; accueil : bloc « Nos stations les plus demandées » (601, 344, 346 au lieu des brouillons 54, 50, 52) et carte La Base (« une journée et plus »). Sauvegardes : `audit/sauvegardes-2026-10-26/`.
 - solandvolt.com (20 h 43) : 7 fiches EcoFlow complétées (?p=601, 623, 539, 546, 739, 525, 563), voir `catalogue/fiches-ecoflow-2026-10-26.md`.
+- solandvolt.com (20 h 51) : 14 autres fiches EcoFlow complétées et 6 titres corrigés (850, 584, 750, 658, 671, 864), voir `catalogue/fiches-ecoflow-lot2-2026-10-26.md`.
 
 - solandvolt.com : fiche Tornasol ?p=114 (lien catégorie corrigé, PW1000 remplacée par AC70P) ; catégorie Climatisation créée, produits 339, 42, 46, 112 déplacés, lien de catégorie corrigé sur leurs fiches.
 - Email de demande de fiche technique envoyé à somos@tornasol.energy depuis david@frayservices.com (réponse attendue avant le 05/11).
@@ -59,7 +60,8 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
-- Sol & Volt : identifier le modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046 : Glacier Classic 35 L ou Glacier 3-en-1 38 L ?) et le délai de livraison des produits EcoFlow.
+- Sol & Volt, fournisseur EcoFlow : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
+- Sol & Volt : accord pour déplacer les batteries STREAM 750, 658, 671 de La Base vers L'Autonomie.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque.
 
 ### Rappels programmés
@@ -67,7 +69,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
 ### Points ouverts sur les sites (non corrigés, à proposer)
-- solandvolt.com, SEO (voir le diagnostic) : 19 fiches EcoFlow sur 48 publiées encore quasi vides (7 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images sans texte alternatif ; blog en « Uncategorized » sans image à la une ; slugs des kits Tornasol.
+- solandvolt.com, SEO (voir le diagnostic) : 5 fiches EcoFlow encore quasi vides (21 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images sans texte alternatif ; blog en « Uncategorized » sans image à la une ; slugs des kits Tornasol.
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
 
@@ -87,7 +89,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | Date | Outil | Sujets traités |
 |---|---|---|
 | 26/10/2026 | Claude Code | Agent Reach, veille kits balcon, articles kit balcon (FR/ES), Wh, hiver, fiche Tornasol, emails syndic et Tornasol, réponses types, calendriers et posts Sol & Volt (nov.-déc.) et Fray (nov.), audits et corrections des deux sites, mémoire des projets, règles Cowork / Claude Code, photos des posts Fray du 02/11 et du 04/11 |
-| 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 7 fiches EcoFlow |
+| 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 21 fiches EcoFlow |
 
 ## Mise à jour de ce fichier
 
