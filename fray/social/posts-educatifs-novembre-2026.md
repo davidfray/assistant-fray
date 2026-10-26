@@ -12,16 +12,16 @@ CTA aligné le 26/10 sur le diagnostic gratuit annoncé sur frayservices.com (pa
 
 ### Version A (accroche problème / solution)
 
-**Facebook (124 mots)**
+**Facebook (148 mots)**
 
 **Accroche :** Vous fermez la maison pour l'hiver ? Cinq vérifications avant de partir.
 
 **Corps :**
 Une maison vide pendant des semaines, c'est une maison où les petits problèmes grossissent sans témoin. Avant de fermer :
 
-1. Coupez l'arrivée d'eau générale. Une fuite sur un flexible peut couler des jours.
+1. Coupez l'arrivée d'eau générale et fermez le gaz du chauffe-eau. Une fuite sur un flexible peut couler des jours.
 2. Faites vérifier gouttières et descentes. Les pluies d'automne les mettent à l'épreuve.
-3. Laissez une aération. Un logement fermé hermétiquement prend vite l'humidité.
+3. Laissez une aération. Un logement fermé hermétiquement prend vite l'humidité, et un appareil au gaz demande un local ventilé.
 4. Coupez les circuits électriques inutiles. Gardez ceux de l'alarme ou de la box si besoin.
 5. Fermez les volets et vérifiez les menuiseries. Un joint fatigué laisse passer l'eau.
 
@@ -31,12 +31,12 @@ Vous êtes déjà rentré en France ? Nous sommes sur place, à Palamós.
 
 **Hashtags :** #rénovation #CostaBrava #villaEspagne #propriétaire #FrayServices
 
-**Instagram (68 mots)**
+**Instagram (74 mots)**
 
 **Accroche :** Vous fermez la maison pour l'hiver ? Cinq vérifications avant de partir.
 
 **Corps :**
-1. Coupez l'eau générale.
+1. Coupez l'eau générale et le gaz du chauffe-eau.
 2. Faites vérifier gouttières et descentes.
 3. Laissez une aération contre l'humidité.
 4. Coupez les circuits électriques inutiles, gardez l'alarme et la box si besoin.
@@ -56,7 +56,7 @@ Déjà rentré en France ? Nous sommes sur place, à Palamós.
 
 ### Brief Canva
 
-- Style : terrain. Vraie photo d'une maison de la Costa Brava volets fermés, ou d'un artisan vérifiant une gouttière.
+- Style : terrain. Photo fournie par David le 26/10 : chauffe-eau au gaz dans un meuble de cuisine (`fray/medias/2026-11-02-chauffe-eau-gaz.jpg`). Recadrer pour que les étiquettes et numéros de téléphone du fabricant ne soient pas lisibles ; garder le carrelage visible. Le logement ne doit pas être reconnaissable (accord du propriétaire si c'est le bien d'un client).
 - Format : 4:5 portrait (1080 × 1350), carrousel de 6 visuels pour Instagram, visuel unique pour Facebook.
 - Visuel 1 : photo, bandeau #F5F0E8, titre Oswald Bold #2C2C2C : « Fermer la maison pour l'hiver ». Sous-titre Lato #C4822A : « 5 vérifications avant de partir ».
 - Visuels 2 à 6 : fond #F5F0E8, grand numéro en Oswald Bold #C4822A, une vérification par visuel en Lato #2C2C2C.
@@ -190,6 +190,7 @@ Votre maison, suivie depuis chez vous.
 - [x] Post 1 : CTA aligné sur le diagnostic gratuit du site (26/10)
 - [ ] Post 2 : formulation IVA validée par le gestor
 - [ ] Post 3 : format de rapport confirmé, visuel réel anonymisé ou exemple signalé
-- [ ] Vraies photos (post 1 et post 3)
+- [x] Photo du post 1 reçue (26/10), recadrage à faire
+- [ ] Vraie photo du post 3
 - [x] Version A validée pour les 3 posts (26/10)
 - [ ] Horaires : Facebook mardi à jeudi conseillé, or ces posts tombent un lundi et un vendredi (calendrier lundi, mercredi, vendredi). Publier en matinée, 9 h-11 h.
