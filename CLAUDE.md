@@ -22,6 +22,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/constats-solandvolt-2026-10-26.md` | Audit solandvolt.com, corrections faites en ligne, décisions |
 | `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
 | `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
+| `audit/redirections-301-rank-math-2026-10-26.md` | Liste prête des 12 redirections 301 à saisir dans Rank Math (pages de niveau, anciennes fiches en 404, catégorie de blog) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
@@ -71,7 +72,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (brouillon Gmail prêt pour Juan Carlos Pinar, à relire et envoyer : `emails/email-fournisseur-ecoflow-infos-fiches.md`) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
 
-- Sol & Volt, SEO : créer les redirections 301 des anciennes fiches produits en 404 listées dans `audit/google-analytics-solandvolt-2026-10-26.md` (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L). Plus urgent : David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers ces pages ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
+- Sol & Volt, SEO : saisir dans Rank Math les redirections 301 de `audit/redirections-301-rank-math-2026-10-26.md` (liste prête, connecteur sans accès aux redirections) ; anciennes fiches produits en 404 (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L). Plus urgent : David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers ces pages ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
 - Sol & Volt, GA4 : activer le suivi e-commerce WooCommerce (aucun événement d'achat remonté) ; devise EUR et fuseau Europe/Madrid ; filtre de trafic interne.
 
 ### Rappels programmés
