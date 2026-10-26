@@ -20,6 +20,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 |---|---|
 | `DOSSIER-KIT-BALCON.md` | Suivi Sol & Volt : livrables, statuts, ordre de publication |
 | `audit/constats-solandvolt-2026-10-26.md` | Audit solandvolt.com, corrections faites en ligne, décisions |
+| `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
@@ -54,11 +55,14 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
+- Sol & Volt, SEO : 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; décider pages de niveau ou catégories (option A recommandée) ; forme unique du nom de marque ; accord pour corriger « Expédié sous 24/48h » (page commande), les accents des catégories et la promesse Le Module.
+
 ### Rappels programmés
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
 ### Points ouverts sur les sites (non corrigés, à proposer)
+- solandvolt.com, SEO (voir le diagnostic) : 26 fiches EcoFlow sur 48 publiées quasi vides (« Fiche technique détaillée à venir ») ; images sans texte alternatif ; blog en « Uncategorized » sans image à la une ; slugs des kits Tornasol.
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
 
@@ -78,6 +82,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | Date | Outil | Sujets traités |
 |---|---|---|
 | 26/10/2026 | Claude Code | Agent Reach, veille kits balcon, articles kit balcon (FR/ES), Wh, hiver, fiche Tornasol, emails syndic et Tornasol, réponses types, calendriers et posts Sol & Volt (nov.-déc.) et Fray (nov.), audits et corrections des deux sites, mémoire des projets, règles Cowork / Claude Code, photos des posts Fray du 02/11 et du 04/11 |
+| 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) |
 
 ## Mise à jour de ce fichier
 

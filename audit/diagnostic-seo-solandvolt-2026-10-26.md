@@ -1,0 +1,129 @@
+# Diagnostic SEO solandvolt.com : 26/10/2026
+
+Lecture du site par le connecteur WordPress (site 257165426) : réglages, 5 articles, 15 pages, 48 produits publiés, 8 catégories de produits, les 100 dernières images (sur 550). Aucune modification faite sur le site.
+
+**Limite :** solandvolt.com n'est pas joignable depuis cet environnement. Les balises title et meta description (Rank Math), le sitemap, le robots.txt, la vitesse, les données structurées et la version espagnole (TranslatePress) n'ont pas pu être lus. Voir la liste de contrôle en fin de document.
+
+Niveaux : rouge = bloque l'indexation ou les ventes ; orange = fait perdre du trafic ; vert = amélioration.
+
+## Synthèse
+
+| # | Constat | Niveau |
+|---|---|---|
+| 1 | 26 fiches produits sur 48 publiées sont quasi vides | Rouge |
+| 2 | Délais de livraison contradictoires (risque Merchant Center) | Rouge |
+| 3 | Images sans texte alternatif, lourdes, nommées par code fournisseur | Orange |
+| 4 | Blog : 5 articles, tous « Uncategorized », sans image | Orange |
+| 5 | Pages de niveau et catégories en concurrence (8 URL pour 4 sujets) | Orange |
+| 6 | Promesse du niveau Le Module différente selon la page | Orange |
+| 7 | Adresses (slugs) incohérentes avec les titres | Orange |
+| 8 | Nom de marque instable : Solandvolt, Sol & Volt, « — Solandvolt » | Orange |
+| 9 | Descriptions de catégories sans accents | Vert |
+| 10 | Réglages : slogan vide, fuseau horaire UTC | Vert |
+| 11 | Catalogue : produits hors cible, catégorie « Batteries » vide de texte | Vert |
+
+Points solides : article ?p=483 bien structuré (méthode, chiffres, FAQ) ; catégories de niveau avec description et lien vers leur page ; titres produits avec capacité et puissance ; pages légales, livraison et retours en place ; aucune mention CE relevée.
+
+## Rouge
+
+### 1. 26 fiches produits sur 48 sont quasi vides
+
+- **Preuve :** 26 fiches EcoFlow publiées contiennent une phrase, un tableau de 3 lignes (marque, référence, poids d'expédition) et « Fiche technique détaillée à venir. ». Exemple ?p=800 : « Panneau solaire EcoFlow : puissance 220 W. » Environ 15 mots utiles.
+- **Concernés :** 864, 850, 833, 800, 790, 776, 768, 750, 739, 705, 690, 671, 658, 646, 640, 634, 623, 614, 601, 584, 573, 563, 546, 539, 532, 525. Dont la River 3 UPS ?p=601, proposée comme alternative au kit 300 Wh.
+- **Effet :** Google classe ces pages en contenu faible ; elles tirent vers le bas l'ensemble du site. Plusieurs fiches ont le même texte (Stream Pro, Stream AC Pro et Stream Ultra X : « puissance 800 W » ; Delta 3 Max et Max Plus : texte identique) : contenu dupliqué. Le texte « à venir » est visible par les clients.
+- **Correction proposée :** compléter en priorité les 8 fiches les plus utiles au parcours « résidence secondaire » (601, 539, 546, 623, 739, 640, 525, 563), au format de la fiche Tornasol : usage concret, capacité en Wh, ce que ça alimente et combien de temps, recharge solaire, délai, niveau d'autonomie. Uniquement à partir des fiches techniques EcoFlow (aucune spec inventée). En attendant, retirer la phrase « Fiche technique détaillée à venir. » ou repasser en brouillon les fiches hors cible.
+
+### 2. Délais de livraison contradictoires
+
+- **Preuve :** page Validation de la commande (?page_id=9) : « Expédié sous 24/48h depuis nos entrepôts. » Fiches : « 12 à 18 jours ouvrés » (Tornasol ?p=114, applique ?p=341), « 3 à 5 jours ouvrés depuis l'Allemagne » (SOK ?p=480, ?p=482).
+- **Effet :** Google Merchant Center sanctionne les promesses de livraison incohérentes (motif « déclarations trompeuses »). Un client qui lit « 24/48h » puis attend 18 jours demande un remboursement ou laisse un avis négatif.
+- **Correction proposée :** remplacer par « Délai indiqué sur chaque fiche produit. Paiement sécurisé. » Même vérification dans le pied de page et les e-mails WooCommerce.
+
+## Orange
+
+### 3. Images
+
+- **Preuve :** sur les 100 dernières images : 100 sans texte alternatif, 100 en JPEG (aucun WebP), noms de fichier en code fournisseur (ECF0082_66874-scaled.jpg), poids de 300 Ko à 2,8 Mo (ex. ?media=834 : 2 792 Ko).
+- **Effet :** aucune visibilité dans Google Images ; pages produits lentes sur mobile (critère de classement).
+- **Correction proposée :** texte alternatif descriptif sur l'image principale de chaque produit publié (48 images, format « EcoFlow River 3 UPS, station électrique 245 Wh, vue de face ») ; activer la conversion WebP et la compression (Jetpack ou réglage de l'hébergeur). Les 450 autres images ne sont pas vérifiées.
+
+### 4. Blog
+
+- **Preuve :** 5 articles publiés (?p=95, 229, 231, 412, 483), tous dans la catégorie « Uncategorized » (adresse /category/uncategorized/, en anglais), aucune étiquette, aucune image à la une.
+- **Effet :** sans image à la une, pas d'aperçu au partage (Facebook, WhatsApp) ni dans Google Discover. La catégorie en anglais sur un site français est un signal de site non entretenu.
+- **Correction proposée :** renommer la catégorie en « Guides » (slug « guides ») ; ajouter une vraie photo produit en image à la une de chaque article ; dans ?p=483, ajouter les liens vers les catégories Le Module et La Base (déjà prévus dans `blog/maj-article-483-combien-wh.html`).
+- **Volume :** 5 articles ne suffisent pas pour se positionner. Le calendrier en place (kit balcon, hiver) va dans le bon sens ; publier au moins 2 articles par mois.
+
+### 5. Pages de niveau et catégories en concurrence
+
+- **Preuve :** chaque niveau existe deux fois : une page (/la-veilleuse/, /le-module/, /la-base/, /l-autonomie/) et une catégorie produit (/categorie-produit/autonomie-energetique/la-veilleuse/ etc.), avec le même nom et le même sujet.
+- **Effet :** Google ne sait pas quelle page afficher pour « kit autonomie coupure de courant » ; les deux se partagent les signaux.
+- **Correction proposée (à décider) :**
+  - A. La catégorie devient la page de référence (elle vend) : son texte reprend le meilleur de la page, la page redirige vers elle (301). Recommandé.
+  - B. Garder les deux avec des rôles distincts : page = guide (« de quoi ai-je besoin »), catégorie = liste de produits ; titres et mots-clés différents.
+
+### 6. Promesse du niveau Le Module
+
+- Catégorie : « Le froid, la connexion et le confort gardés pendant deux jours sans réseau ».
+- Page /le-module/ : « si la panne dure une soirée, voire une journée ».
+- Article ?p=483 : 300 Wh = « une soirée à une demi-journée ».
+- **Correction proposée :** aligner sur « une soirée à une journée » (cohérent avec la méthode de ?p=483), retirer « deux jours » et « le froid » de la description de catégorie.
+
+### 7. Adresses (slugs) incohérentes
+
+| Produit | Titre | Slug actuel |
+|---|---|---|
+| ?p=362 | Kit solaire Tornasol Flex 300 W | kit-solaire-auto-installable-format-entree-de-gamme-300300-w-solandvolt |
+| ?p=360 | Kit solaire Tornasol Efficiency 400 W | kit-solaire-auto-installable-format-compact-60400-w-solandvolt |
+| ?p=114 | Kit solaire Tornasol Efficiency 800 W | kit-solaire-auto-installable-tornasol-energy-kitplugplayeffx800x60-800-w-60o |
+| ?p=112 | Rafraîchisseur SNOWFIELD 5 | climatiseur-evaporation-portable-taurus-snowfield-5-60-w-5-l |
+| ?p=46 | Air Cooler Connecté | rafraichisseur-dair-evaporatif-65-w-telecommande-reservoir-25-l |
+
+- Également : suffixe « -solandvolt » sur ?p=339, 341, 346, 358 ; pages légales en « -2 » (mentions-legales-2, conditions-generales-de-vente-2, politique-de-confidentialite-2).
+- **Correction proposée :** ne changer que les 3 kits Tornasol (mot-clé « kit solaire balcon » absent du slug), avec redirection 301 automatique (Rank Math). Avant : vérifier dans Search Console que ces URL n'ont pas de clics. Ne pas toucher les autres : le gain ne vaut pas le risque.
+
+### 8. Nom de marque
+
+- Réglage WordPress et produits : « Solandvolt ». Article ?p=95 : « Pourquoi Sol & Volt existe ». Deux produits avec « — Solandvolt » dans le titre (?p=83, ?p=85), qui sera répété dans l'onglet si Rank Math ajoute déjà le nom du site.
+- **Effet :** Google associe moins bien les mentions de la marque entre elles (fiche marque, avis, réseaux).
+- **Correction proposée :** choisir une forme unique pour le texte (David décide), retirer « — Solandvolt » des titres de ?p=83 et ?p=85.
+
+## Vert
+
+### 9. Descriptions de catégories sans accents
+
+« electriques », « energetique », « reseau », « gere », « serieux », « soiree », « gardes » dans les catégories 20, 21, 33, 42, 50. Ces textes peuvent servir de meta description : à corriger.
+
+### 10. Réglages du site
+
+- Slogan (description du site) vide : il apparaît dans certains titres et dans le partage.
+- Fuseau horaire UTC au lieu de Europe/Madrid : dates des articles et du sitemap décalées de 1 à 2 heures.
+
+### 11. Catalogue
+
+- Catégorie « Batteries » (2 produits) sans description et hors des 4 niveaux.
+- ?p=864, panneau pour toit de Tesla Model 3 : hors du sujet du site (résidence secondaire, coupures), dilue la thématique.
+- ?p=42 et ?p=46 : extraits contradictoires (3 vitesses, Wi-Fi), déjà signalés le 26/10.
+
+## Plan d'action proposé (4 semaines)
+
+| Semaine | Action | Qui |
+|---|---|---|
+| 1 | Corriger « 24/48h » (point 2) ; contrôles Search Console et Rank Math ci-dessous | David (contrôles), Claude (texte) |
+| 1 | Accents des catégories et promesse Le Module (points 6, 9) | Claude, après accord |
+| 2 | Compléter 8 fiches EcoFlow prioritaires (point 1) | Claude rédige, David valide |
+| 2 | Textes alternatifs des 48 images principales (point 3) | Claude, après accord |
+| 3 | Catégorie blog « Guides », images à la une, mise à jour ?p=483 (point 4) | Claude, après publication de ?p=94 |
+| 3 | Décision pages de niveau A ou B (point 5) | David |
+| 4 | Slugs Tornasol avec 301 (point 7), 18 fiches EcoFlow restantes | Claude, après accord |
+
+## Contrôles à faire par David (10 minutes, dans un navigateur)
+
+1. Search Console > Pages : nombre de pages indexées, motifs « Explorée, actuellement non indexée ».
+2. Search Console > Performances, 3 derniers mois : clics, impressions, 10 premières requêtes.
+3. Rank Math > tableau de bord : bannière « l'URL du site a changé » ou non.
+4. Ouvrir https://www.solandvolt.com/sitemap_index.xml et https://www.solandvolt.com/robots.txt : les deux s'affichent-ils ?
+5. PageSpeed Insights (pagespeed.web.dev) sur la page d'accueil et sur ?p=114, version mobile : noter les scores.
+6. Version espagnole : une page /es/ existe-t-elle, et Google l'indexe-t-il ?
+
+Me transmettre ces résultats permet de compléter le diagnostic (titres, vitesse, indexation, espagnol).
