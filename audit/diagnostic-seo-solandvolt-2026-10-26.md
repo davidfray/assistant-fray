@@ -149,6 +149,21 @@ Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent ve
 - Image principale des 48 produits publiés : 29 textes ajoutés, 5 corrigés, 14 déjà corrects. Détail : `catalogue/textes-alternatifs-images-2026-10-26.md`.
 - Restent : images de galerie, compression et WebP.
 
+### Blog : catégorie « Guides » et images à la une (21 h 05 à 21 h 06, accord de David)
+
+- Catégorie d'articles ID 1 renommée « Uncategorized » → « Guides », slug « guides » (/category/guides/), description ajoutée. Ancienne adresse /category/uncategorized/ : non redirigée (à ajouter dans Rank Math si elle a des visites).
+- Images à la une (photos produits réelles de la médiathèque) : ?p=483 Wh → AC70P (média 345) ; ?p=412 climatisation → rafraîchisseur SNOWFIELD (434) ; ?p=231 LiFePO4 ou plomb → batterie SOK 100 Ah (490) ; ?p=229 coupures Espagne → DELTA 3 (500) ; ?p=95 Pourquoi Sol & Volt → kit Tornasol 800 W (435).
+
+### Contenus périmés repérés dans les articles (non modifiés)
+
+| Article | Problème | Proposition |
+|---|---|---|
+| ?p=231 LiFePO4 ou plomb | Lien vers « batterie LiFePO4 12V 200Ah » : produit ?p=54 en brouillon, lien probablement en erreur | Remplacer par la batterie SOK 100 Ah ?p=480 ou 206 Ah ?p=482 |
+| ?p=229 coupures Espagne | La Base décrite comme « une semaine d'autonomie, station 600 Wh, panneaux 200 W, frigo 40 L » | Aligner sur la catégorie : stations de 768 Wh à 4 000 Wh, réfrigérateur une journée et plus avec le soleil |
+| ?p=412 climatisation | Lien vers ?p=44 (brouillon) ; ?p=42 présenté comme « climatiseur mobile » (c'est un rafraîchisseur) ; produits rattachés à La Veilleuse et Le Module au lieu de Climatisation | Remplacer les liens et le paragraphe par la catégorie Climatisation |
+| ?p=95 Pourquoi Sol & Volt | La Base « une semaine normale sans réseau » ; « 95 % des foyers » sans source | Aligner La Base ; retirer le chiffre ou le sourcer |
+
+
 ## Plan d'action proposé (4 semaines)
 
 | Semaine | Action | Qui |
