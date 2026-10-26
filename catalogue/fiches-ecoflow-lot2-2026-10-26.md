@@ -25,9 +25,9 @@ Les slugs n'ont pas été modifiés.
 | 573 | Câble station vers micro-onduleur | La fiche annonce River, Delta mini et Delta ; les sources ne listent que des câbles DELTA (XT150) |
 | 768 | Support sol et suspendu | Compatibilité contradictoire (panneau rigide 400 W ou 450 W) |
 
-## Point à décider
+## Batteries STREAM déplacées (21 h 00, accord de David)
 
-Les batteries STREAM (750, 658, 671) sont classées dans La Base, alors que la STREAM Ultra ?p=494 est dans L'Autonomie (stockage domestique). Proposition : les déplacer dans L'Autonomie. Le texte des fiches reste neutre sur le niveau en attendant.
+?p=750, 658 et 671 déplacées de La Base vers L'Autonomie (catégorie 50, désormais 5 produits). Sur les 3 fiches : « Niveau 4, L'Autonomie » ajouté dans « Pour qui », lien de bas de page vers la catégorie L'Autonomie. Description de la catégorie 50 : « les batteries EcoFlow STREAM (de 1,92 à 3,84 kWh) ». Les blocs HTML ci-dessous sont ceux d'avant ce déplacement pour ces 3 fiches.
 
 ## ?p=850 : EcoFlow DELTA 3 Max Plus – Station Électrique 2 048 Wh / 3 000 W
 

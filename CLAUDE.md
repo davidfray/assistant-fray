@@ -41,6 +41,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Article Wh : enrichir ?p=483 plutôt que publier le brouillon de novembre (proposition prête : `blog/maj-article-483-combien-wh.html`).
 - Produit niveau Le Module : publier le Kit Autonomie 300 Wh ?p=94 (David le publie lui-même).
 - Fray Services : délai de réponse retenu « réponse sous 24 h ».
+- Sol & Volt : les batteries de stockage STREAM sont classées au niveau L'Autonomie.
 - Sol & Volt, SEO : option A, les catégories de produits deviennent les pages de référence des 4 niveaux ; les pages /la-veilleuse/, /le-module/, /la-base/, /l-autonomie/ redirigent en 301 vers elles.
 - Fray Services, photos : post du 02/11 = chauffe-eau au gaz (`fray/medias/2026-11-02-chauffe-eau-gaz.jpg`, recadrer les étiquettes du fabricant) ; post du 04/11 = « Rénovation salle de bain », média n° 150 de frayservices.com.
 
@@ -48,7 +49,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 - solandvolt.com, SEO (20 h 35) : bandeau de la page commande (« Délai de livraison indiqué sur chaque fiche produit »), descriptions des catégories 20, 21, 33, 42, 50 (accents, promesse Le Module « une soirée à une journée », contenu des pages de niveau repris), boutons des niveaux de l'accueil vers les catégories ; accueil : bloc « Nos stations les plus demandées » (601, 344, 346 au lieu des brouillons 54, 50, 52) et carte La Base (« une journée et plus »). Sauvegardes : `audit/sauvegardes-2026-10-26/`.
 - solandvolt.com (20 h 43) : 7 fiches EcoFlow complétées (?p=601, 623, 539, 546, 739, 525, 563), voir `catalogue/fiches-ecoflow-2026-10-26.md`.
-- solandvolt.com (20 h 51) : 14 autres fiches EcoFlow complétées et 6 titres corrigés (850, 584, 750, 658, 671, 864), voir `catalogue/fiches-ecoflow-lot2-2026-10-26.md`.
+- solandvolt.com (20 h 51) : 14 autres fiches EcoFlow complétées et 6 titres corrigés (850, 584, 750, 658, 671, 864), voir `catalogue/fiches-ecoflow-lot2-2026-10-26.md`. Batteries STREAM 750, 658, 671 déplacées dans L'Autonomie (21 h 00).
 
 - solandvolt.com : fiche Tornasol ?p=114 (lien catégorie corrigé, PW1000 remplacée par AC70P) ; catégorie Climatisation créée, produits 339, 42, 46, 112 déplacés, lien de catégorie corrigé sur leurs fiches.
 - Email de demande de fiche technique envoyé à somos@tornasol.energy depuis david@frayservices.com (réponse attendue avant le 05/11).
@@ -61,7 +62,6 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
 - Sol & Volt, fournisseur EcoFlow : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
-- Sol & Volt : accord pour déplacer les batteries STREAM 750, 658, 671 de La Base vers L'Autonomie.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque.
 
 ### Rappels programmés
