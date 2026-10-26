@@ -105,16 +105,43 @@ Points solides : article ?p=483 bien structuré (méthode, chiffres, FAQ) ; cat�
 - ?p=864, panneau pour toit de Tesla Model 3 : hors du sujet du site (résidence secondaire, coupures), dilue la thématique.
 - ?p=42 et ?p=46 : extraits contradictoires (3 vitesses, Wi-Fi), déjà signalés le 26/10.
 
+## Corrections faites en ligne (26/10/2026, 20 h 35 à 20 h 37, heure du site)
+
+Avec l'accord de David (« corrige les 3 textes, option A »). Textes d'origine sauvegardés dans `audit/sauvegardes-2026-10-26/`.
+
+- **Point 2, délais :** page Validation de la commande (?page_id=9), bandeau remplacé par « **Paiement sécurisé** — Délai de livraison indiqué sur chaque fiche produit. » (« 100% » retiré : affirmation sans preuve).
+- **Points 6 et 9, accents et promesse du Module :** descriptions des catégories 20, 21, 33, 42 et 50 réécrites, accents rétablis. Le Module : « d'une soirée à une journée » (station de 245 à 512 Wh, environ 450 Wh par jour), « deux jours » et « le froid » retirés. La Base : « visez 800 Wh et plus pour tenir une journée » (chiffres de ?p=483), « une semaine entière » retiré.
+- **Point 5, option A (catégorie = page de référence) :** le contenu utile des pages de niveau est repris dans les descriptions de catégorie, avec des liens entre niveaux et vers le guide ?p=483. Les liens « En savoir plus » vers les pages ont été retirés.
+- **Accueil (?page_id=99), section « niveaux » :** les 4 boutons « Découvrir » pointent vers les catégories ; carte Le Module : « 48 heures avec frigo, PC et chauffage appoint » remplacé par « La box, la lumière et les téléphones, d'une soirée à une journée ».
+- WordPress retire les balises de liste des descriptions de catégorie : les listes ont été réécrites en phrases.
+
+### Reste à faire pour terminer l'option A (David, 5 minutes)
+
+Le connecteur ne donne pas accès aux redirections. Dans Rank Math > Redirections > Ajouter, type 301 :
+
+| Source | Destination |
+|---|---|
+| /la-veilleuse/ | /categorie-produit/autonomie-energetique/la-veilleuse/ |
+| /le-module/ | /categorie-produit/autonomie-energetique/le-module/ |
+| /la-base/ | /categorie-produit/autonomie-energetique/la-base/ |
+| /l-autonomie/ | /categorie-produit/lautonomie/ |
+
+Ensuite : vérifier dans Apparence > Menus que les liens des niveaux pointent vers les catégories ; laisser les 4 pages publiées (la redirection prend le dessus) ou les passer en brouillon après une semaine.
+
+### Nouveaux constats pendant les corrections
+
+- **Accueil, bloc « Nos stations les plus demandées » :** il affiche les produits 54, 50 et 52, tous les trois en brouillon. Le bloc est probablement vide en ligne. Proposition : le remplacer par 3 stations publiées (par exemple River 3 UPS ?p=601, DELTA 3 ?p=344, AC70P ?p=346).
+- **Accueil, carte La Base :** « De quoi vivre une semaine normale sans réseau », « Autonomie : une semaine ». Non modifié (hors des 3 textes validés), mais en décalage avec la nouvelle description de catégorie. Proposition : « Station de forte capacité et panneaux solaires. Le réfrigérateur en marche, une journée et plus avec le soleil. »
+
 ## Plan d'action proposé (4 semaines)
 
 | Semaine | Action | Qui |
 |---|---|---|
-| 1 | Corriger « 24/48h » (point 2) ; contrôles Search Console et Rank Math ci-dessous | David (contrôles), Claude (texte) |
-| 1 | Accents des catégories et promesse Le Module (points 6, 9) | Claude, après accord |
+| 1 | ~~Corriger « 24/48h », accents, promesse Le Module, option A côté contenu~~ Fait le 26/10 | Claude |
+| 1 | 4 redirections 301, contrôles Search Console et Rank Math ci-dessous | David |
 | 2 | Compléter 8 fiches EcoFlow prioritaires (point 1) | Claude rédige, David valide |
 | 2 | Textes alternatifs des 48 images principales (point 3) | Claude, après accord |
 | 3 | Catégorie blog « Guides », images à la une, mise à jour ?p=483 (point 4) | Claude, après publication de ?p=94 |
-| 3 | Décision pages de niveau A ou B (point 5) | David |
 | 4 | Slugs Tornasol avec 301 (point 7), 18 fiches EcoFlow restantes | Claude, après accord |
 
 ## Contrôles à faire par David (10 minutes, dans un navigateur)
