@@ -93,3 +93,8 @@ Lecture du site via le connecteur WordPress (Jetpack, site 257165426). Aucune mo
 - ?p=42 : l'extrait annonce « 3 vitesses », le tableau « 2 vitesses ».
 - ?p=46 : l'extrait annonce « télécommande et Wi-Fi », la fiche ne mentionne que la télécommande.
 - Menus non vérifiés : la nouvelle catégorie n'y figure pas automatiquement. L'ajouter dans Apparence > Menus si besoin.
+
+## 10. Fiches climatisation : lien de catégorie corrigé (26/10/2026, 18 h 07 à 18 h 08)
+
+- Sur ?p=339, ?p=42, ?p=46 et ?p=112, le bloc « Ce produit fait partie de » renvoie désormais vers « Découvrez toute la gamme Climatisation » (/categorie-produit/climatisation/). Reste du contenu inchangé.
+- Non traités (David a choisi de ne corriger que le lien de catégorie) : lien de ?p=42 vers ?p=44 (brouillon), extrait de ?p=42 (« 3 vitesses » contre 2 au tableau), extrait de ?p=46 (« Wi-Fi » absent de la fiche).
