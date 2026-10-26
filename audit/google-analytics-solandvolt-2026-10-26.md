@@ -49,7 +49,7 @@ Pic la semaine du 7 au 13 septembre 2026 (64 sessions, 48 utilisateurs), puis 1 
 
 | Priorité | Action | Qui |
 |---|---|---|
-| 1 | Vérifier dans Meta Ads si des publicités actives pointent vers les URL ci-dessus ; les mettre en pause ou changer leur lien | David |
+| 1 | ~~Vérifier dans Meta Ads si des publicités actives pointent vers les URL ci-dessus~~ Fait le 26/10 : aucune publicité active concernée | David |
 | 1 | Redirections 301 dans Rank Math : station 300 W → River 3 Plus ?p=623 (286 Wh, la plus proche) ; station 1 800 W LiFePO4 → DELTA 3 ?p=344 (1 800 W) ; batterie 200 Ah → SOK 206 Ah ?p=482 ; frigo 40 L et glacière 20 L → réfrigérateur EcoFlow ?p=640 ; idem pour les versions /es_es/ | David (Claude peut proposer la liste complète) |
 | 2 | Activer le suivi e-commerce GA4 (extension Google pour WooCommerce, ou Site Kit, ou GTM4WP) et vérifier l'événement purchase sur une commande test | David |
 | 2 | Devise EUR et fuseau Europe/Madrid dans GA4 ; filtre de trafic interne | David |
@@ -64,3 +64,5 @@ Deux options :
 - ou David connecte la boîte à outils « metaads » dans Composio (lecture seule suffit), puis Claude refait le contrôle.
 
 Les redirections 301 proposées plus haut protègent les clics dans les deux cas.
+
+**Résultat (26/10/2026) :** David a vérifié dans le Gestionnaire de publicités. Aucune publicité active ne pointe vers les pages 404. Les sessions « fb » vers ces URL viennent donc d'anciennes publicités ou de liens partagés. Niveau ramené de rouge à orange : les redirections 301 restent utiles pour récupérer ces visites et les impressions Google.
