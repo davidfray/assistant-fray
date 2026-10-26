@@ -1,6 +1,6 @@
 # Fray Services : posts éducatifs de novembre 2026
 
-Statut : brouillon, à valider par David (version A ou B pour chaque post).
+Statut : version A retenue par David le 26/10/2026 pour les 3 posts. Versions B conservées pour un test ultérieur.
 Langue : français. Cible : propriétaires français absents, Costa Brava.
 Charte : fond #F5F0E8, accent #C4822A, texte #2C2C2C, Oswald Bold (titres) / Lato (corps). Vraies photos uniquement.
 
@@ -191,5 +191,5 @@ Votre maison, suivie depuis chez vous.
 - [ ] Post 2 : formulation IVA validée par le gestor
 - [ ] Post 3 : format de rapport confirmé, visuel réel anonymisé ou exemple signalé
 - [ ] Vraies photos (post 1 et post 3)
-- [ ] Version A ou B choisie pour chaque post
+- [x] Version A validée pour les 3 posts (26/10)
 - [ ] Horaires : Facebook mardi à jeudi conseillé, or ces posts tombent un lundi et un vendredi (calendrier lundi, mercredi, vendredi). Publier en matinée, 9 h-11 h.
