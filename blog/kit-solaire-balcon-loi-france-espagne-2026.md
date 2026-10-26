@@ -78,9 +78,9 @@ La façade et l'extérieur du garde-corps sont en général des parties communes
 
 Le kit de balcon est une première étape vers une maison qui produit sa propre énergie. C'est l'esprit de notre niveau 04 — L'Autonomie. Si votre priorité est plutôt de tenir pendant une coupure de courant, une station électrique avec panneau pliable répond mieux au besoin : voir le niveau 03 — La Base.
 
-- Découvrir le niveau 04 — L'Autonomie : [LIEN CATÉGORIE NIVEAU 04]
-- Le kit solaire Tornasol 800 W : [LIEN ?p=ID]
-- Le niveau 03 — La Base, pour l'autonomie pendant les coupures : [LIEN CATÉGORIE NIVEAU 03]
+- Découvrir le niveau 04 — L'Autonomie : https://www.solandvolt.com/categorie-produit/lautonomie/
+- Le kit solaire Tornasol 800 W : https://www.solandvolt.com/?p=114
+- Le niveau 03 — La Base, pour l'autonomie pendant les coupures : https://www.solandvolt.com/categorie-produit/autonomie-energetique/la-base/
 - Une station électrique de la gamme La Base : [LIEN ?p=ID]
 
 **Une question sur votre balcon ou votre logement ? Écrivez-nous : nous vous répondons avec les règles qui s'appliquent à votre commune.** [BOUTON : Poser ma question]

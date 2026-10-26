@@ -8,10 +8,10 @@ Avant publication : compléter les champs [À COMPLÉTER] et confirmer les point
 ## Réglages WooCommerce
 
 - **Titre :** Kit Solaire de Balcon Tornasol 800W
-- **Catégorie :** L'Autonomie (/categorie-produit/autonomie-energetique/lautonomie/)
+- **Catégorie :** L'Autonomie (ID 50, URL réelle https://www.solandvolt.com/categorie-produit/lautonomie/)
 - **Prix :** [À COMPLÉTER] € TTC (vérifier qu'il couvre coût fournisseur + port)
 - **Classe d'expédition :** « Colis volumineux » (kit complet d'environ 55 kg)
-- **Délai de livraison :** [À COMPLÉTER depuis la fiche fournisseur : stock Europe ou international]
+- **Délai de livraison :** 12 à 18 jours ouvrés depuis l'entrepôt fournisseur (fiche en ligne ?p=114, lue le 26/10/2026)
 - **Stock :** publier d'abord le contenu, puis le stock (quantité ≥ 1).
 - **Image :** vraie photo du kit fournie par le fournisseur. Alt : « Kit solaire de balcon Tornasol 800 W, deux panneaux rigides sur support incliné ».
 
@@ -75,7 +75,7 @@ Kit solaire de balcon de 800 W : deux panneaux rigides de 420 W sur support incl
 
 <h2>À découvrir aussi</h2>
 <ul>
-  <li><a href="/categorie-produit/autonomie-energetique/lautonomie/">Tous les produits du niveau L'Autonomie</a></li>
+  <li><a href="https://www.solandvolt.com/categorie-produit/lautonomie/">Tous les produits du niveau L'Autonomie</a></li>
   <li><a href="[LIEN ?p=ID station La Base]">[Nom de la station électrique du niveau La Base]</a></li>
   <li><a href="[LIEN ?p=ID produit complémentaire]">[Nom du produit complémentaire]</a></li>
 </ul>

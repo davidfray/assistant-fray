@@ -75,11 +75,11 @@ Partez toujours de vos appareils et de la durée de coupure que vous voulez couv
 
 ## Pour aller plus loin
 
-- Le niveau 02, Le Module : [LIEN CATÉGORIE NIVEAU 02]
+- Le niveau 02, Le Module : https://www.solandvolt.com/categorie-produit/autonomie-energetique/le-module/
 - Le Kit Autonomie 48H (station et panneau) : [LIEN ?p=ID]
-- Le niveau 03, La Base : [LIEN CATÉGORIE NIVEAU 03]
+- Le niveau 03, La Base : https://www.solandvolt.com/categorie-produit/autonomie-energetique/la-base/
 - Combien de Wh pour tenir 48 heures sans courant ? : [LIEN ARTICLE WH]
-- Batterie LiFePO4 ou plomb : [LIEN ARTICLE EXISTANT]
+- Batterie LiFePO4 ou plomb : https://www.solandvolt.com/?p=231
 
 **Une question sur votre installation d'hiver ? Écrivez-nous l'orientation de votre terrasse et vos appareils : nous faisons le calcul avec vous.** [BOUTON : Poser ma question]
 

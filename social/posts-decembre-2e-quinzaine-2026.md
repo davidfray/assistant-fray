@@ -21,7 +21,7 @@ C'est un cadeau simple, qui se range dans un tiroir et sert le jour où on en a 
 
 À partir de [prix du produit d'entrée] € TTC. Pour une livraison avant Noël, commandez avant le [date France] en France et le [date Espagne] en Espagne.
 
-**CTA :** Le niveau La Veilleuse est en lien dans la bio. (Facebook : [LIEN CATÉGORIE NIVEAU 01])
+**CTA :** Le niveau La Veilleuse est en lien dans la bio. (Facebook : https://www.solandvolt.com/categorie-produit/autonomie-energetique/la-veilleuse/)
 
 **ESPAÑOL**
 **Gancho A:** Un regalo útil este año: la tranquilidad de una noche sin luz.
@@ -61,7 +61,7 @@ Un conseil pour les fêtes : vérifiez sa charge une fois par mois, et rechargez
 
 Notre niveau Le Module est fait pour ça.
 
-**CTA :** Le niveau Le Module est en lien dans la bio. (Facebook : [LIEN CATÉGORIE NIVEAU 02])
+**CTA :** Le niveau Le Module est en lien dans la bio. (Facebook : https://www.solandvolt.com/categorie-produit/autonomie-energetique/le-module/)
 
 **ESPAÑOL**
 **Gancho A:** Preparado, sin tener que pensarlo. Esa es la idea.

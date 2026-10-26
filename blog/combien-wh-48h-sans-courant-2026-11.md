@@ -94,11 +94,11 @@ Partez de vos appareils, pas d'un chiffre rond. Un kit trop gros coûte plus che
 
 ## Pour aller plus loin
 
-- Le niveau 02, Le Module : [LIEN CATÉGORIE NIVEAU 02]
+- Le niveau 02, Le Module : https://www.solandvolt.com/categorie-produit/autonomie-energetique/le-module/
 - Le Kit Autonomie 48H (station et panneau) : [LIEN ?p=ID]
-- Le niveau 03, La Base : [LIEN CATÉGORIE NIVEAU 03]
+- Le niveau 03, La Base : https://www.solandvolt.com/categorie-produit/autonomie-energetique/la-base/
 - Une station du niveau La Base : [LIEN ?p=ID]
-- Notre guide sur les coupures de courant en Espagne et le choix du kit : [LIEN ARTICLE EXISTANT]
+- Notre guide sur les coupures de courant en Espagne et le choix du kit : https://www.solandvolt.com/?p=229
 
 **Vous hésitez entre deux niveaux ? Envoyez-nous la liste de vos appareils : nous faisons le calcul avec vous.** [BOUTON : Calculer mon besoin]
 
