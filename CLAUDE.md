@@ -21,6 +21,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `DOSSIER-KIT-BALCON.md` | Suivi Sol & Volt : livrables, statuts, ordre de publication |
 | `audit/constats-solandvolt-2026-10-26.md` | Audit solandvolt.com, corrections faites en ligne, décisions |
 | `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
+| `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
@@ -65,7 +66,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
 - Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (brouillon Gmail prêt pour Juan Carlos Pinar, à relire et envoyer : `emails/email-fournisseur-ecoflow-infos-fiches.md`) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
-- Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic) ; 6 contrôles navigateur (Search Console, Rank Math, sitemap, PageSpeed, version /es/) ; forme unique du nom de marque.
+- Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
 
 ### Rappels programmés
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.
@@ -76,6 +77,10 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com, SEO (voir le diagnostic) : 5 fiches EcoFlow encore quasi vides (21 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images de galerie sans texte alternatif et images lourdes (JPEG, pas de WebP) ;  slugs des kits Tornasol.
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
+
+## Accès via Composio
+
+Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics, Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté.
 
 ## Travail partagé entre Cowork et Claude Code
 

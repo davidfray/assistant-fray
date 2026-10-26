@@ -189,6 +189,10 @@ Encore à vérifier ou décider (non modifié) :
 | 3 | Catégorie blog « Guides », images à la une, mise à jour ?p=483 (point 4) | Claude, après publication de ?p=94 |
 | 4 | Slugs Tornasol avec 301 (point 7), 18 fiches EcoFlow restantes | Claude, après accord |
 
+## Contrôles Search Console faits par Claude (26/10, via Composio)
+
+Voir `audit/search-console-solandvolt-2026-10-26.md` : 12 clics et 267 impressions en 3 mois ; pages principales indexées ; sitemap sans erreur ; redirection sans www correcte ; ancienne batterie 200 Ah en 404 avec encore des impressions ; /es_es/ et /es_ES/ indexées en double. Restent pour David : bannière Rank Math et PageSpeed.
+
 ## Contrôles à faire par David (10 minutes, dans un navigateur)
 
 1. Search Console > Pages : nombre de pages indexées, motifs « Explorée, actuellement non indexée ».
