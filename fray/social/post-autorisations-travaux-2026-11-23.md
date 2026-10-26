@@ -1,7 +1,7 @@
 # Fray Services : post du lundi 23 novembre 2026 — Autorisations de travaux en Catalogne
 
 Type : éducatif.
-Statut : brouillon. Deux prérequis avant validation :
+Statut : version A retenue par David le 26/10/2026. Version B écartée (risque d'alarmisme). Deux prérequis avant publication :
 1. Confirmer que Fray Services prépare ou accompagne les démarches auprès de la mairie (le CTA en dépend). Sinon, CTA de repli ci-dessous.
 2. Vérifier les règles de Palamós (ordonnance municipale, service d'urbanisme). Le post s'appuie sur les règles générales observées dans plusieurs mairies catalanes, pas sur un texte de Palamós.
 
