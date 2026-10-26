@@ -8,7 +8,7 @@ Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
 |---|---|---|
 | Article blog FR | `blog/kit-solaire-balcon-loi-france-espagne-2026.md` | Rédigé, liens à compléter |
 | Article blog ES | `blog/kit-solar-balcon-ley-espana-francia-2026.md` | Rédigé, liens à compléter |
-| Posts Instagram + Facebook (FR/ES, A/B, brief Canva) | `social/kit-balcon-loi-posts-2026-10.md` | Rédigés, attente validation |
+| Posts Instagram + Facebook (FR/ES, A/B, brief Canva) | `social/kit-balcon-loi-posts-2026-10.md` | Version A validée le 26/10, attente article en ligne et photo |
 | Modèle email syndic (FR + ES) | `emails/modele-email-syndic-kit-balcon.md` | Prêt |
 | Fiche produit Tornasol 800W FR | `catalogue/fiche-kit-tornasol-800w.md` | Brouillon, données fournisseur à confirmer |
 | Fiche produit Tornasol 800W ES | `catalogue/fiche-kit-tornasol-800w-es.md` | Brouillon, idem |
@@ -24,7 +24,7 @@ Suivi des livrables et ordre de publication. Mis à jour le 26/10/2026.
 6. **David : relire la question écrite n° 6574** sur le site de l'Assemblée nationale (citée dans l'article, non lue en direct).
 7. **Publication articles FR puis ES**, liés par hreflang. Vérifier les liens en ligne. Ajouter le lien retour fiche vers article.
 8. **Claude : insérer les URLs des articles** dans les posts Facebook.
-9. **David : valider les posts** et fournir la photo réelle pour Canva.
+9. **Version A validée le 26/10.** David : fournir la photo réelle pour Canva.
 10. **Publication** : Instagram via webhook n8n (après validation uniquement), Facebook.
 
 ## Règles rappel

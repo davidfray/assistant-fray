@@ -1,7 +1,7 @@
 # Posts sociaux : article « Kit solaire de balcon : la loi en France et en Espagne »
 
 Format : éducatif. Univers : Solaire. Niveau relié : 04 (voisin : 03).
-Statut : brouillon, à valider par David avant publication. Ne pas déclencher le webhook avant validation.
+Statut : version A retenue par David le 26/10/2026 (Instagram et Facebook). Version B conservée pour un test ultérieur. Publication après mise en ligne de l'article et réception de la vraie photo.
 
 ---
 
@@ -171,4 +171,5 @@ Version espagnole du carrousel : mêmes visuels, textes traduits depuis le bloc 
 - [ ] Article publié et URLs FR et ES réelles insérées à la place de [LIEN ARTICLE FR] et [ENLACE ARTÍCULO ES]
 - [ ] Texte de la question écrite n° 6574 relu sur le site de l'Assemblée nationale
 - [ ] Photo réelle du kit Tornasol 800 W disponible
-- [ ] Validation de David, puis publication (webhook n8n Instagram : texte FR uniquement, à remplacer l'image Unsplash par la vraie photo)
+- [x] Version A validée par David (26/10)
+- [ ] Publication (webhook n8n Instagram : texte FR uniquement, à remplacer l'image Unsplash par la vraie photo)
