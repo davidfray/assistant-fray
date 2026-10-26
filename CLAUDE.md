@@ -22,6 +22,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/constats-solandvolt-2026-10-26.md` | Audit solandvolt.com, corrections faites en ligne, décisions |
 | `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
 | `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
+| `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
@@ -68,6 +69,9 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (brouillon Gmail prêt pour Juan Carlos Pinar, à relire et envoyer : `emails/email-fournisseur-ecoflow-infos-fiches.md`) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
 - Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
 
+- Sol & Volt, URGENT : vérifier dans Meta Ads si des publicités actives pointent vers les anciennes fiches en 404 (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L) ; les mettre en pause ou changer le lien ; créer les redirections 301 listées dans `audit/google-analytics-solandvolt-2026-10-26.md`.
+- Sol & Volt, GA4 : activer le suivi e-commerce WooCommerce (aucun événement d'achat remonté) ; devise EUR et fuseau Europe/Madrid ; filtre de trafic interne.
+
 ### Rappels programmés
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.
 - 06/11/2026, 9 h (heure de Madrid) : vérifier la réponse du fournisseur EcoFlow ; sans réponse, préparer une relance en espagnol (nouvelle échéance au 13/11) et la soumettre à David avant envoi.
@@ -80,7 +84,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Accès via Composio
 
-Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics, Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté.
+Composio donne accès en lecture à Google Search Console (propriétés `sc-domain:solandvolt.com`, `https://www.solandvolt.com/`, frayservices.com), Google Analytics (propriété « Solandvolt - GA4 », properties/551064081), Gmail (compte david@frayservices.com), Google Drive, Sheets, Brevo, Facebook, Instagram. Pas d'outil PageSpeed connecté.
 
 ## Travail partagé entre Cowork et Claude Code
 
