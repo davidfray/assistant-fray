@@ -1,6 +1,6 @@
 # Posts Sol & Volt : décembre 2026, deuxième quinzaine
 
-Statut : brouillon, à valider par David (accroche A ou B pour chaque post).
+Statut : accroche A retenue par David le 26/10/2026 pour tous les posts. Post 9 : version 2 (récapitulatif des 4 niveaux). Post 8 (25/12) : publication à confirmer.
 Format : un texte par post, 80 à 90 mots en français avec le CTA, utilisable sur Instagram et Facebook. Sur Facebook, remplacer « lien en bio » par l'URL indiquée.
 Univers : Solaire. Charte : fond #3D2E0A, accent #C89B3C, clair #FAEEDA, encre #14201C, papier #FBFAF6, police système sans-serif, chiffres en monospace, logo « SOLANDVOLT » blanc sur sombre.
 Interdits : emoji, mention CE, badge de certification, référence à Fray Services, scène de panne ou de catastrophe, durée d'autonomie garantie, témoignage ou chiffre inventé.
@@ -178,6 +178,6 @@ Pour le niveau 04, ne montrer que le kit réellement au catalogue (Tornasol 800 
 - [ ] Post 6 : dates limites avant Noël calculées sur les délais réels, prix TTC vérifiés, vraies photos des produits La Veilleuse
 - [ ] Post 7 : vraie photo d'une station en usage
 - [ ] Post 8 : décision de David (publier ou non)
-- [ ] Post 9 : choix entre version 1 (vraies questions, au moins 3) et version 2 (récapitulatif)
-- [ ] Accroche A ou B choisie pour chaque post
+- [x] Post 9 : version 2 retenue (26/10)
+- [x] Accroche A validée pour tous les posts (26/10)
 - [ ] Publication Instagram via le webhook n8n uniquement après validation de David
