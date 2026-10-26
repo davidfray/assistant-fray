@@ -171,7 +171,11 @@ Corrections faites (textes d'origine : `audit/sauvegardes-2026-10-26/articles/`)
 
 21 h 12 (accord de David) : ?p=229, « option d'extension de garantie » retirée (n'existe pas) ; la phrase annonce désormais la garantie légale de conformité de 3 ans, comme les CGV (Real Decreto Legislativo 7/2021), avec un lien vers les CGV.
 
-Encore à vérifier ou décider (non modifié) : ?p=231 annonce « garantie légale de conformité 2 ans » alors que les CGV indiquent 3 ans ; ?p=95 « livré depuis l'Europe » (vrai pour tous les fournisseurs ?).
+21 h 13 (accord de David) : ?p=231, « garantie légale de conformité 2 ans » remplacé par la garantie de 3 ans prévue par les CGV, avec lien.
+
+Encore à vérifier ou décider (non modifié) :
+- ?p=346 (centrale AC70P) : tableau « Garantie : 2 ans légale de conformité (UE) » (CGV et page Retours : 3 ans) ; bloc « Complétez votre installation » vers ?p=88 et ?p=348, tous deux en brouillon.
+- ?p=95 « livré depuis l'Europe » (vrai pour tous les fournisseurs ?).
 
 
 ## Plan d'action proposé (4 semaines)

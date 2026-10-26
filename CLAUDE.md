@@ -52,7 +52,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com (20 h 43) : 7 fiches EcoFlow complétées (?p=601, 623, 539, 546, 739, 525, 563), voir `catalogue/fiches-ecoflow-2026-10-26.md`.
 - solandvolt.com (20 h 51) : 14 autres fiches EcoFlow complétées et 6 titres corrigés (850, 584, 750, 658, 671, 864), voir `catalogue/fiches-ecoflow-lot2-2026-10-26.md`. Batteries STREAM 750, 658, 671 déplacées dans L'Autonomie (21 h 00).
 - solandvolt.com (21 h 05) : textes alternatifs des images principales des 48 produits (29 ajoutés, 5 corrigés), voir `catalogue/textes-alternatifs-images-2026-10-26.md`.
-- solandvolt.com (21 h 06) : catégorie d'articles « Uncategorized » renommée « Guides » (/category/guides/) ; images à la une sur les 5 articles (photos produits) ; articles ?p=231, 229, 412, 95 corrigés (21 h 10, sauvegardes dans `audit/sauvegardes-2026-10-26/articles/`) ; ?p=229 : extension de garantie retirée, garantie légale 3 ans comme les CGV (21 h 12).
+- solandvolt.com (21 h 06) : catégorie d'articles « Uncategorized » renommée « Guides » (/category/guides/) ; images à la une sur les 5 articles (photos produits) ; articles ?p=231, 229, 412, 95 corrigés (21 h 10, sauvegardes dans `audit/sauvegardes-2026-10-26/articles/`) ; ?p=229 : extension de garantie retirée, garantie légale 3 ans comme les CGV (21 h 12) ; ?p=231 : garantie 3 ans (21 h 13).
 
 - solandvolt.com : fiche Tornasol ?p=114 (lien catégorie corrigé, PW1000 remplacée par AC70P) ; catégorie Climatisation créée, produits 339, 42, 46, 112 déplacés, lien de catégorie corrigé sur leurs fiches.
 - Email de demande de fiche technique envoyé à somos@tornasol.energy depuis david@frayservices.com (réponse attendue avant le 05/11).
@@ -72,7 +72,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
 ### Points ouverts sur les sites (non corrigés, à proposer)
-- solandvolt.com, SEO (voir le diagnostic) : 5 fiches EcoFlow encore quasi vides (21 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images de galerie sans texte alternatif et images lourdes (JPEG, pas de WebP) ; à corriger ou vérifier : ?p=231 annonce une garantie légale de 2 ans (CGV : 3 ans) ; « livré depuis l'Europe » (?p=95) ; slugs des kits Tornasol.
+- solandvolt.com, SEO (voir le diagnostic) : 5 fiches EcoFlow encore quasi vides (21 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images de galerie sans texte alternatif et images lourdes (JPEG, pas de WebP) ; à corriger ou vérifier : fiche AC70P ?p=346 (garantie « 2 ans » au lieu de 3, liens vers ?p=88 et ?p=348 en brouillon) ; « livré depuis l'Europe » (?p=95) ; slugs des kits Tornasol.
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
 
