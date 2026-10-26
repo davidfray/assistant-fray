@@ -3,7 +3,7 @@
 Type : commercial saisonnier (« Oct-Nov : meilleure période pour les gros chantiers »).
 Cible : propriétaires français absents, villa ou appartement sur la Costa Brava.
 Langue : français.
-Statut : brouillon, à valider par David.
+Statut : version A retenue par David le 26/10/2026. Version B conservée pour un test ultérieur. Publication après vérification des points ci-dessous et réception d'une vraie photo de chantier.
 Horaires conseillés : Facebook mardi à jeudi, 9 h-11 h ou 18 h-20 h. Instagram lundi à vendredi, 7 h-9 h ou 17 h-19 h.
 
 ---
