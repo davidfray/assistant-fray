@@ -26,11 +26,7 @@ Ensuite : Apparence > Menus, vérifier que les liens des niveaux pointent vers l
 
 | Source(s) | Destination | Pourquoi |
 |---|---|---|
-| `produit/station-denergie-300-w-panneau-solaire-60-w-296-wh-80-000-mah` et `es_es/produit/station-denergie-300-w-panneau-solaire-60-w-296-wh-80-000-mah` | https://www.solandvolt.com/produit/ecoflow-river-3-plus-station-electrique-portable-600-w/ (?p=623) | 286 Wh, la station publiée la plus proche des 296 Wh |
-| `produit/station-denergie-portable-1-800-w-batterie-lifepo4-haute-capacite` | https://www.solandvolt.com/produit/station-electrique-portable-ecoflow-delta-3-1024wh/ (?p=344) | LiFePO4, 1 800 W |
-| `produit/batterie-lifepo4-12-v-200-ah-decharge-profonde-2-560-wh` et `es_es/produit/batterie-lifepo4-12-v-200-ah-decharge-profonde-2-560-wh` | https://www.solandvolt.com/produit/sok-sk12v206h-12v-206ah/ (?p=482) | Batterie LiFePO4 12 V 206 Ah, 2 637 Wh |
 | `produit/frigo-a-compression-12v-40l-conservation-autonome` et `produit/glaciere-electrique-12v-20l-frigo-portable-compression` | https://www.solandvolt.com/produit/ecoflow-glacier-3-refrigerateur-portable-35-l/ (?p=640) | Seul réfrigérateur portable publié (35 L) |
-| `produit/panneau-solaire-ecoflow-400w-400-w-solandvolt` | https://www.solandvolt.com/produit/ecoflow-panneau-solaire-400w/ (?p=563) | Ancien slug du même produit |
 | `produit/panneau-solaire-pliable-ecoflow-nextgen-160w-160-w-solandvolt` | https://www.solandvolt.com/produit/ecoflow-panneau-solaire-160w-v3/ (?p=833) | Ancien slug du 160 W ; V3 retenue par défaut (à confirmer : V2 = ?p=690) |
 
 Les sources `es_es/` couvrent les visites espagnoles vues dans Google Analytics. Si TranslatePress utilise `es_ES/` (majuscules), créer la même ligne avec cette forme, ou attendre le choix d'une forme unique.
@@ -54,3 +50,12 @@ Les sources `es_es/` couvrent les visites espagnoles vues dans Google Analytics.
 ## Contrôles du 26/10/2026
 
 4 contrôles entre 21 h 35 et 21 h 45, depuis un serveur externe (Composio, outil bash distant) : aucune redirection active. Les pages de niveau répondent 200, les anciennes adresses 404. La réponse est générée par WordPress (en-tête no-cache), donc ce n'est pas un problème de cache. Cause à trouver dans Rank Math (module Redirections, statut des lignes). Solution de repli : cPanel o2switch > Domaines > Redirections (301). À reprendre le 27/10.
+
+
+## Mise à jour du 27/10/2026
+
+Le 27/10 entre 9 h 41 et 9 h 58 (heure du site), David a republié volontairement 6 anciens produits : ?p=52 (station 300 W + panneau 60 W), ?p=50 (station 1 800 W), ?p=54 (batterie 200 Ah), ?p=354 (panneau EcoFlow 400 W, ancien slug), ?p=350 (PW2000), ?p=86 (power bank). Leurs anciennes adresses répondent de nouveau 200 : **les 4 lignes correspondantes sont retirées de la liste** (station 300 W en FR et es_es, station 1 800 W, batterie 200 Ah en FR et es_es, panneau 400 W). Il ne faut pas les rediriger, sinon les produits deviendraient inaccessibles.
+
+Restent à créer (8 sources) : les 4 pages de niveau, le frigo 40 L et la glacière 20 L (?p=93 et ?p=90 toujours en brouillon), l'ancien panneau NextGen 160 W (?p=352 en brouillon), la catégorie `category/uncategorized`.
+
+Contrôle du 27/10 (10 h 19 et 11 h environ) : toujours aucune redirection active (`la-veilleuse` 200, `category/uncategorized` 404). Cause toujours à trouver dans Rank Math (module, statut des lignes) ou solution cPanel.
