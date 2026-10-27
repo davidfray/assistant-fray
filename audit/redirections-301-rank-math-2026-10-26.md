@@ -59,3 +59,23 @@ Le 27/10 entre 9 h 41 et 9 h 58 (heure du site), David a republié volontairemen
 Restent à créer (8 sources) : les 4 pages de niveau, le frigo 40 L et la glacière 20 L (?p=93 et ?p=90 toujours en brouillon), l'ancien panneau NextGen 160 W (?p=352 en brouillon), la catégorie `category/uncategorized`.
 
 Contrôle du 27/10 (10 h 19 et 11 h environ) : toujours aucune redirection active (`la-veilleuse` 200, `category/uncategorized` 404). Cause toujours à trouver dans Rank Math (module, statut des lignes) ou solution cPanel.
+
+## Réalisé le 27/10/2026
+
+Diagnostic et saisie faits dans wp-admin (Claude dans Chrome), avec validation de David avant chaque modification.
+
+**Cause.** Le module Redirections de Rank Math était activé et les 6 règles déjà présentes fonctionnaient. Les 8 sources de cette liste n'avaient simplement jamais été saisies. Une seule règle existante échouait : `es_ES/2026/07/21/pourquoi-sol-volt-existe/`, interceptée par la regex générale `^es_ES/(.*)$`.
+
+**Corrections.**
+- Regex générale remplacée par `^es_ES/(?![0-9]{4}/)(.*)$` (ne capte plus les URL datées). Dans les regex Rank Math, ne jamais mettre d'antislash : `\d` est enregistré `20dd`.
+- Règle `?p=344` mise en corbeille (WordPress redirige déjà) ; règle `^es_es/producto/(.*)$` supprimée.
+- 8 règles créées (301, correspondance exacte) et testées en 200 : 4 pages de niveau vers leurs catégories, frigo 40 L et glacière 20 L vers ?p=640, panneau NextGen 160 W vers ?p=833, `category/uncategorized` vers /category/guides/. Rank Math compte 14 règles actives. cPanel o2switch non nécessaire.
+
+**Contenu repris dans les catégories** (pour ne pas perdre le texte des pages de niveau redirigées).
+- Descriptions des catégories 21, 33, 42, 50 réécrites d'après le catalogue réel, avec lien vers l'article ?p=483. Anciennes versions sauvegardées dans le localStorage de wp-admin.
+- Modèle WooCommerce `archive-product` : description affichée sous la grille de produits (original réinitialisable via Apparence > Éditeur).
+- Menu d'en-tête (bloc Navigation 167) : liens Autonomie, La Base, Veilleuse, Module pointent directement vers les catégories.
+
+**Search Console** (`sc-domain:solandvolt.com`, compte Google `/u/1` ; le compte par défaut n'y a pas accès). Du 06/09 au 25/10 : 12 clics, 285 impressions. Les 4 anciennes URLs de niveau : 0 clic, 62 impressions, donc pas de perte de trafic à craindre. À relire fin novembre en filtrant `/categorie-produit/`.
+
+**Reste à faire.** Demander l'indexation des 4 catégories dans la Search Console ; retirer le lien vers l'ancienne batterie 200 Ah sur /boutique/ si elle n'est plus voulue (produit republié, ?p=54) ; consulter Rank Math > 404 Monitor dans une semaine.

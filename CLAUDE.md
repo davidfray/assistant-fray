@@ -22,7 +22,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/constats-solandvolt-2026-10-26.md` | Audit solandvolt.com, corrections faites en ligne, décisions |
 | `audit/diagnostic-seo-solandvolt-2026-10-26.md` | Diagnostic SEO solandvolt.com, plan d'action sur 4 semaines |
 | `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
-| `audit/redirections-301-rank-math-2026-10-26.md` | Liste prête des 12 redirections 301 à saisir dans Rank Math (pages de niveau, anciennes fiches en 404, catégorie de blog) |
+| `audit/redirections-301-rank-math-2026-10-26.md` | Les 8 redirections 301 (pages de niveau, anciennes fiches en 404, catégorie de blog), créées dans Rank Math le 27/10 et testées |
 | `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md` | Guide d'activation du suivi e-commerce GA4 (extension, réglages, test) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
@@ -63,6 +63,12 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com : fiche Tornasol ?p=114 (lien catégorie corrigé, PW1000 remplacée par AC70P) ; catégorie Climatisation créée, produits 339, 42, 46, 112 déplacés, lien de catégorie corrigé sur leurs fiches.
 - Email de demande de fiche technique envoyé à somos@tornasol.energy depuis david@frayservices.com (réponse attendue avant le 05/11).
 
+## Fait en ligne (27/10/2026)
+
+- solandvolt.com, redirections 301 (Claude dans Chrome, validation de David à chaque étape) : le module Redirections de Rank Math était activé et les 6 règles déjà saisies fonctionnaient ; la seule en échec était `es_ES/2026/07/21/pourquoi-sol-volt-existe/`, interceptée par la regex générale `^es_ES/(.*)$`, corrigée en `^es_ES/(?![0-9]{4}/)(.*)$`. Dans les regex Rank Math, ne jamais mettre d'antislash (`\d` devenait `20dd`). Règle `?p=344` mise en corbeille (WordPress redirige déjà), règle `^es_es/producto/(.*)$` supprimée. Les 8 sources de l'audit créées (301, exact) et testées en 200 : 4 pages de niveau vers leurs catégories, frigo 40 L et glacière 20 L vers ?p=640, panneau NextGen 160 W vers ?p=833, `category/uncategorized` vers /category/guides/. cPanel o2switch non nécessaire. Rank Math compte 14 règles actives.
+- solandvolt.com, catégories de niveau : descriptions des 4 catégories (21, 33, 42, 50) réécrites d'après le catalogue réel (retrait de « dropshipping », « frigo 40 L », « appareils médicaux », couverture chauffante déplacée au bon niveau ; L'Autonomie contient déjà 5 produits STREAM/Tornasol 800 W) avec lien vers l'article ?p=483 ; sauvegardes des anciennes descriptions dans le localStorage de wp-admin. Modèle WooCommerce `archive-product` modifié pour afficher la description sous la grille de produits (original réinitialisable via Apparence > Éditeur). Menu d'en-tête (bloc Navigation id 167) : les liens Autonomie, La Base, Veilleuse, Module pointent directement vers les catégories.
+- Search Console de `sc-domain:solandvolt.com` lue dans le Chrome de David avec le compte Google `/u/1` (le compte par défaut n'y a pas accès). Du 06/09 au 25/10 : 12 clics, 285 impressions ; les 4 anciennes URLs de niveau : 0 clic, 62 impressions. À relire fin novembre en filtrant `/categorie-produit/`.
+
 ## En attente
 
 ### De David
@@ -71,13 +77,14 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
 - Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (brouillon Gmail prêt pour Juan Carlos Pinar, à relire et envoyer : `emails/email-fournisseur-ecoflow-infos-fiches.md`) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
-- Sol & Volt, SEO : créer les 4 redirections 301 dans Rank Math (tableau dans le diagnostic), plus l'ancienne batterie 200 Ah (404, 22 impressions) vers ?p=482 et les anciennes URL produits listées dans `audit/search-console-solandvolt-2026-10-26.md` ; choisir /es_es/ ou /es_ES/ dans TranslatePress (les deux sont indexées) ; contrôles restants : bannière Rank Math et PageSpeed ; forme unique du nom de marque.
+- Sol & Volt, SEO : les redirections 301 sont faites (voir « Fait en ligne » du 27/10) ; l'ancienne batterie 200 Ah, la station 300 W, la station 1 800 W et le panneau 400 W sont republiés (?p=54, 52, 50, 354) et ne doivent pas être redirigés. Reste à choisir /es_es/ ou /es_ES/ dans TranslatePress (la règle Rank Math redirige déjà es_ES vers es_es) ; contrôles restants : bannière Rank Math « URL du site modifiée » et PageSpeed ; forme unique du nom de marque ; relire la Search Console fin novembre ; vérifier que les chiffres des descriptions de catégories (300 Wh, 100 W, 768 Wh, 4 096 Wh) restent justes.
 
-- Sol & Volt, SEO, à reprendre le 27/10 : les redirections 301 de `audit/redirections-301-rank-math-2026-10-26.md` ne fonctionnent pas. Elles ont été saisies dans Rank Math le 26/10, mais 4 contrôles en ligne (21 h 35 à 21 h 45) donnent toujours 200 sur les pages de niveau et 404 sur les anciennes adresses, sans cache. Demain : captures de Rank Math (Modules, Redirections) ou saisie dans cPanel o2switch > Domaines > Redirections (301), puis nouveau contrôle par Claude (Composio, outil bash distant, `curl`) ; anciennes fiches produits en 404 (station 300 W, station 1 800 W, batterie 200 Ah, frigo 40 L). Plus urgent : David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers ces pages ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
+- Sol & Volt, SEO : le problème des redirections du 26/10 est résolu le 27/10. En réalité aucune des 8 sources de l'audit n'était saisie dans Rank Math, et une règle regex en interceptait une autre. Résumé dans « Fait en ligne (27/10/2026) ». David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers les pages en 404 ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
 - Sol & Volt, GA4 : aucune balise GA4 (`G-X1JG6B971W`) sur le site au 26/10 (seulement Google Ads `AW-18515270298` via Google for WooCommerce) ; dernière session GA4 le 19/10. Installer « Google Analytics for WooCommerce », puis devise EUR et fuseau Europe/Madrid, puis tester. Guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`. Claude vérifie ensuite par l'API GA4 (temps réel).
 
 ### Rappels programmés
-- 27/10/2026, 9 h (heure de Madrid) : reprendre les redirections 301 de solandvolt.com avec David.
+- 27/10/2026 : rappel du matin sur les redirections 301 traité, plus rien à faire.
+- Fin novembre 2026 : relire la Search Console de solandvolt.com (filtre `/categorie-produit/`) pour mesurer l'effet des catégories enrichies.
 - 05/11/2026 : vérifier la réponse de Tornasol, mettre à jour les fiches ou proposer une relance.
 - 06/11/2026, 9 h (heure de Madrid) : vérifier la réponse du fournisseur EcoFlow ; sans réponse, préparer une relance en espagnol (nouvelle échéance au 13/11) et la soumettre à David avant envoi.
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
@@ -108,6 +115,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 |---|---|---|
 | 26/10/2026 | Claude Code | Agent Reach, veille kits balcon, articles kit balcon (FR/ES), Wh, hiver, fiche Tornasol, emails syndic et Tornasol, réponses types, calendriers et posts Sol & Volt (nov.-déc.) et Fray (nov.), audits et corrections des deux sites, mémoire des projets, règles Cowork / Claude Code, photos des posts Fray du 02/11 et du 04/11 |
 | 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 21 fiches EcoFlow, textes alternatifs des 48 images principales, catégorie Guides, images à la une et correction de 4 articles du blog |
+| 27/10/2026 | Claude dans Chrome (Cowork) puis Claude Code | Redirections 301 Rank Math (diagnostic, correction de la regex es_ES, 8 règles créées et testées), descriptions des 4 catégories de niveau, modèle d'archive produit, menu d'en-tête, lecture de la Search Console, fusion de la branche `ccr-1a772cc3-mb90wj` dans `main` |
 
 ## Mise à jour de ce fichier
 
