@@ -45,5 +45,5 @@ Produits republiés volontairement par David le 27/10 entre 9 h 41 et 9 h 58 (he
 - Capacité en Wh de ?p=50 et ?p=350 (à fournir par David).
 - Doublon ?p=354 / ?p=563 (choix de David).
 - ?p=86 publié **sans image** (aucune image à la une) : ajouter une vraie photo.
-- ?p=52 : l'extrait annonce « autonomie complète » pour 296 Wh ; à reformuler (par exemple « pour l'essentiel pendant une coupure »).
+- ?p=52 : extrait corrigé le 27/10 à 10 h 10 (« 296 Wh pour recharger vos appareils essentiels pendant une coupure »).
 - Prix, stock et classe d'expédition des 6 produits (non accessibles par le connecteur).
