@@ -26,3 +26,24 @@ Produits republiés volontairement par David le 27/10 entre 9 h 41 et 9 h 58 (he
 5. ?p=354 : choisir entre garder ?p=563 seule (et rediriger l'ancien slug vers elle) ou garder les deux avec des contenus distincts. Recommandé : une seule fiche.
 6. Titres : retirer les doublons de puissance et les suffixes « — Solandvolt ».
 7. Capacités Wh de ?p=50 et ?p=350 : à fournir par David, ne rien inventer.
+
+## Corrections faites en ligne (27/10/2026, 10 h 07 à 10 h 08, heure du site), avec l'accord de David
+
+| ID | Modifications |
+|---|---|
+| 50 | Titre « Power Station 1800W LiFePO4 » ; garantie 3 ans (CGV) ; liens vers ?p=93 et ?p=88 (brouillons) remplacés par Glacier 3 ?p=640 et panneau EcoFlow 110 W ?p=525 ; titre de bloc « Voir aussi » |
+| 54 | Titre sans suffixe « — Solandvolt » ; garantie 3 ans (CGV) |
+| 350 | Titre « Centrale électrique portable PW2000 » ; garantie 3 ans (CGV) ; liens vers ?p=88 et ?p=348 remplacés par ?p=525 et DELTA 3 ?p=344 ; « Voir aussi » |
+| 52 | Titre « Power Station 300W + panneau solaire 60W » ; garantie 3 ans (CGV) ; « autonomie de 48h » remplacé par « une soirée à une journée d'autonomie pour l'essentiel » ; liens vers ?p=88 et ?p=93 remplacés par ?p=525 et ?p=640 ; « Voir aussi » |
+| 354 | Lien vers ?p=348 remplacé par ?p=344 ; « Voir aussi » |
+| 86 | Lien vers le rafraîchisseur ?p=42 remplacé par le chargeur solaire ?p=84 |
+
+« Voir aussi » remplace « Complétez votre installation » là où les produits liés ont changé : la compatibilité entre ces produits n'est pas vérifiée.
+
+## Restent à traiter
+
+- Capacité en Wh de ?p=50 et ?p=350 (à fournir par David).
+- Doublon ?p=354 / ?p=563 (choix de David).
+- ?p=86 publié **sans image** (aucune image à la une) : ajouter une vraie photo.
+- ?p=52 : l'extrait annonce « autonomie complète » pour 296 Wh ; à reformuler (par exemple « pour l'essentiel pendant une coupure »).
+- Prix, stock et classe d'expédition des 6 produits (non accessibles par le connecteur).
