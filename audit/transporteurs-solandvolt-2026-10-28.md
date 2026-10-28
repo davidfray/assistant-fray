@@ -13,10 +13,10 @@ Poids d'expédition des produits EcoFlow vendus sur le site (fichier Innov8 du 2
 | Tranche | Produits | Nombre |
 |---|---|---|
 | Jusqu'à 10 kg | Câble, powerbank, panneaux 45 à 220 W, Trail 200DC, River 3 Plus (6,1 kg), River 2 Max (7,2 kg), River 2 Pro (9,1 kg) | 15 |
-| 10 à 30 kg | Panneau 400 W (12,3 kg), tracker (12,6 kg), DELTA 3 et 3 Plus (14,7 kg), Glacier 3 (22,7 kg), DELTA 3 Max Plus (23,4 kg), STREAM AC Pro, Pro et Ultra (24 à 27 kg) | 9 |
+| 10 à 30 kg | Panneau 400 W (19,3 kg, voir remarque), tracker (12,6 kg), DELTA 3 et 3 Plus (14,7 kg), Glacier 3 (22,7 kg), DELTA 3 Max Plus (23,4 kg), STREAM AC Pro, Pro et Ultra (24 à 27 kg) | 9 |
 | Plus de 40 kg | STREAM Ultra X (44 kg), DELTA Pro 3 (56,2 kg) | 2 |
 
-Remarque : la fiche du panneau 400 W ?p=563 indique un poids d'expédition de 19,30 kg, alors que le fichier corrigé d'Innov8 indique 12,30 kg. À corriger.
+Remarque : pour le panneau 400 W (ECF0015), le fichier Innov8 du 28/10 indique 12,30 kg, alors que le panneau seul pèse environ 16 kg. C'est donc le fichier qui est faux : la fiche ?p=563 garde 19,30 kg, valeur initiale d'Innov8. À signaler à Innov8 (Juan Carlos Pinar).
 
 ## Comparatif
 
@@ -37,7 +37,7 @@ Les prix réels ne sont pas publics : il faut les demander (A, B) ou les simuler
 
 1. **Démarrer avec Packlink PRO, plan gratuit.** Pas de contrat ni de minimum, l'adresse d'enlèvement peut être celle d'Innov8, l'extension WooCommerce existe, et l'on peut choisir pour chaque envoi un transporteur qui accepte le lithium. C'est la seule option qui permette d'expédier dès la première commande, y compris les 3 River 3 Plus des influenceurs.
 2. **Demander en parallèle une offre à GLS et à SEUR** (email ci-dessous), pour passer en contrat direct dès que le volume dépasse environ 20 colis par mois.
-3. **Plus de 40 kg** (STREAM Ultra X, DELTA Pro 3) : afficher « livraison sur devis » sur ces fiches tant qu'aucun transporteur n'est confirmé pour ces poids.
+3. **Plus de 40 kg** (STREAM Ultra X, DELTA Pro 3) : « livraison sur devis » ajouté sur les fiches ?p=750 et ?p=584 le 28/10 (19 h 13), dans l'extrait et dans une section « Livraison sur devis » avec l'adresse contact@solandvolt.com.
 4. **Avant le premier envoi** : vérifier dans Packlink que le transporteur choisi accepte les batteries lithium, et coller l'étiquette lithium (UN3481) si elle est exigée. Demander à Innov8 si les cartons EcoFlow d'origine portent déjà ce marquage.
 
 ## Email de demande d'offre (espagnol, envoyé par David à GLS et à SEUR)
