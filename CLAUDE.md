@@ -28,7 +28,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
-| `social/` | Posts Sol & Volt (kit balcon, Wh, décembre) et calendrier de décembre |
+| `social/` | Posts Sol & Volt (kit balcon, Wh, décembre), calendrier de décembre, plan influenceurs Instagram (`influenceurs-solandvolt-2026-10-28.md`) |
 | `emails/` | Modèle email syndic, demande fiche technique Tornasol (envoyée), demande d'informations au fournisseur EcoFlow (brouillon) |
 | `service-client/` | Réponses types FR/ES (kit balcon, Wh) |
 | `fray/social/` | Calendrier et posts Fray Services de novembre |
@@ -86,6 +86,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, GA4 : aucune balise GA4 (`G-X1JG6B971W`) sur le site au 26/10 (seulement Google Ads `AW-18515270298` via Google for WooCommerce) ; dernière session GA4 le 19/10. Installer « Google Analytics for WooCommerce », puis devise EUR et fuseau Europe/Madrid, puis tester. Guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`. Claude vérifie ensuite par l'API GA4 (temps réel).
 
 - Sol & Volt, 6 produits republiés : capacité en Wh de ?p=50 et ?p=350, doublon ?p=354 / ?p=563 (recommandé : garder ?p=563 une fois les redirections actives), photo de ?p=86, prix, stock et classe d'expédition.
+- Sol & Volt, influenceurs : vérifier les abonnés dans l'application Instagram, retenir 10 comptes, fixer le budget (stations offertes, commission, publicité de test). Plan : `social/influenceurs-solandvolt-2026-10-28.md`. Pas d'extraction d'abonnés ni de messages en masse (conditions Instagram, RGPD).
 - Remote Control : David ajoutera le dossier `assistant-fray` dans Claude Desktop > Réglages > Claude Code > Remote Control (Mac ou Linux), pour que les sessions cloud puissent travailler dans ses fichiers.
 
 ### Rappels programmés
@@ -123,6 +124,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 21 fiches EcoFlow, textes alternatifs des 48 images principales, catégorie Guides, images à la une et correction de 4 articles du blog |
 | 27/10/2026 | Claude dans Chrome (Cowork) puis Claude Code | Redirections 301 Rank Math (diagnostic, correction de la regex es_ES, 8 règles créées et testées), descriptions des 4 catégories de niveau, modèle d'archive produit, menu d'en-tête, lecture de la Search Console, fusion de la branche `ccr-1a772cc3-mb90wj` dans `main` |
 | 27/10/2026 | Claude Code | Contrôle des redirections 301 (inactives), liste ramenée à 8 sources, relecture et correction de 6 produits republiés, liste des redirections pour Cowork |
+| 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition d'abonnés sur 8 semaines, messages d'approche FR/ES |
 
 ## Mise à jour de ce fichier
 
