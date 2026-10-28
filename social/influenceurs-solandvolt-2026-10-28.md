@@ -130,10 +130,10 @@ Sol & Volt
 
 **Coût indicatif :**
 - 3 stations offertes : 777 € TTC en valeur de vente. Coût réel = 3 × prix d'achat + 3 envois (colis de 4,5 kg). Prix d'achat à fournir par David.
-- Par vente avec code (10 % de remise client, 10 % de commission sur le montant payé) : client 233,10 €, commission 23,31 €, reste 209,79 € avant prix d'achat.
+- ~~Par vente avec code (10 % de remise client)~~ : remise interdite sur EcoFlow (PVP minimum), calcul remplacé par la section 11.
 - Seuil : l'opération est rentable quand la marge des ventes générées couvre le coût des 3 stations.
 
-**Créateurs déjà rémunérés pour parler de stations EcoFlow** (codes affiliés EcoFlow à 5 %). Atout pour Sol & Volt : 10 % de commission, contre 5 % de remise chez EcoFlow, et un public francophone ou espagnol. Abonnés Instagram non vérifiés.
+**Créateurs déjà rémunérés pour parler de stations EcoFlow** (codes affiliés EcoFlow à 5 %). Atout pour Sol & Volt : 10 % de commission pour le créateur, et un public francophone ou espagnol. Abonnés Instagram non vérifiés.
 
 | Créateur | Langue | Preuve trouvée | Priorité |
 |---|---|---|---|
