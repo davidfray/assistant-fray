@@ -37,7 +37,7 @@ Date : 28/10/2026. Statut : brouillon. Décisions du 28/10 : River 3 Plus ?p=623
 ### Semaines 1 et 2 : préparer le terrain
 - Publier les fiches encore en brouillon (?p=94, 87, 88) et ajouter de vraies photos : un créateur vérifie le site avant d'accepter.
 - Activer le suivi e-commerce GA4 (guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`). Sans lui, impossible de savoir quel créateur fait vendre.
-- Créer un code promo WooCommerce par créateur (par exemple `NOMADE10`, 10 % de remise) et un lien avec paramètres UTM (`?utm_source=instagram&utm_medium=influence&utm_campaign=nom-createur`).
+- Créer un code promo WooCommerce par créateur (par exemple `NOMADE`, 0 % de remise : sur EcoFlow, aucune remise sous le prix conseillé) et un lien avec paramètres UTM (`?utm_source=instagram&utm_medium=influence&utm_campaign=nom-createur`).
 
 ### Semaines 2 à 4 : engagement (gratuit)
 - 15 minutes par jour depuis @solandvolt : commenter de façon utile 5 publications des comptes de la liste (une réponse technique, pas « super post »).
@@ -79,7 +79,7 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 J'ai vu votre publication sur [sujet précis]. Votre façon d'expliquer [détail] correspond à ce que nos clients cherchent.
 
-Je vous propose de tester la River 3 (245 Wh) pendant un mois. Si elle vous convient, nous préparons ensemble une publication en collaboration, avec un code promo pour votre communauté et une commission sur chaque vente.
+Je vous propose de tester la River 3 Plus (286 Wh, 600 W) pendant un mois. Si elle vous convient, nous préparons ensemble une publication en collaboration, avec un lien et un code de suivi à votre nom, et 10 % de commission sur chaque vente.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
@@ -96,7 +96,7 @@ Soy David, de Sol & Volt (solandvolt.com). Vendemos estaciones eléctricas y pan
 
 He visto su publicación sobre [tema concreto]. Su manera de explicar [detalle] encaja con lo que buscan nuestros clientes.
 
-Le propongo probar la River 3 (245 Wh) durante un mes. Si le convence, preparamos juntos una publicación en colaboración, con un código de descuento para su comunidad y una comisión por cada venta.
+Le propongo probar la River 3 Plus (286 Wh, 600 W) durante un mes. Si le convence, preparamos juntos una publicación en colaboración, con un enlace y un código de seguimiento a su nombre, y un 10 % de comisión por cada venta.
 
 ¿Le parece bien que le envíe los detalles? Con una respuesta breve es suficiente.
 
