@@ -69,6 +69,9 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com, catégories de niveau : descriptions des 4 catégories (21, 33, 42, 50) réécrites d'après le catalogue réel (retrait de « dropshipping », « frigo 40 L », « appareils médicaux », couverture chauffante déplacée au bon niveau ; L'Autonomie contient déjà 5 produits STREAM/Tornasol 800 W) avec lien vers l'article ?p=483 ; sauvegardes des anciennes descriptions dans le localStorage de wp-admin. Modèle WooCommerce `archive-product` modifié pour afficher la description sous la grille de produits (original réinitialisable via Apparence > Éditeur). Menu d'en-tête (bloc Navigation id 167) : les liens Autonomie, La Base, Veilleuse, Module pointent directement vers les catégories.
 - Search Console de `sc-domain:solandvolt.com` lue dans le Chrome de David avec le compte Google `/u/1` (le compte par défaut n'y a pas accès). Du 06/09 au 25/10 : 12 clics, 285 impressions ; les 4 anciennes URLs de niveau : 0 clic, 62 impressions. À relire fin novembre en filtrant `/categorie-produit/`.
 
+- solandvolt.com (27/10, 10 h 07 à 10 h 10) : 6 produits republiés par David le matin (?p=50, 52, 54, 86, 350, 354) corrigés : garantie 3 ans (CGV), liens vers brouillons remplacés, titres nettoyés, promesse « 48h » retirée de ?p=52, lien Climatisation retiré de ?p=86. Détail : `audit/relecture-6-produits-republies-2026-10-27.md`.
+- Redirections 301 : liste ramenée à 8 sources le 27/10 (les anciennes adresses de ?p=50, 52, 54 et 354 répondent de nouveau, ne pas les rediriger). Toujours inactives au contrôle du 27/10.
+
 ## En attente
 
 ### De David
@@ -81,6 +84,9 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 - Sol & Volt, SEO : le problème des redirections du 26/10 est résolu le 27/10. En réalité aucune des 8 sources de l'audit n'était saisie dans Rank Math, et une règle regex en interceptait une autre. Résumé dans « Fait en ligne (27/10/2026) ». David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers les pages en 404 ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
 - Sol & Volt, GA4 : aucune balise GA4 (`G-X1JG6B971W`) sur le site au 26/10 (seulement Google Ads `AW-18515270298` via Google for WooCommerce) ; dernière session GA4 le 19/10. Installer « Google Analytics for WooCommerce », puis devise EUR et fuseau Europe/Madrid, puis tester. Guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`. Claude vérifie ensuite par l'API GA4 (temps réel).
+
+- Sol & Volt, 6 produits republiés : capacité en Wh de ?p=50 et ?p=350, doublon ?p=354 / ?p=563 (recommandé : garder ?p=563 une fois les redirections actives), photo de ?p=86, prix, stock et classe d'expédition.
+- Remote Control : David ajoutera le dossier `assistant-fray` dans Claude Desktop > Réglages > Claude Code > Remote Control (Mac ou Linux), pour que les sessions cloud puissent travailler dans ses fichiers.
 
 ### Rappels programmés
 - 27/10/2026 : rappel du matin sur les redirections 301 traité, plus rien à faire.
@@ -116,6 +122,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 26/10/2026 | Claude Code | Agent Reach, veille kits balcon, articles kit balcon (FR/ES), Wh, hiver, fiche Tornasol, emails syndic et Tornasol, réponses types, calendriers et posts Sol & Volt (nov.-déc.) et Fray (nov.), audits et corrections des deux sites, mémoire des projets, règles Cowork / Claude Code, photos des posts Fray du 02/11 et du 04/11 |
 | 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 21 fiches EcoFlow, textes alternatifs des 48 images principales, catégorie Guides, images à la une et correction de 4 articles du blog |
 | 27/10/2026 | Claude dans Chrome (Cowork) puis Claude Code | Redirections 301 Rank Math (diagnostic, correction de la regex es_ES, 8 règles créées et testées), descriptions des 4 catégories de niveau, modèle d'archive produit, menu d'en-tête, lecture de la Search Console, fusion de la branche `ccr-1a772cc3-mb90wj` dans `main` |
+| 27/10/2026 | Claude Code | Contrôle des redirections 301 (inactives), liste ramenée à 8 sources, relecture et correction de 6 produits republiés, liste des redirections pour Cowork |
 
 ## Mise à jour de ce fichier
 
