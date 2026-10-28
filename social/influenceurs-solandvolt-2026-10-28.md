@@ -124,6 +124,31 @@ Sol & Volt
 - Lien pour les créateurs : https://www.solandvolt.com/produit/ecoflow-river-3-ups-station-electrique-portable-245-wh-300-w/
 - Prix et stock : non lisibles par le connecteur WordPress. À fournir par David (WooCommerce > Produits > ?p=601), ainsi que le prix d'achat fournisseur pour calculer le coût des 3 stations.
 
+## 9. Créateurs identifiés et coût de l'opération (28/10, suite)
+
+**River 3 ?p=601 (API publique de la boutique, 28/10) :** 259,00 € TTC, « En stock » (quantité non affichée), SKU SV-ECF0039, catégorie Le Module.
+
+**Coût indicatif :**
+- 3 stations offertes : 777 € TTC en valeur de vente. Coût réel = 3 × prix d'achat + 3 envois (colis de 4,5 kg). Prix d'achat à fournir par David.
+- Par vente avec code (10 % de remise client, 10 % de commission sur le montant payé) : client 233,10 €, commission 23,31 €, reste 209,79 € avant prix d'achat.
+- Seuil : l'opération est rentable quand la marge des ventes générées couvre le coût des 3 stations.
+
+**Créateurs déjà rémunérés pour parler de stations EcoFlow** (codes affiliés EcoFlow à 5 %). Atout pour Sol & Volt : 10 % de commission, contre 5 % de remise chez EcoFlow, et un public francophone ou espagnol. Abonnés Instagram non vérifiés.
+
+| Créateur | Langue | Preuve trouvée | Priorité |
+|---|---|---|---|
+| Un van sur la route (Instagram `un_van_sur_la_route`) | FR | Concours Instagram en partenariat avec EcoFlow (2022), article River Max | 1 |
+| Léon Le Daron (leonledaron.com) | FR | Guides « kit solaire van » et « quelle batterie EcoFlow choisir », code LEONLEDARON | 1 |
+| Péripléties (peripleties.fr) | FR | Test de la DELTA, code EcoFlow | 1 |
+| Vanlife France (vanlife-france.com) | FR | Page de codes promo d'équipement, partenariats déclarés | 2 |
+| La Planète de Caro (laplanetedecaro.com) | FR | Code CARO5 chez EcoFlow | 2 |
+| La Furgo Deliante (lafurgodeliante.com) | ES | Page de codes pour furgonetas camper | 2 |
+| Accamper (accamper.com) | ES | Page de codes EcoFlow, série STREAM | 3, plutôt un site de bons plans |
+
+À faire ensuite : retrouver le compte Instagram de chacun (lien en pied de page de leur site) et lire le nombre d'abonnés dans l'application. Le premier message part vers les 3 créateurs de priorité 1.
+
+Sources : [unvansurlaroute.com, concours EcoFlow](https://www.unvansurlaroute.com/concours-et-soldes-ecoflow/), [leonledaron.com, batterie EcoFlow](https://leonledaron.com/vanlife-overland/quelle-batterie-ecoflow-choisir/), [peripleties.fr, test DELTA](https://www.peripleties.fr/batterie-ecoflow-delta-avis/), [vanlife-france.com, codes promo](https://vanlife-france.com/tous-mes-codes-promo-exclusifs-pour-amenager-et-equiper-votre-van-reductions-et-bons-plans/), [laplanetedecaro.com, code EcoFlow](https://www.laplanetedecaro.com/code-promo-offre-reduction-ecoflow/), [lafurgodeliante.com, códigos](https://lafurgodeliante.com/en/codigos-descuento/), [accamper.com, código EcoFlow](https://www.accamper.com/codigo-descuento-ecoflow/).
+
 ## Sources
 
 - [HypeAuditor, catégorie Instagram « solar »](https://hypeauditor.com/instagram-category-solar)
