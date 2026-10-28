@@ -1,6 +1,6 @@
 # Sol & Volt : influenceurs Instagram et plan d'acquisition d'abonnés
 
-Date : 28/10/2026. Statut : brouillon. Décisions du 28/10 : River 3 ?p=601, 3 stations, commission 10 %. Aucun contact pris, aucune publication.
+Date : 28/10/2026. Statut : brouillon. Décisions du 28/10 : River 3 Plus ?p=623 (la River 3 ?p=601 est en rupture chez Innov8), 3 stations, commission 10 %, aucune remise client sur EcoFlow. Aucun contact pris, aucune publication.
 
 ## 1. Ce que les outils permettent, et ce qu'ils ne permettent pas
 
@@ -106,7 +106,7 @@ Sol & Volt
 ## 7. À décider par David
 
 - [x] Budget : 3 stations offertes, commission de 10 % sur les ventes avec code promo (décision de David, 28/10).
-- [x] Produit de test : River 3 UPS 245 Wh ?p=601 (28/10).
+- [x] Produit de test : River 3 Plus ?p=623, 286 Wh, 600 W (28/10, remplace la River 3 ?p=601 en rupture chez Innov8).
 - [ ] Les 10 comptes retenus après vérification dans l'application.
 - [ ] Budget publicité de test (proposé : 5 à 10 € par jour, 7 jours).
 
@@ -163,7 +163,7 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 J'ai lu votre article sur la River Max et vu votre concours avec EcoFlow. Vous expliquez l'énergie en van de façon concrète, c'est ce que cherchent nos clients.
 
-Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente.
+Je vous propose de tester la River 3 Plus (286 Wh, 600 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
@@ -180,7 +180,7 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 Votre guide « Quelle batterie EcoFlow choisir » répond exactement aux questions que nos clients nous posent.
 
-Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente. Un lien depuis votre guide est aussi possible, aux mêmes conditions.
+Je vous propose de tester la River 3 Plus (286 Wh, 600 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente. Un lien depuis votre guide est aussi possible, aux mêmes conditions.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
@@ -195,7 +195,7 @@ Bonjour,
 
 Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électriques et des panneaux solaires, livrés en France et en Espagne.
 
-Votre test de la DELTA est l'un des plus complets que j'ai lus. La River 3 serait un bon complément pour les lecteurs qui cherchent plus petit et moins cher.
+Votre test de la DELTA est l'un des plus complets que j'ai lus. La River 3 Plus serait un bon complément pour les lecteurs qui cherchent plus petit et moins cher.
 
 Je vous propose de la tester pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente.
 
@@ -227,7 +227,7 @@ Sol & Volt
 
 **Alternative en stock : River 3 Plus ?p=623 (ECF0043), 53 unités chez Innov8.** 299,00 € TTC (247,11 € HT), achat 210,04 € HT, marge 37,07 € HT ; commission 10 % = 24,71 €, il reste 12,36 € HT avant transport ; 3 stations offertes = 630,11 € HT d'achat.
 
-**Conséquence :** avec 15 % de marge, une commission de 10 % laisse 10 à 12 € par vente avant transport. Les ventes générées ne rembourseront pas les 3 stations offertes : l'opération est surtout une dépense de notoriété (environ 550 à 630 € HT plus transport). À décider par David : garder 10 % ou passer à 5 %, et River 3 (à recommander) ou River 3 Plus (en stock).
+**Conséquence :** avec 15 % de marge, une commission de 10 % laisse 10 à 12 € par vente avant transport. Les ventes générées ne rembourseront pas les 3 stations offertes : l'opération est surtout une dépense de notoriété (environ 550 à 630 € HT plus transport). Décision de David (28/10) : River 3 Plus, commission 10 % maintenue.
 
 **Autres références EcoFlow à 0 en stock chez Innov8 et affichées « En stock » sur le site :** ECF0061 panneau 160 W V2 (?p=690), ECF0068 DELTA 3 Max (?p=739). Stock faible (1 à 3) : ECF0015 (?p=563), ECF0030 (?p=573), ECF0046 (?p=640), ECF0050 (?p=658), ECF0070 (?p=750), ECF0071 (?p=768), ECF0072 (?p=776).
 
