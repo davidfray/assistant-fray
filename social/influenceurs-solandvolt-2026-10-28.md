@@ -124,6 +124,88 @@ Sol & Volt
 - Lien pour les créateurs : https://www.solandvolt.com/produit/ecoflow-river-3-ups-station-electrique-portable-245-wh-300-w/
 - Prix et stock : non lisibles par le connecteur WordPress. À fournir par David (WooCommerce > Produits > ?p=601), ainsi que le prix d'achat fournisseur pour calculer le coût des 3 stations.
 
+## 9. Créateurs identifiés et coût de l'opération (28/10, suite)
+
+**River 3 ?p=601 (API publique de la boutique, 28/10) :** 259,00 € TTC, « En stock » (quantité non affichée), SKU SV-ECF0039, catégorie Le Module.
+
+**Coût indicatif :**
+- 3 stations offertes : 777 € TTC en valeur de vente. Coût réel = 3 × prix d'achat + 3 envois (colis de 4,5 kg). Prix d'achat à fournir par David.
+- Par vente avec code (10 % de remise client, 10 % de commission sur le montant payé) : client 233,10 €, commission 23,31 €, reste 209,79 € avant prix d'achat.
+- Seuil : l'opération est rentable quand la marge des ventes générées couvre le coût des 3 stations.
+
+**Créateurs déjà rémunérés pour parler de stations EcoFlow** (codes affiliés EcoFlow à 5 %). Atout pour Sol & Volt : 10 % de commission, contre 5 % de remise chez EcoFlow, et un public francophone ou espagnol. Abonnés Instagram non vérifiés.
+
+| Créateur | Langue | Preuve trouvée | Priorité |
+|---|---|---|---|
+| Un van sur la route (Instagram `un_van_sur_la_route`) | FR | Concours Instagram en partenariat avec EcoFlow (2022), article River Max | 1 |
+| Léon Le Daron (leonledaron.com) | FR | Guides « kit solaire van » et « quelle batterie EcoFlow choisir », code LEONLEDARON | 1 |
+| Péripléties (peripleties.fr) | FR | Test de la DELTA, code EcoFlow | 1 |
+| Vanlife France (vanlife-france.com) | FR | Page de codes promo d'équipement, partenariats déclarés | 2 |
+| La Planète de Caro (laplanetedecaro.com) | FR | Code CARO5 chez EcoFlow | 2 |
+| La Furgo Deliante (lafurgodeliante.com) | ES | Page de codes pour furgonetas camper | 2 |
+| Accamper (accamper.com) | ES | Page de codes EcoFlow, série STREAM | 3, plutôt un site de bons plans |
+
+À faire ensuite : retrouver le compte Instagram de chacun (lien en pied de page de leur site) et lire le nombre d'abonnés dans l'application. Le premier message part vers les 3 créateurs de priorité 1.
+
+Sources : [unvansurlaroute.com, concours EcoFlow](https://www.unvansurlaroute.com/concours-et-soldes-ecoflow/), [leonledaron.com, batterie EcoFlow](https://leonledaron.com/vanlife-overland/quelle-batterie-ecoflow-choisir/), [peripleties.fr, test DELTA](https://www.peripleties.fr/batterie-ecoflow-delta-avis/), [vanlife-france.com, codes promo](https://vanlife-france.com/tous-mes-codes-promo-exclusifs-pour-amenager-et-equiper-votre-van-reductions-et-bons-plans/), [laplanetedecaro.com, code EcoFlow](https://www.laplanetedecaro.com/code-promo-offre-reduction-ecoflow/), [lafurgodeliante.com, códigos](https://lafurgodeliante.com/en/codigos-descuento/), [accamper.com, código EcoFlow](https://www.accamper.com/codigo-descuento-ecoflow/).
+
+## 10. Messages personnalisés, priorité 1 (David les envoie)
+
+Envoi conseillé : par le formulaire de contact ou l'email de leur site (plus lu qu'un message privé Instagram venant d'un compte inconnu). Sujet traité dans leur contenu, à vérifier sur leur site avant envoi.
+
+### Un van sur la route
+
+**Objet :** River 3 à tester, partenariat Sol & Volt
+
+Bonjour,
+
+Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électriques et des panneaux solaires, livrés en France et en Espagne.
+
+J'ai lu votre article sur la River Max et vu votre concours avec EcoFlow. Vous expliquez l'énergie en van de façon concrète, c'est ce que cherchent nos clients.
+
+Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour votre communauté et 10 % de commission pour vous sur chaque vente.
+
+Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
+
+David
+Sol & Volt
+
+### Léon Le Daron
+
+**Objet :** River 3 à tester, partenariat Sol & Volt
+
+Bonjour Léon,
+
+Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électriques et des panneaux solaires, livrés en France et en Espagne.
+
+Votre guide « Quelle batterie EcoFlow choisir » répond exactement aux questions que nos clients nous posent.
+
+Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour vos lecteurs et 10 % de commission pour vous sur chaque vente. Un lien depuis votre guide est aussi possible, aux mêmes conditions.
+
+Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
+
+David
+Sol & Volt
+
+### Péripléties
+
+**Objet :** River 3 à tester, partenariat Sol & Volt
+
+Bonjour,
+
+Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électriques et des panneaux solaires, livrés en France et en Espagne.
+
+Votre test de la DELTA est l'un des plus complets que j'ai lus. La River 3 serait un bon complément pour les lecteurs qui cherchent plus petit et moins cher.
+
+Je vous propose de la tester pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour votre communauté et 10 % de commission pour vous sur chaque vente.
+
+Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
+
+David
+Sol & Volt
+
+**Avant envoi :** vérifier que chaque créateur n'a pas d'exclusivité avec EcoFlow ; préparer les 3 codes WooCommerce (`VANROUTE10`, `LEON10`, `PERIPLE10`, 10 %, usage illimité, sans date de fin pour le test) ; mention « Produit offert » ou « Partenariat rémunéré » obligatoire sur leurs contenus.
+
 ## Sources
 
 - [HypeAuditor, catégorie Instagram « solar »](https://hypeauditor.com/instagram-category-solar)
