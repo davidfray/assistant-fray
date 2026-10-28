@@ -38,18 +38,21 @@ Stock faible chez Innov8 (à surveiller, laisser en stock) : ECF0015 ?p=563 (1),
 
 Ne pas choisir « En réapprovisionnement » : le site accepterait la commande sans date de livraison connue.
 
-## 3. Synchronisation automatique (n8n)
+## 3. Synchronisation automatique (Make, créée le 28/10)
 
-Innov8 envoie chaque matin vers 7 h 30 le fichier `Innov8Iberia-Ecoflow.csv` à david@frayservices.com (colonnes : SKU, EAN, nom, « In stock? », Stock, poids, PVP HT, images). Le SKU du site est le même précédé de `SV-` (ECF0039 devient SV-ECF0039).
+n8n n'est plus utilisé (David, 28/10). Deux scénarios créés dans Make (organisation Fray Services, équipe My Team), **inactifs** :
 
-Scénario proposé :
-1. **Déclencheur Gmail** : nouveau message de sac@innov8iberia.com avec la pièce jointe `Innov8Iberia-Ecoflow.csv`.
-2. **Extraire le fichier** : lecture du CSV (séparateur virgule, texte entre guillemets).
-3. **Pour chaque ligne** : chercher le produit WooCommerce par SKU `SV-` + SKU.
-4. **Mettre à jour** : si Stock = 0, état « En rupture de stock » ; sinon « En stock ». Option : activer la gestion du stock et recopier la quantité.
-5. **Contrôle du prix** : si le prix du site TTC est inférieur à PVP HT × 1,21, ne rien modifier et l'ajouter au rapport (risque de vente sous le PVP).
-6. **Rapport par email** à David : produits passés en rupture ou revenus en stock, prix à vérifier.
+| Scénario | ID Make | Déclenchement | Rôle |
+|---|---|---|---|
+| Solandvolt - Stock Innov8 EcoFlow vers WooCommerce | 8239857 | Tous les jours à 8 h 30 | Lit le dernier email de sac@innov8iberia.com avec `Innov8Iberia-Ecoflow.csv`, met chaque produit EcoFlow du site « En stock » ou « En rupture » selon la colonne « In stock? », puis envoie un rapport à david@frayservices.com (références à 3 unités ou moins) |
+| Solandvolt - Codes de suivi influenceurs (une seule fois) | 8239861 | À la demande | Crée les codes `vanroute`, `leon`, `periple` (remise panier fixe de 0 €) |
 
-Prérequis côté David : une clé API WooCommerce en lecture et écriture (WooCommerce > Réglages > Avancé > API REST > Ajouter une clé), enregistrée directement dans les identifiants n8n. La clé ne doit être ni envoyée par email, ni écrite dans ce dépôt.
+Blueprints sauvegardés : `automatisations/make/`. Le lien entre références Innov8 et fiches du site (29 produits) est écrit dans le module 3 du scénario de stock : à compléter à chaque nouveau produit EcoFlow.
 
-Je peux écrire le scénario n8n complet (fichier JSON à importer) dès que David valide le principe.
+**À faire par David dans Make :**
+1. **Reconnecter Gmail.** La connexion « My Gmail connection » (7091749) est expirée (« Invalid refresh token ») et d'un ancien type, refusé par les modules Gmail actuels. Créer une nouvelle connexion Google (Gmail) pour david@frayservices.com, puis la choisir dans les modules 1 et 6. Le scénario existant « frayservices — Gestion quotidienne emails » utilise la connexion expirée : il est probablement en échec.
+2. **Créer la connexion WooCommerce** (module 4 du scénario de stock et les 3 modules du scénario des codes) : dans WooCommerce > Réglages > Avancé > API REST > Ajouter une clé (droits lecture et écriture), puis coller la clé et le secret dans Make, pas ailleurs.
+3. **Codes :** ouvrir le scénario 8239861, « Run once », vérifier les 3 codes dans WooCommerce > Marketing > Codes promo.
+4. **Stock :** ouvrir le scénario 8239857, « Run once », vérifier ?p=601, 690 et 739 en rupture sur le site, puis activer le scénario.
+
+Limite : le scénario ne contrôle pas les prix. Si Innov8 change un PVP, le rapport ne le signale pas encore.
