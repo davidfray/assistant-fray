@@ -42,7 +42,7 @@ Les prix réels ne sont pas publics : il faut les demander (A, B) ou les simuler
 
 ## Étapes concrètes (mise à jour du 28/10 au soir)
 
-1. **Question à Innov8 (brouillon Gmail créé le 28/10, à relire et envoyer par David)** : quels transporteurs recogen déjà chez eux des produits EcoFlow, lesquels acceptent le lithium vers la France, étiquetage des cartons d'origine, horaires d'enlèvement. Réponse utile avant de signer quoi que ce soit.
+1. **Question à Innov8 (brouillon Gmail créé le 28/10, à relire et envoyer par David)** : quels transporteurs viennent déjà chercher chez eux des produits EcoFlow, lesquels acceptent le lithium vers la France, étiquetage des cartons d'origine, horaires d'enlèvement. Réponse utile avant de signer quoi que ce soit.
 2. **Packlink PRO (David, 10 minutes)** : créer le compte sur packlink.es (rubrique PRO, plan gratuit) avec les données de Solandvolt ; adresse d'enlèvement par défaut : Innov8 Iberia SL, Sant Joan Despí ; simuler un colis de 6,12 kg (River 3 Plus, carton d'environ 40 × 30 × 30 cm, à confirmer) vers Palamós et vers une adresse en France, et noter les transporteurs proposés qui acceptent les batteries lithium.
 3. **GLS et SEUR** : pas d'adresse email commerciale publique. Utiliser le formulaire « empresas » de gls-group.com/ES et de seur.com, en collant le texte ci-dessous.
 
