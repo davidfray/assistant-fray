@@ -116,6 +116,7 @@ Sol & Volt
 - Connecteur Instagram (Composio) : ne lit que @solandvolt et @frayservicespalamos.
 - Connexion Facebook : voit les pages Solandvolt, Fray Services, SereniBrava et « Français & Francophones de Palamós », mais pas le compte Instagram lié (permission manquante). La recherche d'un autre compte par son nom d'utilisateur est donc impossible par ce chemin.
 - **Solution trouvée : Supermetrics, source « Instagram Public Data ».** Elle donne les abonnés et les publications de n'importe quel compte professionnel public, et la recherche par hashtag (publications « Top » ou récentes). Elle n'est pas encore connectée : David doit se connecter une fois avec son compte Instagram professionnel @solandvolt depuis Supermetrics. Ensuite, Claude peut vérifier les comptes et chercher les créateurs par hashtag, sans action de David.
+- **Test du 28/10 après connexion par David :** refus, l'essai gratuit Supermetrics de l'équipe « Team frayservices » a expiré le 17/06/2026. Abonnement payant nécessaire. Limite à connaître : la recherche par hashtag renvoie les publications, pas le nom de leur auteur (règle d'Instagram) ; il faut ouvrir chaque lien.
 - Recherche web complémentaire (energie-nomade.com, watt-nomade.fr, tests River 3 par des créateurs français) : aucun compte Instagram identifié.
 
 **River 3 (?p=601), d'après la fiche en ligne :**
