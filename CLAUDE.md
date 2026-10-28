@@ -50,6 +50,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : pas d'extension de garantie proposée ; la référence est la garantie légale de 3 ans des CGV.
 - Sol & Volt : les batteries de stockage STREAM sont classées au niveau L'Autonomie.
 - Sol & Volt, SEO : option A, les catégories de produits deviennent les pages de référence des 4 niveaux ; les pages /la-veilleuse/, /le-module/, /la-base/, /l-autonomie/ redirigent en 301 vers elles.
+- Sol & Volt, influenceurs (28/10) : River 3 UPS 245 Wh ?p=601 comme produit de test, 3 stations offertes au maximum, commission de 10 % sur les ventes avec code promo.
 - Fray Services, photos : post du 02/11 = chauffe-eau au gaz (`fray/medias/2026-11-02-chauffe-eau-gaz.jpg`, recadrer les étiquettes du fabricant) ; post du 04/11 = « Rénovation salle de bain », média n° 150 de frayservices.com.
 
 ## Fait en ligne (26/10/2026)
@@ -86,7 +87,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, GA4 : aucune balise GA4 (`G-X1JG6B971W`) sur le site au 26/10 (seulement Google Ads `AW-18515270298` via Google for WooCommerce) ; dernière session GA4 le 19/10. Installer « Google Analytics for WooCommerce », puis devise EUR et fuseau Europe/Madrid, puis tester. Guide : `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md`. Claude vérifie ensuite par l'API GA4 (temps réel).
 
 - Sol & Volt, 6 produits republiés : capacité en Wh de ?p=50 et ?p=350, doublon ?p=354 / ?p=563 (recommandé : garder ?p=563 une fois les redirections actives), photo de ?p=86, prix, stock et classe d'expédition.
-- Sol & Volt, influenceurs : vérifier les abonnés dans l'application Instagram, retenir 10 comptes, fixer le budget (stations offertes, commission, publicité de test). Plan : `social/influenceurs-solandvolt-2026-10-28.md`. Pas d'extraction d'abonnés ni de messages en masse (conditions Instagram, RGPD).
+- Sol & Volt, influenceurs : vérifier les abonnés dans l'application Instagram, retenir 10 comptes, fixer le budget de publicité de test (proposé : 5 à 10 € par jour, 7 jours). Plan : `social/influenceurs-solandvolt-2026-10-28.md`. Pas d'extraction d'abonnés ni de messages en masse (conditions Instagram, RGPD).
 - Remote Control : David ajoutera le dossier `assistant-fray` dans Claude Desktop > Réglages > Claude Code > Remote Control (Mac ou Linux), pour que les sessions cloud puissent travailler dans ses fichiers.
 
 ### Rappels programmés
