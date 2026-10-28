@@ -40,6 +40,12 @@ Les prix réels ne sont pas publics : il faut les demander (A, B) ou les simuler
 3. **Plus de 40 kg** (STREAM Ultra X, DELTA Pro 3) : « livraison sur devis » ajouté sur les fiches ?p=750 et ?p=584 le 28/10 (19 h 13), dans l'extrait et dans une section « Livraison sur devis » avec l'adresse contact@solandvolt.com.
 4. **Avant le premier envoi** : vérifier dans Packlink que le transporteur choisi accepte les batteries lithium, et coller l'étiquette lithium (UN3481) si elle est exigée. Demander à Innov8 si les cartons EcoFlow d'origine portent déjà ce marquage.
 
+## Étapes concrètes (mise à jour du 28/10 au soir)
+
+1. **Question à Innov8 (brouillon Gmail créé le 28/10, à relire et envoyer par David)** : quels transporteurs recogen déjà chez eux des produits EcoFlow, lesquels acceptent le lithium vers la France, étiquetage des cartons d'origine, horaires d'enlèvement. Réponse utile avant de signer quoi que ce soit.
+2. **Packlink PRO (David, 10 minutes)** : créer le compte sur packlink.es (rubrique PRO, plan gratuit) avec les données de Solandvolt ; adresse d'enlèvement par défaut : Innov8 Iberia SL, Sant Joan Despí ; simuler un colis de 6,12 kg (River 3 Plus, carton d'environ 40 × 30 × 30 cm, à confirmer) vers Palamós et vers une adresse en France, et noter les transporteurs proposés qui acceptent les batteries lithium.
+3. **GLS et SEUR** : pas d'adresse email commerciale publique. Utiliser le formulaire « empresas » de gls-group.com/ES et de seur.com, en collant le texte ci-dessous.
+
 ## Email de demande d'offre (espagnol, envoyé par David à GLS et à SEUR)
 
 **Asunto:** Solicitud de oferta: envíos e-commerce de estaciones de energía con batería de litio (UN3481)
