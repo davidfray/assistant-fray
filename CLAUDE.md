@@ -69,7 +69,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ## Fait en ligne (28/10/2026)
 
-- solandvolt.com (19 h 02, heure du site), avec l'accord de David : fiches ?p=601 (River 3 UPS), ?p=690 (panneau 160 W V2) et ?p=739 (DELTA 3 Max) passées en **brouillon**, car elles sont en rupture chez Innov8 et le changement d'état du stock fait par David ne s'était pas enregistré. Vérifié : elles ne sont plus en vente (API de la boutique). À republier quand Innov8 aura du stock. Effets : l'accueil (`[products ids="601,344,346"]`) n'affiche plus que 2 stations ; des liens vers ?p=601 (fiches 790, 705, 525) et vers ?p=739 (850, 776, 563, 546) mènent à une page 404.
+- solandvolt.com (19 h 02, heure du site), avec l'accord de David : fiches ?p=601 (River 3 UPS), ?p=690 (panneau 160 W V2) et ?p=739 (DELTA 3 Max) passées en **brouillon**, car elles sont en rupture chez Innov8 et le changement d'état du stock fait par David ne s'était pas enregistré. Vérifié : elles ne sont plus en vente (API de la boutique). À republier quand Innov8 aura du stock. Corrections (19 h 04 à 19 h 05) : accueil, bloc « Nos stations les plus demandées » en `[products ids="623,344,346"]` (River 3 Plus à la place de la River 3) ; liens vers ?p=601 remplacés par ?p=623 sur les fiches 525, 790, 705 (mention « River 3 UPS » remplacée par « River 3 Plus ») ; liens vers ?p=739 remplacés par ?p=850 sur 776, 563, 546 et retirés de 850. Plus aucun lien publié vers 601 ou 739 (vérifié). En republiant 601 ou 739, rétablir ces liens si utile.
 
 ## Fait en ligne (27/10/2026)
 
