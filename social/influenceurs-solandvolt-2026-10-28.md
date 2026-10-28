@@ -163,7 +163,7 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 J'ai lu votre article sur la River Max et vu votre concours avec EcoFlow. Vous expliquez l'énergie en van de façon concrète, c'est ce que cherchent nos clients.
 
-Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour votre communauté et 10 % de commission pour vous sur chaque vente.
+Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
@@ -180,7 +180,7 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 Votre guide « Quelle batterie EcoFlow choisir » répond exactement aux questions que nos clients nous posent.
 
-Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour vos lecteurs et 10 % de commission pour vous sur chaque vente. Un lien depuis votre guide est aussi possible, aux mêmes conditions.
+Je vous propose de tester la River 3 (245 Wh, 300 W) pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente. Un lien depuis votre guide est aussi possible, aux mêmes conditions.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
@@ -197,14 +197,39 @@ Je suis David, de Sol & Volt (solandvolt.com). Nous vendons des stations électr
 
 Votre test de la DELTA est l'un des plus complets que j'ai lus. La River 3 serait un bon complément pour les lecteurs qui cherchent plus petit et moins cher.
 
-Je vous propose de la tester pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un code de 10 % pour votre communauté et 10 % de commission pour vous sur chaque vente.
+Je vous propose de la tester pendant un mois. Elle est à vous ensuite. Si elle vous convient, une publication en collaboration et 3 stories, avec un lien et un code de suivi à votre nom, et 10 % de commission pour vous sur chaque vente.
 
 Êtes-vous d'accord pour que je vous envoie les détails ? Une réponse d'un mot me suffit.
 
 David
 Sol & Volt
 
-**Avant envoi :** vérifier que chaque créateur n'a pas d'exclusivité avec EcoFlow ; préparer les 3 codes WooCommerce (`VANROUTE10`, `LEON10`, `PERIPLE10`, 10 %, usage illimité, sans date de fin pour le test) ; mention « Produit offert » ou « Partenariat rémunéré » obligatoire sur leurs contenus.
+**Avant envoi :** vérifier que chaque créateur n'a pas d'exclusivité avec EcoFlow ; préparer 3 codes de suivi WooCommerce **à 0 % de remise** (`VANROUTE`, `LEON`, `PERIPLE`) : sur EcoFlow, aucune remise sous le prix conseillé (voir section 11) ; mention « Produit offert » ou « Partenariat rémunéré » obligatoire sur leurs contenus.
+
+## 11. Prix d'achat, stock fournisseur et règle de prix (28/10, Gmail et fichier Innov8 Iberia du 28/10)
+
+**Règles confirmées par écrit par Innov8 Iberia :**
+- Prix d'achat EcoFlow = PVP conseillé hors TVA moins 15 % (Juan Carlos Pinar, 23/10 et 27/10 ; confirmé par David le 28/10).
+- **Interdiction de vendre sous le PVP conseillé** : « se debe respetar el PVP recomendado, pero siempre podéis vender por encima, nunca por debajo » (Carlos Crespo, 20/10). Un code promo de 10 % sur un produit EcoFlow n'est donc pas permis. Les codes servent seulement au suivi des ventes.
+- Transport : Innov8 n'envoie pas les produits EcoFlow au client final. Sol & Volt doit choisir son transporteur, qui enlève les colis chez Innov8 (bon de livraison neutre) (Juan Carlos Pinar, 27/10).
+- Le prix de vente du site est égal au PVP conseillé pour 28 des 29 références EcoFlow. Exception : DELTA 3 ?p=344 à 967 € TTC, pour un PVP de 799 € TTC (au-dessus, donc autorisé).
+
+**River 3 ?p=601 (ECF0039) :**
+
+| Élément | Montant |
+|---|---|
+| Prix de vente | 259,00 € TTC, soit 214,05 € HT |
+| Prix d'achat | 181,94 € HT (214,05 × 0,85) |
+| Marge brute | 32,11 € HT par unité, avant transport et frais de paiement |
+| Commission 10 % (sur le HT) | 21,41 € : il reste 10,70 € HT avant transport |
+| 3 stations offertes | 545,83 € HT d'achat, plus 3 transports |
+| **Stock chez Innov8 (fichier du 28/10)** | **0, en rupture**. Le site affiche pourtant « En stock » |
+
+**Alternative en stock : River 3 Plus ?p=623 (ECF0043), 53 unités chez Innov8.** 299,00 € TTC (247,11 € HT), achat 210,04 € HT, marge 37,07 € HT ; commission 10 % = 24,71 €, il reste 12,36 € HT avant transport ; 3 stations offertes = 630,11 € HT d'achat.
+
+**Conséquence :** avec 15 % de marge, une commission de 10 % laisse 10 à 12 € par vente avant transport. Les ventes générées ne rembourseront pas les 3 stations offertes : l'opération est surtout une dépense de notoriété (environ 550 à 630 € HT plus transport). À décider par David : garder 10 % ou passer à 5 %, et River 3 (à recommander) ou River 3 Plus (en stock).
+
+**Autres références EcoFlow à 0 en stock chez Innov8 et affichées « En stock » sur le site :** ECF0061 panneau 160 W V2 (?p=690), ECF0068 DELTA 3 Max (?p=739). Stock faible (1 à 3) : ECF0015 (?p=563), ECF0030 (?p=573), ECF0046 (?p=640), ECF0050 (?p=658), ECF0070 (?p=750), ECF0071 (?p=768), ECF0072 (?p=776).
 
 ## Sources
 
