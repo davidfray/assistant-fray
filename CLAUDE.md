@@ -12,7 +12,7 @@ Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillo
 | Skills | solandvolt-garde-fous (lire en premier), -niveaux-autonomie, -seo-blog, -social-instagram, -catalogue-ops, -service-client | social-media-fray, devis-fray, rapport-chantier |
 | Accès site | Connecteur WordPress, site 257165426 (Jetpack) | Connecteur WordPress, site 253853971 (Atomic) |
 
-Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau local » jamais Enedis seul, photos réelles uniquement, aucune référence à Fray Services, publication Instagram (webhook n8n) uniquement après validation de David.
+Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau local » jamais Enedis seul, photos réelles uniquement, aucune référence à Fray Services, publication Instagram uniquement après validation de David (n8n n'est plus utilisé depuis le 28/10 ; automatisations dans Make, organisation Fray Services).
 
 ## Où trouver quoi
 
@@ -24,7 +24,8 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/search-console-solandvolt-2026-10-26.md` | Search Console solandvolt.com (performances, indexation, sitemap, 404) |
 | `audit/redirections-301-rank-math-2026-10-26.md` | Les 8 redirections 301 (pages de niveau, anciennes fiches en 404, catégorie de blog), créées dans Rank Math le 27/10 et testées |
 | `audit/ga4-suivi-ecommerce-solandvolt-2026-10-26.md` | Guide d'activation du suivi e-commerce GA4 (extension, réglages, test) |
-| `audit/stock-et-codes-solandvolt-2026-10-28.md` | Codes de suivi influenceurs (VANROUTE, LEON, PERIPLE, 0 %), produits à passer en rupture, scénario n8n de synchronisation du stock Innov8 |
+| `audit/stock-et-codes-solandvolt-2026-10-28.md` | Codes de suivi influenceurs (0 %), produits en rupture, scénarios Make de synchronisation du stock et de création des codes |
+| `automatisations/make/` | Blueprints des scénarios Make créés par Claude (sans identifiants) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
@@ -102,8 +103,9 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ### Points ouverts sur les sites (non corrigés, à proposer)
 - solandvolt.com, SEO (voir le diagnostic) : 5 fiches EcoFlow encore quasi vides (21 complétées le 26/10) (« Fiche technique détaillée à venir ») ; images de galerie sans texte alternatif et images lourdes (JPEG, pas de WebP) ;  slugs des kits Tornasol.
 - solandvolt.com : ?p=42 renvoie vers ?p=44 (brouillon) ; extraits contradictoires sur ?p=42 (vitesses) et ?p=46 (Wi-Fi) ; catégorie Climatisation à ajouter au menu.
-- solandvolt.com, stock : le site affiche « En stock » pour des références à 0 chez Innov8 au 28/10 (ECF0039 River 3 ?p=601, ECF0061 ?p=690, ECF0068 ?p=739). Demandé par David le 28/10 : non faisable par les connecteurs (codes et stock WooCommerce hors de portée). Étapes manuelles et scénario n8n prêts dans `audit/stock-et-codes-solandvolt-2026-10-28.md`.
+- solandvolt.com, stock : le site affiche « En stock » pour des références à 0 chez Innov8 au 28/10 (ECF0039 River 3 ?p=601, ECF0061 ?p=690, ECF0068 ?p=739). Demandé par David le 28/10 : non faisable par les connecteurs (codes et stock WooCommerce hors de portée). Scénarios Make créés le 28/10, inactifs : 8239857 (stock quotidien à 8 h 30) et 8239861 (3 codes de suivi). À faire par David : reconnecter Gmail et créer la connexion WooCommerce dans Make, lancer « Run once », puis activer. Détail : `audit/stock-et-codes-solandvolt-2026-10-28.md`.
 - Sol & Volt, transport : aucun transporteur choisi pour les produits EcoFlow (Innov8 ne livre pas le client final).
+- Make : la connexion « My Gmail connection » est expirée (28/10), donc le scénario « frayservices — Gestion quotidienne emails » est probablement en échec. Le scénario CJ 7785225 contient la clé API CJ en clair dans un module HTTP : la déplacer dans une connexion ou une variable.
 - frayservices.com : « réponse sous 24h » (Projets) et « devis gratuit en 48h » (accueil) à confirmer comme compatibles ; balise google-site-verification dans le contenu de l'accueil ; emojis et affirmations sans preuve sur la page Services.
 
 ## Accès via Composio
