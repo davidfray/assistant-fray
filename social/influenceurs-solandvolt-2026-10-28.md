@@ -110,6 +110,19 @@ Sol & Volt
 - [ ] Les 10 comptes retenus après vérification dans l'application.
 - [ ] Budget publicité de test (proposé : 5 à 10 € par jour, 7 jours).
 
+## 8. Recherche du 28/10 (suite)
+
+**Vérification des abonnés :**
+- Connecteur Instagram (Composio) : ne lit que @solandvolt et @frayservicespalamos.
+- Connexion Facebook : voit les pages Solandvolt, Fray Services, SereniBrava et « Français & Francophones de Palamós », mais pas le compte Instagram lié (permission manquante). La recherche d'un autre compte par son nom d'utilisateur est donc impossible par ce chemin.
+- **Solution trouvée : Supermetrics, source « Instagram Public Data ».** Elle donne les abonnés et les publications de n'importe quel compte professionnel public, et la recherche par hashtag (publications « Top » ou récentes). Elle n'est pas encore connectée : David doit se connecter une fois avec son compte Instagram professionnel @solandvolt depuis Supermetrics. Ensuite, Claude peut vérifier les comptes et chercher les créateurs par hashtag, sans action de David.
+- Recherche web complémentaire (energie-nomade.com, watt-nomade.fr, tests River 3 par des créateurs français) : aucun compte Instagram identifié.
+
+**River 3 (?p=601), d'après la fiche en ligne :**
+- EcoFlow RIVER 3 UPS, référence fabricant ECF0039, 245 Wh, 300 W (600 W en X-Boost), bascule en moins de 20 ms, recharge solaire jusqu'à 110 W, environ 3,5 kg, poids d'expédition 4,50 kg.
+- Lien pour les créateurs : https://www.solandvolt.com/produit/ecoflow-river-3-ups-station-electrique-portable-245-wh-300-w/
+- Prix et stock : non lisibles par le connecteur WordPress. À fournir par David (WooCommerce > Produits > ?p=601), ainsi que le prix d'achat fournisseur pour calculer le coût des 3 stations.
+
 ## Sources
 
 - [HypeAuditor, catégorie Instagram « solar »](https://hypeauditor.com/instagram-category-solar)
