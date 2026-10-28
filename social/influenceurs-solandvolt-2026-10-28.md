@@ -1,6 +1,6 @@
 # Sol & Volt : influenceurs Instagram et plan d'acquisition d'abonnés
 
-Date : 28/10/2026. Statut : brouillon à valider par David. Aucun contact pris, aucune publication.
+Date : 28/10/2026. Statut : brouillon. Décisions du 28/10 : River 3 ?p=601, 3 stations, commission 10 %. Aucun contact pris, aucune publication.
 
 ## 1. Ce que les outils permettent, et ce qu'ils ne permettent pas
 
@@ -49,7 +49,7 @@ Date : 28/10/2026. Statut : brouillon à valider par David. Aucun contact pris, 
   - 1 publication en **collaboration** Instagram (elle apparaît sur les deux comptes, donc devant les deux publics) ;
   - 3 stories avec le lien et le code promo ;
   - le droit de réutiliser les photos réelles sur solandvolt.com.
-- Commission de 8 à 10 % sur les ventes réalisées avec le code (à fixer par David selon la marge).
+- Commission de 10 % sur les ventes réalisées avec le code (décision de David, 28/10).
 - Mention « Partenariat rémunéré » ou « Produit offert » obligatoire sur chaque contenu (loi française de 2023 sur les influenceurs, règles Instagram).
 
 ### Semaines 5 à 8 : amplifier
@@ -105,8 +105,8 @@ Sol & Volt
 
 ## 7. À décider par David
 
-- [ ] Budget : nombre de stations offertes (proposé : 3) et commission (proposé : 8 à 10 %).
-- [ ] Produit de test : River 3 ?p=601 ou autre.
+- [x] Budget : 3 stations offertes, commission de 10 % sur les ventes avec code promo (décision de David, 28/10).
+- [x] Produit de test : River 3 UPS 245 Wh ?p=601 (28/10).
 - [ ] Les 10 comptes retenus après vérification dans l'application.
 - [ ] Budget publicité de test (proposé : 5 à 10 € par jour, 7 jours).
 
