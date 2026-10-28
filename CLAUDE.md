@@ -1,6 +1,6 @@
 # Mémoire des projets : Fray Services Palamós et Sol & Volt
 
-Fichier chargé automatiquement à chaque session. Mis à jour le 26/10/2026.
+Fichier chargé automatiquement à chaque session. Mis à jour le 28/10/2026.
 Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillons en Markdown dans ce dépôt, sauf mention « en ligne ».
 
 ## Deux marques, jamais mélangées
@@ -137,7 +137,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 26/10/2026 | Claude Code | Diagnostic SEO solandvolt.com (via connecteur WordPress, front non joignable) ; corrections en ligne : page commande, catégories de niveau, accueil (option A), 21 fiches EcoFlow, textes alternatifs des 48 images principales, catégorie Guides, images à la une et correction de 4 articles du blog |
 | 27/10/2026 | Claude dans Chrome (Cowork) puis Claude Code | Redirections 301 Rank Math (diagnostic, correction de la regex es_ES, 8 règles créées et testées), descriptions des 4 catégories de niveau, modèle d'archive produit, menu d'en-tête, lecture de la Search Console, fusion de la branche `ccr-1a772cc3-mb90wj` dans `main` |
 | 27/10/2026 | Claude Code | Contrôle des redirections 301 (inactives), liste ramenée à 8 sources, relecture et correction de 6 produits republiés, liste des redirections pour Cowork |
-| 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition sur 8 semaines, 7 créateurs vanlife, 3 messages personnalisés ; prix d'achat et stock EcoFlow (Gmail, fichier Innov8), règle du PVP minimum, marge River 3 |
+| 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition sur 8 semaines, 7 créateurs vanlife, 3 messages personnalisés ; prix d'achat et stock EcoFlow (Gmail, fichier Innov8), règle du PVP minimum, marge River 3 ; scénarios Make (stock, codes) ; 3 fiches en rupture passées en brouillon, accueil et 7 fiches corrigés ; comparatif transporteurs, livraison sur devis au-delà de 40 kg ; email à Innov8 envoyé (poids ECF0015, réapprovisionnement) |
 
 ## Mise à jour de ce fichier
 
