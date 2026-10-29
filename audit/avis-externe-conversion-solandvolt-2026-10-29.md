@@ -155,3 +155,20 @@ Non fait, et pourquoi :
 3. Commande test et contrôle de la conversion Google Ads.
 4. Retraduire les nouveaux textes dans TranslatePress (accueil, catégories 21, 42, 50, pied de page).
 5. Facultatif : recoller le HTML des catégories pour retrouver les vrais intertitres.
+
+## Google Ads, campagne en cours (lu le 29/10 vers 21 h, compte 3229795533)
+
+Campagne « Solandvolt - Recherche FR-ES v2 » (Search, id 24417115657) : active, 10 € par jour, enchères « Maximiser les clics », statut « en apprentissage », 0 impression sur 30 jours au moment du contrôle. France et Espagne, langues français et espagnol, 20 mots-clés négatifs déjà en place. Conversion « Achat » (Google for WooCommerce) active et principale.
+
+| Groupe d'annonces | Page d'arrivée avant | Après |
+|---|---|---|
+| EcoFlow ES | /produit/…ecoflow-delta-3-1024wh/ (page française) | **/es_es/producto/…ecoflow-delta-3-1024wh/** (corrigé, 200) |
+| SOK ES | /produit/sok-sk12v206h-12v-206ah/ (page française) | **/es_es/producto/sok-sk12v206h-12v-206ah/** (corrigé, 200) |
+| SOK FR | /produit/sok-sk12v206h-12v-206ah/ | inchangé |
+| EcoFlow FR | page d'accueil | inchangé (mots-clés génériques « station électrique portable », l'accueil montre River 3 Plus, DELTA 3, AC70P) |
+
+Les 2 annonces modifiées repassent en examen Google (quelques heures en général).
+
+**Livraison, vérifiée par un panier de test (sans commande) :** la batterie SOK 206 Ah (25 kg, 639,90 €) part en « Livraison offerte (dès 60 €) » vers la France et vers l'Espagne. Même règle pour la DELTA 3 (799 €). Or aucun transporteur n'est choisi pour EcoFlow (Innov8 ne livre pas le client final). Une vente EcoFlow issue de la campagne serait aujourd'hui à expédier sans solution de transport, à frais offerts.
+
+Proposition soumise à David : mettre en pause les groupes « EcoFlow FR » et « EcoFlow ES » jusqu'au choix du transporteur, garder les groupes SOK (expédiés par le fournisseur depuis l'Allemagne, à confirmer : le prix d'achat SOK inclut-il le transport ?). Autres points : l'annonce EcoFlow ES cite « EcoFlow Stream Ultra » mais arrive sur la DELTA 3 ; « Maximiser les clics » avec beaucoup de requêtes larges en EcoFlow FR, à surveiller dans le rapport des termes de recherche après les premiers clics.
