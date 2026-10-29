@@ -23,3 +23,21 @@ Extraits exacts remplacés sur solandvolt.com. Pour revenir en arrière, recolle
   - `<p class="card-subtitle">La maison produit et stocke sa propre énergie. Le réseau devient une option, pas une nécessité.</p>`
   - `<li>Réseau en option</li>`
   - `<div class="card-duration">Autonomie : continue</div>`
+
+## Fiches SOK ?p=480, ?p=481 (brouillon), ?p=482
+
+Ligne « Garantie constructeur » : `7 ans, en plus de la garantie légale de conformité (2 ans en France, 3 ans en Espagne)` (5 ans sur ?p=481).
+
+## Avis produits
+
+Avant le 29/10 : avis ouverts (`comment_status` = open) sur les 50 produits publiés, aucun avis reçu.
+
+## Pied de page (template part `twentytwentyfive-child//footer`)
+
+- Colonne 1 : Accueil, Boutique, Livraison, Mon compte.
+- Colonne 2 : Mentions légales, Conditions Générales de Vente, Politique de Confidentialité.
+- Bas de page : « Twenty Twenty-Five » et « Conçu avec WordPress ».
+
+## Descriptions des catégories 21 et 50
+
+Format HTML d'origine (`<p>`, `<h2>`, `<ul>`), visible dans `content-terms.list` avant le 29/10 ; textes identiques à la version actuelle sauf les deux phrases citées plus haut.

@@ -132,11 +132,26 @@ Non reproduit le 29/10 : 8 requêtes rapides sur une fiche, toutes normales. L'a
 5. **Pas de code promo EcoFlow dans les annonces** (PVP minimum Innov8).
 6. Merchant Center : le blocage signalé auparavant reste à régler par David avec Google avant toute campagne Shopping ou Performance Max.
 
+## Mise en œuvre, 29/10 au soir (David : « Fais les changements »)
+
+Fait en ligne et vérifié (20 h 42 à 20 h 50, heure du site) :
+
+- **Catégories 21 et 50** : « 48 heures » remplacé par « d’une soirée à une journée » (La Veilleuse) ; « Le réseau devient une option, pas une nécessité » remplacé par « une grande partie de sa propre énergie. Le réseau devient un appoint » (L'Autonomie). Même présentation que La Base (intertitres en gras, tirets), puisque le connecteur retire les balises `<h2>` et `<ul>`. Le HTML de la section 1 reste utilisable si David veut retrouver les vrais intertitres.
+- **Garantie dans les fiches** : ?p=480, ?p=482 et ?p=481 (brouillon) indiquent « garantie légale de conformité de 3 ans ». Aucune autre fiche ne contenait la mention.
+- **« Avis (0) » masqué** sur les 50 produits publiés (avis fermés produit par produit). Contrôlé sur ?p=623 : l'onglet Avis a disparu, la description reste. Les produits republiés plus tard (601, 690, 739, 94, 87, 88) auront de nouveau l'onglet : fermer les avis dans leur fiche (Discussion) ou demander à Claude. Pour réactiver après les premières commandes : rouvrir les avis produit par produit, ou par Claude en une fois.
+- **Pied de page** : liens « Pourquoi Sol & Volt » (?p=95, vérifié sans mention de Fray Services), « Retours et remboursements » (la page n'était pas liée), « Nous écrire : contact@solandvolt.com ». La mention « Twenty Twenty-Five / Conçu avec WordPress » est remplacée par « Solandvolt · Livraison France et Espagne · Service client en français et en espagnol ».
+
+Non fait, et pourquoi :
+
+- **Bloc de réassurance** (garantie « 2 ans / 3 ans », délais génériques, « offerte dès 60 € ») : il est dans le code PHP du thème, aucun connecteur n'y accède. Reste à David (section 2 et 3).
+- **Livraison offerte dès 60 €** : réglage WooCommerce hors de portée, et décision commerciale.
+- **Traductions TranslatePress, commande test, GA4** : hors de portée des connecteurs.
+- **Filtres de la boutique et lien « Kit solaire balcon » dans le menu** : les kits sont répartis sur trois niveaux, il n'existe pas de page qui les regroupe ; modifier le modèle de la boutique sans contrôle visuel sur mobile est risqué. À faire en séance Cowork avec Claude dans Chrome.
+
 ## Actions de David, par ordre
 
 1. Vérifier le réglage « livraison offerte dès 60 € » et le coût réel d'un envoi EcoFlow (avant tout budget Google Ads).
-2. Coller le texte de garantie dans `functions.php` (section 2).
-3. Corriger les phrases des catégories 21 et 50, et recoller le HTML de la catégorie 42 (section 1).
-4. Commande test et contrôle de la conversion Google Ads.
-5. Retraduire les nouveaux textes dans TranslatePress.
-6. Décider : masquer « Avis (0) », lien « Pourquoi Sol & Volt » dans le pied de page, filtres de la boutique.
+2. Bloc de réassurance dans `functions.php` : garantie « 3 ans » (section 2) et ligne de délai « Délai de livraison indiqué sur chaque fiche produit » (section 3).
+3. Commande test et contrôle de la conversion Google Ads.
+4. Retraduire les nouveaux textes dans TranslatePress (accueil, catégories 21, 42, 50, pied de page).
+5. Facultatif : recoller le HTML des catégories pour retrouver les vrais intertitres.
