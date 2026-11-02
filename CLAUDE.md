@@ -87,6 +87,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## Fait en ligne (02/11/2026)
 
 - Google Ads (compte 3229795533), par l'API : 2 liens annexes ajoutés au niveau du compte, comme les 4 existants (Voir la boutique, Livraison, Retours et remboursements, EcoFlow Delta 3) : « Pourquoi Sol & Volt » (Notre démarche / Autonomie énergétique, /pourquoi-sol-volt-existe/) et « Batterie SOK 206 Ah » (LiFePO4 12 V 206 Ah / Bluetooth et BMS intégré, /produit/sok-sk12v206h-12v-206ah/). Ne pas créer de liens annexes au niveau de la campagne : ils masqueraient ceux du compte.
+- Google Ads, campagne « Solandvolt - Recherche FR-ES v2 » : mots-clés négatifs bluetti, aferiy, jackery, anker ajoutés (requête large), à la demande de David (marques concurrentes vues dans les termes de recherche du 29 au 30/10). Bilan au 30/10 matin : 286 impressions, 12 clics, 10,24 €, 0 achat.
 
 ## Fait en ligne (27/10/2026)
 
