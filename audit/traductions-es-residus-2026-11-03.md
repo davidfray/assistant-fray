@@ -1,5 +1,11 @@
 # Textes encore en français sur la version espagnole (relevé du 03/11/2026)
 
+> **Mise à jour du 03/11, 22 h 45 : tout ce relevé est traité.** Les 76 pages de /es_es/ (accueil, pages, articles, 6 catégories, fiches produits) ne montrent plus de français à l'écran. Sections 1 à 4 et 11 bis : CSS des styles globaux. Sections 5 à 10 : modèles de catégorie bilingues `taxonomy-product_cat-…` (shortcode `[trp_language]`), plus la catégorie Climatisation (« Aires acondicionados y enfriadores de aire para mantenerse fresco sin obras. »). Fil d'Ariane « El Módulo » : CSS. Article ?p=412 : paragraphe bilingue. Titre des commentaires des articles (il reprenait le titre français) : « Comentarios » en CSS.
+>
+> **Reste, invisible dans la page** : titres d'onglet et méta-descriptions Rank Math en français sur /es_es/ (visibles dans l'onglet du navigateur et les résultats Google) et libellés « … cantidad » des lecteurs d'écran (section 11). À traduire dans l'éditeur TranslatePress ou en séance Cowork avec Claude dans Chrome.
+>
+> Limite connue : un texte ajouté en CSS n'est pas lu par Google. Les modèles bilingues, eux, produisent du vrai texte espagnol.
+
 Méthode : 66 pages espagnoles lues le 03/11 vers 22 h (accueil, boutique, 5 catégories, 6 pages légales et d'information, 53 fiches produits). Chaque texte affiché a été comparé aux mots courants du français et de l'espagnol. Les textes déjà traduits (accueil, pied de page, intertitres des catégories) ne figurent pas ici.
 
 Saisie : wp-admin > « Traduire la page » > Spanish, cliquer sur le texte français, coller l'espagnol, enregistrer. Une ligne = un texte à cliquer. Les textes communs à toutes les fiches se traduisent une seule fois et s'appliquent partout.
