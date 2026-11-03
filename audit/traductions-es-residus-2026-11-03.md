@@ -10,10 +10,10 @@ Saisie : wp-admin > « Traduire la page » > Spanish, cliquer sur le texte fran�
 |---|---|
 | Livraison offerte de 60 € à 350 € | Envío gratuito de 60 € a 350 € |
 | vers France / Espagne — transport au poids au-delà | a Francia y España; por encima, transporte según el peso |
-| Pose possible sur devis | Instalación posible con presupuesto |
+| Pose possible sur devis préalable | Instalación posible con presupuesto previo |
 | par notre équipe à Palamós et sur la Costa Brava — | por nuestro equipo en Palamós y en la Costa Brava — |
 
-La mention de pose est voulue : la pose est assurée avec les partenaires de frayservices.com (décision de David du 03/11).
+La mention de pose est voulue ; David la complète en « Pose possible sur devis préalable » (03/11) : la pose est assurée avec les partenaires de frayservices.com (décision de David du 03/11).
 
 ## 2. Fiches Zendure (912, 913, 914)
 
