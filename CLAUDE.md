@@ -133,6 +133,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Remote Control : David ajoutera le dossier `assistant-fray` dans Claude Desktop > Réglages > Claude Code > Remote Control (Mac ou Linux), pour que les sessions cloud puissent travailler dans ses fichiers.
 
 ### Rappels programmés
+- 04/11/2026, 16 h à 16 h 45 (Madrid), événement Google Agenda « Sol & Volt : séance Cowork TranslatePress (ordi) » : titres et descriptions Google des pages /es_es/ dans TranslatePress, article ?p=906 transformé en traduction de l'article français (brouillon + 301), libellés « cantidad ».
 - 30/10/2026, 10 h 15 (Madrid) : Claude fait le point sur la campagne Google Ads, Gmail Innov8 et les commandes EcoFlow ; 10 h 30 : événement Google Agenda de David « Sol & Volt : actions sur l'ordi » (Rank Math, functions.php, brouillon Innov8, Packlink PRO, TranslatePress).
 - Avant la première commande EcoFlow : David ouvre Packlink PRO (gratuit) et simule River 3 Plus (6,12 kg) et DELTA 3 (14,7 kg) vers Paris et Madrid ; Claude recalcule la marge et la règle « livraison offerte dès 60 € ».
 - 27/10/2026 : rappel du matin sur les redirections 301 traité, plus rien à faire.
