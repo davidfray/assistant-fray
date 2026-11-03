@@ -113,3 +113,11 @@ Autre constat : `/es_ES/` (majuscules) répond 404 ; seule `/es_es/` fonctionne.
 ## 7. Plus tard
 
 Le bloc de réassurance des fiches (garantie, délais, livraison offerte) se traduira aussi dans l'éditeur visuel, mais **après** que David aura corrigé le texte français dans `functions.php`, sinon la traduction serait à refaire.
+
+## 8. Mention de livraison des fiches EcoFlow (ajoutée le 03/11)
+
+À traduire sur chacune des 11 fiches EcoFlow avec batterie (DELTA 3, DELTA 3 Plus, DELTA 3 Max Plus, River 3 Plus, River 2 Max, River 2 Pro, Trail 200DC, Rapid 5 000 mAh, STREAM Pro, STREAM AC Pro, STREAM Ultra). TranslatePress la traite comme une phrase à part, en fin de description courte.
+
+| Français | Espagnol |
+|---|---|
+| Livraison en Espagne péninsulaire uniquement ; pour la France, nous consulter : contact@solandvolt.com. | Envío solo a España peninsular; para Francia, consúltanos: contact@solandvolt.com. |
