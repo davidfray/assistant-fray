@@ -13,7 +13,7 @@ Saisie : wp-admin > « Traduire la page » > Spanish, cliquer sur le texte fran�
 | Pose possible sur devis | Instalación posible con presupuesto |
 | par notre équipe à Palamós et sur la Costa Brava — | por nuestro equipo en Palamós y en la Costa Brava — |
 
-**À vérifier par David :** « Pose possible sur devis par notre équipe à Palamós et sur la Costa Brava » renvoie à l'activité d'installation de Fray Services. Les règles Sol & Volt interdisent toute référence à Fray Services ; la phrase ne cite pas le nom, mais le lien est clair pour un client local. À garder seulement si c'est voulu.
+La mention de pose est voulue : la pose est assurée avec les partenaires de frayservices.com (décision de David du 03/11).
 
 ## 2. Fiches Zendure (912, 913, 914)
 
