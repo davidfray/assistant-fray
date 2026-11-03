@@ -4,7 +4,9 @@ Méthode : 66 pages espagnoles lues le 03/11 vers 22 h (accueil, boutique, 5 cat
 
 Saisie : wp-admin > « Traduire la page » > Spanish, cliquer sur le texte français, coller l'espagnol, enregistrer. Une ligne = un texte à cliquer. Les textes communs à toutes les fiches se traduisent une seule fois et s'appliquent partout.
 
-## 1. Bloc commun sous le bouton d'achat (50 à 53 fiches) : priorité 1
+## 1. Bloc commun sous le bouton d'achat (50 à 53 fiches) : **fait le 03/11 par Claude en CSS** (styles globaux, version espagnole), vérifié en capture d'écran
+
+Les deux lignes françaises du bloc sont masquées sur /es_es/ et remplacées par leur traduction en CSS. Limite : un texte ajouté en CSS n'est pas lu par Google (sans effet sur le référencement). Si ces textes sont un jour traduits dans TranslatePress ou modifiés dans `functions.php`, adapter ou retirer la règle (Apparence > Éditeur > Styles > CSS additionnel).
 
 | Français | Espagnol |
 |---|---|
