@@ -29,6 +29,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/avis-externe-conversion-solandvolt-2026-10-29.md` | Avis externe (conversion, Google Ads) : verdict point par point, corrections faites, textes à coller par David |
 | `audit/traductions-es-translatepress-2026-10-29.md` | Traductions espagnoles prêtes à saisir dans TranslatePress (accueil, pied de page, catégories 21, 42, 50) |
 | `audit/traductions-es-residus-2026-11-03.md` | **Relevé complet des textes encore en français sur la version espagnole** (66 pages, 03/11) avec traductions prêtes |
+| `audit/css-mobile-solandvolt-2026-11-04.md` | **Version mobile de solandvolt.com** : 6 défauts relevés à 360 px, CSS prêt à coller (CSS additionnel), test sur téléphone |
 | `procedures/commande-ecoflow-expedition.md` | **Procédure à suivre dès qu'une commande EcoFlow arrive** : commande et prépaiement chez Innov8, enlèvement Packlink, emails FR/ES prêts, repères de marge |
 | `automatisations/make/` | Blueprints des scénarios Make créés par Claude (sans identifiants) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
@@ -125,6 +126,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## En attente
 
 ### De David
+- Sol & Volt, mobile (04/11) : coller le bloc CSS de `audit/css-mobile-solandvolt-2026-11-04.md` à la fin du CSS additionnel (Apparence > Éditeur > Styles), puis faire le test en 6 points sur téléphone ; dans Brevo, réduire la taille du titre du formulaire (environ 22 px).
 - Sol & Volt, avis externe du 29/10 (`audit/avis-externe-conversion-solandvolt-2026-10-29.md`, section « Actions de David ») : vérifier « livraison offerte dès 60 € » face au coût réel d'un envoi EcoFlow avant tout budget Google Ads ; dans le bloc de réassurance (`functions.php` du thème enfant), garantie « 3 ans » et ligne de délai « Délai de livraison indiqué sur chaque fiche produit » ; commande test pour la conversion Google Ads ; saisir les traductions espagnoles dans l'éditeur visuel gratuit de TranslatePress (textes prêts : `audit/traductions-es-translatepress-2026-10-29.md`, ou en séance Cowork avec Claude dans Chrome) ; **Rank Math redirige en 301 toutes les catégories espagnoles (`/es_es/categoria-producto/...`) vers /es_es/boutique/** : trouver et supprimer la règle ; `/es_ES/` répond 404, n'utiliser que `/es_es/`. Filtres de la boutique et lien « Kit solaire balcon » : en séance Cowork avec Claude dans Chrome.
 - Sol & Volt : publier ?p=94, ?p=87, ?p=88 (vérifier prix, stock, expédition ; corriger le titre « Autonomie 48H » de ?p=87), puis feu vert pour mettre à jour ?p=483 (vérifier le prix AC70P 539,90 €).
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
@@ -185,6 +187,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 30/10 au 03/11/2026 | Claude Code | Google Ads (annonces ES vers /es_es/, liens annexes, mots-clés négatifs, pause EcoFlow FR, bilans quotidiens), procédure de commande EcoFlow, réponses d'Innov8 (pas d'envoi lithium vers la France, TNT environ 100 €), avis fermés sur Zendure, EcoFlow confirmé vendable en France (décision de David), rappels du 30/10 et du 03/11 |
 | 03/11/2026 (soir) | Claude Code | Version espagnole sans français visible : modèles de catégorie bilingues (6), CSS (réassurance, Zendure, extraits, fil d'Ariane, commentaires), article ?p=412, valeurs « à » ; relecture des 76 pages /es_es/ |
 | 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition sur 8 semaines, 7 créateurs vanlife, 3 messages personnalisés ; prix d'achat et stock EcoFlow (Gmail, fichier Innov8), règle du PVP minimum, marge River 3 ; scénarios Make (stock, codes) ; 3 fiches en rupture passées en brouillon, accueil et 7 fiches corrigés ; comparatif transporteurs, livraison sur devis au-delà de 40 kg ; email à Innov8 envoyé (poids ECF0015, réapprovisionnement) |
+| 04/11/2026 | Claude Code | Version mobile de solandvolt.com : contrôle à 360 px (accueil, ?p=623), 6 défauts, CSS prêt à coller et vérifié sur le HTML du site (pas de connecteur WordPress en écriture dans la session) |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 
 ## Mise à jour de ce fichier
