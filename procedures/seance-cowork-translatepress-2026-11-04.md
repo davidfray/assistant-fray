@@ -29,7 +29,13 @@ Bonjour. Séance TranslatePress sur solandvolt.com. Lis d'abord `CLAUDE.md`, pui
 4. Passer ?p=906 en **brouillon**.
 5. Rank Math > Redirections : 301, source exacte `corte-de-luz-estacion-portatil-panel-solar/`, destination `/es_es/` + adresse de l'article français. Pas d'antislash dans les règles. Tester la redirection.
 
-## 4. Si le temps le permet
+## 4. CSS mobile
+
+1. Apparence > Éditeur > Styles > CSS additionnel : copier d'abord le CSS existant dans `audit/sauvegardes-2026-11-04/css-additionnel-avant-mobile.css`.
+2. Coller **à la fin** le bloc CSS de `audit/css-mobile-solandvolt-2026-11-04.md` (de `/* ===== Sol & Volt : mobile` à `fin mobile ===== */`), sans toucher aux règles existantes. Enregistrer.
+3. Faire le test en 6 points de ce fichier, en largeur téléphone (accueil, /es_es/, fiche River 3 Plus ?p=623). Ajuster la hauteur du formulaire Brevo (640px) si besoin.
+
+## 5. Si le temps le permet
 
 Libellés « … cantidad » du champ quantité (lecteurs d'écran) sur les fiches.
 
