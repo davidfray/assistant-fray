@@ -2,14 +2,19 @@
 
 Préparé le 04/11/2026 pour la séance TranslatePress (onglet SEO). Titres ≤ 62 caractères, descriptions ≤ 160. « garder » = déjà en espagnol. Le même contenu existe en CSV (titulos-metas-es-2026-11-04.csv) dans la conversation Cowork du 04/11.
 
-À relever dans TranslatePress (lecture publique en 404) : les catégories /es_es/categoria-producto/... et la fiche EcoFlow DELTA 3 Max Plus (?p=… ECF0081). Fiche DELTA 3 et L'Autonomie : titre et méta déjà en espagnol.
+Corrigé le 04/11 par Claude Code : les anciennes pages de niveau (/es_es/le-module/, /la-base/, /la-veilleuse/) redirigent en 301 vers les catégories depuis le 27/10, donc leurs lignes sont remplacées par les 6 catégories ; promesses retirées du site le 29/10 (« 48 horas », « una semana », « nevera de 40 L ») supprimées ; « La Veilleuse » devient « El Piloto ». Si un titre de catégorie n'apparaît pas dans TranslatePress, le saisir en ouvrant la catégorie sur /es_es/.
+
+À relever dans TranslatePress : la fiche EcoFlow DELTA 3 Max Plus (?p=… ECF0081). Fiche DELTA 3 et L'Autonomie : titre et méta déjà en espagnol.
 
 Format : URL | titre ES | méta ES.
 
 - `/es_es/` | Sol & Volt – Autonomía energética y kits solares | Kits solares, baterías LiFePO4 y equipos de autonomía para segundas residencias. Envío a España y Francia.
-- `/es_es/le-module/` | El Módulo – Estación eléctrica solar | Sol & Volt | Estación eléctrica portátil de 300 Wh y panel solar de 100 W para 48 horas de autonomía. Nevera, portátil, router y recarga al sol.
-- `/es_es/la-base/` | La Base – Generador solar para el hogar | Sol & Volt | Estación de 600 Wh, paneles solares de 200 W y nevera de 40 L para una semana de autonomía doméstica. Frigorífico, congelador, luz y router.
-- `/es_es/la-veilleuse/` | La Veilleuse – Batería y lámpara solar | Sol & Volt | Lámpara de emergencia y batería externa solar para pasar una noche sin luz. Iluminación LED, cargador y unas horas de autonomía.
+- `/es_es/categoria-producto/autonomie-energetique/` | Autonomía energética: kits solares y estaciones | Sol & Volt | Kits solares, baterías y estaciones de energía portátiles para pasar un corte de luz, sin obras. Cuatro niveles, del más sencillo al más completo.
+- `/es_es/categoria-producto/autonomie-energetique/la-veilleuse/` | El Piloto – Lámparas y baterías solares | Sol & Volt | Lámparas, cargadores y pequeñas baterías solares para pasar una noche sin luz. Nivel 1 de la autonomía energética.
+- `/es_es/categoria-producto/autonomie-energetique/le-module/` | El Módulo – Estación portátil y panel solar | Sol & Volt | Estación de energía de 250 a 500 Wh y panel solar de 100 W: router, luz y móviles durante un corte, de una noche a un día.
+- `/es_es/categoria-producto/autonomie-energetique/la-base/` | La Base – Estaciones de gran capacidad | Sol & Volt | Estaciones de gran capacidad y paneles solares para mantener también la nevera funcionando: un día o más de autonomía.
+- `/es_es/categoria-producto/lautonomie/` | garder (déjà en espagnol, relevé Cowork du 04/11) ; sinon : La Autonomía – Baterías solares domésticas | Sol & Volt | Almacenamiento doméstico y kits solares conectados a un enchufe de casa: menos dependencia de la red, a diario y según el sol.
+- `/es_es/categoria-producto/climatisation/` | Climatización: aires acondicionados y enfriadores | Sol & Volt | Aires acondicionados y enfriadores de aire para mantenerse fresco sin obras en una segunda residencia. Envío a España y Francia.
 - `/es_es/boutique/` | Tienda: kits solares, baterías y estaciones | Sol & Volt | Kits solares, baterías LiFePO4, estaciones de energía, lámparas y enfriadores de aire para segunda residencia. Envío a España y Francia.
 - `/es_es/livraison/` | garder | Los plazos de entrega cuentan desde la validación del pago y no incluyen periodos excepcionales (festivos, picos de pedidos).
 - `/es_es/politique-de-confidentialite-2/` | garder | Responsable del tratamiento de los datos personales recogidos en www.solandvolt.com: David Fray, empresario individual. Derechos y contacto.
