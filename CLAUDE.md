@@ -65,6 +65,9 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt, influenceurs (28/10) : River 3 Plus ?p=623 comme produit de test (la River 3 ?p=601 est en rupture chez Innov8), 3 stations offertes au maximum, commission de 10 % sur les ventes suivies par code, sans remise client (PVP minimum EcoFlow).
 - Fray Services, photos : post du 02/11 = chauffe-eau au gaz (`fray/medias/2026-11-02-chauffe-eau-gaz.jpg`, recadrer les étiquettes du fabricant) ; post du 04/11 = « Rénovation salle de bain », média n° 150 de frayservices.com.
 
+- **Décision de David (04/11) : règle de marge Sol & Volt = 12 % de base sur le coût, sauf accord fournisseur** (remplace les 20 %). Le prix du marché est la priorité pour rester compétitif. **Limite qui reste : EcoFlow interdit de vendre sous le PVP conseillé** (voir écrits Innov8) ; les prix publiés des fiches EcoFlow sont égaux à PVP HT x 1,21 (aucun écart à corriger). Le contrôle quotidien du CSV Innov8 (tâche planifiée Cowork, 09 h 07 Paris) signale seulement un prix publié sous ce minimum, un changement de PVP de plus de 15 %, les ruptures, les poids et les nouvelles références en stock.
+- 04/11 : accès GitHub via Composio (compte davidfray) et accès réseau de la session Cowork à solandvolt.com autorisés par David.
+
 ## Fait en ligne (26/10/2026)
 
 - solandvolt.com, SEO (20 h 35) : bandeau de la page commande (« Délai de livraison indiqué sur chaque fiche produit »), descriptions des catégories 20, 21, 33, 42, 50 (accents, promesse Le Module « une soirée à une journée », contenu des pages de niveau repris), boutons des niveaux de l'accueil vers les catégories ; accueil : bloc « Nos stations les plus demandées » (601, 344, 346 au lieu des brouillons 54, 50, 52) et carte La Base (« une journée et plus »). Sauvegardes : `audit/sauvegardes-2026-10-26/`.
@@ -113,6 +116,11 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 - solandvolt.com (27/10, 10 h 07 à 10 h 10) : 6 produits republiés par David le matin (?p=50, 52, 54, 86, 350, 354) corrigés : garantie 3 ans (CGV), liens vers brouillons remplacés, titres nettoyés, promesse « 48h » retirée de ?p=52, lien Climatisation retiré de ?p=86. Détail : `audit/relecture-6-produits-republies-2026-10-27.md`.
 - Redirections 301 : liste ramenée à 8 sources le 27/10 (les anciennes adresses de ?p=50, 52, 54 et 354 répondent de nouveau, ne pas les rediriger). Toujours inactives au contrôle du 27/10.
+
+## Fait en ligne (04/11/2026)
+
+- Contrôle du CSV Innov8 du 04/11 (38 références) : 23 anomalies relevées dans un brouillon Gmail. Ruptures chez Innov8 : ECF0008, 0015, 0041, 0049 (fichier d'import WooCommerce préparé : stock 0, et poids ECF0046 24,58 kg ; à importer par David avec « mettre à jour les produits existants »). Poids ECF0015 : 12,3 kg au CSV contre 19,3 kg sur le site, à confirmer par Innov8 (réponse attendue). ECF0040 : stock 1 060 au CSV, valeur inhabituelle, à faire confirmer. Neuf références du CSV absentes du site ; à créer en brouillon si David valide : ECF0053, 0076, 0084.
+- Titres et méta-descriptions espagnols prêts pour la séance TranslatePress de 16 h : `audit/titulos-metas-es-translatepress-2026-11-04.md` (pages principales et articles) ; le CSV complet des fiches produit a été livré dans la conversation Cowork.
 
 ## En attente
 
@@ -177,6 +185,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 30/10 au 03/11/2026 | Claude Code | Google Ads (annonces ES vers /es_es/, liens annexes, mots-clés négatifs, pause EcoFlow FR, bilans quotidiens), procédure de commande EcoFlow, réponses d'Innov8 (pas d'envoi lithium vers la France, TNT environ 100 €), avis fermés sur Zendure, EcoFlow confirmé vendable en France (décision de David), rappels du 30/10 et du 03/11 |
 | 03/11/2026 (soir) | Claude Code | Version espagnole sans français visible : modèles de catégorie bilingues (6), CSS (réassurance, Zendure, extraits, fil d'Ariane, commentaires), article ?p=412, valeurs « à » ; relecture des 76 pages /es_es/ |
 | 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition sur 8 semaines, 7 créateurs vanlife, 3 messages personnalisés ; prix d'achat et stock EcoFlow (Gmail, fichier Innov8), règle du PVP minimum, marge River 3 ; scénarios Make (stock, codes) ; 3 fiches en rupture passées en brouillon, accueil et 7 fiches corrigés ; comparatif transporteurs, livraison sur devis au-delà de 40 kg ; email à Innov8 envoyé (poids ECF0015, réapprovisionnement) |
+| 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 
 ## Mise à jour de ce fichier
 
