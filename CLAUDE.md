@@ -34,6 +34,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `automatisations/make/` | Blueprints des scénarios Make créés par Claude (sans identifiants) |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
+| `fray/site/corrections-frayservices-2026-11-04.md` | **Corrections de frayservices.com prêtes à coller** en 8 étapes (formulaire Contact Jetpack, liens tel/WhatsApp, barre mobile, CSS charte, menu, textes, bloc David, avis Google, Projets avant/après) |
 | `fray/audit/audit-attractivite-frayservices-2026-11-04.md` | **Audit d'attractivité de frayservices.com** (5/10) : 10 points classés, textes prêts (accueil, formulaire de contact, bloc David), plan d'action |
 | `blog/` | Articles Sol & Volt FR et ES, mise à jour proposée de l'article ?p=483 |
 | `catalogue/` | Fiche Tornasol 800 W (FR, ES) |
@@ -127,6 +128,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## En attente
 
 ### De David
+- Fray Services, site (04/11) : appliquer les étapes 1 à 4 de `fray/site/corrections-frayservices-2026-11-04.md` (formulaire Contact, liens cliquables et WhatsApp, images IA remplacées et supprimées, CSS charte et mobile, Solandvolt retiré du menu), puis prévenir Claude pour le contrôle en ligne ; fournir une photo de David, 2 lignes de parcours, le lien d'avis Google, et vérifier l'adresse Instagram `davif_fray`.
 - Sol & Volt, mobile (04/11) : coller le bloc CSS de `audit/css-mobile-solandvolt-2026-11-04.md` à la fin du CSS additionnel (Apparence > Éditeur > Styles), puis faire le test en 6 points sur téléphone ; dans Brevo, réduire la taille du titre du formulaire (environ 22 px).
 - Sol & Volt, avis externe du 29/10 (`audit/avis-externe-conversion-solandvolt-2026-10-29.md`, section « Actions de David ») : vérifier « livraison offerte dès 60 € » face au coût réel d'un envoi EcoFlow avant tout budget Google Ads ; dans le bloc de réassurance (`functions.php` du thème enfant), garantie « 3 ans » et ligne de délai « Délai de livraison indiqué sur chaque fiche produit » ; commande test pour la conversion Google Ads ; saisir les traductions espagnoles dans l'éditeur visuel gratuit de TranslatePress (textes prêts : `audit/traductions-es-translatepress-2026-10-29.md`, ou en séance Cowork avec Claude dans Chrome) ; **Rank Math redirige en 301 toutes les catégories espagnoles (`/es_es/categoria-producto/...`) vers /es_es/boutique/** : trouver et supprimer la règle ; `/es_ES/` répond 404, n'utiliser que `/es_es/`. Filtres de la boutique et lien « Kit solaire balcon » : en séance Cowork avec Claude dans Chrome.
 - Sol & Volt : publier ?p=94, ?p=87, ?p=88 (vérifier prix, stock, expédition ; corriger le titre « Autonomie 48H » de ?p=87), puis feu vert pour mettre à jour ?p=483 (vérifier le prix AC70P 539,90 €).
@@ -190,7 +192,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 03/11/2026 (soir) | Claude Code | Version espagnole sans français visible : modèles de catégorie bilingues (6), CSS (réassurance, Zendure, extraits, fil d'Ariane, commentaires), article ?p=412, valeurs « à » ; relecture des 76 pages /es_es/ |
 | 28/10/2026 | Claude Code | Recherche d'influenceurs Instagram solaires (FR/ES), plan d'acquisition sur 8 semaines, 7 créateurs vanlife, 3 messages personnalisés ; prix d'achat et stock EcoFlow (Gmail, fichier Innov8), règle du PVP minimum, marge River 3 ; scénarios Make (stock, codes) ; 3 fiches en rupture passées en brouillon, accueil et 7 fiches corrigés ; comparatif transporteurs, livraison sur devis au-delà de 40 kg ; email à Innov8 envoyé (poids ECF0015, réapprovisionnement) |
 | 04/11/2026 | Claude Code | Version mobile de solandvolt.com : contrôle à 360 px (accueil, ?p=623), 6 défauts, CSS prêt à coller et vérifié sur le HTML du site (pas de connecteur WordPress en écriture dans la session) |
-| 04/11/2026 | Claude Code | Audit d'attractivité de frayservices.com (5 pages, bureau et mobile, présence Google) : 10 points classés, textes prêts, plan d'action |
+| 04/11/2026 | Claude Code | Audit d'attractivité de frayservices.com (5 pages, bureau et mobile, présence Google) : 10 points classés, textes prêts, plan d'action ; corrections prêtes à coller en 8 étapes (pas d'accès en écriture au site dans la session) |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 
 ## Mise à jour de ce fichier
