@@ -40,6 +40,14 @@ Puis Rank Math de la catégorie Le Module : titre `Le Module : stations, kits et
 
 **Aussi (07/11) :** titre Rank Math de ?p=640 à mettre à jour (« EcoFlow Glacier 3 : Réfrigérateur Portable 35 L » → `EcoFlow Glacier Classic : réfrigérateur portable 35 L | Sol & Volt`) ; dans TranslatePress, traduire le titre du produit 640 (`EcoFlow Glacier Classic – Nevera portátil 35 L`), visible en français dans le fil d'Ariane et les grilles de /es_es/.
 
+**5. frayservices.com, Polylang (Langues > dans wp-admin de frayservices.com).**
+- Langue espagnole : passer la locale de « es-EC » (Équateur) à **es_ES** (espagnol d'Espagne).
+- Vérifier que les pages traduites sont reliées entre elles (FR, ES, CA, EN) pour que Polylang ajoute les balises hreflang.
+- Créer en espagnol, avec la langue espagnole attribuée dans Polylang : Contacto (formulaire, indicatif ES par défaut), Preguntas frecuentes, Método, Proyectos, et les pages de ville (Palamós, Begur, Palafrugell y Calella, Platja d'Aro). Repartir des versions catalanes ou françaises. Puis faire pointer les liens de /es/servicios/ vers ces pages.
+
+**6. Accès API pour Claude Code (facultatif, débloque les prochaines corrections sans Cowork).**
+Sur solandvolt.com/wp-admin/profile.php (compte **rflso**) : vérifier que la rubrique « Mots de passe d'application » existe (sinon trouver l'extension de sécurité qui la masque), créer un mot de passe « Claude Code ». Le 07/11, les essais de Claude Code ont échoué en « incorrect_password » (identifiant rflso reconnu). Ensuite, dans une session Claude Code, demander de ressaisir l'identifiant **rflso** et ce mot de passe dans le formulaire sécurisé (environnement « assistant-fray »).
+
 **4. Fin de séance.**
 - Noter la cause trouvée et ce qui a été fait dans `CLAUDE.md` (« Fait en ligne (07/11/2026) » et journal).
 - Me rappeler de faire « Commit to main » puis « Push origin ».
