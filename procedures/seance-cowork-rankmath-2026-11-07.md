@@ -27,10 +27,10 @@ Après chaque action, ouvrir `/categorie-produit/lautonomie/` en navigation priv
 
 **2. Une fois le titre français en ligne**, saisir dans TranslatePress les titres et descriptions espagnols des 6 catégories (tableau de `audit/titres-categories-es-2026-11-07.md`). Ouvrir chaque page `/es_es/categoria-producto/...` dans l'éditeur visuel, menu déroulant en haut de la barre latérale.
 
-**4. Descriptions Google de 2 fiches Climatisation (Rank Math, même cause probable que le point 1).**
+**3. Descriptions Google de 2 fiches Climatisation (Rank Math, même cause probable que le point 1).**
 - ?p=42 (Rafraîchisseur d'air portable) : remplacer « Livraison rapide. » par « Livraison en 12 à 18 jours. »
 - ?p=46 (Air Cooler) : `Rafraîchisseur évaporatif 65 W avec télécommande et minuterie 2 à 8 h, sans unité extérieure. Livraison en 12 à 18 jours.`
 
-**3. Fin de séance.**
+**4. Fin de séance.**
 - Noter la cause trouvée et ce qui a été fait dans `CLAUDE.md` (« Fait en ligne (07/11/2026) » et journal).
 - Me rappeler de faire « Commit to main » puis « Push origin ».
