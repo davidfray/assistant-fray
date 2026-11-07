@@ -1,6 +1,6 @@
 # Mémoire des projets : Fray Services Palamós et Sol & Volt
 
-Fichier chargé automatiquement à chaque session. Mis à jour le 28/10/2026.
+Fichier chargé automatiquement à chaque session. Mis à jour le 07/11/2026.
 Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillons en Markdown dans ce dépôt, sauf mention « en ligne ».
 
 ## Deux marques, jamais mélangées
@@ -13,6 +13,15 @@ Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillo
 | Accès site | Connecteur WordPress, site 257165426 (Jetpack) | Connecteur WordPress, site 253853971 (Atomic) |
 
 Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau local » jamais Enedis seul, photos réelles uniquement, aucune référence à Fray Services, publication Instagram uniquement après validation de David (n8n n'est plus utilisé depuis le 28/10 ; automatisations dans Make, organisation Fray Services).
+
+## État au 07/11/2026 (à lire en premier)
+
+- **Sol & Volt, ventes :** aucune commande WooCommerce depuis le 06/10. Le parcours d'achat fonctionne (panier, paiement Mollie). Pas de commande test payée (décision de David) : la première vente réelle servira de contrôle de la conversion Google Ads.
+- **Google Ads :** budget **5 € par jour** jusqu'à la première vente. Groupes actifs : EcoFlow ES, EcoFlow ES genérico, SOK FR, SOK ES. EcoFlow FR en pause (transport vers la France trop cher). Bilan hebdomadaire programmé le 14/11 à 9 h 13 : clics, coût, effet des prix SOK alignés, ventes.
+- **Prix SOK alignés sur SOK Europe** : 206 Ah 585 €, 100 Ah 259 € (marge 44 € et 27 € HT).
+- **GA4** : actif par Site Kit depuis le 03/11, en EUR et Europe/Madrid depuis le 07/11.
+- **Accès API solandvolt.com** opérationnel (voir « Accès API solandvolt.com ») : titres et descriptions Rank Math, redirections, produits et prix WooCommerce se font désormais sans Cowork. Restent dans Chrome (Cowork) : frayservices.com (Polylang), réglages Google à modifier.
+- **Séance Cowork du 07/11** : titres, redirections et descriptions faits en partie et vérifiés par sondage ; contrôle complet à faire (« vérifie la séance »).
 
 ## Où trouver quoi
 
