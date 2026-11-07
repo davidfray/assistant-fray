@@ -34,6 +34,8 @@ Les 4 produits et l'article sont en brouillon depuis le 07/11 ; leurs adresses r
 - mêmes adresses en `/es_es/producto/...`, `/es_es/categoria-producto/climatisation/` et `/es_es/climatiser-residence-secondaire-sans-travaux/` → `/es_es/` (vérifier qu'aucune regex existante ne les intercepte ; jamais d'antislash dans les regex Rank Math)
 Puis Rank Math de la catégorie Le Module : titre `Le Module : stations, kits et panneaux solaires | Sol & Volt`, description `Stations d’énergie portables, panneaux solaires et kits prêts à l’emploi pour garder la box, la lumière et les téléphones pendant une coupure. Livraison en France et en Espagne.`
 
+**Aussi (07/11) :** titre Rank Math de ?p=640 à mettre à jour (« EcoFlow Glacier 3 : Réfrigérateur Portable 35 L » → `EcoFlow Glacier Classic : réfrigérateur portable 35 L | Sol & Volt`) ; dans TranslatePress, traduire le titre du produit 640 (`EcoFlow Glacier Classic – Nevera portátil 35 L`), visible en français dans le fil d'Ariane et les grilles de /es_es/.
+
 **4. Fin de séance.**
 - Noter la cause trouvée et ce qui a été fait dans `CLAUDE.md` (« Fait en ligne (07/11/2026) » et journal).
 - Me rappeler de faire « Commit to main » puis « Push origin ».
