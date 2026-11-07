@@ -42,7 +42,7 @@ Vous avez un seul interlocuteur, francophone. La coordination figure sur une lig
 
 **CTA :** Parlez-nous de votre projet en message privé.
 
-**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitreouvrage #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
+**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
 
 ### Version B (accroche question)
 

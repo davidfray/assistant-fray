@@ -47,7 +47,7 @@ Les règles varient selon la commune.
 
 **CTA :** Envoyez-nous votre projet en message privé : nous vous disons quelle démarche s'applique.
 
-**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitreouvrage #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
+**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
 
 **CTA de repli** (si Fray Services ne prépare pas les démarches) : « Avant de démarrer, contactez le service d'urbanisme de votre mairie. Pour le chantier lui-même, envoyez-nous votre projet. »
 

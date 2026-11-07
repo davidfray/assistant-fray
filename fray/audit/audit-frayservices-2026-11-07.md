@@ -77,3 +77,7 @@ Restent pour David : liens Facebook et Instagram, page « Aviso legal », photo 
 3. Balises hreflang entre FR, ES, CA et EN (réglage de l'extension multilingue).
 4. ~~Désactiver les pages de pièce jointe~~ : fait le 07/11 (extension Disable Media Pages, accord de David).
 5. Pages de blog : leurs titres et descriptions par langue ne sont pas pris en compte ; à régler dans l'extension SEO ou multilingue si possible.
+
+## Positionnement corrigé (07/11, soir)
+
+Décision de David : Fray Services est **maître d'œuvre et bureau d'études**, pas maître d'ouvrage (ni délégué) ni seulement « direction de travaux ». Appliqué en ligne le 07/11 : bandeau, accueil, À propos, Services, slogan, mentions légales, About (EN). Le point 3 ci-dessus est donc remplacé par cette formulation.
