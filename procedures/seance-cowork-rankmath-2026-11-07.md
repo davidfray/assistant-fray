@@ -36,6 +36,8 @@ Puis Rank Math de la catégorie Le Module : titre `Le Module : stations, kits et
 
 **Aussi (07/11), redirections espagnoles des anciennes pages de niveau** (pages 74, 76, 78, 80 passées en brouillon par Claude ; leurs adresses /es_es/ répondent 404) : dans Rank Math > Redirections, 301 exactes `es_es/le-module/` → `/es_es/categoria-producto/autonomie-energetique/le-module/`, `es_es/la-base/` → `/es_es/categoria-producto/autonomie-energetique/la-base/`, `es_es/la-veilleuse/` → `/es_es/categoria-producto/autonomie-energetique/la-veilleuse/`, `es_es/l-autonomie/` → `/es_es/categoria-producto/lautonomie/` (vérifier qu'aucune regex existante ne les intercepte). Puis Rank Math > Plan du site : vider le cache ou réenregistrer, et vérifier que `page-sitemap.xml` ne liste plus /le-module/, /la-base/, /la-veilleuse/, /l-autonomie/, ni les produits de climatisation dans `product-sitemap.xml`.
 
+**Aussi (07/11), 18 descriptions Google de fiches produits** avec « Garantie 2 ans » ou « Livraison rapide » : textes prêts dans `audit/metas-rankmath-promesses-2026-11-07.md` (à faire une fois la cause du point 1 trouvée).
+
 **Aussi (07/11) :** titre Rank Math de ?p=640 à mettre à jour (« EcoFlow Glacier 3 : Réfrigérateur Portable 35 L » → `EcoFlow Glacier Classic : réfrigérateur portable 35 L | Sol & Volt`) ; dans TranslatePress, traduire le titre du produit 640 (`EcoFlow Glacier Classic – Nevera portátil 35 L`), visible en français dans le fil d'Ariane et les grilles de /es_es/.
 
 **4. Fin de séance.**

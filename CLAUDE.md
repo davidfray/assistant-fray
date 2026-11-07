@@ -33,6 +33,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `procedures/seance-cowork-rankmath-2026-11-07.md` | **Demande prête pour la séance Cowork** : titre Rank Math de L'Autonomie qui ne s'affiche pas, puis titres espagnols des 6 catégories dans TranslatePress |
 | `audit/titres-categories-es-2026-11-07.md` | **Titres d'onglet et descriptions Google des 6 catégories espagnoles** (encore en français au 07/11), traductions prêtes pour TranslatePress |
 | `audit/css-mobile-solandvolt-2026-11-04.md` | **Version mobile de solandvolt.com** : 6 défauts relevés à 360 px, CSS prêt à coller (CSS additionnel), test sur téléphone |
+| `audit/metas-rankmath-promesses-2026-11-07.md` | **18 descriptions Google (Rank Math) à corriger** : « Garantie 2 ans » et « Livraison rapide » (contenu visible des pages conforme, relu le 07/11) |
 | `audit/sourcing-panneaux-rigides-2026-11-07.md` | **Panneaux solaires rigides** : Innov8 (pack ECFORPACK1, hors fichier quotidien), Enverd (EcoFlow 400 W et 450 W par 2), marge et transport, brouillons Gmail |
 | `procedures/commande-ecoflow-expedition.md` | **Procédure à suivre dès qu'une commande EcoFlow arrive** : commande et prépaiement chez Innov8, enlèvement Packlink, emails FR/ES prêts, repères de marge |
 | `automatisations/make/` | Blueprints des scénarios Make créés par Claude (sans identifiants) |
