@@ -46,7 +46,7 @@ Déjà rentré en France ? Nous sommes sur place, à Palamós.
 
 **CTA :** Envoyez-nous l'adresse de votre bien en message privé.
 
-**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitreouvrage #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
+**Hashtags :** #renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
 
 ### Version B (accroche question directe)
 

@@ -44,7 +44,7 @@ Logement de plus de 2 ans, particulier : IVA possible à 10 %, sous conditions.
 **CTA :** Envoyez-nous l'adresse de votre bien en message privé.
 
 **Hashtags :**
-#renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitreouvrage #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
+#renovation #rénovationmaison #travauxmaison #artisan #gestiondeprojet #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #investissementimmobilier #rénovationintérieure #FrayServices #Palamós #artisanCostaBrava
 
 ---
 
