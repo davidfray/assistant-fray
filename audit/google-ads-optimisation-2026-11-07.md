@@ -51,6 +51,9 @@ diesel, silencieux, silent, panels, system, decathlon, renouvelable, مولد (a
 - Liens annexes et accroches espagnols rattachés (4 + 4).
 - À surveiller : le titre d'onglet de la page La Base espagnole est encore en français (« La Base : centrale électrique et kits balcon »), à traduire dans TranslatePress.
 
+### EcoFlow FR : requête large remplacée par l'expression exacte (07/11)
+Les 25 mots-clés en requête large du groupe attiraient des recherches hors sujet : « silent diesel generators », « 5000 watt solar generator price », « kit solaire 3000w … 10kw », recherches en arabe, « ecoflow decathlon ». Ils sont **en pause** ; 23 versions en expression exacte (« ») créées, 2 existaient déjà (réactivées si besoin). Le groupe compte 28 mots-clés en expression et 3 exacts. Sans conversion enregistrée, la requête large n'a pas de signal pour se corriger.
+
 ## 3. Ce que je n'ai pas modifié (décision de David)
 
 1. **EcoFlow FR perd de l'argent à chaque vente.** Transport vers la France : environ 100 € par envoi (TNT, Innov8 03/11), supérieur à la marge d'une River 3 Plus (37 € HT) ou d'une DELTA 3. Le groupe a coûté 23,50 € en 9 jours. Options : le remettre en pause jusqu'à un transporteur France rentable, ou le garder pour la notoriété en acceptant la perte.
