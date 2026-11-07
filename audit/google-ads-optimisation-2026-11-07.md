@@ -35,16 +35,29 @@ Appliqué aux annonces EcoFlow FR, EcoFlow ES et SOK ES, et aux accroches (callo
 ### Page d'arrivée EcoFlow FR
 L'annonce EcoFlow FR menait à l'**accueil**, alors que le premier terme payant est « ecoflow delta 3 » (20 clics, 9,12 €). Elle mène désormais à la fiche DELTA 3 française `/produit/station-electrique-portable-ecoflow-delta-3-1024wh/`. Annonce en cours de révision par Google au 07/11.
 
-### 10 mots-clés négatifs ajoutés (57 au total)
-diesel, silencieux, silent, panels, system, decathlon, renouvelable, مولد (arabe), « delta 2 » (expression), « river 2 » (expression). Termes repérés : « silent diesel generators », « solar panels », « 7000 watt solar system », « ecoflow decathlon », « energie renouvelable particulier » (3 clics), recherches en arabe, anciens modèles DELTA 2 et River 2 non vendus.
+### 10 mots-clés négatifs ajoutés (56 au total après correction)
+diesel, silencieux, silent, panels, system, decathlon, renouvelable, مولد (arabe), « delta 2 » (expression). **« river 2 » ajouté puis retiré le jour même** : la River 2 Pro (La Base) et la River 2 Max (Le Module) sont en vente. 56 négatifs au total. Termes repérés : « silent diesel generators », « solar panels », « 7000 watt solar system », « ecoflow decathlon », « energie renouvelable particulier » (3 clics), recherches en arabe, anciens modèles DELTA 2 et River 2 non vendus.
+
+## 2 bis. Ajouts du 07/11, à la demande de David
+
+### Titres SOK FR
+3 titres ajoutés (10 au total) : « Batterie camping-car 206 Ah », « LiFePO4 2 637 Wh », « Garantie légale 3 ans ».
+
+### Nouveau groupe « EcoFlow ES genérico » (id 208684355744)
+- Page d'arrivée : catégorie La Base espagnole `/es_es/categoria-producto/la-base/` (DELTA 3, DELTA 3 Plus, DELTA 3 Max Plus, DELTA 3 Pro, River 2 Pro, AC70P).
+- Mots-clés déplacés depuis EcoFlow ES (mis en pause là-bas) : « central eléctrica portátil », « generador solar portátil », « batería de respaldo casa » (expression), [estación de energía portátil] (exact).
+- EcoFlow ES garde les recherches de modèle : ecoflow delta 3, ecoflow delta 3 plus, ecoflow stream ultra (vers la fiche DELTA 3).
+- Annonce : 11 titres (Estaciones de energía portátil, Generador solar portátil, Batería de respaldo para casa, EcoFlow DELTA 3 y River 2 Pro, Energía para cortes de luz, Elige según tu autonomía, Garantía legal de 3 años, Envío con seguimiento, Pago 100% seguro, Tienda de energía solar, Compra online en Solandvolt) et 4 descriptions ; chemin affiché /estaciones/portatiles.
+- Liens annexes et accroches espagnols rattachés (4 + 4).
+- À surveiller : le titre d'onglet de la page La Base espagnole est encore en français (« La Base : centrale électrique et kits balcon »), à traduire dans TranslatePress.
 
 ## 3. Ce que je n'ai pas modifié (décision de David)
 
 1. **EcoFlow FR perd de l'argent à chaque vente.** Transport vers la France : environ 100 € par envoi (TNT, Innov8 03/11), supérieur à la marge d'une River 3 Plus (37 € HT) ou d'une DELTA 3. Le groupe a coûté 23,50 € en 9 jours. Options : le remettre en pause jusqu'à un transporteur France rentable, ou le garder pour la notoriété en acceptant la perte.
 2. **Budget : ne pas l'augmenter maintenant.** 37 % d'impressions perdues faute de budget, mais 0 achat. Priorité : CSS mobile et commande test d'abord.
 3. **Commande test** pour vérifier la conversion (0 conversion depuis l'ouverture). Sans conversion, impossible de passer en enchères « Maximiser les conversions ».
-4. **EcoFlow ES, mots-clés génériques** (« central eléctrica portátil » 20,34 €, « generador solar portátil » 12,85 €) qui arrivent tous sur la DELTA 3. Proposition : un groupe ES « genérico » vers la catégorie La Base espagnole, et garder la fiche DELTA 3 pour les recherches « ecoflow delta 3 ».
-5. **SOK FR, efficacité de l'annonce « Médiocre »** (7 titres seulement). Titres à ajouter : « Batterie camping-car 206 Ah », « LiFePO4 2 637 Wh », « Garantie légale 3 ans ».
+4. **FAIT le 07/11 (voir section 2 bis).** EcoFlow ES, mots-clés génériques (« central eléctrica portátil » 20,34 €, « generador solar portátil » 12,85 €) qui arrivent tous sur la DELTA 3. Proposition : un groupe ES « genérico » vers la catégorie La Base espagnole, et garder la fiche DELTA 3 pour les recherches « ecoflow delta 3 ».
+5. **FAIT le 07/11 (voir section 2 bis).** SOK FR, efficacité de l'annonce « Médiocre »** (7 titres seulement). Titres à ajouter : « Batterie camping-car 206 Ah », « LiFePO4 2 637 Wh », « Garantie légale 3 ans ».
 
 ## 4. Prochain contrôle
 
