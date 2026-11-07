@@ -65,3 +65,31 @@ Les 25 mots-clés en requête large du groupe attiraient des recherches hors suj
 ## 4. Prochain contrôle
 
 Le 14/11 : effet des négatifs et de la nouvelle page d'arrivée EcoFlow FR (CTR, CPC, taux de rebond GA4 si installé).
+
+## 5. Recalibrage du 07/11 (après-midi), à la demande de David
+
+### Le constat corrigé
+- **Aucune commande WooCommerce depuis le 06/10** (lu par l'API : 3 commandes au total, 2 annulées en août et octobre, 1 remboursée en septembre ; aucune en attente ni échouée). Le « 0 achat » de Google Ads est donc **réel**, ce n'est pas un défaut de suivi. La commande test n'a jamais été passée.
+- **GA4 collecte depuis le 03/11** par Site Kit (balise `GT-NMC3NTFB`, mesure `G-X1JG6B971W`, suivi des conversions de Site Kit activé). Du 03 au 07/11 : 62 sessions, dont 36 en Recherche payante (34 sur mobile, 68 % de sessions engagées, 1 min 52 en moyenne) ; **0 ajout au panier, 0 paiement commencé**. GA4 compte moins de visites que Google Ads de clics (bandeau de cookies CookieAdmin : les refus ne sont pas comptés).
+- **Parcours d'achat testé le 07/11** (iPhone, FR et ES, depuis une machine neutre) : ajout au panier, panier et page de paiement fonctionnent ; Mollie propose carte, PayPal et virement. Le paiement lui-même reste à tester par une vraie commande.
+- Conclusion : les visiteurs regardent la fiche puis repartent sans ajouter au panier. **Le frein est l'offre (prix, délai), pas la technique.**
+
+### Comparaison des prix (07/11)
+| Produit | Sol & Volt | Concurrence |
+|---|---|---|
+| EcoFlow DELTA 3 (1 024 Wh) | 799 € | EcoFlow ES 799 à 849 € ; MediaMarkt 705,49 € (vendeur tiers) ; Idealo annonçait « dès 641,99 € » (aucune offre affichée au contrôle) |
+| EcoFlow River 3 Plus | 299 € | EcoFlow ES 299 €, DSP Camper 299 €, MediaMarkt 299 à 348 € |
+| SOK 12 V 206 Ah chauffante (SK12V206H) | **639,90 €** | **Boutique officielle SOK Europe : 585 €**, livraison offerte dans l'UE, entrepôt en Allemagne |
+| SOK 12 V 100 Ah chauffante (SK12V100H) | **269 €** | **SOK Europe : 259 €** |
+
+- EcoFlow : Sol & Volt est au PVP (obligation Innov8), donc au même prix que la marque, avec un délai plus long. Seuls le conseil (4 niveaux d'autonomie) et le service local peuvent faire la différence.
+- **SOK : Sol & Volt est plus cher que le fabricant lui-même** (55 € sur la 206 Ah). Un visiteur qui compare achète chez SOK. À décider par David : aligner le prix (si le prix d'achat le permet, à vérifier) ou arrêter les groupes SOK de Google Ads.
+
+### Fait le 07/11
+- **Budget de la campagne passé de 10 à 5 € par jour** (accord de David), jusqu'à la première vente. Groupes actifs : EcoFlow ES, EcoFlow ES genérico, SOK FR, SOK ES. EcoFlow FR reste en pause.
+- Contrôle des annonces (12 h 46) : toutes approuvées, le groupe genérico diffuse.
+
+### Reste à faire par David
+1. **Commande test réelle sur téléphone**, version espagnole, avec un produit bon marché (par exemple une lampe), puis remboursement : valide le paiement et la conversion Google Ads.
+2. **SOK** : vérifier le prix d'achat et décider (aligner à 585 € et 259 €, ou couper les groupes SOK).
+3. **GA4** (Admin > Paramètres de la propriété) : devise **EUR** et fuseau **Europe/Madrid** (aujourd'hui USD et UTC). Aucun outil connecté ne permet de modifier la propriété.
