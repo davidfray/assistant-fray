@@ -93,3 +93,8 @@ Le 14/11 : effet des négatifs et de la nouvelle page d'arrivée EcoFlow FR (CTR
 1. **Commande test réelle sur téléphone**, version espagnole, avec un produit bon marché (par exemple une lampe), puis remboursement : valide le paiement et la conversion Google Ads.
 2. **SOK** : vérifier le prix d'achat et décider (aligner à 585 € et 259 €, ou couper les groupes SOK).
 3. **GA4** (Admin > Paramètres de la propriété) : devise **EUR** et fuseau **Europe/Madrid** (aujourd'hui USD et UTC). Aucun outil connecté ne permet de modifier la propriété.
+
+### Suite du 07/11 (« fais les travaux »)
+- **Prix SOK alignés sur SOK Europe** (décision de David, par l'API) : SK12V206H ?p=482 **585 €** (au lieu de 639,90 €), SK12V100H ?p=480 **259 €** (au lieu de 269 €). Prix d'achat SOK (mail d'Eve du 15/10, HT, livraison France et Espagne comprise) : 439 € et 187 €. Marge HT : **44,47 €** (10,1 % du coût) et **27,05 €** (14,5 %), avant frais Mollie. La 206 Ah passe sous la règle des 12 % : exception voulue, le prix du marché est prioritaire. Paliers SOK : 206 Ah à 410 € dès 10 unités par mois (3 modèles cumulés pendant les 3 premiers mois). SOK n'impose pas de prix minimum. Vérifié en ligne (FR et ES).
+- **GA4 devise et fuseau** : refusé par Google (connexion Composio en lecture seule). Reste à David : Admin > Paramètres de la propriété > devise EUR, fuseau Europe/Madrid.
+- **Commande test** : non faisable par Claude (paiement réel par carte depuis un vrai téléphone, et le navigateur de la session ne transmet pas les balises Google). À faire par David ; Claude rembourse ensuite par l'API WooCommerce (remboursement Mollie).
