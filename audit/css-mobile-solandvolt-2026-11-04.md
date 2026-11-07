@@ -1,5 +1,7 @@
 # solandvolt.com : version mobile (04/11/2026)
 
+> **Statut : collé en ligne le 07/11/2026 par Claude** (connecteur WordPress.com, styles globaux, CSS additionnel, à la fin, règles existantes intactes). Deux ajustements par rapport au bloc ci-dessous, après contrôle en capture à 360 px : le sélecteur de langue est à `bottom: 84px` (150 px sur les fiches) pour ne plus chevaucher la bulle de l'assistant, et la barre d'achat collante a `padding-bottom: 84px` (règle « 2 bis ») pour que prix et bouton passent au-dessus de la bulle et du bouton rond de l'assistant ; `body.single-product` a `padding-bottom: 140px`. Vérifié en capture : accueil FR (grille 2 colonnes, newsletter, pied de page), accueil ES, fiche ?p=623. Reste à faire par David : le test sur son téléphone (points 1 à 6), la taille du titre dans Brevo.
+
 ## Constat
 
 Le site est déjà « responsive » (thème Twenty Twenty-Five enfant, balise viewport présente, menu en burger, barre d'achat collante sur les fiches). Il n'y a donc pas de « version mobile » séparée à créer : on corrige l'affichage du site actuel sur téléphone.
