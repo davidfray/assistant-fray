@@ -56,7 +56,7 @@ Les 25 mots-clés en requête large du groupe attiraient des recherches hors suj
 
 ## 3. Ce que je n'ai pas modifié (décision de David)
 
-1. **EcoFlow FR perd de l'argent à chaque vente.** Transport vers la France : environ 100 € par envoi (TNT, Innov8 03/11), supérieur à la marge d'une River 3 Plus (37 € HT) ou d'une DELTA 3. Le groupe a coûté 23,50 € en 9 jours. Options : le remettre en pause jusqu'à un transporteur France rentable, ou le garder pour la notoriété en acceptant la perte.
+1. **FAIT le 07/11 : groupe EcoFlow FR en pause (décision de David).** À réactiver quand un transporteur France rentable sera trouvé, puis surveiller les mots-clés en expression exacte. Constat initial : EcoFlow FR perd de l'argent à chaque vente. Transport vers la France : environ 100 € par envoi (TNT, Innov8 03/11), supérieur à la marge d'une River 3 Plus (37 € HT) ou d'une DELTA 3. Le groupe a coûté 23,50 € en 9 jours. Options : le remettre en pause jusqu'à un transporteur France rentable, ou le garder pour la notoriété en acceptant la perte.
 2. **Budget : ne pas l'augmenter maintenant.** 37 % d'impressions perdues faute de budget, mais 0 achat. Priorité : CSS mobile et commande test d'abord.
 3. **Commande test** pour vérifier la conversion (0 conversion depuis l'ouverture). Sans conversion, impossible de passer en enchères « Maximiser les conversions ».
 4. **FAIT le 07/11 (voir section 2 bis).** EcoFlow ES, mots-clés génériques (« central eléctrica portátil » 20,34 €, « generador solar portátil » 12,85 €) qui arrivent tous sur la DELTA 3. Proposition : un groupe ES « genérico » vers la catégorie La Base espagnole, et garder la fiche DELTA 3 pour les recherches « ecoflow delta 3 ».
