@@ -75,5 +75,5 @@ Restent pour David : liens Facebook et Instagram, page « Aviso legal », photo 
 1. Version espagnole : créer Contacto (avec formulaire, indicatif ES par défaut), Preguntes/Preguntas frecuentes, Método, Proyectos et les pages de ville en espagnol, en leur attribuant la langue espagnole dans l'extension multilingue (le connecteur ne voit pas ce réglage : une page créée par lui serait rangée en français). Puis faire pointer les liens de `/es/servicios/` vers ces pages.
 2. Langue espagnole déclarée en **« es-EC » (Équateur)** et `og:locale` en `es_LA` : régler sur espagnol d'Espagne (es_ES).
 3. Balises hreflang entre FR, ES, CA et EN (réglage de l'extension multilingue).
-4. Désactiver les pages de pièce jointe (environ 75 dans le plan du site).
+4. ~~Désactiver les pages de pièce jointe~~ : fait le 07/11 (extension Disable Media Pages, accord de David).
 5. Pages de blog : leurs titres et descriptions par langue ne sont pas pris en compte ; à régler dans l'extension SEO ou multilingue si possible.
