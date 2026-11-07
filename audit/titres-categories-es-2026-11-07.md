@@ -15,6 +15,9 @@ Traductions faites d'après les titres français **actuels** (elles remplacent c
 
 ## Points à noter
 
-- **Titre français de L'Autonomie dépassé** : « kit solaire Tornasol 800 W » alors que la catégorie contient aussi les batteries STREAM (et Zendure). Proposition pour Rank Math (version française) : « L'Autonomie : batteries solaires pour la maison | Sol & Volt ».
+- **Titre français de L'Autonomie dépassé** : « kit solaire Tornasol 800 W » alors que la catégorie contient aussi les batteries STREAM (et Zendure). À corriger par David dans wp-admin (07/11 : Rank Math hors de portée des connecteurs) : Produits > Catégories > L'Autonomie > Modifier > bloc Rank Math en bas > Modifier l'extrait.
+  - Titre : `L’Autonomie : batteries solaires pour la maison | Sol & Volt`
+  - Description : `Batteries solaires domestiques EcoFlow STREAM et kit solaire Tornasol 800 W pour produire et stocker l’électricité chez soi. Livraison en France et en Espagne.`
+  - **Faire le français avant la saisie espagnole dans TranslatePress** : TranslatePress traduit le texte français tel qu'il est ; si le français change après, la traduction espagnole est à refaire.
 - Zendure n'est pas cité dans la description espagnole de L'Autonomie : sa livraison est limitée à l'Espagne.
 - Contrôle après saisie : ouvrir chaque adresse en navigation privée, lire le titre de l'onglet ; Claude peut vérifier toutes les pages en une fois.
