@@ -24,7 +24,7 @@ Caractéristiques du panneau rigide EcoFlow 400 W (fiche Innov8) : monocristalli
 
 ## Actions
 
-1. **Brouillons Gmail prêts (07/11), à relire et envoyer par David :**
+1. **Emails envoyés le 07/11 à la demande de David** (réponses vérifiées le 10/11 à 9 h 17) :
    - Innov8 (Juan Carlos Pinar, copie sac@) : référence, PVP et stock du panneau rigide 400 W (et 450 W), conditions du pack ECFORPACK1, poids et dimensions des emballages, ajout au fichier quotidien.
    - Enverd (Pau Junyent) : prix revendeur des panneaux rigides EcoFlow 400 W et 450 W (et rigides Bluetti), réapprovisionnement du 400 W, mode d'envoi (palette, camion), France, bon neutre, casse en transport.
 2. Simuler sur Packlink PRO l'envoi d'une paire de panneaux (2 × 21,8 kg, 172 × 113 × 3,5 cm chacun) vers Madrid et Paris.
