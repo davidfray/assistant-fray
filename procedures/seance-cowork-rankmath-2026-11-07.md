@@ -25,11 +25,14 @@ Pourtant, la page `/categorie-produit/lautonomie/` affiche toujours l'ancien tit
 
 Après chaque action, ouvrir `/categorie-produit/lautonomie/` en navigation privée et lire le titre de l'onglet.
 
-**2. Une fois le titre français en ligne**, saisir dans TranslatePress les titres et descriptions espagnols des 6 catégories (tableau de `audit/titres-categories-es-2026-11-07.md`). Ouvrir chaque page `/es_es/categoria-producto/...` dans l'éditeur visuel, menu déroulant en haut de la barre latérale.
+**2. Une fois le titre français en ligne**, saisir dans TranslatePress les titres et descriptions espagnols des 5 catégories (Climatisation retirée) (tableau de `audit/titres-categories-es-2026-11-07.md`). Ouvrir chaque page `/es_es/categoria-producto/...` dans l'éditeur visuel, menu déroulant en haut de la barre latérale.
 
-**3. Descriptions Google de 2 fiches Climatisation (Rank Math, même cause probable que le point 1).**
-- ?p=42 (Rafraîchisseur d'air portable) : remplacer « Livraison rapide. » par « Livraison en 12 à 18 jours. »
-- ?p=46 (Air Cooler) : `Rafraîchisseur évaporatif 65 W avec télécommande et minuterie 2 à 8 h, sans unité extérieure. Livraison en 12 à 18 jours.`
+**3. Climatisation retirée du site (décision de David du 07/11).**
+Les 4 produits et l'article sont en brouillon depuis le 07/11 ; leurs adresses répondent 404. Dans Rank Math > Redirections, créer des 301 (correspondance exacte) :
+- `produit/climatiseur-mural-a-compresseur-solandvolt/`, `produit/rafraichisseur-dair-portable-usb-brumisation-glace-et-huiles-essentielles/`, `produit/rafraichisseur-dair-evaporatif-65-w-telecommande-reservoir-25-l/`, `produit/climatiseur-evaporation-portable-taurus-snowfield-5-60-w-5-l/`, `categorie-produit/climatisation/` → `/boutique/`
+- `climatiser-residence-secondaire-sans-travaux/` → `/blog/`
+- mêmes adresses en `/es_es/producto/...`, `/es_es/categoria-producto/climatisation/` et `/es_es/climatiser-residence-secondaire-sans-travaux/` → `/es_es/` (vérifier qu'aucune regex existante ne les intercepte ; jamais d'antislash dans les regex Rank Math)
+Puis Rank Math de la catégorie Le Module : titre `Le Module : stations, kits et panneaux solaires | Sol & Volt`, description `Stations d’énergie portables, panneaux solaires et kits prêts à l’emploi pour garder la box, la lumière et les téléphones pendant une coupure. Livraison en France et en Espagne.`
 
 **4. Fin de séance.**
 - Noter la cause trouvée et ce qui a été fait dans `CLAUDE.md` (« Fait en ligne (07/11/2026) » et journal).
