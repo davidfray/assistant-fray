@@ -2,7 +2,7 @@
 
 Audit en lecture seule après la refonte faite en séance Cowork (nouvelle charte bleu marine #0B2A5C et orange #F5A30B, Oswald et Lato, validée par David le 07/11 ; bouton « Solandvolt » conservé dans le menu, décision de David). Pages relues : les 53 pages de contenu du plan du site (FR, ES, CA, EN), captures bureau et téléphone de l'accueil et de Contact, formulaire, pied de page, métadonnées.
 
-**Note : 7/10** (5/10 le 04/11). Le fichier `fray/site/corrections-frayservices-2026-11-04.md` est **dépassé** : ne plus l'appliquer.
+**Note : 7/10** (5/10 le 04/11), **7,5/10 après les corrections du 07/11** (voir en fin de fichier). Le fichier `fray/site/corrections-frayservices-2026-11-04.md` est **dépassé** : ne plus l'appliquer.
 
 ## Ce qui est réglé depuis le 04/11
 
@@ -50,3 +50,17 @@ Audit en lecture seule après la refonte faite en séance Cowork (nouvelle chart
 ## Ce que Claude peut faire directement (connecteur WordPress.com, site 253853971)
 
 Points 2, 3, 5 (descriptions des pages de blog), 7 (délais, emojis, texte alternatif) : sur accord de David. Point 1 : la suppression des 3 captures est définitive, donc à confirmer par David ; le réglage des pages de pièce jointe est à vérifier dans le connecteur. Points 4 et 6 : contenu ou décisions de David (photos, avis, traductions espagnoles complètes).
+
+## Corrections faites le 07/11 (à la demande de David, connecteur WordPress.com, tout vérifié en ligne)
+
+| Point | Fait |
+|---|---|
+| 1 | **3 captures supprimées définitivement** (Gmail id 101, ChatGPT id 104 et 105) : fichiers et pages en 404. Aucune page ne les utilisait. Reste : désactiver les pages de pièce jointe (réglage non accessible au connecteur, à faire en séance Cowork ou dans wp-admin). |
+| 2 | Pages Contact FR (13), CA (426), EN (580) : image IA remplacée par la vraie photo `sdb_apres_web` (id 410), textes alternatifs dans chaque langue, image de partage corrigée. **Formulaire : indicatif par défaut « US » remplacé par FR** (CA : ES ; EN : GB inchangé). |
+| 3 | En-tête commun : « Maître d'ouvrage sur la Costa Brava » → « Direction de travaux sur la Costa Brava » ; **drapeaux espagnol et anglais ajoutés** (seuls FR et CA y figuraient). À propos (10) : titre « Votre interlocuteur francophone pour vos travaux sur la Costa Brava », titre Google « À propos \| Direction de travaux à Palamós, Costa Brava \| Fray Services ». Services FR : « Maîtrise d'ouvrage déléguée ». |
+| 5 | Modèle des articles : titre en H1 (vérifié). Slogan du site (utilisé comme description des pages de blog) remplacé : « Direction de travaux et rénovation sur la Costa Brava, en français : un interlocuteur unique à Palamós pour votre résidence principale ou secondaire. » Les descriptions par langue saisies sur les pages de blog ne sont pas prises en compte par le site (pages d'articles), le slogan s'affiche dans les 4 langues. |
+| 7 | Emojis retirés des pages Services FR (165), ES (508), EN (573). |
+
+Points de l'audit **sans correction nécessaire** après vérification : l'image « sans texte alternatif » de l'accueil est le fond décoratif du bandeau (texte vide correct) ; les délais sont cohérents (accueil « devis sous 48 h », FAQ « réponse sous 24 h, devis sous 48 h »).
+
+Restent pour David : liens Facebook et Instagram, page « Aviso legal », photo et parcours de David, avis Google, fiches projet, version espagnole complète et balises hreflang, pages de pièce jointe. Remarque : la page Services espagnole renvoie vers les pages de ville et le Contact en français (pas d'équivalents espagnols).
