@@ -5,7 +5,7 @@ description: "Service client Solandvolt : réponses FR/ES sur livraison, paiemen
 
 # Solandvolt — service client
 
-Lire d'abord solandvolt-garde-fous. Pour orienter un client vers un produit, s'appuyer sur solandvolt-niveaux-autonomie. Contact public : contact@solandvolt.com (redirection vers la boîte de David). Les réponses clients se préparent en brouillon, David valide et envoie.
+Lire d'abord solandvolt-garde-fous. Pour orienter un client vers un produit, s'appuyer sur solandvolt-niveaux-autonomie. Contact public : contact@solandvolt.com (redirection vers la boîte de David). Pour la rédaction de la réponse elle-même (objet, gabarit, format de sortie), suivre aussi le skill réplica. Les réponses clients se préparent en brouillon, David valide et envoie.
 
 ## Ton
 
@@ -13,15 +13,13 @@ Empathique, expert, rassurant, court. Français par défaut, espagnol quand le c
 
 ## Faits à donner, à revérifier sur le site avant d'écrire
 
-Livraison France et Espagne. Frais forfaitaires actuels : 2,90 € HT en France, 4,00 € HT en Espagne, gratuits dès 60 € d'achat. Délais : lire celui de la fiche produit (stock Europe ou entrepôt international), ne jamais en promettre un de mémoire. Paiement : carte, Klarna, virement, virement instantané, PayPal. Prix toujours TTC. Droit de rétractation de 14 jours pour les consommateurs. Garantie commerciale affichée sur les fiches : 2 ans, SAV basé en Europe. Garantie Sérénité Prolongée en option : +2 ans, 8 % du prix produit.
+Livraison France et Espagne. Frais affichés : à partir de 3,51 € TTC (2,90 € HT), offerts dès 60 € d'achat ; vérifier le montant du jour au panier. Délais : lire celui de la fiche produit, ne jamais en promettre un de mémoire. EcoFlow vers la France : aucun transporteur rentable au 07/11, vérifier la faisabilité avant de confirmer un envoi. Produits de plus de 40 kg (?p=750, ?p=584) : livraison sur devis. Paiement : carte, PayPal et virement (Mollie), vérifier les autres moyens au panier. Prix toujours TTC. Droit de rétractation de 14 jours pour les consommateurs.
+
+**Garantie : 3 ans, celle des CGV, en France comme en Espagne. Aucune extension de garantie n'est proposée** (décision de David du 26/10/2026). Ne jamais mentionner de « garantie commerciale 2 ans », de « Garantie Sérénité Prolongée » ni d'option payante.
 
 ## Garanties légales (vérifié le 06/10/2026)
 
-France : garantie légale de conformité de 2 ans à compter de la délivrance pour un bien neuf, avec présomption d'antériorité du défaut pendant ces 2 ans (Code de la consommation, L217-3 et suivants). Espagne : 3 ans pour un bien neuf depuis le 1er janvier 2022 (Real Decreto-ley 7/2021), présomption de 2 ans, prescription de l'action de 5 ans. La durée s'applique selon le pays du consommateur. Un texte de réassurance qui dit « 3 ans » sans distinguer le pays est exact pour l'Espagne et faux pour la France : toujours donner la durée du pays du client. La garantie commerciale (2 ans affichés) s'ajoute à la garantie légale, ne la remplace pas, et ne doit jamais être présentée comme inférieure ou égale à ce que la loi donne déjà. Ces durées sont du droit général : pour un cas litigieux ou une réponse qui engage l'entreprise, proposer le texte à David et à son conseil.
-
-## Garantie prolongée payante
-
-Pour un client espagnol, la loi donne déjà 3 ans : vendre « +2 ans » à la suite d'une garantie commerciale de 2 ans fait payer une année que la loi accorde gratuitement. Pour un client français, les 2 ans légaux couvrent déjà les défauts de conformité. Si un client interroge l'option, ne pas la présenter comme une obligation ni comme ce qui rend le produit protégé : expliquer ce que la garantie légale couvre déjà et ce que l'option ajoute réellement (durée commerciale au-delà du légal, services). Signaler à David toute formulation du site qui pourrait induire en erreur.
+Espagne : 3 ans pour un bien neuf depuis le 1er janvier 2022 (Real Decreto-ley 7/2021), présomption de 2 ans, prescription de l'action de 5 ans : les 3 ans des CGV correspondent à la loi. France : la loi impose 2 ans de garantie légale de conformité (Code de la consommation, L217-3 et suivants), avec présomption d'antériorité du défaut pendant 2 ans ; les CGV de Sol & Volt accordent 3 ans. Pour un client français, écrire « garantie de 3 ans (CGV) » plutôt que « garantie légale de 3 ans ». Pour un cas litigieux ou une réponse qui engage l'entreprise, proposer le texte à David et à son conseil.
 
 ## Cas fréquents
 
@@ -29,7 +27,7 @@ Suivi de commande : demander le numéro de commande, vérifier le statut dans Wo
 
 ## Questions sensibles
 
-CE : ne rien affirmer. Répondre que la conformité est vérifiée produit par produit et n'en parler que si le document est reçu et vérifié. Appareils médicaux : aucune promesse de sécurité, conseiller de contacter le fabricant de l'appareil et un professionnel. Installation et démarches réseau (kits balcon, kits résidentiels) : indiquer de se rapprocher du gestionnaire de réseau local et d'un électricien qualifié, sans garantir de démarche ni d'aide financière. Litige, remboursement chiffré, geste commercial : proposer une réponse à David, ne pas décider.
+CE : ne rien affirmer. Répondre que la conformité est vérifiée produit par produit et n'en parler que si le document est reçu et vérifié. Appareils médicaux : aucune promesse de sécurité, conseiller de contacter le fabricant de l'appareil et un professionnel. Installation et démarches réseau (kits balcon, kits résidentiels) : indiquer de se rapprocher du gestionnaire de réseau local et d'un électricien qualifié, sans garantir de démarche ni d'aide financière. Litige, remboursement chiffré, geste commercial : proposer une réponse à David, ne pas décider. Aucun code de remise sur EcoFlow (prix minimum imposé par le fournisseur).
 
 ## Modèle de réponse
 
