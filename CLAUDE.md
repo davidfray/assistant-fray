@@ -21,7 +21,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - **Prix SOK alignés sur SOK Europe** : 206 Ah 585 €, 100 Ah 259 € (marge 44 € et 27 € HT).
 - **GA4** : actif par Site Kit depuis le 03/11, en EUR et Europe/Madrid depuis le 07/11.
 - **Accès API solandvolt.com** opérationnel (voir « Accès API solandvolt.com ») : titres et descriptions Rank Math, redirections, produits et prix WooCommerce se font désormais sans Cowork. Restent dans Chrome (Cowork) : frayservices.com (Polylang), réglages Google à modifier.
-- **Séance Cowork du 07/11 : contrôlée le 08/11** (`audit/controle-seance-cowork-2026-11-08.md`) : 7 titres, 18 descriptions, 16 redirections et plans du site conformes. Restent : description Google de ?p=640 et liens « Glacier 3 » de ?p=50 et ?p=52 (correction par l'API en attente de l'accord de David), titre ES de La Veilleuse (« El Piloto ») dans TranslatePress. **Découverte : 16 pages anglaises /en/ publiées le 06/11** (dont « Portable Cooling », grilles de produits figées), à décider par David.
+- **Séance Cowork du 07/11 : contrôlée le 08/11** (`audit/controle-seance-cowork-2026-11-08.md`) : 7 titres, 18 descriptions, 16 redirections et plans du site conformes. Glacier corrigé le 08/11 par l'API avec l'accord de David (description Google de ?p=640, liens « Voir aussi » de ?p=50 et ?p=52 ; sauvegardes `audit/sauvegardes-2026-11-08/`, vérifié en ligne FR et ES). Reste : titre ES de La Veilleuse (« El Piloto ») dans TranslatePress. **Découverte : 16 pages anglaises /en/ publiées le 06/11** (dont « Portable Cooling », grilles de produits figées), à décider par David.
 
 ## Où trouver quoi
 

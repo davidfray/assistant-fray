@@ -15,6 +15,8 @@ Relu en ligne le 08/11 vers 18 h 45 (heure de Madrid), par l'API et les pages pu
 
 ## À corriger
 
+**Points 1 et 2 faits le 08/11** par l'API, avec l'accord de David : description Google de ?p=640 et liens de ?p=50 et ?p=52 corrigés, vérifiés en ligne (FR et ES). Sauvegardes : `audit/sauvegardes-2026-11-08/`.
+
 1. **Description Google de ?p=640** : encore « EcoFlow Glacier 3 : Réfrigérateur Portable 35 L. Livraison France et Espagne, paiement sécurisé. » (FR, et en français sur /es_es/). Proposé : `EcoFlow Glacier Classic : réfrigérateur portable 35 L. Livraison en France et en Espagne, paiement sécurisé.` (faisable par l'API Rank Math, avec l'accord de David).
 2. **Fiches ?p=50 et ?p=52, bloc « Voir aussi »** : lien vers ?p=640 intitulé « EcoFlow Glacier 3 – Réfrigérateur portable 35 L ». À remplacer par « EcoFlow Glacier Classic – … » (faisable par l'API WooCommerce, avec l'accord de David).
 3. **La Veilleuse ES** : titre d'onglet « La Veilleuse: lámparas y cargadores solares » ; le nom espagnol retenu est « El Piloto » (menu « Piloto »). À ressaisir dans TranslatePress : `El Piloto: lámparas y cargadores solares | Sol & Volt`.
