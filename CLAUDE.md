@@ -73,7 +73,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Posts : version A retenue partout (kit balcon, Wh, décembre 1re et 2e quinzaines, Fray novembre). Post Sol & Volt du 25/12 validé, lancement en 2026 confirmé ; bilan du 29/12 en version 2 (récapitulatif des 4 niveaux).
 - Article Wh : enrichir ?p=483 plutôt que publier le brouillon de novembre (proposition prête : `blog/maj-article-483-combien-wh.html`).
 - Produit niveau Le Module : publier le Kit Autonomie 300 Wh ?p=94 (David le publie lui-même).
-- Fray Services : délai de réponse retenu « réponse sous 24 h ».
+- Fray Services : délai de réponse retenu « réponse sous 24 h » (reconfirmé le 08/11 pour les posts : ne plus écrire « sous 48 h » ; la visite technique reste « sous 48 h »).
 - Sol & Volt : pas d'extension de garantie proposée ; la référence est la garantie légale de 3 ans des CGV.
 - Sol & Volt : les batteries de stockage STREAM sont classées au niveau L'Autonomie.
 - Sol & Volt, Innov8 : API de commande DropShipping ouverte le 21/10 (identifiants dans le mail de Juan Carlos Pinar du 21/10, **ne jamais les copier dans le dépôt**) ; elle accepte une adresse de livraison client et un suivi d'envoi. Question « Innov8 expédie-t-il lui-même via l'API ? » en brouillon dans Gmail (29/10), à envoyer par David. Paiement : prépaiement par virement, sans minimum.

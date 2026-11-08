@@ -5,7 +5,7 @@ Style repris de la série publiée : accroche courte, un conseil technique concr
 Rôle : Fray Services est **maître d'œuvre et bureau d'études** ; le client reste le maître d'ouvrage.
 Charte des visuels (07/11) : bleu marine #0B2A5C, orange #F5A30B, blanc ; Oswald Bold pour les titres, Lato pour le texte ; logo Fray Services en bas à gauche. Vraies photos uniquement.
 
-**Délai de réponse :** les posts utilisent « réponse sous 24 h » (décision du 26/10). La série publiée disait « sous 48 h ». À trancher par David : garder 24 h, ou revenir à 48 h partout.
+**Délai de réponse : « réponse sous 24 h »**, confirmé par David le 08/11 (la série publiée du 30/10 au 06/11 disait « sous 48 h » ; ne plus l'utiliser).
 
 Hashtags Facebook (tous les posts) : #rénovation #CostaBrava #villaEspagne #propriétaire #FrayServices
 Hashtags Instagram (tous les posts) : #renovation #rénovationmaison #travauxmaison #artisan #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #FrayServices #Palamós
@@ -308,7 +308,7 @@ Envoyez-nous l'adresse de votre bien en message privé : réponse sous 24 h.
 ## Avant de programmer
 
 - [ ] Relecture de David, choix A ou B pour chaque post
-- [ ] Délai de réponse : 24 h ou 48 h
+- [x] Délai de réponse : 24 h (David, 08/11)
 - [ ] Photos réelles pour chaque date (aucune image générée)
 - [ ] 16/11 : accompagnement des démarches en mairie confirmé, règles de Palamós vérifiées
 - [ ] 20/11 : accord de Roger Boullier (ou version « R. B. »)
