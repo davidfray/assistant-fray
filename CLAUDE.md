@@ -1,6 +1,6 @@
 # Mémoire des projets : Fray Services Palamós et Sol & Volt
 
-Fichier chargé automatiquement à chaque session. Mis à jour le 07/11/2026.
+Fichier chargé automatiquement à chaque session. Mis à jour le 08/11/2026.
 Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillons en Markdown dans ce dépôt, sauf mention « en ligne ».
 
 ## Deux marques, jamais mélangées
@@ -14,7 +14,7 @@ Branche de travail : `ccr-1a772cc3-mb90wj`. Tous les livrables sont des brouillo
 
 Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau local » jamais Enedis seul, photos réelles uniquement, aucune référence à Fray Services, publication Instagram uniquement après validation de David (n8n n'est plus utilisé depuis le 28/10 ; automatisations dans Make, organisation Fray Services).
 
-## État au 07/11/2026 (à lire en premier)
+## État au 08/11/2026 (à lire en premier)
 
 - **Sol & Volt, ventes :** aucune commande WooCommerce depuis le 06/10. Le parcours d'achat fonctionne (panier, paiement Mollie). Pas de commande test payée (décision de David) : la première vente réelle servira de contrôle de la conversion Google Ads.
 - **Google Ads :** budget **5 € par jour** jusqu'à la première vente. Groupes actifs : EcoFlow ES, EcoFlow ES genérico, SOK FR, SOK ES. EcoFlow FR en pause (transport vers la France trop cher). Bilan hebdomadaire programmé le 14/11 à 9 h 13 : clics, coût, effet des prix SOK alignés, ventes.
@@ -174,9 +174,8 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## En attente
 
 ### De David
-- Sol & Volt (07/11) : **commande test réelle sur téléphone** (version espagnole, petit produit, puis remboursement) ; (prix SOK alignés le 07/11 ; Claude rembourse la commande test par l'API) ; **GA4** : devise EUR et fuseau Europe/Madrid (aujourd'hui USD et UTC).
 - Sol & Volt, panneaux rigides (07/11) : emails envoyés à Innov8 et Enverd ; simuler une paire de panneaux sur Packlink (`audit/sourcing-panneaux-rigides-2026-11-07.md`).
-- Google Ads (07/11) : ne pas augmenter le budget avant le CSS mobile et une commande test comptée ; saisir dans TranslatePress les titres et descriptions des 6 catégories espagnoles (`audit/titres-categories-es-2026-11-07.md`, non faisable par les connecteurs : la catégorie n'expose pas les réglages Rank Math), de préférence en séance Cowork avec Claude dans Chrome. **Titre français de L'Autonomie (07/11) : enregistré 2 fois par David dans Rank Math, mais toujours l'ancien en ligne** (« kit solaire Tornasol 800 W » ; pas de cache de page, catégorie unique, balise produite par Rank Math) : cause à trouver en séance Cowork (`procedures/seance-cowork-rankmath-2026-11-07.md`). Prochain contrôle le 14/11 (groupe ES genérico : CTR, CPC, clics vers les fiches).
+- Google Ads : budget à 5 € par jour jusqu'à la première vente réelle (pas de commande test, décision du 07/11). Prochain contrôle le 14/11 (groupe ES genérico : CTR, CPC, clics vers les fiches). (Titres FR et ES des catégories et L'Autonomie : en ligne, contrôlés le 08/11.)
 - Fray Services, site (07/11) : séance Cowork pour la version espagnole (`fray/audit/audit-frayservices-2026-11-07.md`, fin du fichier) ; reste à fournir une photo de David, 2 lignes de parcours, le lien d'avis Google, et vérifier l'adresse Instagram `davif_fray`.
 - Sol & Volt, mobile : CSS collé par Claude le 07/11 ; reste le test en 6 points sur téléphone (`audit/css-mobile-solandvolt-2026-11-04.md`) ; dans Brevo, réduire la taille du titre du formulaire (environ 22 px).
 - Sol & Volt, avis externe du 29/10 (`audit/avis-externe-conversion-solandvolt-2026-10-29.md`, section « Actions de David ») : vérifier « livraison offerte dès 60 € » face au coût réel d'un envoi EcoFlow avant tout budget Google Ads ; dans le bloc de réassurance (`functions.php` du thème enfant), garantie « 3 ans » et ligne de délai « Délai de livraison indiqué sur chaque fiche produit » ; commande test pour la conversion Google Ads ; saisir les traductions espagnoles dans l'éditeur visuel gratuit de TranslatePress (textes prêts : `audit/traductions-es-translatepress-2026-10-29.md`, ou en séance Cowork avec Claude dans Chrome) ; **Rank Math redirige en 301 toutes les catégories espagnoles (`/es_es/categoria-producto/...`) vers /es_es/boutique/** : trouver et supprimer la règle ; `/es_ES/` répond 404, n'utiliser que `/es_es/`. Filtres de la boutique et lien « Kit solaire balcon » : en séance Cowork avec Claude dans Chrome.
@@ -184,7 +183,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Sol & Volt : prix TTC et délais (kit Tornasol, kit 300 Wh), délais réels pour la date limite avant Noël, vraies photos, URL espagnoles TranslatePress, relecture de la question écrite n° 6574 (Assemblée nationale).
 - Fray Services (posts du 02/11 et du 04/11 prêts, reste le recadrage Canva) : chantier avant/après (06/11), chantier en cours (16/11), artisan pour portrait (20/11), créneaux d'hiver restants (30/11), accord de Roger Boullier pour son témoignage (25/11), vraies photos ; confirmer la coordination sur une ligne à part du devis, le code couleur vert/orange/rouge, l'accompagnement des démarches en mairie (23/11), les règles de Palamós.
 
-- Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (email envoyé le 27/10 à Juan Carlos Pinar ; réponse du 27/10 : le service client sac@innov8iberia.com rassemble les données ; fiches techniques sur https://productsheet.innov8iberia.com/products/{référence}) : modèle exact du « Glacier 3 » ?p=640 (réf. ECF0046), différence entre panneaux 160 W V2 (?p=690) et V3 (?p=833), compatibilité du câble ?p=573 (River ou DELTA seulement) et du support ?p=768 (panneau 400 ou 450 W), délai de livraison.
+- Sol & Volt, fournisseur EcoFlow Innov8 Iberia SL (fiches techniques sur https://productsheet.innov8iberia.com/products/{référence}) : Glacier ?p=640, panneau ?p=833, câble ?p=573 et support ?p=768 réglés le 07/11 d'après les fiches officielles ; reste le délai de livraison.
 - Sol & Volt, SEO : les redirections 301 sont faites (voir « Fait en ligne » du 27/10) ; l'ancienne batterie 200 Ah, la station 300 W, la station 1 800 W et le panneau 400 W sont republiés (?p=54, 52, 50, 354) et ne doivent pas être redirigés. Reste à choisir /es_es/ ou /es_ES/ dans TranslatePress (la règle Rank Math redirige déjà es_ES vers es_es) ; contrôles restants : bannière Rank Math « URL du site modifiée » et PageSpeed ; forme unique du nom de marque ; relire la Search Console fin novembre ; vérifier que les chiffres des descriptions de catégories (300 Wh, 100 W, 768 Wh, 4 096 Wh) restent justes.
 
 - Sol & Volt, SEO : le problème des redirections du 26/10 est résolu le 27/10. En réalité aucune des 8 sources de l'audit n'était saisie dans Rank Math, et une règle regex en interceptait une autre. Résumé dans « Fait en ligne (27/10/2026) ». David a vérifié le 26/10 qu'aucune publicité Meta active ne pointe vers les pages en 404 ; les visites « fb » viennent d'anciennes publicités ou de liens partagés.
