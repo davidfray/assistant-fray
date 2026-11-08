@@ -21,7 +21,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - **Prix SOK alignés sur SOK Europe** : 206 Ah 585 €, 100 Ah 259 € (marge 44 € et 27 € HT).
 - **GA4** : actif par Site Kit depuis le 03/11, en EUR et Europe/Madrid depuis le 07/11.
 - **Accès API solandvolt.com** opérationnel (voir « Accès API solandvolt.com ») : titres et descriptions Rank Math, redirections, produits et prix WooCommerce se font désormais sans Cowork. Restent dans Chrome (Cowork) : frayservices.com (Polylang), réglages Google à modifier.
-- **Séance Cowork du 07/11** : titres, redirections et descriptions faits en partie et vérifiés par sondage ; contrôle complet à faire (« vérifie la séance »).
+- **Séance Cowork du 07/11 : contrôlée le 08/11** (`audit/controle-seance-cowork-2026-11-08.md`) : 7 titres, 18 descriptions, 16 redirections et plans du site conformes. Restent : description Google de ?p=640 et liens « Glacier 3 » de ?p=50 et ?p=52 (correction par l'API en attente de l'accord de David), titre ES de La Veilleuse (« El Piloto ») dans TranslatePress. **Découverte : 16 pages anglaises /en/ publiées le 06/11** (dont « Portable Cooling », grilles de produits figées), à décider par David.
 
 ## Où trouver quoi
 
@@ -249,7 +249,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 07/11/2026 | Claude Code | Aviso legal (adresse légale et agence commerciale), Disable Media Pages, environnement « assistant-fray » et tentative d'accès API solandvolt.com ; audit et corrections de frayservices.com (captures supprimées, Contact, en-tête, À propos, articles, Services), charte Fray mise à jour ; sourcing panneaux rigides (Innov8, Enverd, 2 brouillons Gmail) ; 4 fiches EcoFlow complétées et ?p=563 corrigé (fiches officielles Innov8, contenus bilingues) ; climatisation retirée du site (4 produits et article en brouillon, menu) ; corrections ?p=42 et ?p=46, sélecteur de langue sur ordinateur ; CSS mobile collé sur solandvolt.com (avec correctif barre d'achat et bulle de l'assistant) ; Google Ads : analyse sur 9 jours, promesses fausses retirées des annonces et accroches, page d'arrivée EcoFlow FR, négatifs, titres SOK FR, groupe EcoFlow ES genérico |
 | 07/11/2026 (après-midi) | Claude Code | Accès API solandvolt.com validé (mot de passe d'application rflso), contrôle partiel de la séance Cowork, validation des annonces Google Ads, recalibrage de l'analyse (0 commande réelle, GA4, test du parcours d'achat, comparaison des prix EcoFlow et SOK), budget à 5 €, slogan sans climatisation |
 | 08/11/2026 | Claude Code | Création du skill « réplica » (réponses FR/ES aux messages entrants, deux marques), paquet .skill pour claude.ai ; correction de solandvolt-service-client (garantie 2 ans et extension retirées) |
-| 08/11/2026 | Claude Code | Google Ads : « Garantie légale 3 ans » remplacé par « Garantie 3 ans » dans les annonces et l'accroche françaises ; lien annexe espagnol SOK sans « 7 años, 3-5 días » |
+| 08/11/2026 | Claude Code | Contrôle de la séance Cowork du 07/11 (titres, descriptions, redirections, plans du site, Glacier), découverte de la version anglaise /en/ ; Google Ads : « Garantie légale 3 ans » remplacé par « Garantie 3 ans » dans les annonces et l'accroche françaises ; lien annexe espagnol SOK sans « 7 años, 3-5 días » |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 
 ## Mise à jour de ce fichier
