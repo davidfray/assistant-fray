@@ -28,6 +28,8 @@ Hashtags Instagram (tous les posts) : #renovation #rénovationmaison #travauxmai
 
 ## Lundi 09/11 : fermer sa maison pour l'hiver
 
+**Statut : validé par David le 08/11 (version A).** Photo recadrée et floutée (`fray/medias/2026-11-09-chauffe-eau-recadre.jpg`, média 681 de frayservices.com). Facebook programmé le 08/11 pour le 09/11 à 7 h 30 (post 659509903912871_122187443378874977, vérifié dans la file Facebook) ; Instagram publié par rappel automatique à 7 h 30 (Instagram ne permet pas la programmation par l'API).
+
 **Facebook (118 mots)**
 
 Vous fermez la villa pour l'hiver ? Cinq vérifications avant de partir.
