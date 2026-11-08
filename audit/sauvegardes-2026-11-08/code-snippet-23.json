@@ -1,0 +1,15 @@
+{
+ "id": 23,
+ "name": "Solandvolt - SEO espagnol categories produit (titre, meta)",
+ "desc": "",
+ "code": "/**\n * Solandvolt - SEO espagnol des categories produit (titre, meta, OG) sur /es_es/\n * Complete l'extrait SEO espagnol : cible uniquement les categories product_cat.\n */\nfunction sv_es_cat_seo( $text, $kind ) {\n\tglobal $TRP_LANGUAGE;\n\tif ( ! isset( $TRP_LANGUAGE ) || 'es_ES' !== $TRP_LANGUAGE || ! function_exists( 'is_tax' ) || ! is_tax( 'product_cat' ) ) {\n\t\treturn $text;\n\t}\n\t$term = get_queried_object();\n\tif ( ! $term || empty( $term->term_id ) ) {\n\t\treturn $text;\n\t}\n\t$map = array(\n\t\t20 => array( 'title' => 'Autonomía energética: kits solares'.' | Sol & Volt', 'desc' => 'Kits solares, baterías y estaciones de energía portátiles, en cuatro niveles de autonomía, sin obras. Envío a Francia y España.' ),\n\t\t21 => array( 'title' => 'La Veilleuse: lámparas y cargadores solares'.' | Sol & Volt', 'desc' => 'Lámparas, linternas, cargadores y paneles solares compactos para iluminar y recargar lo esencial durante un corte de luz. Envío a Francia y España.' ),\n\t\t33 => array( 'title' => 'El Módulo: estaciones, kits y paneles solares'.' | Sol & Volt', 'desc' => 'Estaciones de energía portátiles, paneles solares y kits listos para usar para mantener el router, la luz y los móviles durante un corte. Envío a Francia y España.' ),\n\t\t42 => array( 'title' => 'La Base: estaciones de energía y kits de balcón'.' | Sol & Volt', 'desc' => 'Estaciones de energía portátiles y kits solares de balcón para alimentar lo esencial de la casa. Envío a Francia y España.' ),\n\t\t50 => array( 'title' => 'La Autonomía: baterías solares para casa'.' | Sol & Volt', 'desc' => 'Baterías solares domésticas EcoFlow STREAM y kit solar Tornasol 800 W para producir y almacenar electricidad en casa. Envío a Francia y España.' ),\n\t);\n\treturn isset( $map[ $term->term_id ][ $kind ] ) ? $map[ $term->term_id ][ $kind ] : $text;\n}\n\nforeach ( array(\n\t'rank_math/frontend/title' => 'title',\n\t'rank_math/opengraph/facebook/og_title' => 'title',\n\t'rank_math/opengraph/twitter/twitter_title' => 'title',\n\t'rank_math/frontend/description' => 'desc',\n\t'rank_math/opengraph/facebook/og_description' => 'desc',\n\t'rank_math/opengraph/twitter/twitter_description' => 'desc',\n) as $hook => $kind ) {\n\tadd_filter( $hook, function ( $t ) use ( $kind ) {\n\t\treturn sv_es_cat_seo( $t, $kind );\n\t}, 100 );\n}\n",
+ "tags": [],
+ "scope": "global",
+ "condition_id": 0,
+ "active": true,
+ "priority": 10,
+ "network": false,
+ "shared_network": false,
+ "modified": "2026-11-07 11:09:27",
+ "code_error": null
+}
