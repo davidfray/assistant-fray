@@ -202,6 +202,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - 27/10/2026 : rappel du matin sur les redirections 301 traité, plus rien à faire.
 - Fin novembre 2026 : relire la Search Console de solandvolt.com (filtre `/categorie-produit/`) pour mesurer l'effet des catégories enrichies ; **bilan : version anglaise oui ou non** (ventes FR/ES, visites anglophones dans GA4).
 - 05/11/2026 : réponse de Tornasol vérifiée le 08/11 : aucune réponse (ni à la demande de fiche technique du 26/10, ni à la demande de tarif distributeur du 03/11). Relance en espagnol envoyée le 08/11 avec l'accord de David (fil du 26/10), échéance demandée au 13/11 ; elle rappelle aussi la demande de tarif du 03/11.
+- 13/11/2026, 10 h (heure de Madrid) : vérifier la réponse de Tornasol à la relance du 08/11 ; si réponse, mettre à jour les fiches Tornasol FR/ES ; sinon proposer une option à David, sans rien envoyer.
 - 06/11/2026, 9 h (heure de Madrid) : vérifier la réponse du fournisseur EcoFlow ; sans réponse, préparer une relance en espagnol (nouvelle échéance au 13/11) et la soumettre à David avant envoi. Vérifier aussi les réponses aux deux emails du 28/10 (poids ECF0015 et réapprovisionnement ; transporteurs qui enlèvent chez Innov8).
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
