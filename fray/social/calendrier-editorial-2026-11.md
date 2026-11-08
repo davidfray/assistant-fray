@@ -1,6 +1,10 @@
 # Calendrier éditorial Fray Services : novembre 2026
 
-Statut : proposition, à valider par David.
+Statut : **abandonné le 08/11 (décision de David)**. La série publiée depuis le 30/10 (lundi, mercredi, vendredi vers 7 h 30, textes hors du dépôt : chape, ventilation, joints de dilatation, avant/après salle de bain) est gardée pour novembre. Ne pas publier ce calendrier en parallèle (doublons TVA, coordination, hiver).
+
+Contenus de ce calendrier encore inédits, à proposer pour la série en cours (après accord et éléments réels) : preuve sociale de Roger Boullier (`post-preuve-sociale-2026-11-25.md`, accord à obtenir), démarches en mairie (`post-autorisations-travaux-2026-11-23.md`), portrait d'artisan (accord de l'artisan), « Démarrer en janvier » (`post-commercial-2026-11-18.md`), « Suivre son chantier depuis la France » (déjà publié en partie le 19/10 sur Instagram). Avant réutilisation : nouvelle charte bleu marine #0B2A5C et orange #F5A30B, « maître d'œuvre ».
+
+Ancien statut : proposition, à valider par David.
 Rythme : 3 posts par semaine (lundi, mercredi, vendredi), soit 13 posts. Facebook en priorité, Instagram en reprise.
 Langue : français (clients propriétaires français absents). Une version espagnole possible pour les posts « marque » si vous visez aussi une clientèle locale.
 Message du mois (saisonnalité) : octobre et novembre, la meilleure période pour les gros chantiers.
