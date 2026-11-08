@@ -58,7 +58,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `social/` | Posts Sol & Volt (kit balcon, Wh, décembre), calendrier de décembre, plan influenceurs Instagram (`influenceurs-solandvolt-2026-10-28.md`) |
 | `emails/` | Modèle email syndic, demande fiche technique Tornasol (envoyée), demande d'informations au fournisseur EcoFlow (brouillon) |
 | `service-client/` | Réponses types FR/ES (kit balcon, Wh) |
-| `fray/social/` | Calendrier et posts Fray Services de novembre |
+| `fray/social/` | Posts Fray Services ; **suite de la série du 09/11 au 27/11 en brouillon** (`serie-posts-09-27-novembre-2026.md`, 9 posts, nouvelle charte, à relire par David avant programmation) ; calendrier de novembre abandonné |
 
 ## Identifiants utiles solandvolt.com
 
