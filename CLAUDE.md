@@ -174,6 +174,11 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - solandvolt.com, séance Cowork du 08/11 (19 h) : Personnaliser > CSS additionnel, 4 passages retirés (variables `--sv-clim-*`, « Univers Climatisation », badge CE `.sv-badge-ce`, garantie prolongée `.solandvolt-warranty-option`) ; contrôle Cowork puis Claude Code : `/`, `/boutique/`, `/es_es/`, `/?p=623` en 200, 0 occurrence, « Charte graphique v1 » toujours présent.
 - solandvolt.com, 08/11 soir, à la demande de David (balayage des 172 adresses des plans du site, FR et ES) : **mentions légales (page 195)** : activité « …batteries et stations d'énergie » au lieu de « climatisation portable » (FR et ES) et **les 2 adresses** : adresse légale Carrer Josep Fàbrega i Pou 7 et agence commerciale Carrer Notaries 15, 17230 Palamós (FR et ES) ; **catégorie de blog Guides** : description sans climatisation (« …kits solaires sans travaux »). Vérifié en ligne. Sauvegardes : `audit/sauvegardes-2026-11-08/page-195-mentions-legales.json` et `categorie-guides.json`. Plan du site : le cache de Rank Math ne se vidait plus (pages /en/ en brouillon toujours listées, transients vidés et `updateSettings` sans effet) ; à la demande de David, **snippet Code Snippets n° 24 « Rank Math : plan du site sans cache (08/11) »** (`add_filter( 'rank_math/sitemap/enable_caching', '__return_false' )`) : les plans du site sont recalculés à chaque visite. Vérifié : 0 adresse /en/ et 0 climatisation dans les 5 plans du site (pages 7, articles 7, produits 50, catégories produit 5, catégories 1). Le désactiver pour revenir au cache. Export complet des réglages Rank Math pris avant les essais : `audit/sauvegardes-2026-11-08/rankmath-settings-export.json`.
 
+## Fait en ligne (09/11/2026)
+
+- solandvolt.com, par l'API WooCommerce, accord de David : **GTIN (EAN) renseigné dans le champ officiel WooCommerce** (`global_unique_id`) sur ?p=640 (4895251641623), 833 (4895251649834), 573 (4895251606547), 768 (4895251608442), valeurs envoyées par Innov8 le 03/11 et déjà présentes dans le champ personnalisé `ean`. Vérifié en ligne : `"gtin"` présent dans les données structurées de ?p=640. **19 autres fiches EcoFlow publiées** ont un `ean` mais un GTIN vide (864, 850, 800, 790, 776, 750, 705, 671, 658, 646, 634, 623, 614, 584, 563, 546, 539, 532, 525) : copie proposée à David.
+- Contrôle du 09/11 (Composio, `curl`) : redirections 301 conformes à la liste de 8 sources ; GA4 reçoit des données depuis le 03/11 (balise Site Kit `GT-NMC3NTFB`), mais **aucun événement e-commerce** (view_item, add_to_cart, purchase) du 26/10 au 09/11.
+
 ## En attente
 
 ### De David
@@ -254,6 +259,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 08/11/2026 (soir) | Claude Code | Relance Tornasol envoyée (fiche technique, tarif distributeur), rappel du 13/11 ; nettoyage de la section « En attente » (lignes faites ou dépassées retirées, transport, stock, influenceurs et posts Fray mis à jour) |
 | 08/11/2026 (soir, suite) | Claude Code | Contrôle des publications Fray de novembre (Facebook, Instagram) : une autre série tourne, calendrier du dépôt abandonné sur décision de David ; post Sol & Volt du 01/11 sur les comptes Fray signalé |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
+| 09/11/2026 | Claude Code | Rappel EcoFlow du 06/11 traité (réponse d'Innov8 du 03/11 déjà reçue, pas de relance) ; contrôle des redirections et de GA4 ; GTIN renseigné sur 4 fiches EcoFlow |
 
 ## Mise à jour de ce fichier
 
