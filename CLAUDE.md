@@ -177,7 +177,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## Fait en ligne (09/11/2026)
 
 - solandvolt.com, par l'API WooCommerce, accord de David : **GTIN (EAN) renseigné dans le champ officiel WooCommerce** (`global_unique_id`) sur ?p=640 (4895251641623), 833 (4895251649834), 573 (4895251606547), 768 (4895251608442), valeurs envoyées par Innov8 le 03/11 et déjà présentes dans le champ personnalisé `ean`. Vérifié en ligne : `"gtin"` présent dans les données structurées de ?p=640. **19 autres fiches EcoFlow publiées** ont un `ean` mais un GTIN vide (864, 850, 800, 790, 776, 750, 705, 671, 658, 646, 634, 623, 614, 584, 563, 546, 539, 532, 525) : **GTIN copié le 09/11 avec l'accord de David** (19 sur 19, aucune erreur ; 29 produits publiés ont maintenant un GTIN, aucun écart avec `ean` ; vérifié en ligne sur ?p=623).
-- Contrôle du 09/11 (Composio, `curl`) : redirections 301 conformes à la liste de 8 sources ; GA4 reçoit des données depuis le 03/11 (balise Site Kit `GT-NMC3NTFB`), mais **aucun événement e-commerce** (view_item, add_to_cart, purchase) du 26/10 au 09/11.
+- Contrôle du 09/11 (Composio, `curl`) : redirections 301 conformes à la liste de 8 sources ; GA4 reçoit des données depuis le 03/11 (balise Site Kit `GT-NMC3NTFB`), aucun événement e-commerce du 26/10 au 09/11. **Réglage vérifié le 09/11 : rien à corriger** (suivi des conversions Site Kit `enabled: true` ; script `googlesitekit-events-provider-woocommerce` chargé sur les fiches, devise EUR ; Site Kit envoie `add_to_cart` et `purchase`). Le 0 vient de l'absence d'ajouts au panier (aucune commande depuis le 06/10) et des refus de cookies. Test d'un ajout au panier proposé à David, contrôle par le rapport temps réel GA4 (Composio).
 
 ## En attente
 
