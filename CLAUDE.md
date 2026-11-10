@@ -182,7 +182,8 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 ## Fait en ligne (10/11/2026)
 
 - frayservices.com, 10/11, à la demande de David (« commence par le menu ») : **éléments communs traduits dans les 4 langues** (connecteur WordPress.com, site 253853971). Avant, le menu, le bandeau du haut, le bouton de devis, le pied de page et la barre mobile étaient en français sur /es/, /ca/ et /en/, avec des liens vers les pages françaises. Fait : 3 menus créés (**789 ES, 790 CA, 791 EN**, même structure que le menu français 80, liens vers les pages de la langue) ; en-tête `assembler//header` et pied de page `assembler//footer` avec une version par langue (classes `fs-l-fr`, `fs-l-es`, `fs-l-ca`, `fs-l-en`) ; règle CSS en fin de CSS additionnel : `html:not([lang^="xx"]) .fs-l-xx{display:none!important}`. Français inchangé. Vérifié en capture : FR, ES, CA, EN sur ordinateur, ES sur mobile (barre « Llamar / WhatsApp / Presupuesto »). Sauvegardes : `fray/site/sauvegardes-2026-11-10/`. **Pour modifier le menu d'une langue : modifier sa navigation (80, 789, 790 ou 791) ; pour tout nouveau texte dans l'en-tête ou le pied de page, en mettre 4 versions avec ces classes.**
-- Remarques du 10/11, non corrigées : l'accueil catalan renvoie les villes vers les pages françaises (Calonge sans lien) ; la partie d'en-tête `assembler//header-hero` (ancienne, avec image IA et « Votre maître d'ouvrage ») n'apparaît sur aucune page vérifiée, à supprimer si elle n'est utilisée par aucun modèle.
+- frayservices.com, 10/11, à la demande de David : accueil catalan (425), section « On intervenim » : liens des villes vers les pages catalanes /ca/reformes-… (avant : pages françaises), Calonge lié, « Palafrugell i Calella de Palafrugell ». Vérifié en ligne.
+- Remarque du 10/11, non corrigée : la partie d'en-tête `assembler//header-hero` (ancienne, avec image IA et « Votre maître d'ouvrage ») n'apparaît sur aucune page vérifiée, à supprimer si elle n'est utilisée par aucun modèle.
 
 ## En attente
 
@@ -267,7 +268,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 | 09/11/2026 | Claude Code | Rappel EcoFlow du 06/11 traité (réponse d'Innov8 du 03/11 déjà reçue, pas de relance) ; contrôle des redirections et de GA4 ; GTIN renseigné sur 4 fiches EcoFlow |
 | 10/11/2026 | Claude Code | Contrôle programmé panneaux rigides (pas de réponse d'Innov8 ni d'Enverd, 2 relances en brouillon, tableau comparatif prêt) ; nouveau contrôle en ligne de la séance Cowork du 07/11 : 7 titres, 18 descriptions, 16 redirections, plans du site, Glacier FR/ES toujours conformes |
-| 10/11/2026 (soir) | Claude Code | frayservices.com : état des lieux après la refonte (liste du 04/11 périmée), menu, bandeau, bouton de devis, pied de page et barre mobile traduits en ES, CA et EN (3 menus, 4 versions par langue, CSS), vérifié en capture |
+| 10/11/2026 (soir) | Claude Code | frayservices.com : état des lieux après la refonte (liste du 04/11 périmée), menu, bandeau, bouton de devis, pied de page et barre mobile traduits en ES, CA et EN (3 menus, 4 versions par langue, CSS), vérifié en capture ; liens des villes de l'accueil catalan corrigés |
 
 ## Mise à jour de ce fichier
 
