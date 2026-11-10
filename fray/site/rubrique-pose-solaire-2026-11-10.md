@@ -40,12 +40,12 @@ Volontairement absent : la déduction IRPF. Elle ne concerne que les résidents 
 
 ## Formulaire de demande de pose (10/11/2026)
 
-Page **« Demande de pose solaire » en brouillon** : id 815, slug `/demande-pose-solaire/`, aperçu dans wp-admin (Pages). Formulaire Jetpack, envoi à david@frayservices.com, objet « Demande de pose solaire – frayservices.com », redirection vers /merci/ (comme Contact).
+Page **« Demande de pose solaire » publiée le 10/11 (23 h 30)**, https://frayservices.com/demande-pose-solaire/, lien « → Demander la pose » sous la rubrique FR : id 815, slug `/demande-pose-solaire/`, aperçu dans wp-admin (Pages). Formulaire Jetpack, envoi à david@frayservices.com, objet « Demande de pose solaire – frayservices.com », redirection vers /merci/ (comme Contact).
 
 Champs : nom, email, téléphone (indicatif FR par défaut), commune, matériel à poser (Tornasol 800 W, 400 W, Flex 300 W, panneaux rigides, STREAM, autre), numéro de commande Sol & Volt, usage du logement (résidence secondaire non louée, principale, louée : sert au taux d'IVA), logement de plus de 2 ans, type de logement (maison, appartement panneaux invisibles ou visibles : sert à la copropriété), **photos (champ fichier Jetpack, obligatoire)**, présence le jour de la pose, précisions.
 
 À faire avant publication :
-- [ ] David ouvre l'aperçu, vérifie le champ photos (le champ fichier de Jetpack peut dépendre de l'offre du site, et peut n'accepter qu'un fichier : si c'est le cas, prévoir 4 champs ou demander l'envoi par WhatsApp).
-- [ ] Publier, puis envoyer une demande test avec photos et vérifier la réception à david@frayservices.com.
+- [x] David a vérifié le champ photos (10/11). **Mais la lecture de la page publique par Firecrawl (10/11, 23 h 31) ne trouve ni le libellé ni le champ fichier** : à revérifier dans une fenêtre privée, sans être connecté. Si le champ manque pour les visiteurs, ajouter l'envoi des photos par WhatsApp. Ancienne note : (le champ fichier de Jetpack peut dépendre de l'offre du site, et peut n'accepter qu'un fichier : si c'est le cas, prévoir 4 champs ou demander l'envoi par WhatsApp).
+- [x] Publié. - [ ] Envoyer une demande test avec photos et vérifier la réception à david@frayservices.com.
 - [ ] Versions ES, CA, EN du formulaire.
-- [ ] Lien de la rubrique `#pose-solaire` (4 langues) vers ce formulaire, puis bouton « Demander la pose » sur les fiches Sol & Volt.
+- [x] Lien FR fait (page 165). - [ ] Liens ES, CA, EN vers les futurs formulaires traduits, puis bouton « Demander la pose » sur les fiches Sol & Volt.
