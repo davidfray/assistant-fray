@@ -4,9 +4,11 @@ Pas d'accès automatique : Composio n'a pas de connexion gérée pour Google Bus
 
 Tous les textes ci-dessous reprennent des faits déjà publiés sur frayservices.com.
 
+**État au 10/11 : la fiche « Fray Services » existe et est validée (compte david@frayservices.com). Ne pas en créer d'autre ; compléter les rubriques ci-dessous dans « Éditer la fiche ». Lien d'avis : https://g.page/r/Ceg0eOo_nmq8EBM/review**
+
 ## 1. Nom
 
-**Fray Services Palamós**
+**Fray Services** (nom actuel de la fiche validée : le garder, un changement peut relancer la validation)
 
 Rien d'autre dans le nom (pas de mots-clés comme « rénovation Costa Brava » : Google peut suspendre la fiche).
 
