@@ -29,3 +29,22 @@ Caractéristiques du panneau rigide EcoFlow 400 W (fiche Innov8) : monocristalli
    - Enverd (Pau Junyent) : prix revendeur des panneaux rigides EcoFlow 400 W et 450 W (et rigides Bluetti), réapprovisionnement du 400 W, mode d'envoi (palette, camion), France, bon neutre, casse en transport.
 2. Simuler sur Packlink PRO l'envoi d'une paire de panneaux (2 × 21,8 kg, 172 × 113 × 3,5 cm chacun) vers Madrid et Paris.
 3. Une fois les réponses reçues : tableau comparatif (prix d'achat, PVP minimum, transport, délai, garantie, casse), puis fiche produit en brouillon si David valide.
+
+## Point du 10/11/2026 (contrôle programmé, 9 h 17)
+
+**Aucune réponse** d'Innov8 (fil « Authorised retailer request », question du 07/11) ni d'Enverd (fil « Colaboración Dropshipping BLUETTI », alta du 06/11 et question du 07/11). Seuls les fichiers produits quotidiens d'Innov8 sont arrivés (09 et 10/11).
+
+| Critère | Innov8 (EcoFlow) | Enverd (EcoFlow, BLUETTI) |
+|---|---|---|
+| Prix d'achat | à recevoir (règle connue : PVP HT moins 15 %) | à recevoir |
+| PVP minimum | PVP conseillé EcoFlow obligatoire | à recevoir |
+| Transport | enlèvement chez Innov8, transporteur à trouver (Packlink) | à recevoir (camion avec hayon sur leur site) |
+| Délai | à recevoir | 2 à 4 jours affichés sur leur site |
+| Garantie | EcoFlow, via Innov8 | à recevoir |
+| Casse en transport | à la charge de l'expéditeur choisi | à recevoir |
+
+**Relances en espagnol préparées en brouillon dans Gmail (non envoyées), à valider par David**, échéance demandée au vendredi 14/11 :
+- Innov8 : à Juan Carlos Pinar, copie sac@innov8iberia.com.
+- Enverd : à Pau Junyent (confirmation de l'alta et conditions commerciales).
+
+Suite : tableau complété dès réception des réponses, puis fiche produit en brouillon si David valide.
