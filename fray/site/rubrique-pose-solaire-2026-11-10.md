@@ -64,3 +64,11 @@ Mêmes champs que la page FR 815, champ photos compris. **Restées en brouillon*
 **10/11, 23 h 33 : pages 818, 819, 820 publiées à la demande de David.** Contrôle Firecrawl : /es/solicitud-instalacion-solar/ redirige vers /solicitud-instalacion-solar/, avec `lang="fr-FR"` et `og:locale fr_FR` : **la langue Polylang est toujours le français** (le réglage de David ne s'est pas enregistré). Adresses actuelles sans préfixe : /solicitud-instalacion-solar/, /sollicitud-installacio-solar/, /solar-installation-request/. Aucun lien du site n'y mène. À corriger dans wp-admin (boîte « Langue » de chaque page, puis « Mettre à jour »), puis revérifier et ajouter les liens sous les rubriques ES, CA, EN.
 
 **10/11, 23 h 35 : liens ajoutés à la demande de David** sous les rubriques ES (508, « → Solicitar la instalación »), CA (432, « → Sol·licitar la instal·lació »), EN (573, « → Request installation »), vers les adresses actuelles sans préfixe. Lien ES vérifié sur la page publique. **Langue Polylang des pages 818, 819, 820 toujours française** après 2 tentatives de David (adresse sans préfixe, `lang="fr-FR"`, date de modification inchangée). **Quand la langue sera corrigée, les adresses passeront en /es/, /ca/, /en/ : mettre à jour ces 3 liens.** Piste si la langue ne prend toujours pas : séance Cowork dans Chrome pour régler Polylang en direct.
+
+## Bouton « Demander la pose » sur les fiches Sol & Volt (10/11/2026)
+
+Bloc bilingue `[trp_language]` (classe `sv-pose`, titre « Pose par un électricien », bouton `wp-element-button`) ajouté dans la description, avant le bloc « Ce produit fait partie de » quand il existe, sinon à la fin :
+- **Kits de balcon** ?p=114, 360, 362, 33 : forfait 383,90 € TTC, devis sur 4 photos ;
+- **Batteries STREAM** ?p=494, 658, 671, 750 : devis après visite technique.
+Liens : FR vers https://www.frayservices.com/demande-pose-solaire/ ; ES vers https://www.frayservices.com/solicitud-instalacion-solar/ (**à changer en /es/solicitud-instalacion-solar/ quand la langue Polylang sera réglée**). Vérifié en ligne FR et ES sur les 8 fiches, chaque langue n'affiche que son bloc. Sauvegardes : `audit/sauvegardes-2026-11-10/produit-<id>-avant-bouton-pose.json`.
+Non ajouté : Zendure (batteries, livraison Espagne, hors périmètre Q1), panneaux EcoFlow (pliables ou portables, pas de panneaux rigides au catalogue).
