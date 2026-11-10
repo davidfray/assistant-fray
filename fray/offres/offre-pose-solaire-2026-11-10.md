@@ -64,4 +64,4 @@ Statut : cadrage validé par David le 10/11/2026. **Reste à fournir : le tarif 
 - IVA 10 % (logement de plus de 2 ans, particulier, fournitures Fray sous 40 %) : **383,90 € TTC**.
 - IVA 21 % : **422,29 € TTC**.
 - Repère : circuit dédié seul chez un installateur de Girona, 480 € (base de prix devis-fray, section climatisation).
-- **Point à trancher avec la gestoría** : la base de prix devis-fray applique 21 % aux résidences secondaires. Le texte de l'art. 91.Uno.2.10º LIVA vise les logements utilisés à titre particulier, sans exiger une résidence principale ; une résidence secondaire louée (activité économique) en sort. À confirmer avant d'afficher un prix TTC.
+- **Tranché le 10/11 : la gestoría de David confirme l'IVA à 10 % pour les résidences secondaires. Prix affiché : 383,90 € TTC** (si les conditions sont réunies ; sinon 422,29 € TTC). Ancienne remarque : la base de prix devis-fray applique 21 % aux résidences secondaires. Le texte de l'art. 91.Uno.2.10º LIVA vise les logements utilisés à titre particulier, sans exiger une résidence principale ; une résidence secondaire louée (activité économique) en sort. À confirmer avant d'afficher un prix TTC.
