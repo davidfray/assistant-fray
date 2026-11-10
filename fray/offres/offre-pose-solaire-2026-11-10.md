@@ -49,4 +49,4 @@ Statut : cadrage validé par David le 10/11/2026. **Reste à fournir : le tarif 
 1. David : tarif HT de l'électricien (pose sur prise, et ligne dédiée depuis le tableau).
 2. David : confirmation de l'assurance RC professionnelle pour la pose solaire.
 3. Claude : calcul du forfait, texte de la rubrique « Pose solaire » (4 langues), formulaire de demande, bouton sur les fiches.
-4. Fiche EcoFlow PowerStream (ECF0049) : même phrase réglementaire générale (« Avant la mise en service… »), à revoir de la même façon.
+4. Fiche EcoFlow STREAM Ultra ?p=494 (ECF0049) corrigée le 10/11 de la même façon (sauvegarde `audit/sauvegardes-2026-11-10/produit-494.json`). Restent avec l'ancienne phrase générale : kits Tornasol 400 W ?p=360 et Flex 300 W ?p=362 (et ?p=33 à vérifier).
