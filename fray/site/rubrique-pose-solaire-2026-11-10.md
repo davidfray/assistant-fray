@@ -1,6 +1,6 @@
 # Rubrique « Pose solaire » des pages Services de frayservices.com
 
-Statut : **brouillon, non publié**. Rédigé le 10/11/2026 d'après `fray/offres/offre-pose-solaire-2026-11-10.md`.
+Statut : **publié le 10/11/2026 (23 h 27) sur les 4 pages Services, accord de David** ; vérifié sur la page publique FR (Firecrawl) et par le connecteur pour ES. Version précédente : révisions WordPress des pages 165, 508, 432, 573. Rédigé le 10/11/2026 d'après `fray/offres/offre-pose-solaire-2026-11-10.md`.
 Emplacement : pages Services FR (165), ES (508), CA (432), EN (573), après « Domotique », même format que les autres rubriques (`<h3>` + `<p>`).
 L'ancre `id="pose-solaire"` sert de cible au futur bouton « Demander la pose » des fiches Sol & Volt (Q14).
 
@@ -33,7 +33,7 @@ Volontairement absent : la déduction IRPF. Elle ne concerne que les résidents 
 
 ## Avant publication
 
-- [ ] Accord de David sur les 4 textes.
+- [x] Accord de David sur les 4 textes, publiés le 10/11.
 - [ ] Réponse de l'assureur (garantie de pose) : ajouter la phrase si confirmée.
 - [ ] Formulaire de demande avec envoi de 4 photos (Q10, Q14), puis bouton « Demander la pose » sur les fiches Sol & Volt vers `/services/#pose-solaire`.
 - [ ] Le Catalan « dies feiners » et l'espagnol « días hábiles » : à relire par David.
