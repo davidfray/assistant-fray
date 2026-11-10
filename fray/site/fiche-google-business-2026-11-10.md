@@ -31,10 +31,9 @@ Choisir dans la liste proposée par Google (les libellés exacts varient selon l
 | Lien de rendez-vous | https://frayservices.com/contact/ |
 | Horaires | Lundi à vendredi : 10:00-13:00 et 17:00-20:00 ; samedi et dimanche : fermé |
 
-**Adresse : à trancher par David.**
-- Si les clients peuvent être reçus à l'agence **Carrer Notaries 15, 17230 Palamós** : l'afficher.
-- Sinon : choisir « Je me déplace chez mes clients » et **masquer l'adresse** (Google demande quand même une adresse pour la validation).
-- Attention : la vitrine du 15 Carrer Notaries porte le logo SereniBrava (photo n° 119 du site). Si Google envoie un vérificateur ou demande une vidéo de validation, il faut une signalétique Fray Services visible (plaque, autocollant sur la vitrine).
+**Adresse (décision de David, 10/11 : les clients sont reçus à l'agence) : afficher Carrer Notaries 15, 17230 Palamós.**
+- Cocher aussi « Je me déplace chez mes clients » et renseigner la zone desservie (section 5).
+- Attention : la vitrine du 15 Carrer Notaries porte le logo SereniBrava (photo n° 119 du site). Si Google demande une vidéo de validation, il faut une signalétique Fray Services visible (plaque, autocollant sur la vitrine).
 
 ## 5. Zone desservie
 

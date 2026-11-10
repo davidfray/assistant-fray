@@ -187,7 +187,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - frayservices.com, 10/11, à la demande de David : **version modifiée de l'en-tête `assembler//header-hero` supprimée** (image IA id 18 et « Votre maître d'ouvrage ») ; le thème reprend sa version d'origine. Seul le modèle « Page avec bandeau » (`template-page-w-hero`) l'utilise, et aucune des 59 pages n'emploie ce modèle (vérifié une par une). Sauvegarde : `fray/site/sauvegardes-2026-11-10/header-hero-avant.html`. Image IA id 18 **supprimée définitivement** le même jour, à la demande de David (aucun contenu publié ne l'utilisait, non rattachée).
 
 - frayservices.com, 10/11, à la demande de David (texte validé, photo choisie par Claude) : **bloc « Votre interlocuteur : David Fray »** ajouté sur À propos FR (10) et About EN (583), avec la photo de la salle de bain après travaux (n° 410) et un bouton WhatsApp. Photos écartées : vitrine Carrer Notaries (n° 119, logo SereniBrava visible), cuisine n° 143 (inachevée). Pas de page À propos en ES ni en CA. À remplacer par un portrait de David quand il en enverra un.
-- Google Business Profile : pas d'accès automatique (Composio sans connexion gérée, API Google sur dossier) ; contenu complet prêt à saisir dans `fray/site/fiche-google-business-2026-11-10.md`.
+- Google Business Profile : pas d'accès automatique (Composio sans connexion gérée, API Google sur dossier) ; contenu complet prêt à saisir dans `fray/site/fiche-google-business-2026-11-10.md`. **Décision de David (10/11) : les clients sont reçus à l'agence Carrer Notaries 15**, adresse affichée sur la fiche.
 ## En attente
 
 ### De David
