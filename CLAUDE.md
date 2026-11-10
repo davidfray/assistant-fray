@@ -183,7 +183,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 
 ### De David
 - Sol & Volt, GTIN (09/11) : 20 produits publiés sans EAN. **Demande d'EAN envoyée à SOK le 09/11** (Eve, eve@sokbattery.com, fil « Dropshipping partnership request », SK12V100H ?p=480 et SK12V206H ?p=482, réponse souhaitée le 16/11) ; à la réception, renseigner `global_unique_id` par l'API WooCommerce. Tornasol (?p=114, 360, 362) : ajouter la demande d'EAN à la relance du 13/11, sans email séparé (2 emails déjà sans réponse). Bluetti AC70P ?p=346, PW2000 ?p=350, Trust Zuny ?p=358, panneau 400 W ?p=354 : EAN à demander au fournisseur qui livre ces produits (BigBuy suspendu, Bluetti via distributeur à choisir). Produits CJ et génériques (50, 52, 54, 56, 58, 341, 83, 84, 85, 89, 33) : pas d'EAN fabricant, déclarer « pas de GTIN » dans Google for WooCommerce plutôt que d'en demander.
-- Sol & Volt, panneaux rigides (07/11) : emails envoyés à Innov8 et Enverd ; simuler une paire de panneaux sur Packlink (`audit/sourcing-panneaux-rigides-2026-11-07.md`).
+- Sol & Volt, panneaux rigides (07/11) : emails envoyés à Innov8 et Enverd, **sans réponse au 10/11 ; 2 relances en espagnol en brouillon dans Gmail, à relire et envoyer par David** (échéance demandée : 14/11) ; simuler une paire de panneaux sur Packlink (`audit/sourcing-panneaux-rigides-2026-11-07.md`).
 - Google Ads : budget à 5 € par jour jusqu'à la première vente réelle (pas de commande test, décision du 07/11). Prochain contrôle le 14/11 (groupe ES genérico : CTR, CPC, clics vers les fiches). (Titres FR et ES des catégories et L'Autonomie : en ligne, contrôlés le 08/11.)
 - Fray Services, site (07/11) : séance Cowork pour la version espagnole (`fray/audit/audit-frayservices-2026-11-07.md`, fin du fichier) ; reste à fournir une photo de David, 2 lignes de parcours, le lien d'avis Google, et vérifier l'adresse Instagram `davif_fray`.
 - Sol & Volt, mobile : CSS collé par Claude le 07/11 ; reste le test en 6 points sur téléphone (`audit/css-mobile-solandvolt-2026-11-04.md`) ; dans Brevo, réduire la taille du titre du formulaire (environ 22 px).
@@ -261,6 +261,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 08/11/2026 (soir, suite) | Claude Code | Contrôle des publications Fray de novembre (Facebook, Instagram) : une autre série tourne, calendrier du dépôt abandonné sur décision de David ; post Sol & Volt du 01/11 sur les comptes Fray signalé |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 | 09/11/2026 | Claude Code | Rappel EcoFlow du 06/11 traité (réponse d'Innov8 du 03/11 déjà reçue, pas de relance) ; contrôle des redirections et de GA4 ; GTIN renseigné sur 4 fiches EcoFlow |
+| 10/11/2026 | Claude Code | Contrôle programmé panneaux rigides (pas de réponse d'Innov8 ni d'Enverd, 2 relances en brouillon, tableau comparatif prêt) ; nouveau contrôle en ligne de la séance Cowork du 07/11 : 7 titres, 18 descriptions, 16 redirections, plans du site, Glacier FR/ES toujours conformes |
 
 ## Mise à jour de ce fichier
 
