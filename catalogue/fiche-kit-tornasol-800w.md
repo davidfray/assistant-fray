@@ -68,7 +68,7 @@ Kit solaire de balcon de 800 W : deux panneaux rigides de 420 W sur support incl
 <h2>Réglementation : ce qu'il faut faire avant la pose</h2>
 <ul>
   <li><strong>En France :</strong> le kit est autorisé. Déclarez-le gratuitement en ligne auprès du gestionnaire de réseau local (Enedis dans la plupart des communes) : c'est la convention d'autoconsommation sans injection (CACSI). Un circuit dédié posé par un électricien est l'option prudente.</li>
-  <li><strong>En Espagne :</strong> le RD 244/2019 s'applique. Le kit doit fonctionner avec un dispositif anti-injection, ou faire l'objet d'un certificat d'installation électrique (CIE) et d'une déclaration auprès du distributeur régional pour valoriser le surplus.</li>
+  <li><strong>En Espagne :</strong> le RD 244/2019 s'applique. Le dispositif anti-injection est obligatoire. Pour revendre le surplus, ou si l'onduleur dépasse 800 VA, il faut une ligne dédiée posée par un installateur autorisé et un certificat d'installation électrique (CIE). (Corrigé en ligne sur ?p=114 le 10/11/2026.)</li>
   <li><strong>En copropriété :</strong> prévenez votre syndic avant la pose. Un modèle d'email est disponible sur demande.</li>
 </ul>
 <p>Tous les détails dans notre guide : <a href="[LIEN ARTICLE BLOG FR]">Kit solaire de balcon : ce que dit vraiment la loi en France et en Espagne</a>.</p>
