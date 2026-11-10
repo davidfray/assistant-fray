@@ -49,3 +49,14 @@ Champs : nom, email, téléphone (indicatif FR par défaut), commune, matériel 
 - [x] Publié. - [ ] Envoyer une demande test avec photos et vérifier la réception à david@frayservices.com.
 - [ ] Versions ES, CA, EN du formulaire.
 - [x] Lien FR fait (page 165). - [ ] Liens ES, CA, EN vers les futurs formulaires traduits, puis bouton « Demander la pose » sur les fiches Sol & Volt.
+
+## Versions ES, CA, EN du formulaire (10/11/2026, brouillons)
+
+| Langue | Page | Slug | Remerciement |
+|---|---|---|---|
+| ES | 818 « Solicitud de instalación solar » | `solicitud-instalacion-solar` | /es/gracias/ |
+| CA | 819 « Sol·licitud d'instal·lació solar » | `sollicitud-installacio-solar` | /ca/gracies/ |
+| EN | 820 « Solar installation request » | `solar-installation-request` | /en/thank-you/ |
+
+Mêmes champs que la page FR 815, champ photos compris. **Restées en brouillon** : le connecteur ne peut pas régler la langue Polylang ; publiées telles quelles, elles seraient rattachées au français (adresse sans /es/, menu et bandeau français).
+À faire par David dans wp-admin, pour chaque page : boîte « Langue » de Polylang = ES, CA ou EN, puis la relier comme traduction de la page 815. Ensuite Claude publie, vérifie les adresses /es/, /ca/, /en/ et ajoute le lien « → Solicitar la instalación / Sol·licitar la instal·lació / Request installation » sous la rubrique des pages 508, 432, 573.
