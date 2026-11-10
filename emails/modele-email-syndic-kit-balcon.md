@@ -19,7 +19,12 @@ Vous trouverez ci-dessous un modèle prêt à envoyer. Complétez les champs ent
 - Logement en Espagne : envoyez la version en espagnol à votre administrador de fincas.
 - Logement en France : envoyez la version en français à votre syndic.
 
-Comptez en général 15 jours pour une réponse. Si le syndic demande un vote, la demande sera inscrite à la prochaine assemblée.
+Deux cas :
+
+- **Panneaux invisibles depuis la rue** (face intérieure du garde-corps) : une simple information du syndic suffit en général.
+- **Panneaux qui modifient la façade** : un vote est nécessaire. En Catalogne, c'est le Code civil catalan qui s'applique. Ailleurs en Espagne, depuis le RDL 7/2026 du 20/03/2026, le vote passe avec 1/3 des copropriétaires représentant 1/3 des quotes-parts (art. 17.1 de la loi sur la propriété horizontale).
+
+Comptez en général 15 jours pour une réponse. Si le syndic demande un vote, la demande sera inscrite à la prochaine assemblée. La pose est confirmée dès réception de l'accord.
 
 Une question sur votre cas ? Répondez simplement à cet email.
 
@@ -41,7 +46,7 @@ Características de la instalación:
 - **Fijación:** soportes sobre la barandilla, [sin taladrar / con anclajes desmontables]. La instalación es reversible.
 - **Ubicación:** cara [interior / exterior] de la barandilla, orientación [sur / sureste / suroeste].
 - **Conexión eléctrica:** exclusivamente a la instalación interior de mi vivienda. No afecta a ninguna instalación común.
-- **Normativa:** la instalación se realizará conforme al Real Decreto 244/2019 de autoconsumo, [con dispositivo antivertido / con certificado de instalación eléctrica (CIE) firmado por un instalador autorizado].
+- **Normativa:** la instalación se realizará conforme al Real Decreto 244/2019 de autoconsumo, con dispositivo antivertido[ y certificado de instalación eléctrica (CIE) firmado por un instalador autorizado].
 
 Adjunto la ficha técnica del equipo y una fotografía del balcón.
 
