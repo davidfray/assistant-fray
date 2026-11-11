@@ -151,6 +151,14 @@ describe('règle 4 : sites en production', () => {
     expect(classify('Bash', { command: 'curl -X POST https://www.solandvolt.com/wp-json/code-snippets/v1/snippets/22 -d x=1' })?.question).toContain('snippet de code')
     expect(classify('mcp__WordPress_com__wpcom-global-styles-update', { wpcom_site: '257165426' })?.question).toContain('styles du site (CSS)')
   })
+  test('Rank Math : redirection et SEO distingués', () => {
+    const r = classify('Bash', {
+      command: `curl -s -X POST "https://www.solandvolt.com/wp-json/rankmath/v1/updateRedirection" --data '{"objectID":87,"hasRedirect":true}'`,
+    })
+    expect(r?.question).toContain('— redirection (Rank Math)')
+    const m = classify('Bash', { command: `curl -s -X POST "https://www.solandvolt.com/wp-json/rankmath/v1/updateMeta" --data '{"objectID":7}'` })
+    expect(m?.question).toContain('— SEO Rank Math (titre ou description)')
+  })
   test('lectures et autres sites : rien', () => {
     expect(classify('mcp__WordPress_com__wpcom-mcp-pages-get', { wpcom_site: '257165426', id: 7 })).toBe(null)
     expect(classify('Bash', { command: 'curl -s https://www.solandvolt.com/wp-json/wc/v3/products' })).toBe(null)

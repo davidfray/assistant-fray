@@ -320,8 +320,9 @@ function typeElementWp(s: string): string {
   const types: Array<[RegExp, string]> = [
     [/(wc\/v3\/products|product)/, 'produit WooCommerce'],
     [/(wc\/v3\/orders|order)/, 'commande WooCommerce'],
-    [/(rankmath|rank-math)/, 'SEO Rank Math (titre, description ou redirection)'],
+    [/(rankmath|rank-math)[\s\S]*redirect|redirect[\s\S]*(rankmath|rank-math)/, 'redirection (Rank Math)'],
     [/redirect/, 'redirection'],
+    [/(rankmath|rank-math)/, 'SEO Rank Math (titre ou description)'],
     [/(code-snippets|snippet)/, 'snippet de code (Code Snippets)'],
     [/(global-styles|global_styles|custom_css|css)/, 'styles du site (CSS)'],
     [/(template-part|template_part)/, 'partie de modèle (en-tête, pied de page…)'],
