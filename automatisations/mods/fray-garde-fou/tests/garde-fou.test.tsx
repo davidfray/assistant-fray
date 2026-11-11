@@ -47,8 +47,30 @@ describe('règle 2 : Dolibarr', () => {
     })
     expect(r?.regle).toBe(2)
     expect(r?.question).toContain('Durand')
-    expect(r?.question).toContain('2500.00')
+    expect(r?.question).toContain('2 500,00 €')
     expect(r?.question).toContain('10 %')
+  })
+  test('API : tiers, montant HT et IVA lus dans les données envoyées', () => {
+    const r = classify('Bash', {
+      command: `curl -s -X POST "https://erp.example/api/index.php/proposals" --data '{"socid":"Client Test","lines":[{"subprice":2000,"qty":1,"tva_tx":10},{"subprice":500,"qty":1,"tva_tx":"10.000"}]}'`,
+    })
+    expect(r?.question).toContain('création : devis')
+    expect(r?.question).toContain('Tiers : Client Test')
+    expect(r?.question).toContain('Montant HT : 2 500,00 €')
+    expect(r?.question).toContain('IVA : 10 %')
+  })
+  test('tiers numérique : consigne d’afficher le nom', () => {
+    const r = classify('Bash', { command: `curl -X POST https://erp.example/api/index.php/invoices -d '{"socid":42,"lines":[{"subprice":100,"qty":3,"tva_tx":21}]}'` })
+    expect(r?.question).toContain('création : facture')
+    expect(r?.question).toContain('n° 42 (numéro interne')
+    expect(r?.question).toContain('300,00 €')
+    expect(r?.question).toContain('21 %')
+  })
+  test('validation par l’API et données dans un fichier', () => {
+    const v = classify('Bash', { command: 'curl -X POST https://erp.example/api/index.php/invoices/12/validate -d "{}"' })
+    expect(v?.question).toContain('validation : facture')
+    const f = classify('Bash', { command: 'curl -X POST https://erp.example/api/index.php/proposals -d @devis.json' })
+    expect(f?.question).toContain('Données lues dans un fichier')
   })
   test('validation de facture interceptée, lecture non', () => {
     expect(classify('mcp__dolibarr__validate_invoice', { id: 12 })?.regle).toBe(2)
