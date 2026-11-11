@@ -1,0 +1,5 @@
+{
+  "name": "fray-mods",
+  "owner": { "name": "Fray Services Palamós" },
+  "plugins": [{ "name": "fray-garde-fou", "source": "./" }]
+}

@@ -20,7 +20,21 @@ Une bande au-dessus du prompt indique « garde-fou actif », le nombre d'actions
 
 Accès demandés : aucun fichier, aucun réseau, aucun sous-processus, aucun dialogue ; seulement `$.state` (session) et `$.ui.resolve` (bande).
 
-Chargement après relecture : `claude --plugin-dir ~/mods/fray-garde-fou`. Tests : `claude plugin test ~/mods/fray-garde-fou`.
+## Installation sur le PC de David (une seule fois)
+
+Dans PowerShell (le dossier vient de la synchro du dépôt) :
+
+```
+claude plugin install fray-garde-fou --marketplace "$HOME\Documents\GitHub\assistant-fray\automatisations\mods\fray-garde-fou" --scope user
+```
+
+Le mod est alors actif dans toutes les sessions Claude Code du PC (terminal et onglet Code de l'application). Il est lu directement dans ce dossier : chaque mise à jour fusionnée dans `main` et ramenée par la synchro s'applique à la session suivante. Vérifier : `claude plugin list` doit afficher `fray-garde-fou@fray-mods`, état activé.
+
+Désactiver : `claude plugin disable fray-garde-fou@fray-mods` ; désinstaller : `claude plugin uninstall fray-garde-fou@fray-mods`.
+
+Pour un essai ponctuel sans installation : `claude --plugin-dir <dossier du mod>`. Tests : `claude plugin test <dossier du mod>`.
+
+Le mod n'est volontairement pas activé dans `.claude/settings.json` du dépôt : il bloquerait aussi les sessions cloud et les tâches programmées (publication Instagram de 18 h 31, contrôles quotidiens) qui travaillent sur ce dépôt sans personne pour répondre « confirme ».
 
 ## Commandes et scripts
 
