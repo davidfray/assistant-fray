@@ -55,6 +55,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `fray/offres/offre-pose-solaire-2026-11-10.md` | **Offre de pose solaire Fray Services** (grill-me du 10/11) : 21 décisions, réglementation vérifiée, reste le tarif de l'électricien |
 | `.claude/skills/replica/` | **Skill « réplica »** (08/11) : réponse à tout message entrant (client, fournisseur, avis, commentaire, relance), Fray ou Sol & Volt, FR/ES. Paquet à importer dans claude.ai : `automatisations/skills/replica.skill`. **`solandvolt-service-client` corrigé** (garantie 3 ans des CGV, sans extension), paquet `automatisations/skills/solandvolt-service-client.skill` à réimporter dans claude.ai |
 | `automatisations/make/` | Blueprints des scénarios Make créés par Claude (sans identifiants) |
+| `automatisations/mods/fray-garde-fou/` | **Mod Claude Code « garde-fou »** (11/11, **non installé, à relire par David**) : confirmation avant email Gmail, devis ou facture Dolibarr, publication Facebook, Instagram ou Buffer, écriture sur frayservices.com ou solandvolt.com, scénario Make ou n8n ; bande « garde-fou actif » ; 17 tests. Chargement : `claude --plugin-dir <dossier>` |
 | `audit/google-analytics-solandvolt-2026-10-26.md` | Google Analytics solandvolt.com (90 jours, canaux, publicité Meta vers pages 404, suivi e-commerce absent) |
 | `fray/audit/constats-frayservices-2026-10-26.md` | Audit frayservices.com, faits utilisables dans les posts |
 | `fray/site/fiche-google-business-2026-11-10.md` | **Fiche Google d'entreprise de Fray Services prête à saisir** (nom, catégories, description, horaires, services, photos, premier post, avis) |
@@ -306,6 +307,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 10/11/2026 (nuit) | Claude Code | Fiche Google d'entreprise de Fray Services complétée par David avec guidage (catégories, WhatsApp, couverture et 7 photos via Drive, zones desservies, Instagram), lien d'avis sur les 4 accueils (témoignages ajoutés sur l'accueil ES), rubriques piscines et domotique sur les pages Services (4 langues), décision : avis demandés aux nouveaux clients, pas aux clients espagnols ; revérification programmée le 12/11 |
 | 11/11/2026 | Claude Code | Connecteur Instagram : 2 comptes Composio vérifiés (lecture, quota), fiche `procedures/connecteur-instagram.md`, 3 légendes à corriger relevées ; stratégie d'abonnés, 4 Reels (Fray : salle de bain, toit-terrasse ; Sol & Volt : Wh, SOK 206 Ah), calendrier 16-28/11, bilan Instagram programmé chaque lundi ; publication automatique par file d'attente (tâche quotidienne 18 h 31), vidéos fournisseurs recherchées (aucune exploitable) |
 | 11/11/2026 | Claude Code | Diagnostic de l'absence de ventes (GA4, Google Ads, fiches) ; 14 mots-clés négatifs ; Merchant Center : snippet 36 pour les descriptions des fiches bilingues |
+| 11/11/2026 | Claude Code | Mod « fray-garde-fou » (sources et tests seulement, non chargé) : 5 règles de confirmation, bande au-dessus du prompt |
 
 ## Mise à jour de ce fichier
 
