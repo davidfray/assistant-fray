@@ -301,10 +301,41 @@ function wordpress(nom: string, a: Args): Interception | null {
       (titre && titre !== cible ? `Titre envoyé : ${couper(titre, 120)}\n` : '') +
       (statut ? `Statut envoyé : ${statut}${statut === 'publish' ? ' (en ligne)' : ''}\n` : '') +
       (contenu ? `Contenu envoyé : ${couper(contenu, 300)}\n` : '') +
+      changementsCss(a) +
       (champs.length ? `Champs modifiés : ${champs.join(', ')}\n` : '') +
       CONSIGNE_AVANT_APRES +
       `Confirmer la modification ?`,
   }
+}
+
+/** CSS modifié : chaque « remplace … par … » (css_edits), ou le début du CSS complet envoyé. */
+function changementsCss(a: Args): string {
+  const lignes: string[] = []
+  const edits = Array.isArray(a.css_edits) ? a.css_edits : []
+  edits.slice(0, 5).forEach((e, i) => {
+    const o = objet(e)
+    const cherche = texte(o.search)
+    const remplace = texte(o.replace)
+    lignes.push(
+      `CSS, modification ${i + 1} : ` +
+        (cherche === '' ? `ajout de « ${couper(remplace, 200)} » (CSS vide jusqu'ici)` : remplace === ''
+          ? `suppression de « ${couper(cherche, 200)} »`
+          : `remplace « ${couper(cherche, 200)} » par « ${couper(remplace, 200)} »`),
+    )
+  })
+  if (edits.length > 5) lignes.push(`… et ${edits.length - 5} autre(s) modification(s) CSS`)
+  const styles = objet(a.styles)
+  const cssComplet = typeof styles.css === 'string' ? styles.css : typeof a.css === 'string' ? a.css : ''
+  if (cssComplet) {
+    lignes.push(
+      `CSS complet remplacé (${cssComplet.length} caractères, tout l'ancien CSS est écrasé) : « ${couper(cssComplet, 200)} »`,
+    )
+  }
+  const autresStyles = Object.keys(styles).filter(k => k !== 'css')
+  if (autresStyles.length) lignes.push(`Styles modifiés : ${autresStyles.join(', ')}`)
+  const reglages = Object.keys(objet(a.settings))
+  if (reglages.length) lignes.push(`Réglages de styles modifiés : ${reglages.join(', ')}`)
+  return lignes.map(l => `${l}\n`).join('')
 }
 
 /** Consigne commune aux écritures sur les sites (connecteur ou commande). */

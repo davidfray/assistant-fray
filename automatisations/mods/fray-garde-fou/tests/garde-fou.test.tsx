@@ -151,6 +151,22 @@ describe('règle 4 : sites en production', () => {
     expect(classify('Bash', { command: 'curl -X POST https://www.solandvolt.com/wp-json/code-snippets/v1/snippets/22 -d x=1' })?.question).toContain('snippet de code')
     expect(classify('mcp__WordPress_com__wpcom-global-styles-update', { wpcom_site: '257165426' })?.question).toContain('styles du site (CSS)')
   })
+  test('CSS : chaque modification affichée, CSS complet signalé', () => {
+    const e = classify('mcp__WordPress_com__wpcom-global-styles-update', {
+      wpcom_site: '257165426',
+      css_edits: [
+        { search: '/* fin */', replace: '/* fin */\n/* test */' },
+        { search: '.a { color: red; }', replace: '' },
+        { search: '', replace: 'body { margin: 0; }' },
+      ],
+    })
+    expect(e?.question).toContain('CSS, modification 1 : remplace « /* fin */ » par « /* fin */ /* test */ »')
+    expect(e?.question).toContain('CSS, modification 2 : suppression de « .a { color: red; } »')
+    expect(e?.question).toContain('CSS, modification 3 : ajout de « body { margin: 0; } »')
+    const c = classify('mcp__WordPress_com__wpcom-global-styles-update', { wpcom_site: '257165426', styles: { css: 'x'.repeat(250), color: {} } })
+    expect(c?.question).toContain('CSS complet remplacé (250 caractères, tout l\'ancien CSS est écrasé)')
+    expect(c?.question).toContain('Styles modifiés : color')
+  })
   test('Rank Math : redirection et SEO distingués', () => {
     const r = classify('Bash', {
       command: `curl -s -X POST "https://www.solandvolt.com/wp-json/rankmath/v1/updateRedirection" --data '{"objectID":87,"hasRedirect":true}'`,
