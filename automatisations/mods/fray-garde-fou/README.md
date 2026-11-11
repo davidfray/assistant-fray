@@ -22,6 +22,8 @@ Accès demandés : aucun fichier, aucun réseau, aucun sous-processus, aucun dia
 
 ## Installation sur le PC de David (une seule fois)
 
+**Le plus simple :** double-clic sur `automatisations\windows\installer-garde-fou.cmd` (installe Claude Code en ligne de commande s'il manque, puis le mod, et affiche la vérification). Sinon, à la main :
+
 Dans PowerShell (le dossier vient de la synchro du dépôt) :
 
 ```
