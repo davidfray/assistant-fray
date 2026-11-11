@@ -335,14 +335,21 @@ function automatisation(nom: string, a: Args): Interception | null {
   if (estN8n && !/(activate|delete|execute|run|trigger|start)/.test(act)) return null
   if (!estMake && !estN8n) return null
   const id = premier(a, ['scenarioId', 'scenario_id', 'id', 'workflowId', 'workflow_id', 'name'])
-  const verbe = /activate/.test(act) ? 'activation' : /delete/.test(act) ? 'suppression' : 'lancement'
+  const verbe = /activate/.test(act) ? 'l\'activation' : /delete/.test(act) ? 'la suppression' : 'le lancement'
+  const nomScenario = premier(a, ['scenarioName', 'scenario_name', 'workflowName', 'workflow_name'])
+  const donnees = a.data !== undefined ? texte(a.data) : ''
+  const quoi = estMake ? 'Scénario Make' : 'Workflow n8n'
   return {
     regle: 5,
     entete: estMake ? 'Make' : 'n8n',
     question:
-      `${estMake ? 'Scénario Make' : 'Workflow n8n'} : ${verbe} — ${act}\n` +
-      `Identifiant : ${id || '(non indiqué)'}\n` +
-      `Confirmer la ${verbe} ?`,
+      `${quoi} : ${verbe.replace(/^(l'|la |le )/, '')} — ${act}\n` +
+      `Identifiant : ${id || '(non indiqué)'}${nomScenario ? ` · ${nomScenario}` : ''}\n` +
+      (donnees ? `Données envoyées : ${couper(donnees, 300)}\n` : '') +
+      `Avant de demander « confirme », lis ce ${estMake ? 'scénario' : 'workflow'} ` +
+      `(${estMake ? 'scenarios_get' : 'lecture du workflow'}) et affiche à David : son nom, son état (actif ou inactif) ` +
+      `et ce qu'il fait en une phrase (applications touchées, emails envoyés, fiches modifiées).\n` +
+      `Confirmer ${verbe} ?`,
   }
 }
 
@@ -353,7 +360,11 @@ function automatisationHttp(cmd: string): Interception | null {
   return {
     regle: 5,
     entete: make ? 'Make' : 'n8n',
-    question: `${make ? 'Make' : 'n8n'} lancé par une commande :\n${couper(cmd, 300)}\nConfirmer le lancement ?`,
+    question:
+      `${make ? 'Make' : 'n8n'} lancé par une commande :\n${couper(cmd, 300)}\n` +
+      `Avant de demander « confirme », indique à David quel ${make ? 'scénario' : 'workflow'} ce lien déclenche ` +
+      `(nom, état, ce qu'il fait), ou dis-lui que tu ne le sais pas.\n` +
+      `Confirmer le lancement ?`,
   }
 }
 

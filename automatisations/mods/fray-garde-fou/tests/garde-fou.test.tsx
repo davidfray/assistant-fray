@@ -160,6 +160,18 @@ describe('règle 5 : Make et n8n', () => {
     expect(classify('Bash', { command: 'curl -X POST https://x.app.n8n.cloud/api/v1/workflows/a/deactivate' })).toBe(null)
     expect(classify('Bash', { command: 'curl -X POST https://x.app.n8n.cloud/api/v1/workflows/a/activate' })?.regle).toBe(5)
   })
+  test('résumé : français correct et consigne de lecture du scénario', () => {
+    const run = classify('mcp__Make__scenarios_run', { scenarioId: 8239857, data: { a: 1 } })
+    expect(run?.question).toContain('Scénario Make : lancement')
+    expect(run?.question).toContain('Confirmer le lancement ?')
+    expect(run?.question).toContain('scenarios_get')
+    expect(run?.question).toContain('son état (actif ou inactif)')
+    expect(run?.question).toContain('Données envoyées : {"a":1}')
+    expect(classify('mcp__Make__scenarios_activate', { scenarioId: 1 })?.question).toContain("Confirmer l'activation ?")
+    expect(classify('mcp__Make__scenarios_delete', { scenarioId: 1 })?.question).toContain('Confirmer la suppression ?')
+    expect(classify('mcp__Make__scenarios_run', { scenarioId: 1 })?.question.includes('la lancement')).toBe(false)
+    expect(classify('Bash', { command: 'curl -X POST https://hook.eu2.make.com/abc -d x=1' })?.question).toContain('quel scénario ce lien déclenche')
+  })
   test('lecture de scénario : rien', () => {
     expect(classify('mcp__Make__scenarios_list', {})).toBe(null)
     expect(classify('mcp__Make__scenarios_get', { scenarioId: 1 })).toBe(null)
