@@ -9,6 +9,10 @@ Mise en place le 11/11/2026. Tâche programmée « Publication Instagram (file d
 3. Chaque jour à 18 h 31, la tâche publie les posts du jour au statut `valide`, après les contrôles ci-dessous. Elle met à jour le fichier (identifiant du média, lien), pousse sur la branche et fait un compte rendu.
 4. Vidéos : générées par `automatisations/videos/reels.py` à partir de photos réelles, déposées dans `social/instagram/videos/`. Instagram les lit à leur adresse publique GitHub (dépôt public). Test du 11/11 : conteneur créé et prêt (FINISHED), non publié.
 
+## Préparation chaque lundi
+
+Tâche « Bilan Instagram et posts de la semaine suivante » (lundi 9 h 17, heure de Madrid) : bilan des 2 comptes, puis 2 Reels Fray et 3 posts Sol & Volt ajoutés à la file pour la semaine suivante, au statut `a_valider`. David valide dans la conversation. Elle remplace la tâche « Reel hebdo Solandvolt » (mise en pause le 11/11, publiait sans validation). La tâche « Reel Flow Solandvolt (jeudi) » est aussi en pause (vidéos IA).
+
 ## Contrôles bloquants avant chaque publication
 
 - Statut `valide` et date du jour.
