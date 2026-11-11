@@ -190,9 +190,9 @@ function donneesCurl(cmd: string): { a: Args; fichier: boolean } {
   }
 }
 
-function dolibarrHttp(cmd: string): Interception | null {
+function dolibarrHttp(cmd: string, force = false): Interception | null {
   const route = cmd.match(/api\/index\.php\/(proposals|invoices|supplierinvoices|orders)(\/\d+)?(\/[a-z_]+)?/i)
-  if (!route || !ecritureHttp(cmd)) return null
+  if (!route || (!force && !ecritureHttp(cmd))) return null
   const methode = (cmd.match(/(?:-X|--request)\s*(POST|PUT|PATCH|DELETE)/i)?.[1] ?? 'POST').toUpperCase()
   const suite = (route[3] ?? '').toLowerCase()
   const verbe = /valid/.test(suite)
@@ -307,8 +307,8 @@ const ecritureHttp = (cmd: string): boolean =>
     ` ${cmd} `,
   )
 
-function siteHttp(cmd: string): Interception | null {
-  if (!DOMAINES.test(cmd) || !ecritureHttp(cmd)) return null
+function siteHttp(cmd: string, force = false): Interception | null {
+  if (!DOMAINES.test(cmd) || (!force && !ecritureHttp(cmd))) return null
   const site = (cmd.match(DOMAINES)?.[1] ?? '').toLowerCase()
   const route = cmd.match(/https?:\/\/[^\s'"]+/)?.[0] ?? ''
   return {
@@ -359,8 +359,82 @@ function automatisationHttp(cmd: string): Interception | null {
 
 // ---------- commandes shell et exécutions distantes ----------
 
-function commande(cmd: string): Interception | null {
-  return siteHttp(cmd) ?? dolibarrHttp(cmd) ?? automatisationHttp(cmd)
+// Seules les commandes qui s'exécutent vraiment sont examinées : un texte cité
+// (echo, grep, message de commit, fichier écrit par heredoc, chaîne dans un script)
+// ne bloque plus rien.
+
+type Morceau = { type: 'shell' | 'code'; texte: string }
+
+/** Préfixes qui ne changent pas la commande lancée (variables, sudo, time…). */
+const PREFIXES = /^(?:(?:[A-Za-z_]\w*=\S*\s+)|(?:sudo|time|command|exec|nohup|env|xargs(?:\s+-\S+)*)\s+)*/
+/** Outils qui envoient une requête HTTP ou modifient WordPress quand ils sont lancés. */
+const OUTILS_HTTP = /^(curl|wget|http|https|xh|wp)\b/
+const INTERPRETES = /^(python3?(\.\d+)?|node|deno|bun|php|ruby|perl)\b/
+const SHELLS = /^(bash|sh|zsh|dash)\b/
+/** Dans du code (Python, JavaScript…), un appel réseau en écriture ou un lancement de commande. */
+const CODE_ECRITURE =
+  /(\b(requests|httpx|session|client|s)\.(post|put|patch|delete|request)\s*\(|\bfetch\s*\([\s\S]*?method\s*:\s*['"](POST|PUT|PATCH|DELETE)|method\s*=\s*['"](POST|PUT|PATCH|DELETE)|\burlopen\s*\(|\b(subprocess|os\.system|os\.popen|execSync|spawnSync|spawn|exec)\b[\s\S]*\bcurl\b)/i
+
+const SEPARATEURS = /\n|;|&&|\|\||\||\$\(|`/
+
+const premierMot = (segment: string): string => segment.trim().replace(/^[({\s]+/, '').replace(PREFIXES, '')
+
+export function morceaux(cmd: string, profondeur = 0): Morceau[] {
+  const sortie: Morceau[] = []
+  const lignes = cmd.replace(/\\\r?\n/g, ' ').split(/\r?\n/)
+  const gardees: string[] = []
+
+  for (let i = 0; i < lignes.length; i++) {
+    const ligne = lignes[i] ?? ''
+    const m = ligne.match(/<<-?\s*(['"]?)([A-Za-z_]\w*)\1/)
+    if (!m) {
+      gardees.push(ligne)
+      continue
+    }
+    // Corps du heredoc : jusqu'à la ligne qui ne contient que le délimiteur.
+    const corps: string[] = []
+    let j = i + 1
+    while (j < lignes.length && (lignes[j] ?? '').trim() !== m[2]) corps.push(lignes[j++] ?? '')
+    const avant = ligne.slice(0, m.index)
+    const lanceur = premierMot(avant.split(SEPARATEURS).pop() ?? '')
+    if (INTERPRETES.test(lanceur)) sortie.push({ type: 'code', texte: corps.join('\n') })
+    else if (SHELLS.test(lanceur) && profondeur < 3) sortie.push(...morceaux(corps.join('\n'), profondeur + 1))
+    // Autre lanceur (cat > fichier, tee…) : le corps n'est que du texte écrit.
+    gardees.push(ligne)
+    i = j
+  }
+
+  // Code passé en argument (`python3 -c "…"`, `node -e '…'`, `bash -c '…'`) : extrait
+  // avant le découpage, car il contient souvent des « ; ».
+  let reste = gardees.join('\n')
+  const ARG_CODE = /\b(python3?(?:\.\d+)?|node|deno|bun|php|ruby|perl|bash|sh|zsh|dash)\s+(?:-[A-Za-z]+\s+)*-(?:c|e)\s+(?:'([^']*)'|"((?:[^"\\]|\\.)*)")/g
+  reste = reste.replace(ARG_CODE, (_tout, lanceur: string, simple?: string, double?: string) => {
+    const code = simple ?? (double ?? '').replace(/\\"/g, '"')
+    if (SHELLS.test(lanceur)) {
+      if (profondeur < 3) sortie.push(...morceaux(code, profondeur + 1))
+    } else sortie.push({ type: 'code', texte: code })
+    return lanceur
+  })
+
+  for (const segment of reste.split(SEPARATEURS)) {
+    const s = premierMot(segment)
+    if (OUTILS_HTTP.test(s)) sortie.push({ type: 'shell', texte: s })
+  }
+  return sortie
+}
+
+function codeHttp(code: string): Interception | null {
+  if (!CODE_ECRITURE.test(code)) return null
+  return siteHttp(code, true) ?? dolibarrHttp(code, true) ?? automatisationHttp(code)
+}
+
+function commande(cmd: string, estCode = false): Interception | null {
+  const liste: Morceau[] = estCode ? [{ type: 'code', texte: cmd }] : morceaux(cmd)
+  for (const m of liste) {
+    const r = m.type === 'code' ? codeHttp(m.texte) : (siteHttp(m.texte) ?? dolibarrHttp(m.texte) ?? automatisationHttp(m.texte))
+    if (r) return r
+  }
+  return null
 }
 
 /** Point d'entrée : un appel d'outil -> l'action à confirmer, ou null. */
@@ -387,7 +461,10 @@ export function classify(tool: string, args: Args): Interception | null {
       question: `Requête ${methode} par Composio vers ${couper(cible, 200)}\nCorps : ${couper(texte(args.body), 300) || '(vide)'}\nConfirmer ?`,
     }
   }
-  if (tool === 'Bash' || /composio_remote_(bash_tool|workbench)$/i.test(tool)) {
+  if (/composio_remote_workbench$/i.test(tool)) {
+    return commande(premier(args, ['code_to_execute', 'code', 'script', 'command']), true)
+  }
+  if (tool === 'Bash' || /composio_remote_bash_tool$/i.test(tool)) {
     return commande(premier(args, ['command', 'code_to_execute', 'code', 'script']))
   }
   return email(tool, args) ?? dolibarr(tool, args) ?? social(tool, args) ?? automatisation(tool, args) ?? wordpress(tool, args)

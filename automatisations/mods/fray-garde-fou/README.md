@@ -21,3 +21,7 @@ Une bande au-dessus du prompt indique « garde-fou actif », le nombre d'actions
 Accès demandés : aucun fichier, aucun réseau, aucun sous-processus, aucun dialogue ; seulement `$.state` (session) et `$.ui.resolve` (bande).
 
 Chargement après relecture : `claude --plugin-dir ~/mods/fray-garde-fou`. Tests : `claude plugin test ~/mods/fray-garde-fou`.
+
+## Commandes et scripts
+
+Seules les commandes réellement lancées sont examinées : `curl`, `wget`, `http`, `wp` (y compris après `cd … &&`, une variable, `sudo`, `$( )`, sur plusieurs lignes, ou dans `bash -c` et un heredoc lancé par `bash`), et le code Python, JavaScript, PHP… (`python3 -c`, heredoc lancé par un interpréteur, workbench Composio) qui écrit vraiment (`requests.post`, `fetch` en POST, `subprocess` avec `curl`…). Un texte seulement cité ne bloque rien : `echo`, `printf`, `grep`, message de commit, fichier écrit par `cat > fichier <<EOF`, chaîne de caractères dans un script.

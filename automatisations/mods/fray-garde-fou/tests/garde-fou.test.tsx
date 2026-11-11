@@ -166,6 +166,55 @@ describe('règle 5 : Make et n8n', () => {
   })
 })
 
+describe('faux positifs : un texte cité ne bloque pas', () => {
+  const SITE = 'curl -X POST https://www.solandvolt.com/wp-json/wp/v2/pages/7 -d x=1'
+  const DOLI = `curl -X POST https://erp.example/api/index.php/proposals -d '{"socid":1}'`
+  const MAKE = 'curl -X POST https://hook.eu2.make.com/abc -d x=1'
+  test('echo, printf, grep, git commit', () => {
+    expect(classify('Bash', { command: `echo ${MAKE}` })).toBe(null)
+    expect(classify('Bash', { command: `printf '%s' "${SITE}"` })).toBe(null)
+    expect(classify('Bash', { command: `grep -rn "api/index.php/proposals" . && grep -c "${MAKE}" notes.md` })).toBe(null)
+    expect(classify('Bash', { command: `git commit -m "Test : ${SITE}"` })).toBe(null)
+  })
+  test('fichier écrit par heredoc (cat > fichier)', () => {
+    expect(classify('Bash', { command: `cat > notes.md <<'EOF'\n${SITE}\n${DOLI}\nEOF\nwc -l notes.md` })).toBe(null)
+  })
+  test('chaîne de caractères dans un script Python (cas du 11/11)', () => {
+    const script = `python3 - <<'EOF'\ns = open('t.ts').read()\ns = s.replace("a", """${DOLI}""")\nopen('t.ts','w').write(s)\nEOF`
+    expect(classify('Bash', { command: script })).toBe(null)
+  })
+  test('lecture seule : GET sur le site', () => {
+    expect(classify('Bash', { command: 'curl -s https://www.solandvolt.com/wp-json/wc/v3/products/87' })).toBe(null)
+  })
+  test('code Composio (workbench) qui ne fait que lire', () => {
+    expect(classify('mcp__Composio__COMPOSIO_REMOTE_WORKBENCH', { code_to_execute: `r = requests.get("https://www.solandvolt.com/")\nprint("${SITE}")` })).toBe(null)
+  })
+})
+
+describe('vraies écritures : toujours bloquées', () => {
+  test('curl après cd, &&, variables, sudo, $( )', () => {
+    expect(classify('Bash', { command: 'cd /tmp && curl -X PUT https://www.solandvolt.com/wp-json/wc/v3/products/87 -d x=1' })?.regle).toBe(4)
+    expect(classify('Bash', { command: 'TOKEN=1 curl -X POST https://www.frayservices.com/wp-json/wp/v2/pages/10 --json "{}"' })?.regle).toBe(4)
+    expect(classify('Bash', { command: 'sudo curl -X DELETE https://www.solandvolt.com/wp-json/wp/v2/posts/1' })?.regle).toBe(4)
+    expect(classify('Bash', { command: 'R=$(curl -s -X POST https://hook.eu2.make.com/abc -d x=1)' })?.regle).toBe(5)
+  })
+  test('curl sur plusieurs lignes (antislash)', () => {
+    expect(classify('Bash', { command: 'curl -s \\\n  -X POST \\\n  https://www.solandvolt.com/wp-json/rankmath/v1/updateMeta \\\n  --data "{}"' })?.regle).toBe(4)
+  })
+  test('heredoc lancé par bash, et bash -c', () => {
+    expect(classify('Bash', { command: `bash <<'EOF'\ncurl -X POST https://hook.eu2.make.com/abc -d x=1\nEOF` })?.regle).toBe(5)
+    expect(classify('Bash', { command: `bash -c 'curl -X POST https://www.solandvolt.com/wp-json/wp/v2/pages/7 -d x=1'` })?.regle).toBe(4)
+  })
+  test('Python qui écrit vraiment (requests.post, subprocess curl)', () => {
+    expect(classify('Bash', { command: `python3 - <<'EOF'\nimport requests\nrequests.post("https://www.solandvolt.com/wp-json/wc/v3/products/87", json={})\nEOF` })?.regle).toBe(4)
+    expect(classify('Bash', { command: `python3 -c "import subprocess; subprocess.run(['curl','-X','POST','https://erp.example/api/index.php/invoices'])"` })?.regle).toBe(2)
+    expect(classify('mcp__Composio__COMPOSIO_REMOTE_WORKBENCH', { code_to_execute: 'requests.put("https://www.frayservices.com/wp-json/wp/v2/pages/10", json={})' })?.regle).toBe(4)
+  })
+  test('WP-CLI', () => {
+    expect(classify('Bash', { command: 'cd site && wp option update blogname "X" --url=https://www.solandvolt.com' })?.regle).toBe(4)
+  })
+})
+
 test('outils ordinaires : rien', () => {
   expect(classify('Read', { file_path: '/x' })).toBe(null)
   expect(classify('Bash', { command: 'git status' })).toBe(null)
