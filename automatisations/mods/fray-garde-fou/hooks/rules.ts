@@ -308,6 +308,24 @@ function wordpress(nom: string, a: Args): Interception | null {
   }
 }
 
+/**
+ * Snippet Code Snippets : avertissement en tête si le code PHP est envoyé, si le snippet est
+ * activé ou désactivé, ou s'il est supprimé. Une erreur de PHP peut rendre le site inaccessible.
+ */
+function avertissementSnippet(cmd: string): string {
+  if (!/code-snippets/i.test(cmd)) return ''
+  const raisons: string[] = []
+  if (/["']code["']\s*:/.test(cmd)) raisons.push('code PHP modifié')
+  if (/["']active["']\s*:|\/(activate|deactivate)\b/i.test(cmd)) raisons.push('snippet activé ou désactivé')
+  if (/-X\s*DELETE|--request\s+DELETE|requests\.delete|method\s*[:=]\s*['"]DELETE/i.test(cmd)) raisons.push('snippet supprimé')
+  if (!raisons.length) return ''
+  return (
+    `⚠ ATTENTION : ${raisons.join(', ')}. Une erreur de PHP peut rendre solandvolt.com inaccessible. ` +
+    `Avant de demander « confirme », montre à David le code complet avant et après, ` +
+    `et prévois le retour arrière (ancien code ou désactivation du snippet).\n`
+  )
+}
+
 /** CSS modifié : chaque « remplace … par … » (css_edits), ou le début du CSS complet envoyé. */
 function changementsCss(a: Args): string {
   const lignes: string[] = []
@@ -386,6 +404,7 @@ function siteHttp(cmd: string, force = false): Interception | null {
     regle: 4,
     entete: 'Site',
     question:
+      avertissementSnippet(cmd) +
       `Écriture sur ${site} par une commande — ${typeElementWp(route || cmd)}\n` +
       (route ? `Adresse : ${couper(route, 200)}\n` : '') +
       `Commande : ${couper(cmd, 300)}\n` +

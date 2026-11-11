@@ -167,6 +167,18 @@ describe('règle 4 : sites en production', () => {
     expect(c?.question).toContain('CSS complet remplacé (250 caractères, tout l\'ancien CSS est écrasé)')
     expect(c?.question).toContain('Styles modifiés : color')
   })
+  test('snippet : avertissement si code, activation ou suppression', () => {
+    const URL = 'https://www.solandvolt.com/wp-json/code-snippets/v1/snippets/24'
+    const desc = classify('Bash', { command: `curl -X POST ${URL} --data '{"desc":"x"}'` })
+    expect(desc?.question.includes('ATTENTION')).toBe(false)
+    const code = classify('Bash', { command: `curl -X POST ${URL} --data '{"code":"add_filter();"}'` })
+    expect(code?.question.startsWith('⚠ ATTENTION : code PHP modifié.')).toBe(true)
+    expect(code?.question).toContain('code complet avant et après')
+    expect(classify('Bash', { command: `curl -X POST ${URL} --data '{"active":false}'` })?.question).toContain('snippet activé ou désactivé')
+    expect(classify('Bash', { command: `curl -X POST ${URL}/deactivate -d "{}"` })?.question).toContain('snippet activé ou désactivé')
+    expect(classify('Bash', { command: `curl -X DELETE ${URL}` })?.question).toContain('snippet supprimé')
+    expect(classify('Bash', { command: `python3 -c "import requests; requests.post('${URL}', json={'code': 'x'})"` })?.question).toContain('code PHP modifié')
+  })
   test('Rank Math : redirection et SEO distingués', () => {
     const r = classify('Bash', {
       command: `curl -s -X POST "https://www.solandvolt.com/wp-json/rankmath/v1/updateRedirection" --data '{"objectID":87,"hasRedirect":true}'`,
