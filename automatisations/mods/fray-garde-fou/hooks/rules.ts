@@ -289,17 +289,56 @@ function wordpress(nom: string, a: Args): Interception | null {
   if (site && !DOMAINES.test(site) && !/^\d+$/.test(site)) return null
   const cible = premier(a, ['id', 'post_id', 'page_id', 'ID', 'slug', 'name', 'plugin', 'theme', 'domain'])
   const titre = premier(a, ['title', 'name'])
-  const contenu = premier(a, ['content', 'css', 'records', 'source', 'destination', 'status'])
+  const contenu = premier(a, ['content', 'css', 'records', 'source', 'destination'])
+  const statut = premier(a, ['status'])
+  const champs = Object.keys(a).filter(k => !/^(wpcom_site|site|site_id|siteId|blog_id|id|ID|post_id|page_id|include_fields|context|_compte|tool|tool_use_id|agentId|requestMeta|_host|description)$/.test(k))
   return {
     regle: 4,
     entete: 'Site',
     question:
       `Modification de production sur ${site || '(site non indiqué)'} — ${act}\n` +
-      (cible ? `Élément : ${couper(cible, 120)}\n` : '') +
-      (titre && titre !== cible ? `Titre : ${couper(titre, 120)}\n` : '') +
-      (contenu ? `Change : ${couper(contenu, 300)}\n` : '') +
+      `Type : ${typeElementWp(act)}${cible ? ` n° ${couper(cible, 120)}` : ''}\n` +
+      (titre && titre !== cible ? `Titre envoyé : ${couper(titre, 120)}\n` : '') +
+      (statut ? `Statut envoyé : ${statut}${statut === 'publish' ? ' (en ligne)' : ''}\n` : '') +
+      (contenu ? `Contenu envoyé : ${couper(contenu, 300)}\n` : '') +
+      (champs.length ? `Champs modifiés : ${champs.join(', ')}\n` : '') +
+      CONSIGNE_AVANT_APRES +
       `Confirmer la modification ?`,
   }
+}
+
+/** Consigne commune aux écritures sur les sites (connecteur ou commande). */
+const CONSIGNE_AVANT_APRES =
+  `Avant de demander « confirme », lis l'élément tel qu'il est maintenant et affiche à David, pour chaque champ modifié, ` +
+  `l'AVANT et l'APRÈS (titre, texte, statut, prix, CSS, redirection…), en citant les passages changés. ` +
+  `Dis aussi si le changement est visible tout de suite par les visiteurs (élément en ligne) ou non (brouillon). ` +
+  `Si tu ne peux pas lire l'élément, dis-le.\n`
+
+/** Type d'élément WordPress d'après le nom de l'outil ou l'adresse de l'API. */
+function typeElementWp(s: string): string {
+  const t = s.toLowerCase()
+  const types: Array<[RegExp, string]> = [
+    [/(wc\/v3\/products|product)/, 'produit WooCommerce'],
+    [/(wc\/v3\/orders|order)/, 'commande WooCommerce'],
+    [/(rankmath|rank-math)/, 'SEO Rank Math (titre, description ou redirection)'],
+    [/redirect/, 'redirection'],
+    [/(code-snippets|snippet)/, 'snippet de code (Code Snippets)'],
+    [/(global-styles|global_styles|custom_css|css)/, 'styles du site (CSS)'],
+    [/(template-part|template_part)/, 'partie de modèle (en-tête, pied de page…)'],
+    [/template/, 'modèle de page'],
+    [/(navigation|menu)/, 'menu'],
+    [/(dns|nameserver|domain)/, 'domaine ou DNS'],
+    [/plugin/, 'extension'],
+    [/theme/, 'thème'],
+    [/(media|upload)/, 'média'],
+    [/comment/, 'commentaire'],
+    [/(settings|option)/, 'réglages du site'],
+    [/(\/pages|pages-|page)/, 'page'],
+    [/(\/posts|posts-|post)/, 'article'],
+    [/(categor|tag|term)/, 'catégorie ou étiquette'],
+    [/user/, 'utilisateur'],
+  ]
+  return types.find(([re]) => re.test(t))?.[1] ?? 'élément du site'
 }
 
 const ecritureHttp = (cmd: string): boolean =>
@@ -315,9 +354,10 @@ function siteHttp(cmd: string, force = false): Interception | null {
     regle: 4,
     entete: 'Site',
     question:
-      `Écriture sur ${site} par une commande (API REST, WooCommerce, Rank Math, redirections…)\n` +
+      `Écriture sur ${site} par une commande — ${typeElementWp(route || cmd)}\n` +
       (route ? `Adresse : ${couper(route, 200)}\n` : '') +
       `Commande : ${couper(cmd, 300)}\n` +
+      CONSIGNE_AVANT_APRES +
       `Confirmer la modification ?`,
   }
 }
