@@ -190,19 +190,49 @@ function donneesCurl(cmd: string): { a: Args; fichier: boolean } {
   }
 }
 
+/** Fiche de tiers ou contact Dolibarr : résumé propre (nom, coordonnées, pièces rattachées). */
+function resumeTiersDolibarr(verbe: string, objetTiers: string, origine: string, a: Args, id: string, fichier: boolean): Interception {
+  const nom = premier(a, ['name', 'nom', 'lastname', 'firstname', 'thirdparty_name'])
+  const coord = [premier(a, ['email']), premier(a, ['phone']), premier(a, ['town'])].filter(Boolean).join(' · ')
+  const champs = Object.keys(a)
+  return {
+    regle: 2,
+    entete: 'Dolibarr',
+    question:
+      `Dolibarr, ${verbe} : ${objetTiers} — ${origine}\n` +
+      (id ? `Fiche n° ${id}\n` : '') +
+      (nom ? `Nom : ${nom}\n` : '') +
+      (coord ? `Coordonnées : ${coord}\n` : '') +
+      (champs.length ? `Champs envoyés : ${champs.join(', ')}\n` : '') +
+      (fichier ? 'Données lues dans un fichier : affiche à David son contenu avant de demander « confirme ».\n' : '') +
+      (verbe === 'suppression'
+        ? `Avant de demander « confirme », lis la fiche n° ${id || '(à préciser)'} dans Dolibarr et affiche à David son nom, ses devis, factures et commandes rattachés. ` +
+          `Ne supprime jamais une fiche qui porte une pièce (devis, facture, commande) : propose de la fusionner ou de la garder.\n`
+        : `Avant de demander « confirme », lis la fiche dans Dolibarr et affiche à David l'avant et l'après de chaque champ modifié.\n`) +
+      `Confirmer la ${verbe} ?`,
+  }
+}
+
 function dolibarrHttp(cmd: string, force = false): Interception | null {
-  const route = cmd.match(/api\/index\.php\/(proposals|invoices|supplierinvoices|orders)(\/\d+)?(\/[a-z_]+)?/i)
+  const route = cmd.match(/api\/index\.php\/(proposals|invoices|supplierinvoices|orders|thirdparties|contacts)(\/\d+)?(\/[a-z_]+)?/i)
   if (!route || (!force && !ecritureHttp(cmd))) return null
   const methode = (cmd.match(/(?:-X|--request)\s*(POST|PUT|PATCH|DELETE)/i)?.[1] ?? 'POST').toUpperCase()
   const suite = (route[3] ?? '').toLowerCase()
+  const estTiers = /^(thirdparties|contacts)$/i.test(route[1] ?? '')
   const verbe = /valid/.test(suite)
     ? 'validation'
     : methode === 'DELETE'
       ? 'suppression'
-      : methode === 'PUT' || methode === 'PATCH' || route[2] || suite
-        ? 'modification'
-        : 'création'
+      : /(close|setinvoiced|sign|refus|accept|settodraft|setdraft|cancel)/.test(suite)
+        ? 'changement de statut'
+        : methode === 'PUT' || methode === 'PATCH' || route[2] || suite
+          ? 'modification'
+          : 'création'
   const { a, fichier } = donneesCurl(cmd)
+  if (estTiers) {
+    const objetTiers = /contacts/i.test(route[1] ?? '') ? 'contact' : 'fiche de tiers (client, prospect ou fournisseur)'
+    return resumeTiersDolibarr(verbe, objetTiers, `API ${methode} ${route[0]}`, a, (route[2] ?? '').replace('/', ''), fichier)
+  }
   const note = fichier ? 'Données lues dans un fichier : affiche à David son contenu (tiers, lignes, montant, IVA) avant de demander « confirme ».\n' : ''
   return resumeDolibarr(verbe, sujetDe(route[1] ?? ''), `API ${methode} ${route[0]}`, a, note)
 }
