@@ -16,7 +16,7 @@ Tâche « Bilan Instagram et posts de la semaine suivante » (lundi 9 h 17, heur
 ## Contrôles bloquants avant chaque publication
 
 - Statut `valide` et date du jour.
-- Aucun autre Reel publié le même jour sur le même compte (la tâche « Reel hebdo Solandvolt » du lundi publie aussi sur @solandvolt) : sinon report au lendemain.
+- Aucun autre Reel publié le même jour sur le même compte : sinon report au lendemain.
 - Sol & Volt : prix de la légende identique au prix de la boutique ce jour-là (API publique, champ `controle_prix`) et produit en stock ; sinon pas de publication.
 - Mots interdits : « CE », « certifié », « Europe » pour la livraison, « 48 h » pour Fray, emoji dans les légendes Sol & Volt.
 - Quota Instagram non atteint.
