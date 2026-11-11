@@ -1,6 +1,12 @@
 # fray-garde-fou
 
-Mod Claude Code qui demande la confirmation de David avant toute action irréversible ou visible par un client. Chaque appel concerné ouvre un dialogue « Confirmer / Refuser ». Sans réponse « Confirmer », l'outil ne s'exécute pas.
+Mod Claude Code qui bloque toute action irréversible ou visible par un client tant que David ne l'a pas confirmée **dans la conversation**.
+
+Fonctionnement (identique sur ordinateur, téléphone et session cloud, sans dialogue) :
+1. L'action est bloquée ; Claude reçoit le résumé (destinataire, objet, montant, texte du post…) et doit le montrer à David.
+2. David répond « confirme » (ou « je confirme », « ok confirme ») en début de **son propre message**. Un texte qui ne vient pas de David (autre session, tâche programmée, mod, message système) n'autorise rien.
+3. Claude relance exactement le même appel : il passe **une seule fois**. Un appel différent (autre destinataire, autre texte…) est de nouveau bloqué.
+4. Toute autre réponse de David abandonne l'action en attente.
 
 | Règle | Outils interceptés | Affiché |
 |---|---|---|
@@ -10,6 +16,8 @@ Mod Claude Code qui demande la confirmation de David avant toute action irréver
 | 4. Sites | WordPress.com en écriture (pages, articles, extensions, thème, styles, menus, DNS…) sur solandvolt.com, frayservices.com ou un site non indiqué ; `curl`, `requests` ou `wp` en écriture vers ces 2 domaines | site, élément, ce qui change |
 | 5. Automatisations | Make `scenarios_activate`, `delete`, `run`, `replay` ; n8n `activate`, `execute`, `run`, `delete` (la désactivation n'est pas bloquée) ; webhooks `hook.*.make.com` et n8n | identifiant, action |
 
-Une bande au-dessus du prompt indique « garde-fou actif » et le nombre d'actions bloquées dans la session (et refusées).
+Une bande au-dessus du prompt indique « garde-fou actif », le nombre d'actions bloquées dans la session et l'action en attente (elle peut ne pas s'afficher sur l'application mobile).
+
+Accès demandés : aucun fichier, aucun réseau, aucun sous-processus, aucun dialogue ; seulement `$.state` (session) et `$.ui.resolve` (bande).
 
 Chargement après relecture : `claude --plugin-dir ~/mods/fray-garde-fou`. Tests : `claude plugin test ~/mods/fray-garde-fou`.
