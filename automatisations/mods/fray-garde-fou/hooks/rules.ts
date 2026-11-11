@@ -207,6 +207,9 @@ function social(nom: string, a: Args): Interception | null {
   if (!/(publish|post|schedule|share|send|reel|stor(y|ies)|comment|reply|create_update)/.test(act)) return null
   if (LECTURE.test(act)) return null
   const plateforme = { facebook: 'Facebook', instagram: 'Instagram', buffer: 'Buffer', postiz: 'Postiz' }[m[1] as 'facebook']
+  // Instagram publie en 2 étapes : la création du conteneur (photo + légende) est invisible
+  // et passe ; seule la publication (`…_publish`) est bloquée.
+  if (plateforme === 'Instagram' && !/publish/.test(act) && /(media|container)/.test(act)) return null
   const txt = premier(a, ['caption', 'message', 'text', 'content', 'body', 'description'])
   const media = premier(a, ['image_url', 'video_url', 'media_url', 'url', 'creation_id', 'link'])
   const nomPlateforme = plateforme ?? 'Social'
@@ -217,8 +220,13 @@ function social(nom: string, a: Args): Interception | null {
       `Publication ${nomPlateforme} — ${act}\n` +
       `Page ou compte : ${compteSocial(nomPlateforme, a)}\n` +
       `Statut : ${statutSocial(act, a)}\n` +
-      `Texte : ${txt ? couper(txt, 1000) : '(aucun texte dans l\'appel)'}\n` +
-      (media ? `Média : ${couper(media, 150)}\n` : '') +
+      (!txt && premier(a, ['creation_id'])
+        ? `Conteneur n° ${premier(a, ['creation_id'])} : la légende et la photo ne sont pas dans l'appel.\n` +
+          `Avant de demander « confirme », affiche à David la légende complète et l'adresse de la photo ou de la vidéo ` +
+          `utilisées à la création de ce conteneur (étape 1 dans cette conversation, ou social/instagram/file-publication.json). ` +
+          `Si tu ne les retrouves pas, dis-le et ne relance pas.\n`
+        : `Texte : ${txt ? couper(txt, 1000) : '(aucun texte dans l\'appel)'}\n` +
+          (media ? `Média : ${couper(media, 150)}\n` : '')) +
       `Confirmer la publication ?`,
   }
 }
