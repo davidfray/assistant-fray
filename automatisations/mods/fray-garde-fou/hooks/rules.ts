@@ -241,17 +241,13 @@ function automatisation(nom: string, a: Args): Interception | null {
   const act = action(nom)
   const estMake = n.startsWith('mcp__make__') || n.startsWith('make_')
   const estN8n = n.includes('n8n')
-  if (estMake && !/(scenarios?_(activate|deactivate|delete|run|replay|start)|run_scenario)/.test(act)) return null
-  if (estN8n && !/(activate|deactivate|delete|execute|run|trigger|start)/.test(act)) return null
+  // La désactivation n'est pas bloquée (décision de David, 11/11).
+  if (/deactivate/.test(act)) return null
+  if (estMake && !/(scenarios?_(activate|delete|run|replay|start)|run_scenario)/.test(act)) return null
+  if (estN8n && !/(activate|delete|execute|run|trigger|start)/.test(act)) return null
   if (!estMake && !estN8n) return null
   const id = premier(a, ['scenarioId', 'scenario_id', 'id', 'workflowId', 'workflow_id', 'name'])
-  const verbe = /deactivate/.test(act)
-    ? 'désactivation'
-    : /activate/.test(act)
-      ? 'activation'
-      : /delete/.test(act)
-        ? 'suppression'
-        : 'lancement'
+  const verbe = /activate/.test(act) ? 'activation' : /delete/.test(act) ? 'suppression' : 'lancement'
   return {
     regle: 5,
     entete: estMake ? 'Make' : 'n8n',
@@ -263,8 +259,8 @@ function automatisation(nom: string, a: Args): Interception | null {
 }
 
 function automatisationHttp(cmd: string): Interception | null {
-  const make = /hook\.[a-z0-9]+\.make\.com|hook\.make\.com|\.make\.com\/api\/v2\/scenarios\/\d+\/(run|start|stop)/i.test(cmd)
-  const n8n = /n8n/i.test(cmd) && /(\/webhook\/|\/workflows\/[^\s]*\/(activate|deactivate)|\/executions)/i.test(cmd)
+  const make = /hook\.[a-z0-9]+\.make\.com|hook\.make\.com|\.make\.com\/api\/v2\/scenarios\/\d+\/(run|start)/i.test(cmd)
+  const n8n = /n8n/i.test(cmd) && /(\/webhook\/|\/workflows\/[^\s]*\/activate|\/executions)/i.test(cmd)
   if (!make && !n8n) return null
   return {
     regle: 5,
