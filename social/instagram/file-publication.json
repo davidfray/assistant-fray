@@ -1,0 +1,105 @@
+{
+ "regles": "Ne publier que statut=valide. Comptes Composio : fray=instagram_creagh-averah, solandvolt=instagram_izote-crepe. Heure de Madrid.",
+ "publications": [
+  {
+   "id": "2026-11-17-fray-reel-sdb",
+   "compte": "fray",
+   "date": "2026-11-17",
+   "heure": "18:30",
+   "format": "REELS",
+   "media": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/fray-salle-de-bain.mp4",
+   "couverture": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/fray-salle-de-bain-couverture.jpg",
+   "legende": "Une salle de bain refaite à Palamós, en 4 étapes.\n\nDémolition, plomberie, électricité, carrelage. Chaque artisan arrive quand le chantier est prêt pour lui : c'est le rôle du maître d'œuvre.\n\nVous êtes en France ? Nous suivons le chantier sur place et vous envoyons les photos chaque semaine.\n\nEnvoyez 3 photos de votre salle de bain en message privé : réponse sous 24 h.\n\nPhotos de nos chantiers à Palamós.\n\n#renovation #rénovationmaison #travauxmaison #artisan #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #FrayServices #Palamós",
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  },
+  {
+   "id": "2026-11-17-sv-reel-wh",
+   "compte": "solandvolt",
+   "date": "2026-11-17",
+   "heure": "18:30",
+   "format": "REELS",
+   "media": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/sv-combien-de-wh.mp4",
+   "couverture": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/sv-combien-de-wh-couverture.jpg",
+   "legende": "Coupure de courant : combien de Wh pour tenir une journée ?\n\nBox internet : 240 Wh. Réfrigérateur : 200 à 350 Wh. Éclairage LED et recharges : 220 Wh. Total : 660 à 810 Wh par jour.\n\nL'EcoFlow DELTA 3 stocke 1 024 Wh en LiFePO4. Prix : 799 € TTC. Livraison en Espagne péninsulaire : 3 à 5 jours ouvrés.\n\nLe calcul complet pour votre résidence secondaire : lien en bio.\n\nESPAÑOL\n\nCorte de luz: ¿cuántos Wh para aguantar un día?\n\nRouter: 240 Wh. Nevera: 200 a 350 Wh. Iluminación LED y cargas: 220 Wh. Total: 660 a 810 Wh al día.\n\nLa EcoFlow DELTA 3 almacena 1.024 Wh en LiFePO4. Precio: 799 € IVA incluido. Envío a España peninsular: 3 a 5 días laborables.\n\nGuía completa: enlace en la bio.\n\n#solandvolt #autonomieenergetique #residencesecondaire #costabrava #powerstation #ecoflow #cortedeluz #segundaresidencia",
+   "controle_prix": {
+    "344": "799"
+   },
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  },
+  {
+   "id": "2026-11-19-fray-reel-toit",
+   "compte": "fray",
+   "date": "2026-11-19",
+   "heure": "18:30",
+   "format": "REELS",
+   "media": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/fray-toit-terrasse.mp4",
+   "couverture": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/fray-toit-terrasse-couverture.jpg",
+   "legende": "Une tache au plafond sous un toit-terrasse ? Regardez l'étanchéité.\n\nSur ce chantier à Palamós : ancienne étanchéité usée, nouvelle étanchéité bitumineuse, relevés et angles traités. La terrasse est étanche avant les pluies d'hiver.\n\nUne villa fermée l'hiver ne prévient pas : l'eau s'infiltre sans que personne ne la voie.\n\nEnvoyez l'adresse et 3 photos en message privé : réponse sous 24 h.\n\n#renovation #travauxmaison #etancheite #toitterrasse #maitredoeuvre #bureaudetudes #villaEspagne #CostaBrava #Emporda #propriétaire #FrayServices #Palamós",
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  },
+  {
+   "id": "2026-11-19-sv-reel-sok",
+   "compte": "solandvolt",
+   "date": "2026-11-19",
+   "heure": "18:30",
+   "format": "REELS",
+   "media": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/sv-sok-206ah.mp4",
+   "couverture": "https://raw.githubusercontent.com/davidfray/assistant-fray/ccr-84eec403-l3q45s/social/instagram/videos/sv-sok-206ah-couverture.jpg",
+   "legende": "Une batterie pour le van, le bateau ou la maison isolée.\n\nSOK 12 V 206 Ah LiFePO4 : 2 637 Wh. Chauffage intégré : la charge reprend au-dessus de 5 °C, même en hiver. Bluetooth et BMS intégrés pour suivre chaque cellule.\n\nPrix : 585 € TTC. Garantie 3 ans. Livraison France et Espagne continentale : 3 à 5 jours ouvrés.\n\nFiche complète : lien en bio.\n\nESPAÑOL\n\nUna batería para la furgoneta, el barco o la casa aislada.\n\nSOK 12 V 206 Ah LiFePO4: 2.637 Wh. Calefacción integrada: la carga se reanuda por encima de 5 °C, incluso en invierno. Bluetooth y BMS integrados para seguir cada celda.\n\nPrecio: 585 € IVA incluido. Garantía de 3 años. Envío a Francia y España peninsular: 3 a 5 días laborables.\n\nFicha completa: enlace en la bio.\n\n#solandvolt #autonomieenergetique #lifepo4 #vanlife #bateau #barco #franceespagne",
+   "controle_prix": {
+    "482": "585"
+   },
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  },
+  {
+   "id": "2026-11-21-sv-kit-balcon",
+   "compte": "solandvolt",
+   "date": "2026-11-21",
+   "heure": "18:30",
+   "format": "IMAGE",
+   "media": "https://www.solandvolt.com/wp-content/uploads/2026/09/D2300007_4899888760610_P74-5.jpg",
+   "legende": "Produire son électricité au balcon, sans travaux.\n\nLe kit Tornasol Efficiency 800 W se fixe au garde-corps et se branche sur le logement. Il réduit la consommation prise au réseau pendant la journée.\n\nAvant la mise en service : déclaration au gestionnaire de réseau local (Enedis en France, distributeur régional en Espagne). En Espagne, un dispositif anti-injection est obligatoire.\n\nPrix : 599,90 € TTC. Livraison : 12 à 18 jours ouvrés. Détails : lien en bio.\n\nESPAÑOL\n\nProducir su electricidad en el balcón, sin obras.\n\nEl kit Tornasol Efficiency 800 W se fija a la barandilla y se conecta a la vivienda. Reduce la energía tomada de la red durante el día.\n\nAntes de la puesta en marcha: comunicación a la distribuidora eléctrica de su zona. En España, el sistema antivertido es obligatorio.\n\nPrecio: 599,90 € IVA incluido. Entrega: 12 a 18 días laborables. Detalles: enlace en la bio.\n\n#solandvolt #kitbalcon #kitssolaires #autoconsommation #autoconsumo #franceespagne",
+   "controle_prix": {
+    "114": "599.90"
+   },
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  },
+  {
+   "id": "2026-11-24-sv-river3plus",
+   "compte": "solandvolt",
+   "date": "2026-11-24",
+   "heure": "18:30",
+   "format": "IMAGE",
+   "media": "https://www.solandvolt.com/wp-content/uploads/2026/10/ECF0043_56891.jpg",
+   "legende": "Une soirée sans réseau, la box et la lumière allumées.\n\nL'EcoFlow River 3 Plus stocke 286 Wh. C'est assez pour la box internet, l'éclairage et les téléphones pendant une soirée à une demi-journée.\n\nPrix : 299 € TTC. Livraison en Espagne péninsulaire : 3 à 5 jours ouvrés. Fiche : lien en bio.\n\nESPAÑOL\n\nUna noche sin red, con el router y la luz encendidos.\n\nLa EcoFlow River 3 Plus almacena 286 Wh. Basta para el router, la iluminación y los móviles durante una noche o media jornada.\n\nPrecio: 299 € IVA incluido. Envío a España peninsular: 3 a 5 días laborables. Ficha: enlace en la bio.\n\n#solandvolt #autonomieenergetique #ecoflow #residencesecondaire #costabrava #segundaresidencia",
+   "controle_prix": {
+    "623": "299"
+   },
+   "statut": "valide",
+   "version": "A",
+   "media_id": null,
+   "permalien": null,
+   "valide_le": "2026-11-11"
+  }
+ ]
+}
