@@ -1,0 +1,6 @@
+{
+  "name": "fray-garde-fou-cowork",
+  "version": "0.1.0",
+  "description": "Demande l'accord de David avant tout email, devis ou facture Dolibarr, publication, modification de frayservices.com ou solandvolt.com, et lancement Make ou n8n.",
+  "author": { "name": "Fray Services Palamós" }
+}
