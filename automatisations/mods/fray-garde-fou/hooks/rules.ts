@@ -101,7 +101,13 @@ function email(nom: string, a: Args): Interception | null {
 
 // ---------- règle 2 : Dolibarr ----------
 
-const OBJETS_DOLIBARR = /(propal|proposal|invoice|facture|devis|quote|order|commande)/
+/** 2500 -> « 2 500,00 € » ; une valeur non numérique est rendue telle quelle. */
+function euros(v: string): string {
+  const n = Number(v.replace(/\s/g, '').replace(',', '.'))
+  if (!Number.isFinite(n) || v.trim() === '') return v
+  const [ent, dec] = Math.abs(n).toFixed(2).split('.')
+  return `${n < 0 ? '-' : ''}${(ent ?? '0').replace(/\B(?=(\d{3})+(?!\d))/g, ' ')},${dec} €`
+}
 
 function montantLignes(a: Args): { ht: string; tva: string } {
   const lignes = Array.isArray(a.lines) ? a.lines : []
@@ -112,12 +118,13 @@ function montantLignes(a: Args): { ht: string; tva: string } {
     const o = objet(l)
     const pu = Number(o.subprice ?? o.price ?? o.pu_ht)
     const q = Number(o.qty ?? o.quantity ?? 1)
+    const remise = Number(o.remise_percent ?? 0)
     if (Number.isFinite(pu)) {
-      total += pu * (Number.isFinite(q) ? q : 1)
+      total += pu * (Number.isFinite(q) ? q : 1) * (Number.isFinite(remise) ? 1 - remise / 100 : 1)
       vu = true
     }
     const t = texte(o.tva_tx ?? o.vat_rate ?? o.tva)
-    if (t) taux.add(t)
+    if (t) taux.add(t.replace(/\.0+$/, ''))
   }
   return {
     ht: vu ? total.toFixed(2) : '',
@@ -125,48 +132,79 @@ function montantLignes(a: Args): { ht: string; tva: string } {
   }
 }
 
+/** Résumé commun (connecteur ou API) : type, action, tiers, montant HT, IVA. */
+function resumeDolibarr(verbe: string, sujet: string, origine: string, a: Args, note = ''): Interception {
+  const lignes = montantLignes(a)
+  const nomTiers = premier(a, ['thirdparty_name', 'socname', 'soc_name', 'tiers', 'customer', 'client', 'nom_client'])
+  const idTiers = premier(a, ['socid', 'thirdparty', 'thirdparty_id', 'fk_soc'])
+  const tiers = nomTiers
+    ? nomTiers
+    : /^\d+$/.test(idTiers)
+      ? `n° ${idTiers} (numéro interne : avant de demander « confirme », lis ce tiers dans Dolibarr et affiche à David le nom du client)`
+      : idTiers || '(tiers non indiqué : à afficher à David avant de demander « confirme »)'
+  const htBrut = premier(a, ['total_ht', 'amount_ht', 'montant_ht', 'totalHT', 'total_ht_amount']) || lignes.ht
+  const tvaBrute = premier(a, ['tva_tx', 'vat_rate', 'tva', 'taux_iva', 'iva'])
+  const tva = tvaBrute ? `${tvaBrute.replace(/\.0+$/, '')} %` : lignes.tva
+  return {
+    regle: 2,
+    entete: 'Dolibarr',
+    question:
+      `Dolibarr, ${verbe} : ${sujet} — ${origine}\n` +
+      `Tiers : ${tiers}\n` +
+      `Montant HT : ${htBrut ? euros(htBrut) : '(non indiqué dans l\'appel : à afficher à David)'}\n` +
+      `IVA : ${tva || '(non indiquée dans l\'appel : à afficher à David)'}\n` +
+      note +
+      `Confirmer la ${verbe} ?`,
+  }
+}
+
+const sujetDe = (s: string): string =>
+  /supplier/i.test(s)
+    ? 'facture fournisseur'
+    : /(invoice|facture)/i.test(s)
+      ? 'facture'
+      : /(propal|proposal|devis|quote)/i.test(s)
+        ? 'devis'
+        : /(order|commande)/i.test(s)
+          ? 'commande'
+          : 'objet Dolibarr'
+
 function dolibarr(nom: string, a: Args): Interception | null {
   const n = nom.toLowerCase()
   if (!n.includes('dolibarr')) return null
   const act = action(nom)
   if (LECTURE.test(act) && !/(valid|create|update|add|set|close|delete|modify|edit)/.test(act)) return null
-  const sujet = OBJETS_DOLIBARR.test(act) || OBJETS_DOLIBARR.test(texte(a.module ?? a.object ?? a.type ?? ''))
-    ? 'devis ou facture'
-    : 'objet Dolibarr'
-  const lignes = montantLignes(a)
-  const tiers =
-    premier(a, ['thirdparty_name', 'socname', 'soc_name', 'tiers', 'customer', 'client', 'thirdparty', 'socid']) ||
-    '(tiers non indiqué)'
-  const ht =
-    premier(a, ['total_ht', 'amount_ht', 'montant_ht', 'totalHT', 'total_ht_amount']) ||
-    lignes.ht ||
-    '(non indiqué)'
-  const tva =
-    premier(a, ['tva_tx', 'vat_rate', 'tva', 'taux_iva', 'iva']) ||
-    lignes.tva ||
-    '(non indiqué)'
   const verbe = /valid/.test(act) ? 'validation' : /(delete|remove)/.test(act) ? 'suppression' : /(update|set|modify|edit)/.test(act) ? 'modification' : 'création'
-  return {
-    regle: 2,
-    entete: 'Dolibarr',
-    question:
-      `Dolibarr, ${verbe} (${sujet}) — ${act}\n` +
-      `Tiers : ${tiers}\n` +
-      `Montant HT : ${ht}${/^[\d.,\s]+$/.test(ht) ? ' €' : ''} · IVA : ${tva}${/^\d+([.,]\d+)?$/.test(tva) ? ' %' : ''}\n` +
-      `Confirmer la ${verbe} ?`,
+  return resumeDolibarr(verbe, sujetDe(`${act} ${texte(a.module ?? a.object ?? a.type ?? '')}`), act, a)
+}
+
+/** Données JSON envoyées par curl (`--data`, `-d`, `--json`, `--data-raw`), si elles sont dans la commande. */
+function donneesCurl(cmd: string): { a: Args; fichier: boolean } {
+  const m = cmd.match(/(?:--data(?:-raw|-binary)?|--json|-d)\s+(?:'([^']*)'|"((?:[^"\\]|\\.)*)"|(\S+))/)
+  const brut = m ? (m[1] ?? (m[2] !== undefined ? m[2].replace(/\\"/g, '"') : m[3]) ?? '') : ''
+  if (brut.startsWith('@')) return { a: {}, fichier: true }
+  try {
+    return { a: objet(JSON.parse(brut)), fichier: false }
+  } catch {
+    return { a: {}, fichier: false }
   }
 }
 
 function dolibarrHttp(cmd: string): Interception | null {
-  if (!/api\/index\.php\/(proposals|invoices|supplierinvoices|orders)/i.test(cmd)) return null
-  if (!ecritureHttp(cmd)) return null
-  return {
-    regle: 2,
-    entete: 'Dolibarr',
-    question:
-      `Dolibarr par l'API (devis ou facture), commande :\n${couper(cmd, 300)}\n` +
-      `Tiers, montant HT et IVA : à lire dans la commande ci-dessus.\nConfirmer ?`,
-  }
+  const route = cmd.match(/api\/index\.php\/(proposals|invoices|supplierinvoices|orders)(\/\d+)?(\/[a-z_]+)?/i)
+  if (!route || !ecritureHttp(cmd)) return null
+  const methode = (cmd.match(/(?:-X|--request)\s*(POST|PUT|PATCH|DELETE)/i)?.[1] ?? 'POST').toUpperCase()
+  const suite = (route[3] ?? '').toLowerCase()
+  const verbe = /valid/.test(suite)
+    ? 'validation'
+    : methode === 'DELETE'
+      ? 'suppression'
+      : methode === 'PUT' || methode === 'PATCH' || route[2] || suite
+        ? 'modification'
+        : 'création'
+  const { a, fichier } = donneesCurl(cmd)
+  const note = fichier ? 'Données lues dans un fichier : affiche à David son contenu (tiers, lignes, montant, IVA) avant de demander « confirme ».\n' : ''
+  return resumeDolibarr(verbe, sujetDe(route[1] ?? ''), `API ${methode} ${route[0]}`, a, note)
 }
 
 // ---------- règle 3 : réseaux sociaux ----------
