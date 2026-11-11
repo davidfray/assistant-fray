@@ -138,6 +138,19 @@ describe('règle 4 : sites en production', () => {
       classify('Bash', { command: 'curl -X POST https://www.solandvolt.com/wp-json/rankmath/v1/updateRedirection --json \'{}\'' })?.regle,
     ).toBe(4)
   })
+  test('type, statut, champs et consigne avant / après', () => {
+    const p = classify('mcp__WordPress_com__wpcom-mcp-pages-update', { wpcom_site: '253853971', id: 638, title: 'Aviso legal', status: 'publish' })
+    expect(p?.question).toContain('frayservices.com')
+    expect(p?.question).toContain('Type : page n° 638')
+    expect(p?.question).toContain('Statut envoyé : publish (en ligne)')
+    expect(p?.question).toContain('Champs modifiés : title, status')
+    expect(p?.question).toContain("l'AVANT et l'APRÈS")
+    const c = classify('Bash', { command: 'curl -X PUT https://www.solandvolt.com/wp-json/wc/v3/products/87 -d x=1' })
+    expect(c?.question).toContain('produit WooCommerce')
+    expect(c?.question).toContain("l'AVANT et l'APRÈS")
+    expect(classify('Bash', { command: 'curl -X POST https://www.solandvolt.com/wp-json/code-snippets/v1/snippets/22 -d x=1' })?.question).toContain('snippet de code')
+    expect(classify('mcp__WordPress_com__wpcom-global-styles-update', { wpcom_site: '257165426' })?.question).toContain('styles du site (CSS)')
+  })
   test('lectures et autres sites : rien', () => {
     expect(classify('mcp__WordPress_com__wpcom-mcp-pages-get', { wpcom_site: '257165426', id: 7 })).toBe(null)
     expect(classify('Bash', { command: 'curl -s https://www.solandvolt.com/wp-json/wc/v3/products' })).toBe(null)
