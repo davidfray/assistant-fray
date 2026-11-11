@@ -84,7 +84,17 @@ describe('règle 3 : réseaux sociaux', () => {
     })
     expect(ig?.question).toContain('@solandvolt (Sol & Volt)')
     expect(ig?.question).toContain('publié immédiatement')
+    expect(ig?.question).toContain('Conteneur n° 42')
     expect(classify('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', { creation_id: '42' })?.question ?? '').toContain('@frayservicespalamos')
+  })
+  test('Instagram : conteneur libre, publication bloquée avec consigne', () => {
+    expect(classify('INSTAGRAM_POST_IG_USER_MEDIA', { ig_user_id: 'me', image_url: 'https://x/y.jpg', caption: 'L' })).toBe(null)
+    expect(classify('INSTAGRAM_CREATE_MEDIA_CONTAINER', { image_url: 'https://x/y.jpg' })).toBe(null)
+    expect(classify('INSTAGRAM_CREATE_CAROUSEL_CONTAINER', { children: ['1', '2'] })).toBe(null)
+    const pub = classify('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', { ig_user_id: 'me', creation_id: '179' })
+    expect(pub?.regle).toBe(3)
+    expect(pub?.question).toContain('Conteneur n° 179')
+    expect(pub?.question).toContain('légende complète')
   })
   test('Buffer intercepté, lectures non', () => {
     expect(classify('mcp__buffer__create_update', { text: 'Bonjour' })?.regle).toBe(3)

@@ -12,7 +12,7 @@ Fonctionnement (identique sur ordinateur, téléphone et session cloud, sans dia
 |---|---|---|
 | 1. Email | Gmail `send_message`, `reply`, `forward` (MCP et Composio `GMAIL_*SEND*`, `REPLY`, `FORWARD`) | destinataire, objet, 200 premiers caractères ; pour l'envoi d'un brouillon existant (seul son identifiant est dans l'appel), consigne à Claude de lire le brouillon et d'afficher ces 3 éléments avant le « confirme » |
 | 2. Dolibarr | tout outil `dolibarr` qui crée, modifie, valide ou supprime ; `curl` en écriture vers `api/index.php/proposals`, `invoices`, `orders` | tiers, montant HT (ou somme des lignes), taux d'IVA |
-| 3. Réseaux sociaux | outils Facebook, Instagram, Buffer, Postiz qui publient, programment, partagent ou commentent | plateforme, page ou compte (Fray Services ou Sol & Volt), statut (publié tout de suite, non publié, programmé), texte, média |
+| 3. Réseaux sociaux | outils Facebook, Instagram, Buffer, Postiz qui publient, programment, partagent ou commentent | plateforme, page ou compte (Fray Services ou Sol & Volt), statut (publié tout de suite, non publié, programmé), texte, média. Instagram : la création du conteneur (invisible) passe, seule la publication est bloquée, avec consigne à Claude d'afficher la légende et la photo du conteneur avant le « confirme » |
 | 4. Sites | WordPress.com en écriture (pages, articles, extensions, thème, styles, menus, DNS…) sur solandvolt.com, frayservices.com ou un site non indiqué ; `curl`, `requests` ou `wp` en écriture vers ces 2 domaines | site, élément, ce qui change |
 | 5. Automatisations | Make `scenarios_activate`, `delete`, `run`, `replay` ; n8n `activate`, `execute`, `run`, `delete` (la désactivation n'est pas bloquée) ; webhooks `hook.*.make.com` et n8n | identifiant, action |
 
