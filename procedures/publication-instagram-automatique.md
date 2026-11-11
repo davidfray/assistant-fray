@@ -13,6 +13,10 @@ Mise en place le 11/11/2026. Tâche programmée « Publication Instagram (file d
 
 Tâche « Bilan Instagram et posts de la semaine suivante » (lundi 9 h 17, heure de Madrid) : bilan des 2 comptes, puis 2 Reels Fray et 3 posts Sol & Volt ajoutés à la file pour la semaine suivante, au statut `a_valider`. David valide dans la conversation. Elle remplace la tâche « Reel hebdo Solandvolt » (mise en pause le 11/11, publiait sans validation). La tâche « Reel Flow Solandvolt (jeudi) » est aussi en pause (vidéos IA).
 
+## Contrôle des 3 légendes à corriger (depuis le 11/11)
+
+Chaque soir à 18 h 31, la tâche vérifie les 3 posts de `procedures/seance-cowork-legendes-instagram-2026-11-11.md` (Reels SOK FR et ES du 10/11, post chape Fray du 02/11) et donne leur état dans le compte rendu, même sans publication. Un Reel SOK est réglé s'il ne contient plus « Europe » ni « 10x » ou s'il est archivé ; le post Fray est réglé s'il dit « 24 h ». Quand les 3 sont réglés, la tâche écrit « Légendes Instagram corrigées le JJ/MM » dans `CLAUDE.md` et arrête ce contrôle.
+
 ## Contrôles bloquants avant chaque publication
 
 - Statut `valide` et date du jour.
