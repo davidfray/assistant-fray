@@ -171,6 +171,34 @@ function dolibarrHttp(cmd: string): Interception | null {
 
 // ---------- règle 3 : réseaux sociaux ----------
 
+/** Pages et comptes connus (identifiants publics, aucun secret). */
+const PAGES_FACEBOOK: Record<string, string> = { '659509903912871': 'Fray Services' }
+const COMPTES_COMPOSIO: Record<string, string> = {
+  'instagram_creagh-averah': '@frayservicespalamos (Fray Services)',
+  'instagram_izote-crepe': '@solandvolt (Sol & Volt)',
+}
+
+function compteSocial(plateforme: string, a: Args): string {
+  const compte = premier(a, ['_compte'])
+  if (compte) return COMPTES_COMPOSIO[compte] ?? `compte Composio « ${compte} » (non reconnu)`
+  const page = premier(a, ['page_id', 'pageId', 'ig_user_id', 'igUserId', 'profile_ids', 'profile_id', 'account_id'])
+  if (page && page !== 'me') return PAGES_FACEBOOK[page] ? `page ${PAGES_FACEBOOK[page]} (${page})` : `page ou compte n° ${page} (non reconnu)`
+  if (plateforme === 'Instagram') return 'compte Instagram par défaut de Composio : @frayservicespalamos (Fray Services)'
+  return '(page ou compte non indiqué)'
+}
+
+function statutSocial(act: string, a: Args): string {
+  const quand = a.scheduled_publish_time ?? a.scheduled_at ?? a.scheduledAt ?? a.publish_at
+  if (quand !== undefined && quand !== null && quand !== '') {
+    const n = Number(quand)
+    const date = Number.isFinite(n) && n > 1e9 ? new Date((n < 1e12 ? n * 1000 : n)).toISOString().replace('T', ' ').slice(0, 16) + ' UTC' : texte(quand)
+    return `programmé pour le ${date}`
+  }
+  if (a.published === false) return 'non publié (invisible du public)'
+  if (/(comment|reply)/.test(act)) return 'commentaire public immédiat'
+  return 'publié immédiatement (visible du public)'
+}
+
 function social(nom: string, a: Args): Interception | null {
   const n = nom.toLowerCase()
   const m = n.match(/(facebook|instagram|buffer|postiz)/)
@@ -181,15 +209,16 @@ function social(nom: string, a: Args): Interception | null {
   const plateforme = { facebook: 'Facebook', instagram: 'Instagram', buffer: 'Buffer', postiz: 'Postiz' }[m[1] as 'facebook']
   const txt = premier(a, ['caption', 'message', 'text', 'content', 'body', 'description'])
   const media = premier(a, ['image_url', 'video_url', 'media_url', 'url', 'creation_id', 'link'])
-  const quand = premier(a, ['scheduled_publish_time', 'scheduled_at', 'scheduledAt', 'publish_at', 'date'])
+  const nomPlateforme = plateforme ?? 'Social'
   return {
     regle: 3,
-    entete: plateforme ?? 'Social',
+    entete: nomPlateforme,
     question:
-      `Publication ${plateforme} — ${act}\n` +
+      `Publication ${nomPlateforme} — ${act}\n` +
+      `Page ou compte : ${compteSocial(nomPlateforme, a)}\n` +
+      `Statut : ${statutSocial(act, a)}\n` +
       `Texte : ${txt ? couper(txt, 1000) : '(aucun texte dans l\'appel)'}\n` +
       (media ? `Média : ${couper(media, 150)}\n` : '') +
-      (quand ? `Programmée : ${quand}\n` : '') +
       `Confirmer la publication ?`,
   }
 }
@@ -295,7 +324,8 @@ export function classify(tool: string, args: Args): Interception | null {
     for (const t of args.tools) {
       const o = objet(t)
       const slug = texte(o.tool_slug ?? o.slug ?? o.name)
-      const r = classify(slug, objet(o.arguments ?? o.args ?? o.input))
+      const compte = texte(o.account)
+      const r = classify(slug, { ...objet(o.arguments ?? o.args ?? o.input), ...(compte ? { _compte: compte } : {}) })
       if (r) return r
     }
     return null

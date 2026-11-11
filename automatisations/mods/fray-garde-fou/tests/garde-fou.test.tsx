@@ -70,6 +70,22 @@ describe('règle 3 : réseaux sociaux', () => {
     expect(fb?.regle).toBe(3)
     expect(fb?.question).toContain('Fermer la villa')
   })
+  test('page, compte et statut dans le résumé', () => {
+    const fb = classify('mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL', {
+      tools: [{ tool_slug: 'FACEBOOK_CREATE_POST', arguments: { page_id: '659509903912871', message: 'x', published: false } }],
+    })
+    expect(fb?.question).toContain('page Fray Services (659509903912871)')
+    expect(fb?.question).toContain('non publié (invisible du public)')
+    const prog = classify('FACEBOOK_CREATE_POST', { page_id: '111', message: 'x', scheduled_publish_time: 1795000000 })
+    expect(prog?.question).toContain('page ou compte n° 111 (non reconnu)')
+    expect(prog?.question).toContain('programmé pour le 2026-')
+    const ig = classify('mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL', {
+      tools: [{ tool_slug: 'INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', account: 'instagram_izote-crepe', arguments: { ig_user_id: 'me', creation_id: '42' } }],
+    })
+    expect(ig?.question).toContain('@solandvolt (Sol & Volt)')
+    expect(ig?.question).toContain('publié immédiatement')
+    expect(classify('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', { creation_id: '42' })?.question ?? '').toContain('@frayservicespalamos')
+  })
   test('Buffer intercepté, lectures non', () => {
     expect(classify('mcp__buffer__create_update', { text: 'Bonjour' })?.regle).toBe(3)
     expect(classify('FACEBOOK_GET_PAGE_POSTS', {})).toBe(null)
