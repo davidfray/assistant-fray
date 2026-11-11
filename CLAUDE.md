@@ -46,6 +46,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/css-mobile-solandvolt-2026-11-04.md` | **Version mobile de solandvolt.com** : 6 défauts relevés à 360 px, CSS prêt à coller (CSS additionnel), test sur téléphone |
 | `audit/metas-rankmath-promesses-2026-11-07.md` | **18 descriptions Google (Rank Math) à corriger** : « Garantie 2 ans » et « Livraison rapide » (contenu visible des pages conforme, relu le 07/11) |
 | `audit/sourcing-panneaux-rigides-2026-11-07.md` | **Panneaux solaires rigides** : Innov8 (pack ECFORPACK1, hors fichier quotidien), Enverd (EcoFlow 400 W et 450 W par 2), marge et transport, brouillons Gmail |
+| `procedures/connecteur-instagram.md` | **Connecteur Instagram (Composio), testé le 11/11** : @frayservicespalamos et @solandvolt (comptes Business), lecture, publication en 2 étapes, statistiques, règles de validation |
 | `procedures/commande-ecoflow-expedition.md` | **Procédure à suivre dès qu'une commande EcoFlow arrive** : commande et prépaiement chez Innov8, enlèvement Packlink, emails FR/ES prêts, repères de marge |
 | `fray/site/rubrique-pose-solaire-2026-11-10.md` | **Rubrique « Pose solaire » des pages Services en FR, ES, CA, EN** (**publiée le 10/11** sur les pages 165, 508, 432, 573, ancre `#pose-solaire` ; sans garantie de pose ni déduction IRPF) |
 | `fray/offres/offre-pose-solaire-2026-11-10.md` | **Offre de pose solaire Fray Services** (grill-me du 10/11) : 21 décisions, réglementation vérifiée, reste le tarif de l'électricien |
@@ -296,6 +297,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 10/11/2026 (nuit, fin) | Claude Code | Grill-me sur l'offre de pose solaire (21 décisions), vérification réglementaire Catalogne, fiche ?p=114 corrigée FR/ES, modèle d'email au syndic complété ; gstack et no-mistakes examinés, non installés |
 | 10/11/2026 (nuit, suite) | Claude Code | Extension « Matt Pocock Skills » installée pour le dépôt (`.claude/settings.json`, 39 skills dont `grill-me` et `handoff`) ; Marketing Studio et ECC examinés et non installés (ECC : 314 skills et scripts automatiques) |
 | 10/11/2026 (nuit) | Claude Code | Fiche Google d'entreprise de Fray Services complétée par David avec guidage (catégories, WhatsApp, couverture et 7 photos via Drive, zones desservies, Instagram), lien d'avis sur les 4 accueils (témoignages ajoutés sur l'accueil ES), rubriques piscines et domotique sur les pages Services (4 langues), décision : avis demandés aux nouveaux clients, pas aux clients espagnols ; revérification programmée le 12/11 |
+| 11/11/2026 | Claude Code | Connecteur Instagram : 2 comptes Composio vérifiés (lecture, quota), fiche `procedures/connecteur-instagram.md`, 3 légendes à corriger relevées |
 | 11/11/2026 | Claude Code | Diagnostic de l'absence de ventes (GA4, Google Ads, fiches) ; 14 mots-clés négatifs ; Merchant Center : snippet 36 pour les descriptions des fiches bilingues |
 
 ## Mise à jour de ce fichier
