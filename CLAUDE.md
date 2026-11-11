@@ -39,6 +39,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `audit/traductions-es-translatepress-2026-10-29.md` | Traductions espagnoles prêtes à saisir dans TranslatePress (accueil, pied de page, catégories 21, 42, 50) |
 | `audit/traductions-es-residus-2026-11-03.md` | **Relevé complet des textes encore en français sur la version espagnole** (66 pages, 03/11) avec traductions prêtes |
 | `audit/google-ads-optimisation-2026-11-07.md` | **Google Ads du 29/10 au 06/11** (232 clics, 88,85 €, 0 achat), corrections faites le 07/11, décisions à prendre |
+| `procedures/seance-cowork-legendes-instagram-2026-11-11.md` | **Séance Cowork prête** : corriger 3 légendes Instagram publiées (2 Reels SOK du 10/11, post Fray du 02/11) sur instagram.com ; l'API ne permet pas de modifier une légende |
 | `procedures/seance-cowork-polylang-formulaires-pose-2026-11-11.md` | **Séance Cowork prête** : langue Polylang des formulaires de pose solaire ES, CA, EN (pages 818, 819, 820), liaison avec la page 815, mise à jour des 3 liens des pages Services |
 | `procedures/seance-cowork-theme-enfant-2026-11-08.md` | Séance Cowork **faite le 08/11** : CSS climatisation, badge CE et garantie prolongée retirés du CSS additionnel du Personnaliseur |
 | `procedures/seance-cowork-rankmath-2026-11-07.md` | **Demande prête pour la séance Cowork** : titre Rank Math de L'Autonomie qui ne s'affiche pas, puis titres espagnols des 6 catégories dans TranslatePress |
