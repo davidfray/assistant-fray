@@ -14,6 +14,13 @@ describe('règle 1 : emails', () => {
     expect(r?.question).toContain(`${'x'.repeat(200)}…`)
     expect(r?.question.includes('x'.repeat(201))).toBe(false)
   })
+  test('envoi d’un brouillon existant : consigne de lecture', () => {
+    const r = classify('mcp__Gmail__send_message', { draftId: 'r123' })
+    expect(r?.regle).toBe(1)
+    expect(r?.question).toContain('brouillon n° r123')
+    expect(r?.question).toContain('get_draft')
+    expect(classify('GMAIL_SEND_DRAFT', { draft_id: 'r9' })?.question ?? '').toContain('brouillon n° r9')
+  })
   test('reply et forward interceptés, brouillon non', () => {
     expect(classify('mcp__Gmail__reply', { thread_id: 't1', body: 'ok' })?.regle).toBe(1)
     expect(classify('mcp__Gmail__forward', { to: 'a@b.c' })?.regle).toBe(1)

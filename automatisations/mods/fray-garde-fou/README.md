@@ -10,7 +10,7 @@ Fonctionnement (identique sur ordinateur, téléphone et session cloud, sans dia
 
 | Règle | Outils interceptés | Affiché |
 |---|---|---|
-| 1. Email | Gmail `send_message`, `reply`, `forward` (MCP et Composio `GMAIL_*SEND*`, `REPLY`, `FORWARD`) | destinataire, objet, 200 premiers caractères |
+| 1. Email | Gmail `send_message`, `reply`, `forward` (MCP et Composio `GMAIL_*SEND*`, `REPLY`, `FORWARD`) | destinataire, objet, 200 premiers caractères ; pour l'envoi d'un brouillon existant (seul son identifiant est dans l'appel), consigne à Claude de lire le brouillon et d'afficher ces 3 éléments avant le « confirme » |
 | 2. Dolibarr | tout outil `dolibarr` qui crée, modifie, valide ou supprime ; `curl` en écriture vers `api/index.php/proposals`, `invoices`, `orders` | tiers, montant HT (ou somme des lignes), taux d'IVA |
 | 3. Réseaux sociaux | outils Facebook, Instagram, Buffer, Postiz qui publient, programment, partagent ou commentent | plateforme, texte, média, date |
 | 4. Sites | WordPress.com en écriture (pages, articles, extensions, thème, styles, menus, DNS…) sur solandvolt.com, frayservices.com ou un site non indiqué ; `curl`, `requests` ou `wp` en écriture vers ces 2 domaines | site, élément, ce qui change |

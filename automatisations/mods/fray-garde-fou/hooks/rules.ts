@@ -64,6 +64,19 @@ function email(nom: string, a: Args): Interception | null {
   if (!n.includes('gmail')) return null
   const act = action(nom)
   if (!/(send|reply|forward)/.test(act)) return null
+  // Envoi d'un brouillon existant : l'appel ne contient que son identifiant.
+  const brouillon = premier(a, ['draftId', 'draft_id'])
+  if (brouillon) {
+    return {
+      regle: 1,
+      entete: 'Email',
+      question:
+        `Email (envoi du brouillon n° ${brouillon}) — destinataire, objet et texte ne sont pas dans l'appel.\n` +
+        `Avant de demander « confirme », lis ce brouillon dans Gmail (get_draft) et affiche à David : ` +
+        `le destinataire, l'objet et les 200 premiers caractères du texte.\n` +
+        `Confirmer l'envoi ?`,
+    }
+  }
   const dest =
     premier(a, ['to', 'recipient_email', 'recipients', 'to_recipients', 'recipient', 'email']) ||
     '(destinataire non indiqué)'
