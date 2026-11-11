@@ -167,6 +167,22 @@ describe('règle 4 : sites en production', () => {
     expect(c?.question).toContain('CSS complet remplacé (250 caractères, tout l\'ancien CSS est écrasé)')
     expect(c?.question).toContain('Styles modifiés : color')
   })
+  test('produit : prix, promotion, stock et rappel PVP EcoFlow', () => {
+    const URL = 'https://www.solandvolt.com/wp-json/wc/v3/products'
+    const p = classify('Bash', { command: `curl -s -X PUT "${URL}/87" --data '{"regular_price":"229.00","sale_price":"199"}'` })
+    expect(p?.question).toContain('Champs envoyés : prix normal 229,00 €, prix promotionnel 199,00 €')
+    expect(p?.question).toContain('PVP conseillé')
+    const s = classify('Bash', { command: `curl -s -X PUT "${URL}/493" --data '{"stock_quantity":0,"backorders":"no","sale_price":""}'` })
+    expect(s?.question).toContain('promotion retirée, stock 0, commandes en rupture no')
+    const st = classify('Bash', { command: `curl -s -X PUT "${URL}/87" --data '{"status":"publish"}'` })
+    expect(st?.question).toContain('statut publish (en ligne)')
+    expect(st?.question.includes('PVP')).toBe(false)
+    const b = classify('Bash', { command: `curl -s -X POST "${URL}/batch" --data '{"update":[{"id":623,"regular_price":"399"},{"id":344,"stock_quantity":3}],"delete":[90]}'` })
+    expect(b?.question).toContain('Produit 623 (modification) : prix normal 399,00 €')
+    expect(b?.question).toContain('Produit 344 (modification) : stock 3')
+    expect(b?.question).toContain('Produits supprimés : 90')
+    expect(b?.question).toContain('PVP conseillé')
+  })
   test('snippet : avertissement si code, activation ou suppression', () => {
     const URL = 'https://www.solandvolt.com/wp-json/code-snippets/v1/snippets/24'
     const desc = classify('Bash', { command: `curl -X POST ${URL} --data '{"desc":"x"}'` })
