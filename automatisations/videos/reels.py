@@ -25,6 +25,9 @@ def font(name, size, bold=False):
 
 _cache = {}
 def photo(url):
+    loc = os.environ.get("FRAY_LOCAL")  # copie locale de fray/medias/reels/ si frayservices.com est injoignable
+    if loc and url.startswith("https://frayservices.com/wp-content/uploads/"):
+        return Image.open(os.path.join(loc, url.split("/uploads/")[1].replace("/", "_"))).convert("RGB")
     if url not in _cache:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         _cache[url] = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=60).read())).convert("RGB")
