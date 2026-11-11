@@ -316,6 +316,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 11/11/2026 | Claude Code | fray-garde-fou : faux positifs corrigés, seules les commandes réellement lancées (curl, wget, wp, code qui écrit) sont examinées ; echo, grep, commit, heredoc vers un fichier et chaînes dans un script ne bloquent plus |
 | 11/11/2026 | Claude Code | fray-garde-fou testé : echo libre, vrai curl Dolibarr fictif bloqué puis passé après « confirme » (échec réseau attendu), lancement du scénario Make 8239857 (inactif) bloqué ; résumé Make corrigé (« le lancement », consigne d'afficher nom, état et rôle du scénario) |
 | 11/11/2026 | Claude Code | fray-garde-fou testé sur frayservices.com (page 638, titre réécrit à l'identique après « confirme ») ; règle 4 : type d'élément, statut, champs modifiés et consigne d'afficher l'avant et l'après |
+| 11/11/2026 | Claude Code | fray-garde-fou, tests sans changement de code : email direct vers david@frayservices.com bloqué puis envoyé après « confirme » (à supprimer par David) ; post Facebook publié sur la page Fray Services bloqué, abandonné ; Instagram @solandvolt, conteneur 18098862551440581 créé librement, publication bloquée (légende et photo affichées), abandonnée, rien publié |
 
 ## Mise à jour de ce fichier
 
