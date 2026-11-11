@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'claude-code/testing'
 
-import { classify } from '../hooks/rules'
+import { classify, cleDe } from '../hooks/rules'
 
 // ---------- règles, fonction pure ----------
 
@@ -132,65 +132,108 @@ const BANDE = {
   },
 } as const
 
-// Le moteur pose la question par l'outil AskUserQuestion : ce faux moteur y répond.
-const repondre = (e: { questions?: unknown }, reponse: string) => {
-  const qs = (e.questions ?? []) as Array<{ question: string }>
-  return { result: { questions: qs, answers: Object.fromEntries(qs.map(q => [q.question, reponse])) } }
-}
-
 const EMAIL = { tool: 'mcp__Gmail__send_message', to: 'client@exemple.fr', subject: 'Test', body: 'Bonjour' } as const
 
-test('confirmé : l’email part ; refusé : bloqué ; la bande compte', async ($, on) => {
-  let envoyes = 0
-  let reponse = 'Confirmer'
-  on('tool.call', (_, e) => {
-    if (e.tool === 'AskUserQuestion') return repondre(e, reponse) as never
-    envoyes += 1
+type Origine = 'sdk' | 'composer' | 'bridge' | 'plugin' | 'peer' | 'task-notification'
+const message = (text: string, kind: Origine = 'sdk', isMeta = false) =>
+  ({ text, origin: { kind }, wait: false, ...(isMeta ? { isMeta: true } : {}) }) as never
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type OnTest = (event: any, hook: (...a: any[]) => unknown) => unknown
+// Appel d'outil typé simplement (les types complets des outils MCP sont trop profonds pour tsc).
+const appeler = (moteurTest: unknown, input: unknown) =>
+  (moteurTest as { tool: { call: (i: unknown) => Promise<{ deny?: string }> } }).tool.call(input)
+
+const moteur = (on: OnTest) => {
+  const executes: string[] = []
+  on('tool.call', (_: unknown, e: { tool: string }) => {
+    executes.push(String(e.tool))
     return { result: {} }
   })
+  on('prompt.submit', (_: unknown, e: { text: string }) => ({ text: e.text }))
+  return executes
+}
 
-  const ok = await $.tool.call(EMAIL)
-  expect(ok.deny).toBe(undefined)
-  expect(envoyes).toBe(1)
+test('bloqué, puis « confirme » de David : passe une seule fois', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
 
-  reponse = 'Refuser'
-  const non = await $.tool.call(EMAIL)
-  expect(non.deny ?? '').toContain('non confirmée')
-  expect(envoyes).toBe(1)
+  const r1 = await appeler($, EMAIL)
+  expect(r1.deny ?? '').toContain('BLOQUÉE')
+  expect(r1.deny ?? '').toContain('client@exemple.fr')
+  expect(executes.length).toBe(0)
+
+  await $.prompt.submit(message('confirme'))
+  const r2 = await appeler($, EMAIL)
+  expect(r2.deny).toBe(undefined)
+  expect(executes.length).toBe(1)
+
+  const r3 = await appeler($, EMAIL)
+  expect(r3.deny ?? '').toContain('BLOQUÉE')
+  expect(executes.length).toBe(1)
 
   const ui = await $.ui.mount({ ...BANDE, surface: 'terminal' })
   const ligne = await ui.find({ type: 'Text', text: /bloquées/ })
   expect(ligne?.text ?? '').toContain('2 actions bloquées')
-  expect(ligne?.text ?? '').toContain('1 refusée')
+  expect(ligne?.text ?? '').toContain('en attente : Email')
   await ui.unmount()
 })
 
-test('dialogue fermé : l’action est bloquée', async ($, on) => {
-  let envoyes = 0
-  on('tool.call', (_, e) => {
-    if (e.tool === 'AskUserQuestion') return { deny: 'dialogue fermé' }
-    envoyes += 1
-    return { result: {} }
-  })
-  const r = await $.tool.call(EMAIL)
-  expect(r.deny ?? '').toContain('fray-garde-fou')
-  expect(envoyes).toBe(0)
+test('la confirmation ne vaut que pour l’action identique', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
+  await appeler($, EMAIL)
+  await $.prompt.submit(message('Je confirme'))
+  const autre = await appeler($, { ...EMAIL, to: 'autre@exemple.fr' })
+  expect(autre.deny ?? '').toContain('BLOQUÉE')
+  expect(executes.length).toBe(0)
 })
 
-test('outil ordinaire : aucune question, aucun compteur', async ($, on) => {
-  let questions = 0
-  on('tool.call', (_, e) => {
-    if (e.tool === 'AskUserQuestion') {
-      questions += 1
-      return repondre(e, 'Confirmer') as never
-    }
-    return { result: {} }
-  })
-  await $.tool.call({ tool: 'Bash', command: 'ls' })
-  expect(questions).toBe(0)
+test('une autre réponse de David abandonne l’action', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
+  await appeler($, EMAIL)
+  await $.prompt.submit(message('non, attends'))
+  await $.prompt.submit(message('confirme'))
+  const r = await appeler($, EMAIL)
+  expect(r.deny ?? '').toContain('BLOQUÉE')
+  expect(executes.length).toBe(0)
+})
+
+test('« confirme » qui ne vient pas de David : sans effet', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
+  for (const kind of ['plugin', 'peer', 'task-notification'] as const) {
+    await appeler($, EMAIL)
+    await $.prompt.submit(message('confirme', kind))
+    expect((await appeler($, EMAIL)).deny ?? '').toContain('BLOQUÉE')
+  }
+  await appeler($, EMAIL)
+  await $.prompt.submit(message('confirme', 'sdk', true))
+  expect((await appeler($, EMAIL)).deny ?? '').toContain('BLOQUÉE')
+  expect(executes.length).toBe(0)
+})
+
+test('confirmation depuis le téléphone (bridge) et le clavier (composer)', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
+  for (const kind of ['bridge', 'composer'] as const) {
+    await appeler($, EMAIL)
+    await $.prompt.submit(message('confirme', kind))
+    expect((await appeler($, EMAIL)).deny).toBe(undefined)
+  }
+  expect(executes.length).toBe(2)
+})
+
+test('outil ordinaire : jamais bloqué', async ($, on) => {
+  const executes = moteur(on as unknown as OnTest)
+  await appeler($, { tool: 'Bash', command: 'ls' })
+  expect(executes).toEqual(['Bash'])
 
   const ui = await $.ui.mount({ ...BANDE, surface: 'desktop' })
   expect((await ui.find({ type: 'Text', text: /garde-fou actif/ }))?.text).toBe('garde-fou actif')
   expect((await ui.find({ type: 'Text', text: /bloquée/ }))?.text ?? '').toContain('0 action bloquée')
   await ui.unmount()
+})
+
+test('empreinte : la description Bash et l’identifiant d’appel sont ignorés', () => {
+  const a = cleDe('Bash', { command: 'x', description: 'a', tool_use_id: '1' })
+  const b = cleDe('Bash', { command: 'x', description: 'b', tool_use_id: '2' })
+  expect(a).toBe(b)
+  expect(cleDe('Bash', { command: 'y' }) === a).toBe(false)
 })

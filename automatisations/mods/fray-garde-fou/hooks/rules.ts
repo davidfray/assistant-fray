@@ -303,3 +303,24 @@ export function classify(tool: string, args: Args): Interception | null {
   }
   return email(tool, args) ?? dolibarr(tool, args) ?? social(tool, args) ?? automatisation(tool, args) ?? wordpress(tool, args)
 }
+
+// ---------- empreinte d'une action ----------
+
+/** Champs qui changent d'un appel à l'autre sans changer l'action. */
+const IGNORES = new Set(['tool', 'tool_use_id', 'agentId', 'requestMeta', '_host', 'description'])
+
+const stable = (v: unknown): string => {
+  if (Array.isArray(v)) return `[${v.map(stable).join(',')}]`
+  if (v && typeof v === 'object') {
+    const o = v as Record<string, unknown>
+    return `{${Object.keys(o)
+      .sort()
+      .map(k => `${JSON.stringify(k)}:${stable(o[k])}`)
+      .join(',')}}`
+  }
+  return JSON.stringify(v) ?? 'null'
+}
+
+/** Empreinte de l'action : l'outil et ses arguments exacts. */
+export const cleDe = (tool: string, args: Record<string, unknown>): string =>
+  `${tool}|${stable(Object.fromEntries(Object.entries(args).filter(([k]) => !IGNORES.has(k))))}`
