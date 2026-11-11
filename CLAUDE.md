@@ -319,6 +319,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 11/11/2026 | Claude Code | fray-garde-fou, tests sans changement de code : email direct vers david@frayservices.com bloqué puis envoyé après « confirme » (à supprimer par David) ; post Facebook publié sur la page Fray Services bloqué, abandonné ; Instagram @solandvolt, conteneur 18098862551440581 créé librement, publication bloquée (légende et photo affichées), abandonnée, rien publié |
 | 11/11/2026 | Claude Code | fray-garde-fou : redirection 301 Rank Math du produit brouillon 87 vers /boutique/ bloquée (avant / après affiché), abandonnée, rien créé ; type affiché « redirection (Rank Math) » distinct du SEO |
 | 11/11/2026 | Claude Code | fray-garde-fou : modification du CSS additionnel (styles globaux 98) de solandvolt.com bloquée (commentaire de test), abandonnée, rien modifié ; le résumé affiche désormais chaque modification CSS ou le CSS complet écrasé |
+| 11/11/2026 | Claude Code | fray-garde-fou testé sur le menu ES de frayservices.com (navigation 789, nom réécrit à l'identique après « confirme », liens inchangés) ; constat : si la session cloud redémarre pendant qu'une action attend, l'action est oubliée et le « confirme » envoyé à ce moment ne compte pas (il faut confirmer de nouveau, comportement prudent) |
 
 ## Mise à jour de ce fichier
 
