@@ -1,0 +1,6 @@
+{
+  "name": "fray-garde-fou",
+  "version": "0.1.0",
+  "description": "Demande confirmation avant tout envoi d'email, devis ou facture Dolibarr, publication sociale, modification de frayservices.com ou solandvolt.com, et scénario Make ou n8n.",
+  "types": "./types/index.d.ts"
+}
