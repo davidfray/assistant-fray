@@ -98,6 +98,13 @@ describe('règle 5 : Make et n8n', () => {
     expect(classify('mcp__n8n__execute_workflow', { workflowId: 'a' })?.regle).toBe(5)
     expect(classify('Bash', { command: 'curl -X POST https://hook.eu2.make.com/abc -d x=1' })?.regle).toBe(5)
   })
+  test('désactivation : rien (décision du 11/11)', () => {
+    expect(classify('mcp__Make__scenarios_deactivate', { scenarioId: 8239857 })).toBe(null)
+    expect(classify('mcp__n8n__deactivate_workflow', { workflowId: 'a' })).toBe(null)
+    expect(classify('Bash', { command: 'curl -X POST https://eu2.make.com/api/v2/scenarios/1/stop' })).toBe(null)
+    expect(classify('Bash', { command: 'curl -X POST https://x.app.n8n.cloud/api/v1/workflows/a/deactivate' })).toBe(null)
+    expect(classify('Bash', { command: 'curl -X POST https://x.app.n8n.cloud/api/v1/workflows/a/activate' })?.regle).toBe(5)
+  })
   test('lecture de scénario : rien', () => {
     expect(classify('mcp__Make__scenarios_list', {})).toBe(null)
     expect(classify('mcp__Make__scenarios_get', { scenarioId: 1 })).toBe(null)
