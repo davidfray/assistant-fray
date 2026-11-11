@@ -326,6 +326,53 @@ function avertissementSnippet(cmd: string): string {
   )
 }
 
+/** Champs d'un produit WooCommerce envoyés : prix, promotion, stock, statut. */
+function champsProduit(p: Args): string[] {
+  const l: string[] = []
+  const prix = texte(p.regular_price)
+  const promo = p.sale_price === undefined ? undefined : texte(p.sale_price)
+  if (prix) l.push(`prix normal ${euros(prix)}`)
+  if (promo !== undefined) l.push(promo ? `prix promotionnel ${euros(promo)}` : 'promotion retirée')
+  if (p.stock_quantity !== undefined) l.push(`stock ${texte(p.stock_quantity)}`)
+  if (p.stock_status !== undefined) l.push(`état du stock ${texte(p.stock_status)}`)
+  if (p.backorders !== undefined) l.push(`commandes en rupture ${texte(p.backorders)}`)
+  if (p.status !== undefined) l.push(`statut ${texte(p.status)}${texte(p.status) === 'publish' ? ' (en ligne)' : ''}`)
+  if (p.name !== undefined) l.push(`nom « ${couper(texte(p.name), 80)} »`)
+  return l
+}
+
+/** Produit WooCommerce par l'API : champs envoyés lisibles, et rappel du PVP EcoFlow si un prix change. */
+function resumeProduit(cmd: string): string {
+  if (!/wc\/v3\/products/i.test(cmd)) return ''
+  const { a } = donneesCurl(cmd)
+  const lignes: string[] = []
+  const lots: Array<[string, unknown]> = [['modification', a.update], ['création', a.create]]
+  let prixEnJeu = false
+  for (const [verbe, liste] of lots) {
+    if (!Array.isArray(liste)) continue
+    for (const item of liste.slice(0, 10)) {
+      const o = objet(item)
+      const champs = champsProduit(o)
+      if (o.regular_price !== undefined || o.sale_price !== undefined) prixEnJeu = true
+      lignes.push(`Produit ${texte(o.id) || '(nouveau)'} (${verbe}) : ${champs.join(', ') || 'autres champs'}`)
+    }
+    if (liste.length > 10) lignes.push(`… et ${liste.length - 10} autre(s) produit(s)`)
+  }
+  if (Array.isArray(a.delete) && a.delete.length) lignes.push(`Produits supprimés : ${a.delete.map(texte).join(', ')}`)
+  if (!lignes.length) {
+    const champs = champsProduit(a)
+    if (champs.length) lignes.push(`Champs envoyés : ${champs.join(', ')}`)
+    if (a.regular_price !== undefined || a.sale_price !== undefined) prixEnJeu = true
+  }
+  if (prixEnJeu) {
+    lignes.push(
+      `Rappel prix : pour une fiche EcoFlow (SKU SV-ECF…), le prix TTC ne doit jamais être sous le PVP conseillé ` +
+        `(PVP HT du fichier Innov8 × 1,21), promotion comprise. Vérifie la référence et ce minimum avant de demander « confirme ».`,
+    )
+  }
+  return lignes.map(l => `${l}\n`).join('')
+}
+
 /** CSS modifié : chaque « remplace … par … » (css_edits), ou le début du CSS complet envoyé. */
 function changementsCss(a: Args): string {
   const lignes: string[] = []
@@ -407,6 +454,7 @@ function siteHttp(cmd: string, force = false): Interception | null {
       avertissementSnippet(cmd) +
       `Écriture sur ${site} par une commande — ${typeElementWp(route || cmd)}\n` +
       (route ? `Adresse : ${couper(route, 200)}\n` : '') +
+      resumeProduit(cmd) +
       `Commande : ${couper(cmd, 300)}\n` +
       CONSIGNE_AVANT_APRES +
       `Confirmer la modification ?`,
