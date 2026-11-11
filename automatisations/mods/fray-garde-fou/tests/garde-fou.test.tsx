@@ -109,6 +109,11 @@ describe('règle 3 : réseaux sociaux', () => {
     expect(ig?.question).toContain('Conteneur n° 42')
     expect(classify('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH', { creation_id: '42' })?.question ?? '').toContain('@frayservicespalamos')
   })
+  test('pages Facebook nommées, pages hors marques signalées', () => {
+    expect(classify('FACEBOOK_CREATE_POST', { page_id: '1244233788769589', message: 'x' })?.question).toContain('page Sol & Volt (Solandvolt) (1244233788769589)')
+    expect(classify('FACEBOOK_CREATE_POST', { page_id: '688555174347773', message: 'x' })?.question).toContain('ni Fray Services ni Sol & Volt')
+    expect(classify('FACEBOOK_CREATE_POST', { page_id: '894312617095394', message: 'x' })?.question).toContain('Francophones de Palamós')
+  })
   test('Instagram : conteneur libre, publication bloquée avec consigne', () => {
     expect(classify('INSTAGRAM_POST_IG_USER_MEDIA', { ig_user_id: 'me', image_url: 'https://x/y.jpg', caption: 'L' })).toBe(null)
     expect(classify('INSTAGRAM_CREATE_MEDIA_CONTAINER', { image_url: 'https://x/y.jpg' })).toBe(null)

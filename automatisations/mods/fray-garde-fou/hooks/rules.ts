@@ -210,7 +210,12 @@ function dolibarrHttp(cmd: string, force = false): Interception | null {
 // ---------- règle 3 : réseaux sociaux ----------
 
 /** Pages et comptes connus (identifiants publics, aucun secret). */
-const PAGES_FACEBOOK: Record<string, string> = { '659509903912871': 'Fray Services' }
+const PAGES_FACEBOOK: Record<string, string> = {
+  '659509903912871': 'Fray Services',
+  '1244233788769589': 'Sol & Volt (Solandvolt)',
+  '688555174347773': 'SereniBrava Conciergerie Palamós (⚠ ni Fray Services ni Sol & Volt)',
+  '894312617095394': 'Français & Francophones de Palamós (⚠ ni Fray Services ni Sol & Volt)',
+}
 const COMPTES_COMPOSIO: Record<string, string> = {
   'instagram_creagh-averah': '@frayservicespalamos (Fray Services)',
   'instagram_izote-crepe': '@solandvolt (Sol & Volt)',
