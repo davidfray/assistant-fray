@@ -29,7 +29,11 @@ Ordinateur inchangé (règles limitées aux écrans de 768 px ou moins, vérifi�
 2. **Bulle de l'assistant** (widget solandvolt-assistant.netlify.app, en bas à droite) : bloquée par le réseau de test, donc absente des captures. Vérifier qu'elle ne couvre pas « Añadir al carrito » dans la barre d'achat.
 3. **Formulaire Brevo** : titre interne à réduire dans Brevo (environ 22 px), toujours en attente.
 
-## Petits points restants (non corrigés)
+## Petits points restants
+
+**Corrigés le 12/11 (CSS, espagnol seulement, vérifié en ligne) :** espaces du bandeau cookies et « Envío con seguimiento: plazo ».
+
+Non corrigé :
 
 - iPhone SE, accueil : la bulle cookies de 40 px touche le coin gauche du bouton « Descubrir los 4 niveles » quand la page n'a pas défilé. Le bouton reste utilisable.
 - Bandeau cookies : espaces manquants dans le texte du module CookieAdmin (« enPersonalizar », « Todopara », et en français « enPersonnaliser »). À corriger dans les réglages de CookieAdmin (texte du bandeau).
