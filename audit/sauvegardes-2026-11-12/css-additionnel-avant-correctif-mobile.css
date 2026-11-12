@@ -1,0 +1,168 @@
+/* Sol & Volt 03/11 : bloc de reassurance des fiches, "Pose possible sur devis prealable" (texte source dans functions.php ; retirer cette regle si functions.php est corrige) */
+html[lang^="fr"] .sv-reassurance-item:has(a[href^="mailto:"]) strong::after { content: " préalable"; }
+
+/* Sol & Volt 03/11 : traduction espagnole de 2 lignes du bloc de reassurance (TranslatePress hors de portee des connecteurs). Si ces textes sont traduits dans TranslatePress ou changes dans functions.php, adapter ou retirer ce bloc. */
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]),
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child strong,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) strong,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) a { font-size: 0; }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child .sv-check,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) .sv-check,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::before,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::after,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) strong::before,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) strong::after,
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) a::after { font-size: var(--wp--preset--font-size--large); }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::before { content: "\00a0 Envío gratuito de 60 € a 350 €"; }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::after { content: " a Francia y España; por encima, transporte según el peso"; font-weight: 400; }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) strong::before { content: "\00a0 Instalación posible con presupuesto previo"; }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) strong::after { content: " por nuestro equipo en Palamós y en la Costa Brava — "; font-weight: 400; }
+html[lang^="es"] .solandvolt-product-reassurance .sv-reassurance-item:has(a[href^="mailto:"]) a::after { content: "pedir presupuesto"; }
+/* Zendure (912, 913, 914) : premiere ligne differente (livraison en Espagne uniquement) */
+html[lang^="es"] body.postid-912 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::before,
+html[lang^="es"] body.postid-913 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::before,
+html[lang^="es"] body.postid-914 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::before { content: "\00a0 Envío gratuito"; }
+html[lang^="es"] body.postid-912 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::after,
+html[lang^="es"] body.postid-913 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::after,
+html[lang^="es"] body.postid-914 .solandvolt-product-reassurance .sv-reassurance-item:first-child strong::after { content: " solo a España peninsular por ahora"; }
+
+/* Sol & Volt 03/11 : descriptions courtes en espagnol de ?p=341 et ?p=339 (a retirer si traduites dans TranslatePress) */
+html[lang^="es"] body.postid-341 .wp-block-post-excerpt__excerpt { font-size: 0; }
+/* 07/11 : fiches EcoFlow completees (640, 833, 573, 768, 563) : extraits espagnols, a retirer si traduits dans TranslatePress */
+html[lang^="es"] body.postid-640 .wp-block-post-excerpt__excerpt,
+html[lang^="es"] body.postid-833 .wp-block-post-excerpt__excerpt,
+html[lang^="es"] body.postid-573 .wp-block-post-excerpt__excerpt,
+html[lang^="es"] body.postid-768 .wp-block-post-excerpt__excerpt,
+html[lang^="es"] body.postid-563 .wp-block-post-excerpt__excerpt { font-size: 0; }
+html[lang^="es"] body.postid-640 .wp-block-post-excerpt__excerpt::after,
+html[lang^="es"] body.postid-833 .wp-block-post-excerpt__excerpt::after,
+html[lang^="es"] body.postid-573 .wp-block-post-excerpt__excerpt::after,
+html[lang^="es"] body.postid-768 .wp-block-post-excerpt__excerpt::after,
+html[lang^="es"] body.postid-563 .wp-block-post-excerpt__excerpt::after { font-size: var(--wp--preset--font-size--large); }
+html[lang^="es"] body.postid-640 .wp-block-post-excerpt__excerpt::after { content: "Nevera-congelador portátil EcoFlow GLACIER Classic 35 L, de -20 °C a 20 °C. Red, toma de 12/24 V o solar, unos 165 Wh cada 24 h en refrigeración."; }
+html[lang^="es"] body.postid-833 .wp-block-post-excerpt__excerpt::after { content: "Panel solar portátil EcoFlow 160 W bifacial, 3,8 kg, estanco IP68, pie regulable de 30 a 60°. Cable XT60 integrado para las estaciones EcoFlow."; }
+html[lang^="es"] body.postid-573 .wp-block-post-excerpt__excerpt::after { content: "Cable EcoFlow BKW-RIVER de 0,5 m: conecta una estación River, DELTA mini o DELTA (1300) al microinversor EcoFlow PowerStream."; }
+html[lang^="es"] body.postid-768 .wp-block-post-excerpt__excerpt::after { content: "Soporte regulable EcoFlow (inclinación de 20 a 75°) para colocar en el suelo o fijar a la pared el panel solar rígido EcoFlow de 400 W."; }
+html[lang^="es"] body.postid-563 .wp-block-post-excerpt__excerpt::after { content: "Panel solar plegable EcoFlow 400 W bifacial, estanco IP68, 10,2 kg. Diseñado para recargar las estaciones DELTA con el sol."; }
+/* titre espagnol du Glacier (?p=640) */
+html[lang^="es"] body.postid-640 h1.wp-block-post-title { font-size: 0 !important; }
+html[lang^="es"] body.postid-640 h1.wp-block-post-title::after { content: "EcoFlow Glacier Classic – Nevera portátil 35 L"; font-size: var(--wp--preset--font-size--xx-large); }
+
+html[lang^="es"] body.postid-341 .wp-block-post-excerpt__excerpt::after { font-size: var(--wp--preset--font-size--large); }
+html[lang^="es"] body.postid-341 .wp-block-post-excerpt__excerpt::after { content: "Aplique solar estanco para exterior. Se carga con el sol durante el día y se enciende por la noche, sin cableado. Entrega en 12 a 18 días laborables."; }
+
+/* Sol & Volt 03/11 : fil d'Ariane espagnol de la categorie Le Module (nom non traduit par TranslatePress) */
+html[lang^="es"] body.term-le-module .woocommerce-breadcrumb { font-size: 0; white-space: nowrap; }
+html[lang^="es"] body.term-le-module .woocommerce-breadcrumb a { font-size: var(--wp--preset--font-size--small); }
+html[lang^="es"] body.term-le-module .woocommerce-breadcrumb a::after { content: "\00a0/\00a0"; display: inline-block; color: currentColor; }
+html[lang^="es"] body.term-le-module .woocommerce-breadcrumb a:last-of-type::after { content: "\00a0/\00a0 El Módulo"; }
+
+/* Sol & Volt 03/11 : titre des commentaires des articles (reprend le titre francais de l'article) remplace par "Comentarios" sur /es_es/ */
+html[lang^="es"] .wp-block-comments-title { font-size: 0 !important; }
+html[lang^="es"] .wp-block-comments-title::after { content: "Comentarios"; font-size: var(--wp--preset--font-size--large); }
+
+/* 07/11 : ordinateur, selecteur de langue en bas a gauche (la bulle de l'assistant le recouvrait en bas a droite) */
+.trp-language-switcher.trp-floating-switcher {
+  left: 24px !important;
+  right: auto !important;
+}
+
+/* ===== Sol & Volt : mobile (04/11/2026, colle le 07/11) ===== */
+@media (max-width: 768px) {
+
+  /* 1. Selecteur de langue : petit, a gauche, au-dessus de la barre d'achat */
+  .trp-language-switcher.trp-floating-switcher {
+    left: 12px !important;
+    right: auto !important;
+    bottom: 84px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    font-size: 13px !important;
+    box-shadow: 0 2px 8px rgba(20, 32, 28, .15) !important;
+  }
+  body.single-product .trp-language-switcher.trp-floating-switcher {
+    bottom: 150px !important;
+  }
+
+  /* 2. La barre d'achat collante ne cache plus le bas de page */
+  body.single-product {
+    padding-bottom: 140px;
+  }
+  /* 2 bis (07/11) : prix et bouton au-dessus de la bulle de l'assistant (bouton rond 56 px + bulle en bas a droite) */
+  .solandvolt-sticky-bar {
+    padding-bottom: 84px !important;
+  }
+  .solandvolt-sticky-bar .sticky-btn {
+    white-space: nowrap;
+  }
+
+  /* 3. Grilles de produits : 2 colonnes propres, bouton sur une ligne */
+  ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 12px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  ul.products::before,
+  ul.products::after {
+    display: none !important;
+  }
+  ul.products li.product {
+    width: auto !important;
+    float: none !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  ul.products li.product .woocommerce-loop-product__title {
+    font-size: 15px !important;
+    line-height: 1.3;
+  }
+  ul.products li.product .button,
+  ul.products li.product a.add_to_cart_button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 6px !important;
+    font-size: 14px !important;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* 4. Newsletter Brevo : plus de doublon, cadre plus large et plus haut */
+  #sv-brevo-fr > div,
+  #sv-brevo-es > div {
+    margin: 32px 0 !important;
+    padding: 16px 8px !important;
+    border-radius: 0 !important;
+  }
+  #sv-brevo-fr > div > h2,
+  #sv-brevo-fr > div > p,
+  #sv-brevo-es > div > h2,
+  #sv-brevo-es > div > p {
+    display: none;
+  }
+  #sv-brevo-fr iframe,
+  #sv-brevo-es iframe {
+    width: 100% !important;
+    height: 640px !important;
+  }
+
+  /* 5. Pied de page : le logo suffit */
+  footer .wp-block-site-title {
+    display: none;
+  }
+
+  /* 6. Fiche produit : SKU, categorie, etiquettes sur plusieurs lignes */
+  .wp-block-woocommerce-product-meta .wp-block-group.is-nowrap {
+    flex-wrap: wrap !important;
+    gap: 8px 16px;
+  }
+}
+/* ===== fin mobile ===== */
+
+/* 07/11 : slogan du site sans climatisation, version espagnole (TranslatePress ne traduit pas le nouveau slogan ; a retirer si traduit dans TranslatePress) */
+html[lang^="es"] .wp-block-site-tagline { visibility: hidden; position: relative; }
+html[lang^="es"] .wp-block-site-tagline::after { content: "Kits solares, baterías y estaciones de energía, sin obras"; visibility: visible; position: absolute; left: 0; top: 0; }
