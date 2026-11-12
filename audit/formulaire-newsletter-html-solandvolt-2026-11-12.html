@@ -1,0 +1,99 @@
+<!-- wp:html -->
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<style>
+#sv-newsletter{max-width:600px;margin:48px auto;padding:32px 24px;background:#FAEEDA;border-radius:8px;text-align:center;color:#14201C;font-family:-apple-system,'Segoe UI',Arial,sans-serif}
+#sv-newsletter h2{color:#14201C;font-family:inherit;font-size:28px;line-height:1.2;margin:0 0 12px}
+@media (max-width:768px){#sv-newsletter{margin:32px 0;padding:24px 16px;border-radius:0}#sv-newsletter h2{font-size:22px}#sv-newsletter .sv-nl-intro{font-size:16px}}
+#sv-newsletter .sv-nl-intro{margin:0 0 20px}
+#sv-newsletter .sib-form,#sv-newsletter .sib-form-container{padding:0!important;margin:0;width:100%;max-width:none;background:transparent;font-family:inherit}
+#sv-newsletter #sib-container{max-width:440px;margin:0 auto;padding:0;background:transparent;border:0;text-align:left}
+#sv-newsletter .entry__label{display:block;font-weight:700;font-size:15px;color:#14201C;margin-bottom:6px;font-family:inherit}
+#sv-newsletter .entry__field{border:1px solid #DEDACB;border-radius:6px;background:#fff}
+#sv-newsletter .entry__field input{font-size:16px;padding:12px;font-family:inherit;color:#14201C}
+#sv-newsletter .entry__error{font-size:14px;font-family:inherit}
+#sv-newsletter .sib-form-block__button{display:block;width:100%;margin-top:14px;padding:14px 16px;border:0;border-radius:6px;background:#C89B3C;color:#14201C;font-size:16px;font-weight:700;font-family:inherit;text-align:center;cursor:pointer}
+#sv-newsletter .sib-form-block__button:hover{background:#B5892F}
+#sv-newsletter .sib-form-message-panel{max-width:440px;margin:0 auto 16px;font-size:15px;font-family:inherit;border-radius:6px}
+#sv-newsletter .sv-nl-legal{margin:12px 0 0;font-size:12px;color:#5F6A6C;text-align:center}
+#sv-newsletter .input--hidden{display:none!important}
+</style>
+<div id="sv-newsletter" data-no-translation="">
+  <h2 class="sv-nl-title">Recevez nos meilleures offres</h2>
+  <p class="sv-nl-intro">Inscrivez-vous pour recevoir en avant-première nos offres et l'arrivée de nouveaux produits.</p>
+  <div class="sib-form">
+    <div id="sib-form-container" class="sib-form-container">
+      <div id="error-message" class="sib-form-message-panel" style="color:#661d1d;background-color:#ffeded;border-color:#ff4949;">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text sv-nl-error">Nous n'avons pas pu confirmer votre inscription.</span>
+        </div>
+      </div>
+      <div id="success-message" class="sib-form-message-panel" style="color:#085229;background-color:#e7faf0;border-color:#13ce66;">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text sv-nl-success">Votre inscription est confirmée.</span>
+        </div>
+      </div>
+      <div id="sib-container" class="sib-container--large sib-container--vertical">
+        <form id="sib-form" method="POST" action="https://1df662ae.sibforms.com/v2/serve/MUIFAB-AIP399rG5uevrK1aP9BOYrvuCDvU5eqHDUta3tlcffYPruVBaAFDoR1-mhYytw0wMXU6DPVwZcG2_ahHhdTfoCQ79tGUGMtdxs4kRfgJ_7RNqzcIQ9V-x1EMQz5bGKUEysE3ez85Ee0_7N7cz3l_pavN3s1Hzt_BaGzg2xM-KgKwD_0bMupgMeNhEPzVtczfJqm4jPu1RSA==" data-type="subscription" novalidate="true">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row">
+                <label class="entry__label sv-nl-label" for="EMAIL" data-required="*">Votre adresse email</label>
+                <div class="entry__field">
+                  <input class="input" type="text" inputmode="email" id="EMAIL" name="EMAIL" autocomplete="email" value="" placeholder="exemple@email.com" data-required="true" required="">
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="color:#661d1d;background-color:#ffeded;border-color:#ff4949;border-radius:6px;"></label>
+            </div>
+          </div>
+          <div class="sib-form-block">
+            <button class="sib-form-block__button sib-form-block__button-with-loader sv-nl-button" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"></path></svg>
+              <span class="sv-nl-button-text">Je m'inscris</span>
+            </button>
+          </div>
+          <input type="text" name="email_address_check" value="" class="input--hidden" aria-hidden="true" tabindex="-1">
+        </form>
+      </div>
+      <p class="sv-nl-legal">Désinscription en un clic dans chaque email.</p>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var es = window.location.pathname.toLowerCase().indexOf("/es_es/") !== -1;
+  var t = es ? {
+    action: "https://1df662ae.sibforms.com/v2/serve/MUIFAEvI3-IIUnGOwigLqpfDXdihky9XZOwkmnyy0VS7fpa-ohD8HJIxJbzaAMZMVzJuVfDDAlg2X2eesE41fYYFnwvIciNA46vzEFo18ge50O9YIDprzPHH094LPljoEV7KvJzz_Kt4Bv3XALTa4Jct8sYUHpcPnljfDga4GAqYeloPgbNTR-ULUccMQwjvabloefyJkK4010Lh0g==",
+    title: "Recibe nuestras mejores ofertas",
+    intro: "Suscríbete para recibir antes que nadie nuestras ofertas y la llegada de nuevos productos.",
+    label: "Tu correo electrónico",
+    placeholder: "ejemplo@correo.com",
+    button: "Suscribirme",
+    error: "No hemos podido confirmar tu inscripción.",
+    success: "Tu inscripción ha sido confirmada.",
+    legal: "Baja en un clic en cada correo.",
+    invalid: "La información proporcionada no es válida. Comprueba el formato del campo e inténtalo de nuevo.",
+    required: "Debes completar este campo."
+  } : {
+    invalid: "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.",
+    required: "Vous devez renseigner ce champ."
+  };
+  var box = document.getElementById("sv-newsletter");
+  if (es && box) {
+    document.getElementById("sib-form").setAttribute("action", t.action);
+    var set = function(sel, txt){ var el = box.querySelector(sel); if (el) el.textContent = txt; };
+    set(".sv-nl-title", t.title); set(".sv-nl-intro", t.intro); set(".sv-nl-label", t.label);
+    set(".sv-nl-button-text", t.button); set(".sv-nl-error", t.error); set(".sv-nl-success", t.success); set(".sv-nl-legal", t.legal);
+    box.querySelector("#EMAIL").setAttribute("placeholder", t.placeholder);
+  }
+  window.REQUIRED_CODE_ERROR_MESSAGE = es ? "Elige un código de país" : "Veuillez choisir un code pays";
+  window.LOCALE = es ? "es" : "fr";
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = window.GENERIC_INVALID_MESSAGE = window.INVALID_NUMBER = t.invalid;
+  window.REQUIRED_ERROR_MESSAGE = t.required;
+  window.INVALID_DATE = es ? "Indica una fecha válida" : "Veuillez saisir une date valide";
+  window.REQUIRED_MULTISELECT_MESSAGE = es ? "Elige al menos una opción" : "Veuillez choisir au moins une option";
+  window.translation = { common: { selectedList: "{quantity}", selectedLists: "{quantity}", selectedOption: "{quantity}", selectedOptions: "{quantity}" } };
+  window.AUTOHIDE = false;
+})();
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<!-- /wp:html -->
