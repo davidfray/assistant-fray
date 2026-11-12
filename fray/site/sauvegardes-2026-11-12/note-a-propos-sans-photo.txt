@@ -1,0 +1,6 @@
+12/11/2026 : bloc « Votre interlocuteur : David Fray » des pages À propos FR (10) et About EN (583), section 1.
+Avant : bloc media-text avec la photo n° 410 (sdb_apres_web.jpg) à gauche (mediaWidth 38, classe fs-about-me), texte à droite.
+Après : même titre, mêmes 3 paragraphes et même bouton WhatsApp, sans photo (décision de David : pas de photos).
+Retour arrière : révisions WordPress des pages 10 et 583 (version du 10/11, 12 h 19), ou remettre le media-text avec mediaId 410.
+
+12/11/2026, suite : bloc ajouté sans photo sur l'accueil ES (page 510, contenu HTML classique, avant « Opiniones de clientes », révision précédente du 10/11 22 h 33) et l'accueil CA (page 425, nouvelle section 8 avant « Experiències de clients », révision précédente du 10/11 12 h 34). Retour arrière : révisions WordPress, ou retirer le bloc.

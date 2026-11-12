@@ -65,7 +65,7 @@ Palamós · Calonge i Sant Antoni · Platja d'Aro · Palafrugell · Calella de P
 | Logo | `fray_services_logo_option3_palamos_majuscules.png` (média n° 66) |
 | Couverture | Salle de bain après travaux `sdb_apres_web.jpg` (n° 410) |
 | Travaux | Salle de bain avant travaux `sdb_avant_web.jpg` (n° 411) ; terrasse en toit, nouvelle étanchéité (n° 111) ; douche à l'italienne (n° 127) ; colonne de douche (n° 125) |
-| Équipe | **Une photo de David sur un chantier** (à prendre : les fiches avec un visage inspirent plus confiance) |
+| Équipe | Aucune (décision de David du 12/11 : pas de photo de lui) |
 
 Aucune image générée par IA (le site en contient encore : n° 14, 15, 16, 17, 19, 47, 48, 56, 350).
 
