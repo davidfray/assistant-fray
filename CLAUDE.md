@@ -198,7 +198,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 - Avant la première commande EcoFlow : David ouvre Packlink PRO (gratuit) et simule River 3 Plus (6,12 kg) et DELTA 3 (14,7 kg) vers Paris et Madrid ; Claude recalcule la marge et la règle « livraison offerte dès 60 € ».
 - Fin novembre 2026 : relire la Search Console de solandvolt.com (filtre `/categorie-produit/`) pour mesurer l'effet des catégories enrichies ; **bilan : version anglaise oui ou non** (ventes FR/ES, visites anglophones dans GA4).
 - 05/11/2026 : réponse de Tornasol vérifiée le 08/11 : aucune réponse (ni à la demande de fiche technique du 26/10, ni à la demande de tarif distributeur du 03/11). Relance en espagnol envoyée le 08/11 avec l'accord de David (fil du 26/10), échéance demandée au 13/11 ; elle rappelle aussi la demande de tarif du 03/11.
-- Tornasol, contrôle du 13/11 : **toujours aucune réponse** (ni à la demande de fiche technique du 26/10, ni au tarif distributeur du 03/11, ni à la relance du 08/11 ; rien de tornasol.energy dans Gmail). Options proposées à David, rien envoyé : appel téléphonique, autre contact Tornasol, ou retrait des mentions non confirmées de la fiche ?p=114. Décision attendue.
+- Tornasol, contrôle du 13/11 : **toujours aucune réponse** (ni à la demande de fiche technique du 26/10, ni au tarif distributeur du 03/11, ni à la relance du 08/11 ; rien de tornasol.energy dans Gmail). Options proposées à David, rien envoyé : appel téléphonique, autre contact Tornasol, ou retrait des mentions non confirmées de la fiche ?p=114. **Décision de David (13/11) : appel téléphonique** ; fiche d'appel en espagnol prête (`emails/appel-tornasol-2026-11-13.md`, WhatsApp du site +34 611 127 192, 5 questions, tableau des réponses). Après l'appel, Claude met à jour les fiches Tornasol FR/ES et ?p=114.
 - Innov8 : réponses reçues le 30/10 et le 03/11 (voir « Décisions » et « Fait en ligne » du 03/11). Toujours sans réponse : poids d'expédition d'ECF0015 et date de réapprovisionnement d'ECF0039 et ECF0068 (ECF0061 est arrêté). À relancer avec la prochaine commande ou question.
 - 24/12/2026 : préparer la publication du post Sol & Volt du 25/12 et demander le feu vert final.
 
@@ -253,6 +253,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 08/11/2026 | Cowork | Nettoyage du CSS additionnel du Personnaliseur (climatisation, badge CE, garantie prolongée), contrôle sans cache ; vérifié ensuite par Claude Code |
 | 08/11/2026 (soir) | Claude Code | Relance Tornasol envoyée (fiche technique, tarif distributeur), rappel du 13/11 ; nettoyage de la section « En attente » (lignes faites ou dépassées retirées, transport, stock, influenceurs et posts Fray mis à jour) |
 | 08/11/2026 (soir, suite) | Claude Code | Contrôle des publications Fray de novembre (Facebook, Instagram) : une autre série tourne, calendrier du dépôt abandonné sur décision de David ; post Sol & Volt du 01/11 sur les comptes Fray signalé |
+| 13/11/2026 | Claude Code | Contrôle Tornasol (aucune réponse), fiche d'appel en espagnol ; publication du post Fray du 09/11 consignée |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 
 ## Mise à jour de ce fichier
