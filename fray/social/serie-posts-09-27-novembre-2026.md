@@ -15,7 +15,7 @@ Hashtags Instagram (tous les posts) : #renovation #rénovationmaison #travauxmai
 | Date | Type | Sujet | Prérequis avant publication |
 |---|---|---|---|
 | Lun. 09/11 | Conseil | Fermer sa maison pour l'hiver : 5 vérifications | **Publié le 09/11** |
-| Lun. 16/11 | Conseil | L'ordre des corps de métier sur un chantier | Une photo de chantier en cours |
+| Lun. 16/11 | Conseil | L'ordre des corps de métier sur un chantier | **Programmé** (FB 7 h 30, Instagram par rappel) |
 | Mer. 18/11 | Commercial | Des travaux en janvier : tout se décide en novembre | Aucun (photo de chantier) |
 | Ven. 20/11 | Conseil | Condensation dans une villa fermée l'hiver | Photo de fenêtre ou de menuiserie réelle |
 | Lun. 23/11 | Conseil | Travaux et mairie en Catalogne | **Confirmer que Fray Services accompagne les démarches** ; règles de Palamós à vérifier |
@@ -66,6 +66,8 @@ Déjà rentré en France ? Nous sommes sur place, à Palamós. Écrivez-nous en 
 ---
 
 ## Lundi 16/11 : l'ordre des corps de métier
+
+**Statut : validé par David le 13/11 (version A).** Visuel : photos réelles avant/après de la salle de bain de Palamós (médias 411 et 410) avec les 5 étapes, charte bleu marine et orange (`fray/medias/2026-11-16-ordre-travaux-avant-apres.jpg`, média 851 de frayservices.com). Facebook programmé le 13/11 pour le 16/11 à 7 h 30 (post 659509903912871_122188007252874977, vérifié dans la file Facebook) ; Instagram publié par rappel automatique le 16/11 à 7 h 30.
 
 **Facebook (121 mots)**
 
