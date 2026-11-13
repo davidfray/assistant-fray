@@ -16,7 +16,7 @@ Hashtags Instagram (tous les posts) : #renovation #rénovationmaison #travauxmai
 |---|---|---|---|
 | Lun. 09/11 | Conseil | Fermer sa maison pour l'hiver : 5 vérifications | **Publié le 09/11** |
 | Lun. 16/11 | Conseil | L'ordre des corps de métier sur un chantier | **Programmé** (FB 7 h 30, Instagram par rappel) |
-| Mer. 18/11 | Commercial | Des travaux en janvier : tout se décide en novembre | Aucun (photo de chantier) |
+| Mer. 18/11 | Commercial | Des travaux en janvier : tout se décide en novembre | Validé (A), visuel prêt, **programmation à faire** |
 | Ven. 20/11 | Conseil | Condensation dans une villa fermée l'hiver | Photo de fenêtre ou de menuiserie réelle |
 | Lun. 23/11 | Conseil | Travaux et mairie en Catalogne | **Confirmer que Fray Services accompagne les démarches** ; règles de Palamós à vérifier |
 | Mer. 25/11 | Preuve sociale | Témoignage de Roger Boullier | **Accord de Roger Boullier** pour les réseaux ; sinon version « R. B. » |
@@ -102,6 +102,8 @@ Envoyez-nous l'adresse de votre bien en message privé : réponse sous 24 h.
 ---
 
 ## Mercredi 18/11 : des travaux en janvier
+
+**Statut : validé par David le 13/11 (version A).** Visuel prêt : photo réelle de la médiathèque (média 109, cloisons en plâtre et sol protégé) avec les 4 étapes, charte bleu marine et orange (`fray/medias/2026-11-18-travaux-janvier.jpg`). **Programmation à faire** : les connecteurs (Composio, WordPress) refusaient le 13/11 vers 10 h 20 ; Facebook à programmer pour le 18/11 à 7 h 30 (horodatage 1794983400), Instagram par rappel automatique.
 
 **Facebook (104 mots)**
 
