@@ -1,6 +1,6 @@
-# Fray Services : suite de la série de posts, du 09/11 au 27/11/2026
+# Fray Services : suite de la série de posts, du 09/11 au 02/12/2026
 
-Statut : **brouillon, à relire par David**. Rien n'est programmé. Après accord, publication par Composio (page Facebook 659509903912871 et Instagram @frayservicespalamos), programmée pour 7 h 30 (heure de Madrid), comme la série du 30/10 au 06/11.
+Statut : **brouillon, à relire par David**. **Redaté le 13/11** (les dates des 11 et 13/11 étaient passées) : même rythme lundi, mercredi, vendredi ; « mairie » et « Roger Boullier » placés plus tard pour laisser le temps des confirmations. Rien n'est programmé. Après accord, publication par Composio (page Facebook 659509903912871 et Instagram @frayservicespalamos), programmée pour 7 h 30 (heure de Madrid), comme la série du 30/10 au 06/11.
 Style repris de la série publiée : accroche courte, un conseil technique concret, ce que fait Fray Services, appel à l'action, hashtags en fin. Aucun emoji.
 Rôle : Fray Services est **maître d'œuvre et bureau d'études** ; le client reste le maître d'ouvrage.
 Charte des visuels (07/11) : bleu marine #0B2A5C, orange #F5A30B, blanc ; Oswald Bold pour les titres, Lato pour le texte ; logo Fray Services en bas à gauche. Vraies photos uniquement.
@@ -14,15 +14,15 @@ Hashtags Instagram (tous les posts) : #renovation #rénovationmaison #travauxmai
 
 | Date | Type | Sujet | Prérequis avant publication |
 |---|---|---|---|
-| Lun. 09/11 | Conseil | Fermer sa maison pour l'hiver : 5 vérifications | Photo du chauffe-eau (`fray/medias/2026-11-02-chauffe-eau-gaz.jpg`) recadrée sans étiquettes |
-| Mer. 11/11 | Conseil | L'ordre des corps de métier sur un chantier | Une photo de chantier en cours |
-| Ven. 13/11 | Commercial | Des travaux en janvier : tout se décide en novembre | Aucun (photo de chantier) |
-| Lun. 16/11 | Conseil | Travaux et mairie en Catalogne | **Confirmer que Fray Services accompagne les démarches** ; règles de Palamós à vérifier |
-| Mer. 18/11 | Conseil | Condensation dans une villa fermée l'hiver | Photo de fenêtre ou de menuiserie réelle |
-| Ven. 20/11 | Preuve sociale | Témoignage de Roger Boullier | **Accord de Roger Boullier** pour les réseaux ; sinon version « R. B. » |
-| Lun. 23/11 | Conseil | Peinture de façade : pourquoi attendre le printemps | Photo de façade réelle |
-| Mer. 25/11 | Marque | Pourquoi Palamós | Photo de vous ou d'un chantier à Palamós |
-| Ven. 27/11 | Commercial | La visite technique : comment elle se passe | Aucun (photo de chantier) |
+| Lun. 09/11 | Conseil | Fermer sa maison pour l'hiver : 5 vérifications | **Publié le 09/11** |
+| Lun. 16/11 | Conseil | L'ordre des corps de métier sur un chantier | Une photo de chantier en cours |
+| Mer. 18/11 | Commercial | Des travaux en janvier : tout se décide en novembre | Aucun (photo de chantier) |
+| Ven. 20/11 | Conseil | Condensation dans une villa fermée l'hiver | Photo de fenêtre ou de menuiserie réelle |
+| Lun. 23/11 | Conseil | Travaux et mairie en Catalogne | **Confirmer que Fray Services accompagne les démarches** ; règles de Palamós à vérifier |
+| Mer. 25/11 | Preuve sociale | Témoignage de Roger Boullier | **Accord de Roger Boullier** pour les réseaux ; sinon version « R. B. » |
+| Ven. 27/11 | Conseil | Peinture de façade : pourquoi attendre le printemps | Photo de façade réelle |
+| Lun. 30/11 | Marque | Pourquoi Palamós | Photo de vous ou d'un chantier à Palamós |
+| Mer. 02/12 | Commercial | La visite technique : comment elle se passe | Aucun (photo de chantier) |
 
 ---
 
@@ -65,7 +65,7 @@ Déjà rentré en France ? Nous sommes sur place, à Palamós. Écrivez-nous en 
 
 ---
 
-## Mercredi 11/11 : l'ordre des corps de métier
+## Lundi 16/11 : l'ordre des corps de métier
 
 **Facebook (121 mots)**
 
@@ -99,7 +99,7 @@ Envoyez-nous l'adresse de votre bien en message privé : réponse sous 24 h.
 
 ---
 
-## Vendredi 13/11 : des travaux en janvier
+## Mercredi 18/11 : des travaux en janvier
 
 **Facebook (104 mots)**
 
@@ -137,7 +137,37 @@ Envoyez-nous l'adresse de votre bien en message privé : réponse sous 24 h, en 
 
 ---
 
-## Lundi 16/11 : travaux et mairie en Catalogne
+## Vendredi 20/11 : condensation dans une villa fermée
+
+**Facebook (122 mots)**
+
+Des gouttes sur les vitres à votre retour ? L'humidité s'est installée.
+
+Dans une villa fermée l'hiver, l'air chargé d'humidité se condense sur les surfaces froides : vitres, angles de murs, placards contre les murs extérieurs. Au bout de quelques semaines, des taches noires apparaissent.
+
+Trois réflexes simples : laisser une aération permanente, faire passer quelqu'un régulièrement pour aérer, et ne rien coller contre les murs extérieurs.
+
+Si le problème revient chaque hiver, il faut chercher la cause : menuiseries à simple vitrage, pont thermique, ventilation absente. Un diagnostic sur place évite de repeindre chaque printemps.
+
+Vous retrouvez de la condensation à chaque retour ? Envoyez-nous trois photos : réponse sous 24 h.
+
+**Instagram (58 mots)**
+
+Des gouttes sur les vitres à votre retour ? L'humidité s'est installée.
+
+Trois réflexes : une aération permanente, un passage régulier pour aérer, rien contre les murs extérieurs.
+
+Si ça revient chaque hiver, on cherche la cause : simple vitrage, pont thermique, ventilation absente.
+
+Envoyez-nous trois photos en message privé : réponse sous 24 h.
+
+**Variante B (accroche) :** Taches noires dans les angles : ce n'est pas la peinture.
+
+**Brief Canva :** 4:5. Photo réelle de fenêtre avec buée ou de menuiserie. Bandeau bas bleu marine, titre blanc « Condensation : trouver la cause », 3 réflexes en Lato, puces orange.
+
+---
+
+## Lundi 23/11 : travaux et mairie en Catalogne
 
 **À ne publier qu'après vos deux confirmations** (accompagnement des démarches, règles de Palamós). Texte repris de `post-autorisations-travaux-2026-11-23.md`, version A.
 
@@ -171,37 +201,7 @@ Les règles varient selon la commune.
 
 ---
 
-## Mercredi 18/11 : condensation dans une villa fermée
-
-**Facebook (122 mots)**
-
-Des gouttes sur les vitres à votre retour ? L'humidité s'est installée.
-
-Dans une villa fermée l'hiver, l'air chargé d'humidité se condense sur les surfaces froides : vitres, angles de murs, placards contre les murs extérieurs. Au bout de quelques semaines, des taches noires apparaissent.
-
-Trois réflexes simples : laisser une aération permanente, faire passer quelqu'un régulièrement pour aérer, et ne rien coller contre les murs extérieurs.
-
-Si le problème revient chaque hiver, il faut chercher la cause : menuiseries à simple vitrage, pont thermique, ventilation absente. Un diagnostic sur place évite de repeindre chaque printemps.
-
-Vous retrouvez de la condensation à chaque retour ? Envoyez-nous trois photos : réponse sous 24 h.
-
-**Instagram (58 mots)**
-
-Des gouttes sur les vitres à votre retour ? L'humidité s'est installée.
-
-Trois réflexes : une aération permanente, un passage régulier pour aérer, rien contre les murs extérieurs.
-
-Si ça revient chaque hiver, on cherche la cause : simple vitrage, pont thermique, ventilation absente.
-
-Envoyez-nous trois photos en message privé : réponse sous 24 h.
-
-**Variante B (accroche) :** Taches noires dans les angles : ce n'est pas la peinture.
-
-**Brief Canva :** 4:5. Photo réelle de fenêtre avec buée ou de menuiserie. Bandeau bas bleu marine, titre blanc « Condensation : trouver la cause », 3 réflexes en Lato, puces orange.
-
----
-
-## Vendredi 20/11 : témoignage de Roger Boullier
+## Mercredi 25/11 : témoignage de Roger Boullier
 
 **À ne publier qu'avec l'accord de Roger Boullier** pour les réseaux sociaux. Sans accord : remplacer « Roger » par « un propriétaire » et signer « R. B. ». Texte repris de `post-preuve-sociale-2026-11-25.md`, version A.
 
@@ -234,7 +234,7 @@ Votre projet ? Écrivez-nous en message privé : réponse sous 24 h.
 
 ---
 
-## Lundi 23/11 : peinture de façade
+## Vendredi 27/11 : peinture de façade
 
 **Facebook (118 mots)**
 
@@ -262,7 +262,7 @@ Envoyez-nous trois photos de votre façade en message privé : réponse sous 24 
 
 ---
 
-## Mercredi 25/11 : pourquoi Palamós
+## Lundi 30/11 : pourquoi Palamós
 
 Texte repris de `posts-marque-novembre-2026.md` (post 5), à relire : le passage de la version A vous concerne directement.
 
@@ -274,7 +274,7 @@ Texte repris de `posts-marque-novembre-2026.md` (post 5), à relire : le passage
 
 ---
 
-## Vendredi 27/11 : la visite technique
+## Mercredi 02/12 : la visite technique
 
 **Facebook (116 mots)**
 
@@ -313,7 +313,7 @@ Envoyez-nous l'adresse de votre bien en message privé : réponse sous 24 h.
 - [ ] Relecture de David, choix A ou B pour chaque post
 - [x] Délai de réponse : 24 h (David, 08/11)
 - [ ] Photos réelles pour chaque date (aucune image générée)
-- [ ] 16/11 : accompagnement des démarches en mairie confirmé, règles de Palamós vérifiées
-- [ ] 20/11 : accord de Roger Boullier (ou version « R. B. »)
-- [ ] 27/11 : durée de la visite et fonctionnement sans présence du propriétaire confirmés
+- [ ] 23/11 : accompagnement des démarches en mairie confirmé, règles de Palamós vérifiées
+- [ ] 25/11 : accord de Roger Boullier (ou version « R. B. »)
+- [ ] 02/12 : durée de la visite et fonctionnement sans présence du propriétaire confirmés
 - [ ] Programmation par Composio à 7 h 30 (heure de Madrid), Facebook et Instagram, après accord
