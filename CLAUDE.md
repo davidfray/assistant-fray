@@ -69,7 +69,7 @@ Règles Sol & Volt absolues : aucune mention CE, « gestionnaire de réseau loca
 | `social/` | Posts Sol & Volt (kit balcon, Wh, décembre), calendrier de décembre, plan influenceurs Instagram (`influenceurs-solandvolt-2026-10-28.md`) |
 | `emails/` | Modèle email syndic, demande fiche technique Tornasol (envoyée), demande d'informations au fournisseur EcoFlow (brouillon) |
 | `service-client/` | Réponses types FR/ES (kit balcon, Wh) |
-| `fray/social/` | Posts Fray Services ; **suite de la série du 09/11 au 27/11 en brouillon** (`serie-posts-09-27-novembre-2026.md`, 9 posts, nouvelle charte, à relire par David avant programmation) ; calendrier de novembre abandonné |
+| `fray/social/` | Posts Fray Services ; **suite de la série en brouillon** (`serie-posts-09-27-novembre-2026.md`, 9 posts, nouvelle charte ; 09/11 publié ; **redatée le 13/11 : 16, 18, 20, 23, 25, 27, 30/11 et 02/12**, à relire par David avant programmation) ; calendrier de novembre abandonné |
 
 ## Identifiants utiles solandvolt.com
 
@@ -314,7 +314,7 @@ David travaille sur les mêmes sujets dans Cowork (dossier local, synchronisé a
 | 08/11/2026 | Cowork | Nettoyage du CSS additionnel du Personnaliseur (climatisation, badge CE, garantie prolongée), contrôle sans cache ; vérifié ensuite par Claude Code |
 | 08/11/2026 (soir) | Claude Code | Relance Tornasol envoyée (fiche technique, tarif distributeur), rappel du 13/11 ; nettoyage de la section « En attente » (lignes faites ou dépassées retirées, transport, stock, influenceurs et posts Fray mis à jour) |
 | 08/11/2026 (soir, suite) | Claude Code | Contrôle des publications Fray de novembre (Facebook, Instagram) : une autre série tourne, calendrier du dépôt abandonné sur décision de David ; post Sol & Volt du 01/11 sur les comptes Fray signalé |
-| 13/11/2026 | Claude Code | Contrôle Tornasol (aucune réponse), fiche d'appel en espagnol ; publication du post Fray du 09/11 consignée |
+| 13/11/2026 | Claude Code | Contrôle Tornasol (aucune réponse), message WhatsApp ES/FR envoyé par David, modèle YCloud soumis, bascule sur l'environnement « assistant-fray » ; publication du post Fray du 09/11 consignée ; série Fray redatée (16/11 au 02/12) |
 | 04/11/2026 | Cowork | Contrôle du CSV Innov8, règle de marge à 12 % (limite : PVP conseillé EcoFlow), fichier d'import ruptures et poids, accès GitHub et réseau, titres et méta espagnols pour TranslatePress |
 | 09/11/2026 | Claude Code | Rappel EcoFlow du 06/11 traité (réponse d'Innov8 du 03/11 déjà reçue, pas de relance) ; contrôle des redirections et de GA4 ; GTIN renseigné sur 4 fiches EcoFlow |
 | 10/11/2026 | Claude Code | Contrôle programmé panneaux rigides (pas de réponse d'Innov8 ni d'Enverd, 2 relances en brouillon, tableau comparatif prêt) ; nouveau contrôle en ligne de la séance Cowork du 07/11 : 7 titres, 18 descriptions, 16 redirections, plans du site, Glacier FR/ES toujours conformes |
