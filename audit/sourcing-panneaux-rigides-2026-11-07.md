@@ -48,3 +48,7 @@ Caractéristiques du panneau rigide EcoFlow 400 W (fiche Innov8) : monocristalli
 - Enverd : à Pau Junyent (confirmation de l'alta et conditions commerciales).
 
 Suite : tableau complété dès réception des réponses, puis fiche produit en brouillon si David valide.
+
+## Point du 14/11/2026
+
+Les 2 relances ne sont plus utiles : Innov8 (Nuria) a répondu sur le panneau rigide et Enverd (Pau Junyent) a envoyé ses conditions ; David leur a répondu le 10 et le 11/11. Brouillons de relance absents de Gmail, rien envoyé. Suite : tableau comparatif à compléter à partir de ces réponses.
