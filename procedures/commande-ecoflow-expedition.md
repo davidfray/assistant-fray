@@ -1,5 +1,8 @@
 # Procédure : traiter une commande EcoFlow (Sol & Volt)
 
+> **14/11/2026 : Packlink refuse le lithium (information de David).** Les étapes Packlink ci-dessous ne s'appliquent plus aux stations EcoFlow. Transporteur à trouver pour l'Espagne : GLS en contrat direct (l'agence qui pose le moins de problèmes pour la classe 9, selon Innov8) ou SEUR ; demande d'offre prête dans `audit/transporteurs-solandvolt-2026-10-28.md`.
+
+
 Créée le 29/10/2026, pendant la campagne Google Ads « Solandvolt - Recherche FR-ES v2 ». À suivre dès qu'une commande contient un produit EcoFlow (référence fournisseur ECF…).
 Les produits SOK ne sont pas concernés : le fournisseur les expédie directement.
 
