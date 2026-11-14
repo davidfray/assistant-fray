@@ -98,3 +98,27 @@ Le 14/11 : effet des négatifs et de la nouvelle page d'arrivée EcoFlow FR (CTR
 - **Prix SOK alignés sur SOK Europe** (décision de David, par l'API) : SK12V206H ?p=482 **585 €** (au lieu de 639,90 €), SK12V100H ?p=480 **259 €** (au lieu de 269 €). Prix d'achat SOK (mail d'Eve du 15/10, HT, livraison France et Espagne comprise) : 439 € et 187 €. Marge HT : **44,47 €** (10,1 % du coût) et **27,05 €** (14,5 %), avant frais Mollie. La 206 Ah passe sous la règle des 12 % : exception voulue, le prix du marché est prioritaire. Paliers SOK : 206 Ah à 410 € dès 10 unités par mois (3 modèles cumulés pendant les 3 premiers mois). SOK n'impose pas de prix minimum. Vérifié en ligne (FR et ES).
 - **GA4 devise et fuseau** : faits par David à 13 h 08 (EUR, Europe/Madrid), vérifiés par l'API. La connexion Composio ne peut que lire GA4.
 - **Commande test : abandonnée (décision de David, pas de fonds pour des tests).** La première vente réelle servira de contrôle. Note d'origine : non faisable par Claude (paiement réel par carte depuis un vrai téléphone, et le navigateur de la session ne transmet pas les balises Google). À faire par David ; Claude rembourse ensuite par l'API WooCommerce (remboursement Mollie).
+
+## 6. Bilan hebdomadaire du 14/11 (période du 07 au 13/11)
+
+| Groupe | Impressions | Clics | Coût | CTR | CPC moyen |
+|---|---|---|---|---|---|
+| EcoFlow ES genérico | 2 681 | 106 | 28,16 € | 4,0 % | 0,27 € |
+| EcoFlow ES (modèles) | 464 | 16 | 5,62 € | 3,4 % | 0,35 € |
+| EcoFlow FR | 677 | 9 | 2,11 € | 1,3 % | 0,23 € |
+| SOK ES | 94 | 6 | 2,21 € | 6,4 % | 0,37 € |
+| SOK FR | 58 | 1 | 0,08 € | 1,7 % | 0,08 € |
+| **Total** | **3 974** | **138** | **38,18 €** | 3,5 % | 0,28 € |
+
+- **0 conversion, 0 vente** (seules les commandes 1014 et 1015 du 09/11, tests de David, annulées). 92 % des clics sur mobile. Dépense de 4,21 à 7,15 € par jour pour un budget de 5 € (Google peut dépasser un jour, pas sur le mois).
+- **Genérico contre modèles** : le groupe genérico fait 77 % des clics, moins cher (0,27 € contre 0,35 €) et avec un meilleur taux de clic. Depuis le 12/11, sa nouvelle annonce River 2 Max (« Desde 399 € », fiche ?p=539 en stock) prend le relais : 17 clics en 2 jours contre 8 pour l'ancienne (mise en pause).
+- **EcoFlow FR** : page d'arrivée DELTA 3 française en place depuis le 07/11 ; taux de clic faible (1,3 %). Le groupe a dépensé 1,44 € le 07/11 avant la pause, puis **0,67 € le 13/11 : il a été réactivé le 12/11 à 18 h 41**.
+- **Termes de recherche** : « generador solar amazon » (14 clics, 1,51 €) déjà bloqué par le négatif « amazon » du 11/11. Rien de nouveau à bloquer, hormis « batterie berger » (SOK FR, 0,08 €, marque sans rapport) en option.
+
+### Changements du 12/11 au soir (18 h 38 à 18 h 42) absents de la mémoire du projet
+Faits par l'API avec le compte de David (autre session ou Cowork) :
+1. **Groupe EcoFlow FR réactivé**, contraire à la décision du 07/11 (transport vers la France d'environ 100 €, supérieur à la marge).
+2. **Négatifs « 3000w » et « 3000 watt » remis**, alors qu'ils avaient été retirés le 03/11 : ils bloquent la DELTA 3 Max Plus 3 000 W (?p=850, 1 499 €, en ligne et en stock), citée dans la description de l'annonce EcoFlow ES. Aussi ajoutés : « generators » et « solar panels » (sans risque pour le catalogue).
+3. **Groupe genérico** : nouvelle annonce vers la River 2 Max (approuvée), ancienne annonce vers La Base en pause.
+
+À confirmer par David avant toute modification : garder EcoFlow FR actif ou le remettre en pause ; retirer ou non « 3000w » et « 3000 watt ».
