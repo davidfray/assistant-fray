@@ -122,3 +122,7 @@ Faits par l'API avec le compte de David (autre session ou Cowork) :
 3. **Groupe genérico** : nouvelle annonce vers la River 2 Max (approuvée), ancienne annonce vers La Base en pause.
 
 À confirmer par David avant toute modification : garder EcoFlow FR actif ou le remettre en pause ; retirer ou non « 3000w » et « 3000 watt ».
+
+### Décisions de David du 14/11, appliquées par l'API et vérifiées
+- **Groupe EcoFlow FR remis en pause** (statut PAUSED vérifié). Actifs : EcoFlow ES, EcoFlow ES genérico, SOK FR, SOK ES.
+- **Négatifs « 3000w » et « 3000 watt » retirés** : la DELTA 3 Max Plus 3 000 W (?p=850) peut de nouveau apparaître. 72 négatifs restent, aucun ne contient « 3000 ». **Ne plus les remettre** (c'est la 2e fois qu'ils reviennent : 03/11 et 12/11).
